@@ -1,0 +1,6 @@
+[submodule "humanizer"]
+	path = humanizer
+	url = https://github.com/blader/humanizer.git
+[submodule "GSAP"]
+	path = GSAP
+	url = https://github.com/greensock/GSAP.git
