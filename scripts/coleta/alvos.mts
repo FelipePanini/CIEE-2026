@@ -241,4 +241,15 @@ export const ALVOS: Alvo[] = [
     tipo: 'json',
     corpo: overpass(`[out:json][timeout:120];nwr["amenity"="university"]["name"~"ULBRA|Luterana",i](-29.99,-51.25,-29.85,-51.10);out center tags;`),
   },
+  {
+    id: 'osm-rodovias-estaduais',
+    url: OVERPASS,
+    espelhos: OVERPASS_ESPELHOS,
+    metodo: 'POST',
+    tipo: 'json',
+    corpo: overpass(
+      `[out:json][timeout:180];(way["highway"~"^(motorway|trunk|primary|secondary)$"]["ref"~"(ERS|RS)-(129|130|287|401|453)"](${BBOX}););out geom;`,
+    ),
+    nota: 'Rodovias estaduais citadas nos boletins de bloqueio de jul/2026 (ERS-129, ERS-130) e ligações regionais',
+  },
 ];
