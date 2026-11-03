@@ -38,5 +38,5 @@ jobs:
           git add data/brutos
           if git diff --cached --quiet; then echo "Sem mudanças"; exit 0; fi
           git commit -m "dados: coleta bruta automática ($(date -u +%Y-%m-%dT%H:%MZ))"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
