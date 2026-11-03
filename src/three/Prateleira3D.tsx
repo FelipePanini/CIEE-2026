@@ -3,10 +3,10 @@
  * aos dias de cobertura na chegada da reposição. A pilha fica vermelha abaixo do prazo crítico.
  * "A água acaba antes do papel higiênico — e dá para ver isso."
  */
-import { Html } from '@react-three/drei';
 import { useOperacao, useResultado } from '../store';
 import { ITENS, itemPorId } from '../engine/urgencia';
 import { ILHAS } from './mundo';
+import { Rotulo } from './Rotulo';
 
 const ALT_DIA = 0.55; // unidades por dia de cobertura
 const MAX_DIAS = 14;
@@ -82,47 +82,45 @@ export function Prateleira3D() {
               <boxGeometry args={[1.7, 0.05, 1.3]} />
               <meshBasicMaterial color="#f3efe6" transparent opacity={0.8} />
             </mesh>
-            {rotulos && (
-              <Html
-                position={[0, Math.max(n, u.prazo) * ALT_DIA + 1.1, 0]}
-                center
-                distanceFactor={18}
-                zIndexRange={[5, 0]}
-                className="pointer-events-none select-none"
+            <Rotulo
+              visivel={rotulos}
+              position={[0, Math.max(n, u.prazo) * ALT_DIA + 1.1, 0]}
+              center
+              distanceFactor={18}
+              zIndexRange={[5, 0]}
+              className="pointer-events-none select-none"
+            >
+              <div
+                className={`whitespace-nowrap rounded px-2 py-1 text-center text-[12px] leading-tight ${critico ? 'bg-coral-500 text-navy-950' : 'bg-navy-950/85 text-creme-100'}`}
               >
-                <div
-                  className={`whitespace-nowrap rounded px-2 py-1 text-center text-[12px] leading-tight ${critico ? 'bg-coral-500 text-navy-950' : 'bg-navy-950/85 text-creme-100'}`}
-                >
-                  <strong>{itemPorId(u.item).nome}</strong>
-                  <div>
-                    {u.coberturaNaChegada.valor >= 999
-                      ? 'coberto'
-                      : `${u.coberturaNaChegada.valor.toFixed(1).replace('.', ',')} dias`}{' '}
-                    · prazo {u.prazo} d
-                  </div>
+                <strong>{itemPorId(u.item).nome}</strong>
+                <div>
+                  {u.coberturaNaChegada.valor >= 999
+                    ? 'coberto'
+                    : `${u.coberturaNaChegada.valor.toFixed(1).replace('.', ',')} dias`}{' '}
+                  · prazo {u.prazo} d
                 </div>
-              </Html>
-            )}
+              </div>
+            </Rotulo>
           </group>
         );
       })}
-      {rotulos && (
-        <Html
-          position={[0, 9.6, 0]}
-          center
-          distanceFactor={22}
-          zIndexRange={[5, 0]}
-          className="pointer-events-none select-none"
-        >
-          <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_#0b1e26]">
-            <div className="font-display text-[18px] text-creme-100">Prateleira: {local.nome}</div>
-            <div className="text-[12px] text-creme-200">
-              {Math.round(local.pessoasN)} pessoas · altura da pilha = dias de cobertura (
-              {ITENS.length} itens)
-            </div>
+      <Rotulo
+        visivel={rotulos}
+        position={[0, 9.6, 0]}
+        center
+        distanceFactor={22}
+        zIndexRange={[5, 0]}
+        className="pointer-events-none select-none"
+      >
+        <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_#0b1e26]">
+          <div className="font-display text-[18px] text-creme-100">Prateleira: {local.nome}</div>
+          <div className="text-[12px] text-creme-200">
+            {Math.round(local.pessoasN)} pessoas · altura da pilha = dias de cobertura (
+            {ITENS.length} itens)
           </div>
-        </Html>
-      )}
+        </div>
+      </Rotulo>
     </group>
   );
 }

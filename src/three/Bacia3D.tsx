@@ -4,13 +4,15 @@
  */
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Html, Line } from '@react-three/drei';
+import { Line } from '@react-three/drei';
 import * as THREE from 'three';
+import { Rotulo } from './Rotulo';
 import { DADOS, municipioPorIbge } from '../data/carregar';
 import { useOperacao, useResultado } from '../store';
 import { elevacao, paraMundo, Y_POR_METRO, type Relevo } from './mundo';
 import { Terreno } from './Terreno';
 import { PlanoAgua, Regua3D } from './Agua';
+import { OndasImpacto } from './CartaCrise3D';
 
 type Geo = Record<string, [number, number][]>;
 let cacheRotas: Promise<Geo> | null = null;
@@ -58,23 +60,22 @@ function Pinos({ relevo, rotulos }: { relevo: Relevo; rotulos: boolean }) {
                 emissiveIntensity={l.urgenciaMax >= 0.5 ? 0.45 : 0.15}
               />
             </mesh>
-            {rotulos && l.pessoasN > 0 && (
-              <Html
-                position={[0, h + 0.6, 0]}
-                zIndexRange={[5, 0]}
-                center
-                distanceFactor={55}
-                className="pointer-events-none select-none"
-              >
-                <div className="whitespace-nowrap rounded bg-navy-950/80 px-1.5 py-0.5 text-[10px] font-semibold text-creme-100">
-                  {l.nome.replace(
-                    /^(EMEF|EEEF|Instituto Estadual de Educação|Colégio Estadual|Abrigo( na)?)\s*/i,
-                    '',
-                  )}{' '}
-                  · {Math.round(l.pessoasN)}
-                </div>
-              </Html>
-            )}
+            <Rotulo
+              visivel={rotulos && l.pessoasN > 0}
+              position={[0, h + 0.6, 0]}
+              zIndexRange={[5, 0]}
+              center
+              distanceFactor={55}
+              className="pointer-events-none select-none"
+            >
+              <div className="whitespace-nowrap rounded bg-navy-950/80 px-1.5 py-0.5 text-[10px] font-semibold text-creme-100">
+                {l.nome.replace(
+                  /^(EMEF|EEEF|Instituto Estadual de Educação|Colégio Estadual|Abrigo( na)?)\s*/i,
+                  '',
+                )}{' '}
+                · {Math.round(l.pessoasN)}
+              </div>
+            </Rotulo>
           </group>
         );
       })}
@@ -218,7 +219,7 @@ function Rotas3D({ relevo }: { relevo: Relevo }) {
 }
 
 /** Pinos dos municípios atendidos no cenário (sede municipal, IBGE). */
-function Municipios({ relevo }: { relevo: Relevo }) {
+function Municipios({ relevo, visivel }: { relevo: Relevo; visivel: boolean }) {
   const r = useResultado();
   const grupos = new Map<number, { lat: number; lon: number; n: number }>();
   for (const l of r.locais) {
@@ -233,18 +234,17 @@ function Municipios({ relevo }: { relevo: Relevo }) {
         // rótulo no centro dos locais atendidos no município (não na sede)
         const p = ponto3D(relevo, g.lat / g.n, g.lon / g.n, 0);
         return (
-          <Html
+          <Rotulo
+            visivel={visivel}
             key={ibge}
             position={[p.x + 1.6, p.y + 3.2, p.z - 1.2]}
             center
             distanceFactor={70}
-            zIndexRange={[5, 0]}
-            className="pointer-events-none select-none"
           >
             <div className="font-display whitespace-nowrap text-[13px] text-creme-100 [text-shadow:0_1px_3px_#0b1e26]">
               {m.nome}
             </div>
-          </Html>
+          </Rotulo>
         );
       })}
     </group>
@@ -271,8 +271,9 @@ export function Bacia3D({
         </group>
       ))}
       <Pinos relevo={relevo} rotulos={rotulos} />
-      {rotulos && <Municipios relevo={relevo} />}
+      <Municipios relevo={relevo} visivel={rotulos} />
       <Rotas3D relevo={relevo} />
+      <OndasImpacto posicao={(lat, lon) => ponto3D(relevo, lat, lon)} />
     </group>
   );
 }

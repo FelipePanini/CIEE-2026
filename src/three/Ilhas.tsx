@@ -2,6 +2,7 @@
 import { Quadra3D } from './Quadra3D';
 import { Prateleira3D } from './Prateleira3D';
 import { Kit3D } from './Kit3D';
+import { Organograma3D } from './Organograma3D';
 
 export function Ilhas() {
   return (
@@ -9,6 +10,7 @@ export function Ilhas() {
       <Quadra3D />
       <Prateleira3D />
       <Kit3D />
+      <Organograma3D />
     </>
   );
 }

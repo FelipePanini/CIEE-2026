@@ -6,8 +6,8 @@
  */
 import { useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
 import * as THREE from 'three';
+import { Rotulo } from './Rotulo';
 import { DADOS } from '../data/carregar';
 import { elevacaoMinima, paraMundo, Y_POR_METRO, UNIDADES_POR_KM, type Relevo } from './mundo';
 import type { Dado } from '../engine/tipos';
@@ -115,23 +115,22 @@ export function Regua3D({
         <cylinderGeometry args={[0.6, 0.6, 0.12, 24]} />
         <meshBasicMaterial color={nivel >= cota ? '#ef6a4b' : '#2f9fbf'} />
       </mesh>
-      {rotulos && (
-        <Html
-          position={[0.8, topo, 0]}
-          distanceFactor={60}
-          zIndexRange={[5, 0]}
-          className="pointer-events-none select-none"
-        >
-          <div className="whitespace-nowrap rounded bg-navy-950/85 px-2 py-1 text-[11px] leading-tight text-creme-100 ring-1 ring-piscina-300/40">
-            <strong>{est.rio}</strong> · {nivel.toFixed(2).replace('.', ',')} m
-            {marcas.map((m) => (
-              <div key={m.t} style={{ color: m.cor }}>
-                {m.t}
-              </div>
-            ))}
-          </div>
-        </Html>
-      )}
+      <Rotulo
+        visivel={rotulos}
+        position={[0.8, topo, 0]}
+        distanceFactor={60}
+        zIndexRange={[5, 0]}
+        className="pointer-events-none select-none"
+      >
+        <div className="whitespace-nowrap rounded bg-navy-950/85 px-2 py-1 text-[11px] leading-tight text-creme-100 ring-1 ring-piscina-300/40">
+          <strong>{est.rio}</strong> · {nivel.toFixed(2).replace('.', ',')} m
+          {marcas.map((m) => (
+            <div key={m.t} style={{ color: m.cor }}>
+              {m.t}
+            </div>
+          ))}
+        </div>
+      </Rotulo>
     </group>
   );
 }

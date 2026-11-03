@@ -3,8 +3,8 @@
  */
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
 import * as THREE from 'three';
+import { Rotulo } from './Rotulo';
 import { DADOS } from '../data/carregar';
 import { useOperacao, useResultado } from '../store';
 import { ILHAS } from './mundo';
@@ -70,51 +70,49 @@ export function Kit3D() {
                 )}
                 <meshStandardMaterial color={cor} emissive={cor} emissiveIntensity={0.15} />
               </mesh>
-              {tela === 'gastos' && (
-                <Html
-                  position={[0, 0.7, 0]}
-                  center
-                  distanceFactor={12}
-                  zIndexRange={[5, 0]}
-                  className="pointer-events-none select-none"
-                >
-                  <div className="whitespace-nowrap rounded bg-navy-950/85 px-1.5 py-0.5 text-center text-[11px] leading-tight text-creme-100">
-                    <strong>{p?.nome ?? l.produto}</strong>
-                    <div>
-                      {l.qtd.toLocaleString('pt-BR', { maximumFractionDigits: 2 })} ×{' '}
-                      {l.preco && typeof l.preco.valor === 'number'
-                        ? brl(l.preco.valor)
-                        : 'A CONFIRMAR'}
-                    </div>
-                    <div className="text-[9px] text-piscina-300">
-                      {(l.preco?.fonte ?? '').split('—')[0]}
-                    </div>
+              <Rotulo
+                visivel={tela === 'gastos'}
+                position={[0, 0.7, 0]}
+                center
+                distanceFactor={12}
+                zIndexRange={[5, 0]}
+                className="pointer-events-none select-none"
+              >
+                <div className="whitespace-nowrap rounded bg-navy-950/85 px-1.5 py-0.5 text-center text-[11px] leading-tight text-creme-100">
+                  <strong>{p?.nome ?? l.produto}</strong>
+                  <div>
+                    {l.qtd.toLocaleString('pt-BR', { maximumFractionDigits: 2 })} ×{' '}
+                    {l.preco && typeof l.preco.valor === 'number'
+                      ? brl(l.preco.valor)
+                      : 'A CONFIRMAR'}
                   </div>
-                </Html>
-              )}
+                  <div className="text-[9px] text-piscina-300">
+                    {(l.preco?.fonte ?? '').split('—')[0]}
+                  </div>
+                </div>
+              </Rotulo>
             </group>
           );
         })}
       </group>
-      {tela === 'gastos' && (
-        <Html
-          position={[0, 8.2, 0]}
-          center
-          distanceFactor={14}
-          zIndexRange={[5, 0]}
-          className="pointer-events-none select-none"
-        >
-          <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_#0b1e26]">
-            <div className="font-display text-[22px] text-creme-100">
-              Kit família: {brl(r.kit.custo.valor)}
-            </div>
-            <div className="text-[12px] text-creme-200">
-              {brl(r.kit.custoPorPessoaDia.valor)} por pessoa/dia ·{' '}
-              {Math.round(r.kit.kcalPessoaDia.valor)} kcal/pessoa/dia (TACO)
-            </div>
+      <Rotulo
+        visivel={tela === 'gastos'}
+        position={[0, 8.2, 0]}
+        center
+        distanceFactor={14}
+        zIndexRange={[5, 0]}
+        className="pointer-events-none select-none"
+      >
+        <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_#0b1e26]">
+          <div className="font-display text-[22px] text-creme-100">
+            Kit família: {brl(r.kit.custo.valor)}
           </div>
-        </Html>
-      )}
+          <div className="text-[12px] text-creme-200">
+            {brl(r.kit.custoPorPessoaDia.valor)} por pessoa/dia ·{' '}
+            {Math.round(r.kit.kcalPessoaDia.valor)} kcal/pessoa/dia (TACO)
+          </div>
+        </div>
+      </Rotulo>
     </group>
   );
 }

@@ -5,8 +5,8 @@
  */
 import { useLayoutEffect, useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
 import * as THREE from 'three';
+import { Rotulo } from './Rotulo';
 import { useOperacao, useResultado } from '../store';
 import { ZONAS } from '../engine/producao';
 import { ILHAS } from './mundo';
@@ -141,25 +141,24 @@ export function Quadra3D() {
               <boxGeometry args={[1.2, (z.kitsHora / maxVazao) * 5, 0.6]} />
               <meshStandardMaterial color={gargalo ? '#ef6a4b' : '#8cc7c5'} />
             </mesh>
-            {rotulos && (
-              <Html
-                position={[0, 3.6, -PROF / 2 + 1.5]}
-                center
-                distanceFactor={26}
-                zIndexRange={[5, 0]}
-                className="pointer-events-none select-none"
+            <Rotulo
+              visivel={rotulos}
+              position={[0, 3.6, -PROF / 2 + 1.5]}
+              center
+              distanceFactor={26}
+              zIndexRange={[5, 0]}
+              className="pointer-events-none select-none"
+            >
+              <div
+                className={`whitespace-nowrap rounded px-2 py-1 text-center text-[12px] leading-tight ${gargalo ? 'bg-coral-500 text-navy-950' : 'bg-navy-950/85 text-creme-100'}`}
               >
-                <div
-                  className={`whitespace-nowrap rounded px-2 py-1 text-center text-[12px] leading-tight ${gargalo ? 'bg-coral-500 text-navy-950' : 'bg-navy-950/85 text-creme-100'}`}
-                >
-                  <strong>{ZONAS[i]!.nome}</strong>
-                  <div>
-                    {Math.round(z.kitsHora)} kits/h · {z.voluntarios} vol.
-                  </div>
-                  {gargalo && <div className="font-bold">GARGALO</div>}
+                <strong>{ZONAS[i]!.nome}</strong>
+                <div>
+                  {Math.round(z.kitsHora)} kits/h · {z.voluntarios} vol.
                 </div>
-              </Html>
-            )}
+                {gargalo && <div className="font-bold">GARGALO</div>}
+              </div>
+            </Rotulo>
           </group>
         );
       })}
@@ -175,19 +174,18 @@ export function Quadra3D() {
         <sphereGeometry args={[0.2, 10, 10]} />
         <meshStandardMaterial color="#f3efe6" />
       </instancedMesh>
-      {rotulos && (
-        <Html
-          position={[0, 5.5, PROF / 2 + 1]}
-          center
-          distanceFactor={30}
-          zIndexRange={[5, 0]}
-          className="pointer-events-none select-none"
-        >
-          <div className="font-display whitespace-nowrap text-[18px] text-creme-100 [text-shadow:0_2px_6px_#0b1e26]">
-            Linha da quadra: {Math.round(pr.kitsHora.valor)} kits/h
-          </div>
-        </Html>
-      )}
+      <Rotulo
+        visivel={rotulos}
+        position={[0, 5.5, PROF / 2 + 1]}
+        center
+        distanceFactor={30}
+        zIndexRange={[5, 0]}
+        className="pointer-events-none select-none"
+      >
+        <div className="font-display whitespace-nowrap text-[18px] text-creme-100 [text-shadow:0_2px_6px_#0b1e26]">
+          Linha da quadra: {Math.round(pr.kitsHora.valor)} kits/h
+        </div>
+      </Rotulo>
     </group>
   );
 }

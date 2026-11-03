@@ -11,6 +11,7 @@ import { Bacia3D } from './Bacia3D';
 import { useRelevo } from './Terreno';
 import { presetDaTela } from './presets';
 import { Ilhas } from './Ilhas';
+import { CartaCrise3D } from './CartaCrise3D';
 
 declare global {
   interface Window {
@@ -57,7 +58,7 @@ function Registro() {
   useEffect(() => {
     const w = (window.__cc3d ??= { renderers: 0, perdas: 0 });
     w.renderers += 1;
-    w.gl = gl;
+    Object.defineProperty(w, 'gl', { value: gl, enumerable: false, configurable: true });
     const perda = () => {
       w.perdas += 1;
     };
@@ -80,7 +81,7 @@ function Mundo({ passo }: { passo: number }) {
   );
 }
 
-export function Palco() {
+export function Palco({ ativo = true }: { ativo?: boolean }) {
   const qualidade = useOperacao((s) => s.qualidade);
   const pausado = useOperacao((s) => s.animacoesPausadas);
   const sugerir = useOperacao((s) => s.setSugestaoModoLeve);
@@ -89,7 +90,7 @@ export function Palco() {
     <Canvas
       className="!absolute inset-0"
       dpr={alta ? [1, 2] : 1}
-      frameloop={pausado ? 'demand' : 'always'}
+      frameloop={!ativo ? 'never' : pausado ? 'demand' : 'always'}
       gl={{ antialias: alta, powerPreference: 'high-performance', preserveDrawingBuffer: true }}
       camera={{ fov: 38, near: 0.5, far: 900, position: [0, 85, 95] }}
       onCreated={({ gl }) => gl.setClearColor('#0b1e26')}
@@ -100,11 +101,15 @@ export function Palco() {
       <hemisphereLight args={['#b5dcdb', '#102a35', 0.7]} />
       <ambientLight intensity={0.25} />
       <directionalLight position={[-60, 90, -40]} intensity={1.5} color="#fff2e0" />
-      <PerformanceMonitor onDecline={() => qualidade === 'alta' && sugerir(true)} flipflops={2} />
+      <PerformanceMonitor
+        onDecline={() => ativo && qualidade === 'alta' && sugerir(true)}
+        flipflops={2}
+      />
       <Suspense fallback={null}>
         <Mundo passo={alta ? 2 : 3} />
       </Suspense>
       <CameraRig />
+      <CartaCrise3D />
       {alta && (
         <EffectComposer multisampling={0}>
           <Bloom intensity={0.35} luminanceThreshold={0.75} mipmapBlur />

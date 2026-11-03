@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { Cabecalho, LegendaCamadas, Rodape } from './ui/Cabecalho';
 import { IndicadorAlerta, PainelConfiguracao, SeletorCenario, SeletorFase } from './ui/Controles';
 import { BannerCrise, BotaoCartaCrise } from './ui/CartaCrise';
@@ -17,6 +17,9 @@ export function App() {
   const setRecolhido = useOperacao((s) => s.setPainelRecolhido);
   const Modulo = moduloPorId(tela).Painel2D;
   const com3d = qualidade !== '2d';
+  // o Canvas é criado na primeira vez que o 3D é pedido e nunca mais desmontado (um único contexto WebGL)
+  const [montado3d, setMontado3d] = useState(com3d);
+  if (com3d && !montado3d) setMontado3d(true);
   return (
     <div className="flex h-full flex-col">
       <Cabecalho>
@@ -31,16 +34,22 @@ export function App() {
       <div className="flex min-h-0 flex-1 flex-col md:flex-row">
         <Navegacao />
         <main className="relative min-h-0 flex-1 overflow-hidden">
-          {com3d && (
-            <Suspense
-              fallback={
-                <div className="absolute inset-0 grid place-items-center text-sm text-creme-200">
-                  Carregando o mundo 3D…
-                </div>
-              }
+          {montado3d && (
+            <div
+              className="absolute inset-0"
+              style={{ display: com3d ? 'block' : 'none' }}
+              aria-hidden={!com3d}
             >
-              <Palco />
-            </Suspense>
+              <Suspense
+                fallback={
+                  <div className="absolute inset-0 grid place-items-center text-sm text-creme-200">
+                    Carregando o mundo 3D…
+                  </div>
+                }
+              >
+                <Palco ativo={com3d} />
+              </Suspense>
+            </div>
           )}
           <AvisoModoLeve />
           {com3d && (
