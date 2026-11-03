@@ -57,7 +57,7 @@ export function BotaoCartaCrise() {
           setAberto(true);
           setEscolhida(null);
         }}
-        className="rounded-md bg-coral-500 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-navy-950 shadow hover:bg-coral-400"
+        className="whitespace-nowrap rounded-md bg-coral-500 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-navy-950 shadow hover:bg-coral-400"
       >
         🂠 Carta de Crise
       </button>

@@ -6,14 +6,16 @@ import { SeloCamada } from './SeloCamada';
 /** Cabeçalho fixo: marca, data da última atualização dos dados e controles globais (passados como filhos). */
 export function Cabecalho({ children }: { children?: ReactNode }) {
   return (
-    <header className="relative z-20 flex h-[var(--altura-cabecalho)] items-center gap-4 border-b border-piscina-300/20 bg-navy-950/90 px-4 backdrop-blur">
+    <header className="relative z-20 flex min-h-[var(--altura-cabecalho)] flex-wrap items-center gap-x-4 gap-y-2 border-b border-piscina-300/20 bg-navy-950/90 px-4 py-2 backdrop-blur">
       <div className="flex min-w-0 flex-col leading-tight">
-        <span className="font-display text-lg text-creme-100 sm:text-xl">Central de Comando</span>
+        <span className="font-display whitespace-nowrap text-lg text-creme-100 sm:text-xl">
+          Central de Comando
+        </span>
         <span className="truncate text-xs text-piscina-300">
           Solução Distribuidora · Ação Social RS
         </span>
       </div>
-      <div className="flex flex-1 items-center justify-end gap-3">{children}</div>
+      <div className="flex flex-1 flex-wrap items-center justify-end gap-2">{children}</div>
       <div className="hidden flex-col items-end text-right text-[0.7rem] leading-tight text-creme-200 md:flex">
         <span className="opacity-70">Dados atualizados em</span>
         <span className="font-semibold tabular-nums text-creme-100">

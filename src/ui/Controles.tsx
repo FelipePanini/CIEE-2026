@@ -63,8 +63,8 @@ export function SeletorFase() {
             onChange={(e) => setBoletim(e.target.value as typeof boletim)}
             className="rounded-md bg-navy-800 px-2 py-1 text-creme-100"
           >
-            <option value="2026-07">23/07/2026 (pico)</option>
-            <option value="2026-09">22/09/2026 (mais recente com abrigos)</option>
+            <option value="2026-07">23/07 (pico)</option>
+            <option value="2026-09">22/09 (recente)</option>
           </select>
         </label>
       )}

@@ -35,6 +35,10 @@ export interface Estado {
   movimentoReduzido: boolean;
   animacoesPausadas: boolean;
   apresentacao: { ativa: boolean; etapa: number };
+  sugestaoModoLeve: boolean;
+  setSugestaoModoLeve: (v: boolean) => void;
+  painelRecolhido: boolean;
+  setPainelRecolhido: (v: boolean) => void;
   mensagens: Mensagem[];
   bilhetes: string[];
   organograma: Record<string, string>;
@@ -123,6 +127,10 @@ export const useOperacao = create<Estado>((set, get) => {
     movimentoReduzido: movimentoReduzidoInicial(),
     animacoesPausadas: movimentoReduzidoInicial(),
     apresentacao: { ativa: false, etapa: 0 },
+    sugestaoModoLeve: false,
+    setSugestaoModoLeve: (sugestaoModoLeve) => set({ sugestaoModoLeve }),
+    painelRecolhido: false,
+    setPainelRecolhido: (painelRecolhido) => set({ painelRecolhido }),
     mensagens: [],
     bilhetes: [
       'Vocês não estão sozinhos. — voluntária da triagem',

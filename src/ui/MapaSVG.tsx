@@ -3,6 +3,7 @@
  * + nós da operação. Projeção equirretangular no recorte do relevo.
  */
 import { useEffect, useState, type ReactNode } from 'react';
+import { useOperacao } from '../store';
 import meta from '../../public/geo/relevo.json';
 
 export type LL = [number, number];
@@ -80,6 +81,8 @@ interface Props {
   children?: ReactNode;
   className?: string;
   alturaMax?: string;
+  /** Mostrar mesmo com o 3D ligado (por padrão o mapa 2D é o fallback e some quando o 3D está ativo). */
+  sempre?: boolean;
 }
 
 export function MapaSVG({
@@ -91,8 +94,11 @@ export function MapaSVG({
   children,
   className = '',
   alturaMax = '62vh',
+  sempre = false,
 }: Props) {
   const geo = useGeo();
+  const com3d = useOperacao((s) => s.qualidade !== '2d');
+  if (com3d && !sempre) return null;
   let vb = `0 0 ${LARG} ${ALT}`;
   if (recorte) {
     const [x0, y0] = projetar([recorte[2], recorte[1]]);

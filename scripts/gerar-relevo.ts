@@ -122,7 +122,8 @@ export function sombreado(z: Int16Array, w: number, h: number): Buffer {
     const a = [23, 52, 61];
     const b = [74, 120, 118];
     const c = [214, 205, 186];
-    const m = (x: number[], y: number[], k: number) => x.map((v, i) => v + (y[i]! - v) * k) as [number, number, number];
+    const m = (x: number[], y: number[], k: number) =>
+      x.map((v, i) => v + (y[i]! - v) * k) as [number, number, number];
     return t < 0.35 ? m(a, b, t / 0.35) : m(b, c, Math.min(1, (t - 0.35) / 0.65));
   };
   for (let y = 0; y < h; y++)
@@ -143,7 +144,8 @@ export function sombreado(z: Int16Array, w: number, h: number): Buffer {
   return PNG.sync.write(png);
 }
 
-if (process.argv[1]?.endsWith("gerar-relevo.ts")) main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+if (process.argv[1]?.endsWith('gerar-relevo.ts'))
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
