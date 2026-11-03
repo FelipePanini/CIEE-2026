@@ -131,4 +131,11 @@ export const ALVOS: Alvo[] = [
       `[out:json][timeout:180];area["boundary"="administrative"]["admin_level"="8"]["name"~"^(Porto Alegre|Canoas|Eldorado do Sul|Lajeado|Estrela)$"]->.a;(nwr["leisure"="sports_centre"]["name"](area.a);nwr["name"~"Parque do Imigrante"](area.a););out center tags;`,
     ),
   },
+  // PIX SOS RS — arrecadação e destinação
+  { id: 'sosenchentes-sobre-o-pix', url: 'https://sosenchentes.rs.gov.br/sobre-o-pix', tipo: 'html' },
+  { id: 'planoriogrande-pix', url: 'https://planoriogrande.rs.gov.br/pix-sos-rio-grande-do-sul', tipo: 'html' },
+  // ANTT — texto da resolução de pisos (cópia LegisWeb)
+  { id: 'legisweb-antt-6076-2026', url: 'https://www.legisweb.com.br/legislacao/?id=489672', tipo: 'html' },
+  // Manual Esfera (português, se existir)
+  { id: 'esfera-manual-2018-pt', url: 'https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf', tipo: 'pdf' },
 ];

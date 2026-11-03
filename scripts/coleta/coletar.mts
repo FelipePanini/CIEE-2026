@@ -1,13 +1,13 @@
 /**
  * Coleta bruta: baixa cada alvo de alvos.ts para data/brutos/ e escreve data/brutos/manifesto.json.
- * Uso: npx tsx scripts/coleta/coletar.ts [filtro-de-id]
+ * Uso: npx tsx scripts/coleta/coletar.mts [filtro-de-id]
  * Pensado para rodar na GitHub Action "coleta-bruta" (internet aberta). Falhas não interrompem a coleta.
  */
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { mkdirSync, writeFileSync, existsSync, readFileSync, unlinkSync } from 'node:fs';
 import { join } from 'node:path';
-import { ALVOS } from './alvos.ts';
+import { ALVOS } from './alvos.mts';
 
 const DIR = join(process.cwd(), 'data', 'brutos');
 mkdirSync(DIR, { recursive: true });
