@@ -919,5 +919,42 @@
       "velocidade_kmh": 30
     }
   ],
-  "bloqueios_reais": []
+  "bloqueios_reais": [
+    {
+      "id": "b24-br116-canoas",
+      "aresta": "e-canoas-centro__e-poa-norte",
+      "descricao": "BR-116 km 270 em Canoas bloqueada no sentido do aeroporto; trânsito desviado para a Freeway.",
+      "evento": "2024-05",
+      "fonte": "PRF — bloqueios de rodovias federais no RS (10/05/2024, 12h)",
+      "url": "https://serranossa.com.br/wp-content/uploads/2024/05/Bloqueios-de-Rodovias-Federais-RS-10MAIO-12hs.pdf",
+      "data_referencia": "2024-05-10"
+    },
+    {
+      "id": "b24-alca-386",
+      "aresta": "e-canoas-386__e-canoas-centro",
+      "descricao": "Alça da BR-386 com a BR-116 em Canoas alagada.",
+      "evento": "2024-05",
+      "fonte": "PRF — bloqueios de rodovias federais no RS (10/05/2024, 12h)",
+      "url": "https://serranossa.com.br/wp-content/uploads/2024/05/Bloqueios-de-Rodovias-Federais-RS-10MAIO-12hs.pdf",
+      "data_referencia": "2024-05-10"
+    },
+    {
+      "id": "b24-br448",
+      "aresta": "e-esteio-448__e-poa-448",
+      "descricao": "BR-448 (Rodovia do Parque) em Canoas bloqueada por alagamento.",
+      "evento": "2024-05",
+      "fonte": "PRF — bloqueios de rodovias federais no RS (10/05/2024, 12h)",
+      "url": "https://serranossa.com.br/wp-content/uploads/2024/05/Bloqueios-de-Rodovias-Federais-RS-10MAIO-12hs.pdf",
+      "data_referencia": "2024-05-10"
+    },
+    {
+      "id": "b24-pontes-guaiba",
+      "aresta": "e-poa-norte__e-ponte-guaiba",
+      "descricao": "Pontes do Guaíba (nova e móvel) e entroncamento BR-116/BR-290 interditados pela cheia do Guaíba.",
+      "evento": "2024-05",
+      "fonte": "Brasil de Fato (maio/2024)",
+      "url": "https://www.brasildefato.com.br/?p=599325",
+      "data_referencia": "2024-05"
+    }
+  ]
 }

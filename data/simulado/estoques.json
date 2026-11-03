@@ -255,7 +255,7 @@
       "local": "a-lajeado-imigrante",
       "itens": {
         "agua": {
-          "valor": 1800,
+          "valor": 700,
           "unidade": "L",
           "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
           "url": null,
@@ -264,7 +264,7 @@
           "camada": "SIMULADO"
         },
         "alimentos": {
-          "valor": 2600,
+          "valor": 650,
           "unidade": "rações (2.100 kcal)",
           "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
           "url": null,
@@ -273,7 +273,7 @@
           "camada": "SIMULADO"
         },
         "higiene": {
-          "valor": 120,
+          "valor": 15,
           "unidade": "kits pessoa-mês",
           "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
           "url": null,
@@ -282,7 +282,7 @@
           "camada": "SIMULADO"
         },
         "cobertores": {
-          "valor": 300,
+          "valor": 60,
           "unidade": "un",
           "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
           "url": null,
@@ -291,7 +291,7 @@
           "camada": "SIMULADO"
         },
         "papel_roupas": {
-          "valor": 900,
+          "valor": 200,
           "unidade": "rolos",
           "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
           "url": null,

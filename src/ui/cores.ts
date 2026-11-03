@@ -22,3 +22,11 @@ export const PALETA = {
   alerta: '#f2b84b',
   ok: '#6cc28f',
 } as const;
+
+/** Cor do termômetro de urgência: vermelho abaixo do prazo crítico, amarelo em atenção, verde coberto. */
+export const corUrgencia = (u: number, critico: boolean) =>
+  critico && u >= 0.5
+    ? 'var(--color-coral-500)'
+    : u >= 0.25
+      ? 'var(--color-alerta)'
+      : 'var(--color-ok)';

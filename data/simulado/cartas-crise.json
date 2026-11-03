@@ -75,8 +75,10 @@
       "efeitos": [
         {
           "tipo": "bloquear",
-          "via": "BR-116",
-          "trecho": "canoas"
+          "arestas": [
+            "e-canoas-centro__e-poa-norte",
+            "e-canoas-386__e-canoas-centro"
+          ]
         }
       ],
       "resposta_sugerida": "Recalcular as rotas (Dijkstra) e avisar os pontos de coleta de Canoas sobre a nova janela de recolhimento."
