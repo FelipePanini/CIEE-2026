@@ -1,0 +1,2951 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-03T15:23:58Z",
+    "timestamp_areas_base": "2026-11-03T13:52:13Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 416646843,
+  "tags": {
+    "name": "Palmas",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416766851,
+  "tags": {
+    "name": "São Bento",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416766857,
+  "tags": {
+    "name": "Medianeira",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416766939,
+  "tags": {
+    "name": "Belém Velho",
+    "place": "suburb",
+    "population": "7876",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2895207",
+    "wikipedia": "pt:Belém Velho"
+  }
+},
+{
+  "type": "node",
+  "id": 416766945,
+  "tags": {
+    "name": "Passo dos Pires",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416766950,
+  "tags": {
+    "name": "Lami",
+    "place": "suburb",
+    "population": "2699",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10316157",
+    "wikipedia": "pt:Lami (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 1148841838,
+  "tags": {
+    "name": "Lapa",
+    "place": "neighbourhood",
+    "wikidata": "Q137402454"
+  }
+},
+{
+  "type": "node",
+  "id": 1946238529,
+  "tags": {
+    "name": "Betania",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2076309256,
+  "tags": {
+    "name": "Arquipélago",
+    "place": "suburb",
+    "population": "5061",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2863548",
+    "wikipedia": "pt:Arquipélago (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076316503,
+  "tags": {
+    "name": "São João",
+    "place": "suburb",
+    "population": "13238",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3509837",
+    "wikipedia": "pt:São João (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076316504,
+  "tags": {
+    "name": "Anchieta",
+    "place": "suburb",
+    "population": "203",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2845741",
+    "wikipedia": "pt:Anchieta (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076316505,
+  "tags": {
+    "name": "Humaitá",
+    "place": "suburb",
+    "population": "10470",
+    "source:name": "Lei 12112",
+    "wikidata": "Q5936705",
+    "wikipedia": "pt:Humaitá (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076316506,
+  "tags": {
+    "name": "Farrapos",
+    "place": "suburb",
+    "population": "17019",
+    "source:name": "Lei 12112",
+    "wikidata": "Q5436241",
+    "wikipedia": "pt:Farrapos (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076316507,
+  "tags": {
+    "name": "Navegantes",
+    "place": "suburb",
+    "population": "4475",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6982247",
+    "wikipedia": "pt:Navegantes (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076649707,
+  "tags": {
+    "name": "Jardim Lindóia",
+    "place": "suburb",
+    "population": "7334",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6159654",
+    "wikipedia": "pt:Jardim Lindóia"
+  }
+},
+{
+  "type": "node",
+  "id": 2076649709,
+  "tags": {
+    "name": "São Sebastião",
+    "place": "suburb",
+    "population": "6465",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7665709",
+    "wikipedia": "pt:São Sebastião (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076649711,
+  "tags": {
+    "name": "Rubem Berta",
+    "place": "suburb",
+    "population": "78624",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7375937",
+    "wikipedia": "pt:Rubem Berta (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076649713,
+  "tags": {
+    "name": "Santa Maria Goretti",
+    "place": "suburb",
+    "population": "4132",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7419686",
+    "wikipedia": "pt:Santa Maria Goretti (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076649714,
+  "tags": {
+    "name": "Jardim São Pedro",
+    "place": "suburb",
+    "population": "3998",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6159665",
+    "wikipedia": "pt:Jardim São Pedro (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076649715,
+  "tags": {
+    "name": "Sarandi",
+    "place": "suburb",
+    "population": "60403",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7423081",
+    "wikipedia": "pt:Sarandi (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076649717,
+  "tags": {
+    "name": "Jardim Floresta",
+    "old_name": "Vila Floresta",
+    "place": "suburb",
+    "population": "3822",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6159645",
+    "wikipedia": "pt:Jardim Floresta"
+  }
+},
+{
+  "type": "node",
+  "id": 2076664061,
+  "tags": {
+    "name": "Cristo Redentor",
+    "place": "suburb",
+    "population": "16103",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3697584",
+    "wikipedia": "pt:Cristo Redentor (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076677631,
+  "tags": {
+    "alt_name": "Passo d'Areia",
+    "name": "Passo da Areia",
+    "place": "suburb",
+    "population": "23083",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3368397",
+    "wikipedia": "pt:Passo d'Areia (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076683200,
+  "tags": {
+    "name": "Higienópolis",
+    "place": "suburb",
+    "population": "9096",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10295527",
+    "wikipedia": "pt:Higienópolis (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076687278,
+  "tags": {
+    "name": "São Geraldo",
+    "place": "suburb",
+    "population": "8692",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3509825",
+    "wikipedia": "pt:São Geraldo (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076691801,
+  "tags": {
+    "name": "Floresta",
+    "place": "suburb",
+    "population": "14941",
+    "source:name": "Lei 12112",
+    "wikidata": "Q5460963",
+    "wikipedia": "pt:Floresta (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076692233,
+  "tags": {
+    "name": "Auxiliadora",
+    "place": "suburb",
+    "population": "9985",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2873190",
+    "wikipedia": "pt:Auxiliadora"
+  }
+},
+{
+  "type": "node",
+  "id": 2076695085,
+  "tags": {
+    "name": "Moinhos de Vento",
+    "place": "suburb",
+    "population": "8067",
+    "source:name": "Lei 12112",
+    "wikidata": "Q16800806",
+    "wikipedia": "pt:Moinhos de Vento (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076697824,
+  "tags": {
+    "name": "Boa Vista",
+    "place": "suburb",
+    "population": "8691",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2907507",
+    "wikipedia": "pt:Boa Vista (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076704849,
+  "tags": {
+    "alt_name": "Mont' Serrat",
+    "name": "Montserrat",
+    "old_name": "Mont'Serrat",
+    "place": "suburb",
+    "population": "10236",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6902977",
+    "wikipedia": "pt:Mont'Serrat"
+  }
+},
+{
+  "type": "node",
+  "id": 2076704850,
+  "tags": {
+    "name": "Independência",
+    "place": "suburb",
+    "population": "6407",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6017665",
+    "wikipedia": "pt:Independência (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076714067,
+  "tags": {
+    "alt_name": "Centro",
+    "alt_name:en": "Downtown",
+    "historic": "district",
+    "name": "Centro Histórico",
+    "name:de": "Historische Zentrum",
+    "name:en": "Historic District",
+    "old_name": "Centro",
+    "place": "suburb",
+    "population": "39154",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2946145",
+    "wikipedia": "pt:Centro (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076719231,
+  "tags": {
+    "name": "Cidade Baixa",
+    "place": "suburb",
+    "population": "16634",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2972297",
+    "wikipedia": "pt:Cidade Baixa (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076719237,
+  "tags": {
+    "name": "Bom Fim",
+    "place": "suburb",
+    "population": "11351",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2909572",
+    "wikipedia": "pt:Bom Fim"
+  }
+},
+{
+  "type": "node",
+  "id": 2076724322,
+  "tags": {
+    "name": "Rio Branco",
+    "place": "suburb",
+    "population": "19069",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7335159",
+    "wikipedia": "pt:Rio Branco (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076733833,
+  "tags": {
+    "name": "Farroupilha",
+    "place": "suburb",
+    "population": "1101",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3067018",
+    "wikipedia": "pt:Farroupilha (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076737943,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb",
+    "population": "9621",
+    "source:name": "Lei 12112",
+    "wikidata": "Q780830",
+    "wikipedia": "pt:Bela Vista (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076740519,
+  "tags": {
+    "name": "Santa Cecília",
+    "place": "suburb",
+    "population": "5800",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7419296",
+    "wikipedia": "pt:Santa Cecília (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076744472,
+  "tags": {
+    "name": "Santana",
+    "place": "suburb",
+    "population": "21221",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3472784",
+    "wikipedia": "pt:Santana (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076744473,
+  "tags": {
+    "name": "Petrópolis",
+    "place": "suburb",
+    "population": "35069",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7179250",
+    "wikipedia": "pt:Petrópolis (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076781960,
+  "tags": {
+    "name": "Vila Ipiranga",
+    "place": "suburb",
+    "population": "20951",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7929986",
+    "wikipedia": "pt:Vila Ipiranga"
+  }
+},
+{
+  "type": "node",
+  "id": 2076783052,
+  "tags": {
+    "name": "Três Figueiras",
+    "place": "suburb",
+    "population": "3657",
+    "short_name": "3 Figueiras",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10385199",
+    "wikipedia": "pt:Três Figueiras"
+  }
+},
+{
+  "type": "node",
+  "id": 2076784406,
+  "tags": {
+    "name": "Chácara das Pedras",
+    "place": "suburb",
+    "population": "7034",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2967761",
+    "wikipedia": "pt:Chácara das Pedras"
+  }
+},
+{
+  "type": "node",
+  "id": 2076785849,
+  "tags": {
+    "name": "Vila Jardim",
+    "place": "suburb",
+    "population": "14251",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7929990",
+    "wikipedia": "pt:Vila Jardim"
+  }
+},
+{
+  "type": "node",
+  "id": 2076787317,
+  "tags": {
+    "name": "Bom Jesus",
+    "place": "suburb",
+    "population": "28229",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2909575",
+    "wikipedia": "pt:Bom Jesus (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076790999,
+  "tags": {
+    "name": "Mário Quintana",
+    "place": "suburb",
+    "population": "21848",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3869210",
+    "wikipedia": "pt:Mário Quintana (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076794101,
+  "tags": {
+    "name": "Partenon",
+    "place": "suburb",
+    "population": "47460",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10345572",
+    "wikipedia": "pt:Partenon (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076795760,
+  "tags": {
+    "name": "Jardim do Salso",
+    "place": "suburb",
+    "population": "5143",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6159666",
+    "wikipedia": "pt:Jardim do Salso"
+  }
+},
+{
+  "type": "node",
+  "id": 2076796889,
+  "tags": {
+    "name": "Jardim Carvalho",
+    "place": "suburb",
+    "population": "25915",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6159637",
+    "wikipedia": "pt:Jardim Carvalho"
+  }
+},
+{
+  "type": "node",
+  "id": 2076806533,
+  "tags": {
+    "name": "Azenha",
+    "place": "suburb",
+    "population": "13449",
+    "source:name": "Lei 12112",
+    "wikidata": "Q592461",
+    "wikipedia": "pt:Azenha (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076806540,
+  "tags": {
+    "name": "Menino Deus",
+    "place": "suburb",
+    "population": "29577",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3306001",
+    "wikipedia": "pt:Menino_Deus_(Porto_Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076807535,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb",
+    "population": "14392",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3472916",
+    "wikipedia": "pt:Santo Antônio (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076809023,
+  "tags": {
+    "name": "Medianeira",
+    "place": "suburb",
+    "population": "12428",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6806142",
+    "wikipedia": "pt:Medianeira (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076809726,
+  "tags": {
+    "name": "Santa Tereza",
+    "place": "suburb",
+    "population": "47175",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3472758",
+    "wikipedia": "pt:Santa Tereza (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076811662,
+  "tags": {
+    "name": "Glória",
+    "place": "suburb",
+    "population": "8809",
+    "source:name": "Lei 12112",
+    "wikidata": "Q5573685",
+    "wikipedia": "pt:Glória (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076811712,
+  "tags": {
+    "name": "Coronel Aparício Borges",
+    "place": "suburb",
+    "population": "22786",
+    "source:name": "Lei 12112",
+    "wikidata": "Q5172256",
+    "wikipedia": "pt:Coronel Aparício Borges"
+  }
+},
+{
+  "type": "node",
+  "id": 2076812142,
+  "tags": {
+    "name": "Vila João Pessoa",
+    "place": "suburb",
+    "population": "10522",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7929991",
+    "wikipedia": "pt:Vila João Pessoa"
+  }
+},
+{
+  "type": "node",
+  "id": 2076819918,
+  "tags": {
+    "name": "Nonoai",
+    "place": "suburb",
+    "population": "32222",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10337321",
+    "wikipedia": "pt:Nonoai (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076820624,
+  "tags": {
+    "name": "Teresópolis",
+    "place": "suburb",
+    "population": "12844",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7702315",
+    "wikipedia": "pt:Teresópolis (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076821760,
+  "tags": {
+    "name": "Cascata",
+    "place": "suburb",
+    "population": "24130",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2940886",
+    "wikipedia": "pt:Cascata (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076824240,
+  "tags": {
+    "name": "Cristal",
+    "place": "suburb",
+    "population": "21054",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3002805",
+    "wikipedia": "pt:Cristal (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076827122,
+  "tags": {
+    "name": "Cavalhada",
+    "place": "suburb",
+    "population": "19854",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2943218",
+    "wikipedia": "pt:Cavalhada"
+  }
+},
+{
+  "type": "node",
+  "id": 2076834396,
+  "tags": {
+    "name": "Ipanema",
+    "place": "suburb",
+    "population": "16877",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3154187",
+    "wikipedia": "pt:Ipanema (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076837685,
+  "tags": {
+    "name": "Vila Assunção",
+    "place": "suburb",
+    "population": "4591",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7929975",
+    "wikipedia": "pt:Vila Assunção"
+  }
+},
+{
+  "type": "node",
+  "id": 2076839790,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "suburb",
+    "population": "33145",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10391031",
+    "wikipedia": "pt:Vila Nova (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076842930,
+  "tags": {
+    "name": "Jardim Isabel",
+    "place": "suburb",
+    "population": "3000",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6159651",
+    "wikipedia": "pt:Jardim Isabel (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076843865,
+  "tags": {
+    "name": "Pedra Redonda",
+    "place": "suburb",
+    "population": "316",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7159358",
+    "wikipedia": "pt:Pedra Redonda (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076847420,
+  "tags": {
+    "name": "Espírito Santo",
+    "place": "suburb",
+    "population": "5734",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10275279",
+    "wikipedia": "pt:Espírito Santo (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076851955,
+  "tags": {
+    "name": "Campo Novo",
+    "place": "suburb",
+    "population": "7652",
+    "source:name": "Lei 12112",
+    "wikidata": "Q9686073",
+    "wikipedia": "pt:Campo Novo (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076857102,
+  "tags": {
+    "name": "Serraria",
+    "place": "suburb",
+    "population": "5775",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7455301",
+    "wikipedia": "pt:Serraria (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076857289,
+  "tags": {
+    "name": "Ponta Grossa",
+    "place": "suburb",
+    "population": "3290",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7228036",
+    "wikipedia": "pt:Ponta Grossa (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076860321,
+  "tags": {
+    "name": "Hípica",
+    "place": "suburb",
+    "population": "10363",
+    "source:name": "Lei 12112",
+    "wikidata": "Q5964393",
+    "wikipedia": "pt:Hípica"
+  }
+},
+{
+  "type": "node",
+  "id": 2076862563,
+  "tags": {
+    "alt_name": "Vila Restinga",
+    "loc_name": "Tinga",
+    "name": "Restinga",
+    "place": "suburb",
+    "population": "50020",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7316123",
+    "wikipedia": "pt:Restinga (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076863873,
+  "tags": {
+    "name": "Chapéu do Sol",
+    "place": "suburb",
+    "population": "2620",
+    "source:name": "Lei 12112",
+    "wikidata": "Q18463063",
+    "wikipedia": "pt:Chapéu do Sol"
+  }
+},
+{
+  "type": "node",
+  "id": 2076864580,
+  "tags": {
+    "name": "Lageado",
+    "place": "suburb",
+    "population": "3425",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6471965",
+    "wikipedia": "pt:Lageado (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076870110,
+  "tags": {
+    "name": "Belém Novo",
+    "place": "suburb",
+    "population": "13787",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2895203",
+    "wikipedia": "pt:Belém Novo"
+  }
+},
+{
+  "type": "node",
+  "id": 2076879149,
+  "tags": {
+    "name": "Lomba do Pinheiro",
+    "place": "suburb",
+    "population": "30388",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6669324",
+    "wikipedia": "pt:Lomba do Pinheiro"
+  }
+},
+{
+  "type": "node",
+  "id": 2076887876,
+  "tags": {
+    "name": "Agronomia",
+    "place": "suburb",
+    "population": "10681",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2827245",
+    "wikipedia": "pt:Agronomia (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2076893397,
+  "tags": {
+    "name": "Vila São José",
+    "place": "suburb",
+    "population": "28957",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3509832",
+    "wikipedia": "pt:São José (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2079304378,
+  "tags": {
+    "name": "Camaquã",
+    "place": "suburb",
+    "population": "21723",
+    "source:name": "Lei 12112",
+    "wikidata": "Q2934625",
+    "wikipedia": "pt:Camaquã (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2079304381,
+  "tags": {
+    "name": "Tristeza",
+    "place": "suburb",
+    "population": "15125",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7844182",
+    "wikipedia": "pt:Tristeza (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2079304385,
+  "tags": {
+    "name": "Vila Conceição",
+    "place": "suburb",
+    "population": "1467",
+    "source:name": "Lei 12112",
+    "wikidata": "Q7929981",
+    "wikipedia": "pt:Vila Conceição (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 2081756586,
+  "tags": {
+    "name": "Villa Darizara",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2109623643,
+  "tags": {
+    "name": "Jardim dos Lagos",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 2130647628,
+  "tags": {
+    "name": "Fátima",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2130647629,
+  "tags": {
+    "name": "Nossa Senhora das Graças",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2130647630,
+  "tags": {
+    "name": "Rio Branco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2130647631,
+  "tags": {
+    "name": "Niteroi",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2275340450,
+  "tags": {
+    "name": "Guaíba Country Club",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2278742383,
+  "tags": {
+    "name": "Igara",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202783,
+  "tags": {
+    "name": "Alto do Bronze",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202793,
+  "tags": {
+    "name": "Pinheiros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202798,
+  "tags": {
+    "name": "Oriental",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202803,
+  "tags": {
+    "name": "Moinhos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202807,
+  "tags": {
+    "name": "Auxiliadora",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202809,
+  "tags": {
+    "alt_name": "Bairro dos Estados",
+    "name": "Estados",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202811,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202814,
+  "tags": {
+    "name": "Cristo Rei",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202818,
+  "tags": {
+    "name": "Imigrantes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394202825,
+  "tags": {
+    "name": "Chacrinha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2394229974,
+  "tags": {
+    "name": "Boa União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2396591041,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398385457,
+  "tags": {
+    "name": "Hidráulica",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398385458,
+  "tags": {
+    "name": "Alto do Parque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398479203,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398479206,
+  "tags": {
+    "name": "Moinhos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398479212,
+  "tags": {
+    "name": "Florestal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398479214,
+  "tags": {
+    "name": "São Cristóvão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398479216,
+  "tags": {
+    "name": "Carneiros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398479218,
+  "tags": {
+    "name": "Universitário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398479219,
+  "tags": {
+    "name": "Santo André",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2398479221,
+  "tags": {
+    "name": "Montanha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2399943960,
+  "tags": {
+    "name": "Campestre",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2441127410,
+  "tags": {
+    "name": "Passo das Pedras",
+    "place": "suburb",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10345956",
+    "wikipedia": "pt:Passo das Pedras"
+  }
+},
+{
+  "type": "node",
+  "id": 2600621908,
+  "tags": {
+    "name": "Mato Grande",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2600621913,
+  "tags": {
+    "name": "Mathias Velho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3170762215,
+  "tags": {
+    "name": "Arábia",
+    "place": "neighbourhood",
+    "population": "71",
+    "population:date": "2021",
+    "source:population": "INE"
+  }
+},
+{
+  "type": "node",
+  "id": 3242104460,
+  "tags": {
+    "name": "Guarujá",
+    "place": "suburb",
+    "population": "2589",
+    "source:name": "Lei 12112",
+    "wikidata": "Q5614184",
+    "wikipedia": "pt:Guarujá (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 3304314985,
+  "tags": {
+    "name": "Santos-o-Velho",
+    "place": "neighbourhood",
+    "wikidata": "Q1890230",
+    "wikimedia_commons": "Category:Santos-o-Velho (Lisbon)",
+    "wikipedia": "en:Santos-o-Velho, Lisbon"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265947,
+  "tags": {
+    "name": "Alegria",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265948,
+  "tags": {
+    "alt_name": "Balneário Alvorada",
+    "name": "Alvorada",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265949,
+  "tags": {
+    "name": "Sans Souci",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265950,
+  "tags": {
+    "name": "Columbia City",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265951,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265953,
+  "tags": {
+    "name": "Engenho",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265954,
+  "tags": {
+    "name": "Ermo",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265955,
+  "tags": {
+    "name": "Nossa Senhora de Fátima",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265957,
+  "tags": {
+    "alt_name": "Jardim Santa Rita",
+    "name": "Santa Rita",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265958,
+  "tags": {
+    "name": "Colina",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265959,
+  "tags": {
+    "alt_name": "Parque Trinta e Cinco",
+    "name": "Parque 35",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 3315265960,
+  "tags": {
+    "name": "São Francisco",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3618663200,
+  "tags": {
+    "name": "Jardim Botânico",
+    "place": "suburb",
+    "population": "11494",
+    "source:name": "Lei 12112",
+    "wikidata": "Q6159630",
+    "wikipedia": "pt:Jardim Botânico (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 3618663210,
+  "tags": {
+    "name": "Praia de Belas",
+    "place": "suburb",
+    "population": "1869",
+    "source:name": "Lei 12112",
+    "wikidata": "Q3401238",
+    "wikipedia": "pt:Praia de Belas"
+  }
+},
+{
+  "type": "node",
+  "id": 3635883985,
+  "tags": {
+    "name": "La Bomba",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3635889916,
+  "tags": {
+    "name": "El Cartín",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3635891400,
+  "tags": {
+    "name": "San Jorge Sur",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3635892910,
+  "tags": {
+    "name": "Ciudadela El Triunfo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3667145243,
+  "tags": {
+    "name": "Vila Colúmbia",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3667202106,
+  "tags": {
+    "name": "Centro Novo",
+    "place": "suburb",
+    "source": "Prefeitura de Eldorado do Sul"
+  }
+},
+{
+  "type": "node",
+  "id": 4108477604,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4253379967,
+  "tags": {
+    "name": "Vila Cabo Rocha",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4360242988,
+  "tags": {
+    "name": "Prazeres",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4432839008,
+  "tags": {
+    "name": "Jardim das Bandeiras",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4456953328,
+  "tags": {
+    "name": "Jardim Alto Petrópolis",
+    "official_name": "Conjunto Residencial Jardim Alto Petrópolis",
+    "place": "neighbourhood",
+    "source": "PMPA"
+  }
+},
+{
+  "type": "node",
+  "id": 4462525892,
+  "tags": {
+    "fixme": "contorno",
+    "name": "Parque Madepinho",
+    "place": "neighbourhood",
+    "source": "PMPA"
+  }
+},
+{
+  "type": "node",
+  "id": 4854494445,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb",
+    "source": "Lei Municipal nº 4736/2003"
+  }
+},
+{
+  "type": "node",
+  "id": 4854533126,
+  "tags": {
+    "name": "Brigadeira",
+    "place": "suburb",
+    "source": "Lei Municipal nº 4736/2003"
+  }
+},
+{
+  "type": "node",
+  "id": 4856559784,
+  "tags": {
+    "name": "São Luís",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4860717266,
+  "tags": {
+    "name": "Guajuviras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862651408,
+  "tags": {
+    "name": "Harmonia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862672201,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862701625,
+  "tags": {
+    "name": "Marechal Rondon",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862711021,
+  "tags": {
+    "name": "Olaria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326739,
+  "tags": {
+    "name": "Aberta dos Morros",
+    "place": "suburb",
+    "source:name": "Lei 12112",
+    "wikidata": "Q16484633",
+    "wikipedia": "pt:Aberta dos Morros"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326740,
+  "tags": {
+    "name": "Boa Vista do Sul",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326741,
+  "tags": {
+    "name": "Costa e Silva",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326743,
+  "tags": {
+    "name": "Extrema",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326744,
+  "tags": {
+    "name": "Jardim Europa",
+    "place": "suburb",
+    "population": "20951",
+    "source:name": "Lei 12112",
+    "wikidata": "Q30939394",
+    "wikipedia": "pt:Jardim Europa (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326745,
+  "tags": {
+    "name": "Jardim Itu",
+    "old_name": "Jardim Itu-Sabará",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326746,
+  "tags": {
+    "loc_name": "Jardim Dona Leopoldina",
+    "name": "Jardim Leopoldina",
+    "place": "suburb",
+    "source:name": "Lei 12112",
+    "wikidata": "Q10305634",
+    "wikipedia": "pt:Jardim Dona Leopoldina"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326747,
+  "tags": {
+    "name": "Jardim Sabará",
+    "old_name": "Jardim Itu-Sabará",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326749,
+  "tags": {
+    "name": "Morro Santana",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326752,
+  "tags": {
+    "name": "Parque Santa Fé",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326753,
+  "tags": {
+    "loc_name": "Vila Pitinga",
+    "name": "Pitinga",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326754,
+  "tags": {
+    "name": "Santa Rosa de Lima",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326755,
+  "tags": {
+    "name": "São Caetano",
+    "place": "suburb",
+    "source:name": "Lei 12112"
+  }
+},
+{
+  "type": "node",
+  "id": 4915326756,
+  "tags": {
+    "alt_name": "7o Céu",
+    "name": "Sétimo Céu",
+    "place": "suburb",
+    "population": "1329",
+    "short_name": "7º Céu",
+    "source:name": "Lei 12112",
+    "source:population": "PROCEMPA",
+    "wikidata": "Q106632647",
+    "wikipedia": "pt:Sétimo Céu (Porto Alegre)"
+  }
+},
+{
+  "type": "node",
+  "id": 4923342871,
+  "tags": {
+    "name": "La Libertad",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4923342872,
+  "tags": {
+    "name": "Carlín Rodríguez",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4923342873,
+  "tags": {
+    "name": "San Martín",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4923342874,
+  "tags": {
+    "name": "San Miguel",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990937,
+  "tags": {
+    "name": "Igrejinha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990938,
+  "tags": {
+    "alt_name": "Morro 25",
+    "name": "Morro Vinte e Cinco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990940,
+  "tags": {
+    "name": "Americano",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990941,
+  "tags": {
+    "name": "Imigrante",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990942,
+  "tags": {
+    "name": "Olarias",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990944,
+  "tags": {
+    "name": "Moinhos D'Água",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990945,
+  "tags": {
+    "name": "Jardim do Cedro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990948,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990955,
+  "tags": {
+    "name": "Conservas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990958,
+  "tags": {
+    "name": "Indústrias",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990964,
+  "tags": {
+    "alt_name": "Bairro das Nações",
+    "name": "Nações",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990966,
+  "tags": {
+    "name": "Floresta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990967,
+  "tags": {
+    "name": "Centenário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990968,
+  "tags": {
+    "name": "Conventos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990969,
+  "tags": {
+    "name": "Planalto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990971,
+  "tags": {
+    "name": "Bom Pastor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991051,
+  "tags": {
+    "name": "Ferroviário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991052,
+  "tags": {
+    "name": "Centenário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991053,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991054,
+  "tags": {
+    "name": "Timbaúva",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991055,
+  "tags": {
+    "name": "Santa Rita",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991056,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991057,
+  "tags": {
+    "name": "Progresso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991058,
+  "tags": {
+    "name": "Rui Barbosa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991059,
+  "tags": {
+    "name": "Municipal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991060,
+  "tags": {
+    "name": "Estação",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991061,
+  "tags": {
+    "name": "Germano Henke",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991062,
+  "tags": {
+    "name": "São João",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991063,
+  "tags": {
+    "name": "Senai",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991064,
+  "tags": {
+    "name": "Panorama",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991065,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991066,
+  "tags": {
+    "name": "Imigração",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991067,
+  "tags": {
+    "name": "Faxinal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991068,
+  "tags": {
+    "name": "São Paulo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991069,
+  "tags": {
+    "name": "Passo do Manduca",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991070,
+  "tags": {
+    "name": "Porto dos Pereiras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991071,
+  "tags": {
+    "name": "Zootecnia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991072,
+  "tags": {
+    "name": "Tanac",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991073,
+  "tags": {
+    "name": "Cinco de Maio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991074,
+  "tags": {
+    "name": "Aeroclube",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991075,
+  "tags": {
+    "name": "Olaria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991076,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991151,
+  "tags": {
+    "name": "Jacarezinho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991152,
+  "tags": {
+    "name": "Planalto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991153,
+  "tags": {
+    "name": "Porto Quinze",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991154,
+  "tags": {
+    "name": "Navegantes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991155,
+  "tags": {
+    "name": "Santa Clara",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991156,
+  "tags": {
+    "name": "Santo Antão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991157,
+  "tags": {
+    "name": "Vila Amazonas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991158,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991159,
+  "tags": {
+    "alt_name": "Vila Moca",
+    "name": "Vila Moça",
+    "place": "suburb",
+    "source:alt_name": "IBGE Setores Censitários",
+    "source:name": "LM 1266/1985"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991160,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991161,
+  "tags": {
+    "name": "Barra do Jacaré",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991162,
+  "tags": {
+    "name": "Lambari",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991163,
+  "tags": {
+    "name": "Nossa Senhora Aparecida",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991164,
+  "tags": {
+    "name": "Lajeadinho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991261,
+  "tags": {
+    "name": "Residencial Eldorado",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991262,
+  "tags": {
+    "name": "Picada",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991263,
+  "tags": {
+    "name": "Chácara",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991264,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991265,
+  "tags": {
+    "name": "Progresso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991266,
+  "tags": {
+    "name": "Loteamento Popular",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991267,
+  "tags": {
+    "name": "Sol Nascente",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991268,
+  "tags": {
+    "name": "Vila da Paz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991269,
+  "tags": {
+    "name": "Cidade Verde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991270,
+  "tags": {
+    "name": "Itaí",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991271,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991274,
+  "tags": {
+    "name": "Parque Eldorado 4",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991275,
+  "tags": {
+    "name": "Parque das Acácias Norte",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991276,
+  "tags": {
+    "name": "Parque Eldorado 1",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991277,
+  "tags": {
+    "name": "Parque Eldorado 2",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991278,
+  "tags": {
+    "name": "Parque Eldorado 3",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991279,
+  "tags": {
+    "name": "Parque das Acácias Sul",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5636236815,
+  "tags": {
+    "name": "Loteamento Parque Perolim",
+    "place": "neighbourhood",
+    "source": "LM 1266/1985"
+  }
+},
+{
+  "type": "node",
+  "id": 5952693366,
+  "tags": {
+    "name": "Florida",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 5952693367,
+  "tags": {
+    "name": "Bom Fim",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 5952693368,
+  "tags": {
+    "name": "Passo Fundo",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 5952693369,
+  "tags": {
+    "alt_name": "Vila Iolanda",
+    "name": "Jardim Iolanda",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 5952693370,
+  "tags": {
+    "name": "Altos da Alegria",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 5952693371,
+  "tags": {
+    "name": "Coronel Nassuca",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 5952693372,
+  "tags": {
+    "name": "Chaves Barcellos",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 5952693373,
+  "tags": {
+    "alt_name": "Vila Pedras Brancas",
+    "name": "Pedras Brancas",
+    "place": "suburb",
+    "source:name": "Lei 3344"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195377,
+  "tags": {
+    "name": "Cohab",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195378,
+  "tags": {
+    "name": "Companhia Predial e Agrícola",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195379,
+  "tags": {
+    "name": "Territorial Pedras Brancas",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195381,
+  "tags": {
+    "name": "Nova Guaíba",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195382,
+  "tags": {
+    "name": "Industrial São Francisco",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195383,
+  "tags": {
+    "name": "Distrito Industrial",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195384,
+  "tags": {
+    "name": "Parque do Noli",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195685,
+  "tags": {
+    "name": "Bom Fim Velho",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195686,
+  "tags": {
+    "name": "Ramada",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195687,
+  "tags": {
+    "name": "Bairro da Ramada",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195688,
+  "tags": {
+    "name": "Vila São Jorge",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195689,
+  "tags": {
+    "name": "Vila Primavera",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195690,
+  "tags": {
+    "name": "São Luiz",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195691,
+  "tags": {
+    "name": "Balneário Florida",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195692,
+  "tags": {
+    "alt_name": "Neiva",
+    "name": "Neiwa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195693,
+  "tags": {
+    "name": "Vila Elsa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195694,
+  "tags": {
+    "name": "Los Angeles",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195706,
+  "tags": {
+    "name": "Recanto das Laranjeiras",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195707,
+  "tags": {
+    "name": "Recanto Solar",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195708,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195709,
+  "tags": {
+    "name": "Jardim Bela Vista",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195710,
+  "tags": {
+    "name": "Jardim Panorama",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195711,
+  "tags": {
+    "name": "Bernardinho Rios Pinto",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195713,
+  "tags": {
+    "name": "Balneário São Geraldo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195715,
+  "tags": {
+    "name": "Anita Guimarães",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195716,
+  "tags": {
+    "name": "Nossa Senhora do Livramento",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195717,
+  "tags": {
+    "name": "Chácara das Paineiras",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195718,
+  "tags": {
+    "alt_name": "Dona Eloá",
+    "name": "Dona Eloah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954195719,
+  "tags": {
+    "name": "Rui Coelho",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954780069,
+  "tags": {
+    "name": "Loteamento Passo Fundo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5954780083,
+  "tags": {
+    "name": "Colina",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6571899985,
+  "tags": {
+    "name": "Planalto Canoense",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7247787750,
+  "tags": {
+    "name": "Santa Marta",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7247787771,
+  "tags": {
+    "name": "Coloradito Sur",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7247856317,
+  "tags": {
+    "name": "San Isidro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7780221091,
+  "tags": {
+    "name": "Ceuta Sul",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8390838376,
+  "tags": {
+    "name": "Las Torres",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8391072659,
+  "tags": {
+    "name": "Betel",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8391072660,
+  "tags": {
+    "name": "Campo Bello",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8391072661,
+  "tags": {
+    "name": "La Brigada",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8391072662,
+  "tags": {
+    "name": "San Gil",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8391072663,
+  "tags": {
+    "name": "San Jorge Norte",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8391885912,
+  "tags": {
+    "name": "San Cristóbal",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9254124719,
+  "tags": {
+    "description": "El Corregimiento 2 de Soacha está ubicado en la parte norte del municipio de Soacha: Comprende las veredas de Alto de La Cruz, Bosatama, Canoas, Cascajal, El Charquito y San Francisco.",
+    "name": "Corregimiento 2 Norte",
+    "place": "suburb",
+    "wikidata": "Q128807804",
+    "wikipedia": "es:Corregimiento 2 (Soacha)"
+  }
+},
+{
+  "type": "node",
+  "id": 9283875826,
+  "tags": {
+    "name": "Asentamiento Padilla",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9362738596,
+  "tags": {
+    "name": "COOTEEPA - Cooperativa Habitacional dos Trabalhadores de Escolas Particulares de Porto Alegre",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 9728520719,
+  "tags": {
+    "name": "Monte Carlo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9861177881,
+  "tags": {
+    "name": "Quinta do Eucalipto",
+    "place": "neighbourhood",
+    "population": "381",
+    "population:date": "2021",
+    "source:population": "INE"
+  }
+},
+{
+  "type": "node",
+  "id": 9861177882,
+  "tags": {
+    "name": "Vale das Almas",
+    "place": "neighbourhood",
+    "population": "73",
+    "population:date": "2021",
+    "source:population": "INE"
+  }
+},
+{
+  "type": "node",
+  "id": 9861204893,
+  "tags": {
+    "name": "Gambelas",
+    "place": "neighbourhood",
+    "population": "2289",
+    "population:date": "2021",
+    "source:population": "INE"
+  }
+},
+{
+  "type": "node",
+  "id": 10538555700,
+  "tags": {
+    "name": "Veracruz",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 10830920418,
+  "tags": {
+    "name": "Jardim Botânico",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11425975813,
+  "tags": {
+    "name": "Loteamento Saint Moritz",
+    "place": "neighbourhood",
+    "source:name": "PL CM Nº 030-03/2015"
+  }
+},
+{
+  "type": "node",
+  "id": 11426725042,
+  "tags": {
+    "name": "Loteamento Floresta",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13188966211,
+  "tags": {
+    "name": "Villarreal",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13198340909,
+  "tags": {
+    "name": "Las Brisas",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13686487028,
+  "tags": {
+    "name": "Condominio Encosta do Cerro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 14301280146,
+  "tags": {
+    "name": "Condomínio Reserva do Lago",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 14301280147,
+  "tags": {
+    "name": "Condomínio Reserva da Mata",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 14301280148,
+  "tags": {
+    "name": "Condomínio Residencial Aurora",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 14301280149,
+  "tags": {
+    "name": "Condomínio Alta Vista",
+    "place": "quarter"
+  }
+}
+
+  ]
+}

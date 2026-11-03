@@ -82,10 +82,10 @@
   "sgb-sace-taquari-ultimo-boletim": {
     "id": "sgb-sace-taquari-ultimo-boletim",
     "url": "https://www.sgb.gov.br/sace/taquari/ultimo_boletim.php",
-    "data_consulta": "2026-11-03T15:10:29.519Z",
+    "data_consulta": "2026-11-03T15:21:37.238Z",
     "status": 404,
     "bytes": 70886,
-    "sha256": "37564d595a547f5778bfaa32ffd35860bc2eb5151710d144428899a0537f479d",
+    "sha256": "08d3fd665200076c1ed7bc2b9f0b53bbdf7f4c135defa0848729f9586f1736f0",
     "arquivo": null
   },
   "sgb-sace-index": {
@@ -164,7 +164,7 @@
   "dieese-cesta-2026-10": {
     "id": "dieese-cesta-2026-10",
     "url": "https://www.dieese.org.br/analisecestabasica/2026/202610cestabasica.pdf",
-    "data_consulta": "2026-11-03T15:10:31.566Z",
+    "data_consulta": "2026-11-03T15:21:38.642Z",
     "status": 404,
     "bytes": 280,
     "sha256": "0c33a759892a35ea8b5831e75d42be14bde14706c363fec644557956fa179042",
@@ -173,7 +173,7 @@
   "antt-pisos-minimos": {
     "id": "antt-pisos-minimos",
     "url": "https://www.gov.br/antt/pt-br/assuntos/cargas/pisos-minimos-de-frete",
-    "data_consulta": "2026-11-03T15:10:32.728Z",
+    "data_consulta": "2026-11-03T15:21:39.943Z",
     "status": 404,
     "bytes": 26,
     "sha256": "6bbcea2b37bd092cc60604157a0ceec8944866fc2478f7af8aea3c3df40bc258",
@@ -182,10 +182,10 @@
   "esfera-handbook-2018-en": {
     "id": "esfera-handbook-2018-en",
     "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf",
-    "data_consulta": "2026-11-03T15:10:33.305Z",
+    "data_consulta": "2026-11-03T15:21:40.694Z",
     "status": 403,
     "bytes": 5708,
-    "sha256": "5b1f2e4fd23423a7a284e0620993e83353370440167c882d90bea03065935b18",
+    "sha256": "f6bf024887c3a1c37d0403a7159f1b56c40c4524ca7aba40c740f8b2fa591a13",
     "arquivo": null
   },
   "osm-rios": {
@@ -265,10 +265,10 @@
   "esfera-manual-2018-pt": {
     "id": "esfera-manual-2018-pt",
     "url": "https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf",
-    "data_consulta": "2026-11-03T15:10:33.369Z",
+    "data_consulta": "2026-11-03T15:21:40.947Z",
     "status": 403,
     "bytes": 5680,
-    "sha256": "73cbbbeaa352e9e549d1c5945e2f4a960d68ac1717dba4b605732bd16c01c980",
+    "sha256": "8bd6e66b2d3c42abf9582fdc23f9f388fc829c1aa6124a0b9fb9307a10484e25",
     "arquivo": null
   },
   "ana-telemetria-87450004-caismaua-2026": {
@@ -352,7 +352,7 @@
   "dieese-cesta-produto": {
     "id": "dieese-cesta-produto",
     "url": "https://www.dieese.org.br/cesta/produto",
-    "data_consulta": "2026-11-03T15:10:33.407Z",
+    "data_consulta": "2026-11-03T15:21:41.048Z",
     "status": 400,
     "bytes": 1101,
     "sha256": "3c10e0ed2340cb5d16483d023492cfd295c3cc4655c1d14951ff6b0640474eea",
@@ -370,7 +370,7 @@
   "vtex-carrefour-sabonete-85g": {
     "id": "vtex-carrefour-sabonete-85g",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=sabonete%2085g&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:10:33.578Z",
+    "data_consulta": "2026-11-03T15:21:41.198Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -390,7 +390,7 @@
   "vtex-carrefour-creme-dental-90g": {
     "id": "vtex-carrefour-creme-dental-90g",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=creme%20dental%2090g&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:10:41.880Z",
+    "data_consulta": "2026-11-03T15:21:49.450Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -410,7 +410,7 @@
   "vtex-carrefour-escova-dental": {
     "id": "vtex-carrefour-escova-dental",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=escova%20dental&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:10:50.329Z",
+    "data_consulta": "2026-11-03T15:21:57.699Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -430,7 +430,7 @@
   "vtex-carrefour-papel-higienico-12-rolos": {
     "id": "vtex-carrefour-papel-higienico-12-rolos",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=papel%20higienico%2012%20rolos&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:10:58.639Z",
+    "data_consulta": "2026-11-03T15:22:05.946Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -450,7 +450,7 @@
   "vtex-carrefour-absorvente": {
     "id": "vtex-carrefour-absorvente",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=absorvente&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:11:06.767Z",
+    "data_consulta": "2026-11-03T15:22:14.196Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -470,7 +470,7 @@
   "vtex-carrefour-sabao-em-barra": {
     "id": "vtex-carrefour-sabao-em-barra",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=sabao%20em%20barra&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:11:15.068Z",
+    "data_consulta": "2026-11-03T15:22:22.453Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -490,7 +490,7 @@
   "vtex-carrefour-agua-sanitaria-2l": {
     "id": "vtex-carrefour-agua-sanitaria-2l",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=agua%20sanitaria%202l&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:11:23.357Z",
+    "data_consulta": "2026-11-03T15:22:30.692Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -510,7 +510,7 @@
   "vtex-carrefour-agua-mineral-5l": {
     "id": "vtex-carrefour-agua-mineral-5l",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=agua%20mineral%205l&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:11:31.480Z",
+    "data_consulta": "2026-11-03T15:22:38.931Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -530,7 +530,7 @@
   "vtex-carrefour-cobertor-solteiro": {
     "id": "vtex-carrefour-cobertor-solteiro",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=cobertor%20solteiro&_from=0&_to=4",
-    "data_consulta": "2026-11-03T15:11:39.767Z",
+    "data_consulta": "2026-11-03T15:22:47.194Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -599,13 +599,12 @@
   },
   "osm-bairros": {
     "id": "osm-bairros",
-    "url": "https://overpass-api.de/api/interpreter",
-    "data_consulta": "2026-11-03T15:11:47.877Z",
-    "status": "erro",
-    "bytes": 0,
-    "sha256": null,
-    "arquivo": null,
-    "erro": "TimeoutError: The operation was aborted due to timeout"
+    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "data_consulta": "2026-11-03T15:22:55.432Z",
+    "status": 200,
+    "bytes": 49636,
+    "sha256": "9ef84dc865184c26c08c17a9a333fb3ffcff8708213611995994f98ddb37cb23",
+    "arquivo": "osm-bairros.json"
   },
   "osm-ulbra-canoas": {
     "id": "osm-ulbra-canoas",
@@ -618,13 +617,12 @@
   },
   "osm-rodovias-estaduais": {
     "id": "osm-rodovias-estaduais",
-    "url": "https://overpass-api.de/api/interpreter",
-    "data_consulta": "2026-11-03T15:16:26.896Z",
+    "url": "https://overpass.kumi.systems/api/interpreter",
+    "data_consulta": "2026-11-03T15:25:40.308Z",
     "nota": "Rodovias estaduais citadas nos boletins de bloqueio de jul/2026 (ERS-129, ERS-130) e ligações regionais",
-    "status": "erro",
-    "bytes": 0,
-    "sha256": null,
-    "arquivo": null,
-    "erro": "TimeoutError: The operation was aborted due to timeout"
+    "status": 200,
+    "bytes": 316191,
+    "sha256": "fa7ea98b9cd787ed42c00038b2c8f1e7030b8355a9cc7be235fe5da58e2530be",
+    "arquivo": "osm-rodovias-estaduais.json"
   }
 }
