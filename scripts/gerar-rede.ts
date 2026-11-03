@@ -277,6 +277,28 @@ const ENTRONCAMENTOS: NoDef[] = [
     ll: [-30.11, -51.33],
     ref: 'BR-116',
   },
+  // Vale do Taquari — rodovias estaduais citadas no boletim de bloqueios de 22/07/2026
+  {
+    id: 'e-encantado',
+    nome: 'Encantado — ERS-130',
+    tipo: 'entroncamento',
+    ll: [-29.2351, -51.8703],
+    ref: 'ERS-130',
+  },
+  {
+    id: 'e-colinas',
+    nome: 'Colinas — ERS-129',
+    tipo: 'entroncamento',
+    ll: [-29.3948, -51.8556],
+    ref: 'ERS-129',
+  },
+  {
+    id: 'e-bom-retiro',
+    nome: 'Bom Retiro do Sul — ERS-129',
+    tipo: 'entroncamento',
+    ll: [-29.6071, -51.9456],
+    ref: 'ERS-129',
+  },
 ];
 
 // Trechos de rodovia (pares de nós ligados pela geometria real)
@@ -293,6 +315,10 @@ const TRECHOS: [string, string, string][] = [
   ['e-poa-norte', 'e-ponte-guaiba', 'BR-116/BR-290'],
   ['e-ponte-guaiba', 'e-eldorado', 'BR-116/BR-290'],
   ['e-eldorado', 'e-guaiba', 'BR-116'],
+  ['e-lajeado', 'e-encantado', 'ERS-130'],
+  ['e-estrela', 'e-colinas', 'ERS-129'],
+  ['e-colinas', 'e-encantado', 'ERS-129'],
+  ['e-estrela', 'e-bom-retiro', 'ERS-129'],
 ];
 
 const nosOp: NoDef[] = [
@@ -330,6 +356,15 @@ for (const [de, para, via] of TRECHOS) {
   const r = dijkstra(snapId.get(de)!, snapId.get(para)!);
   if (!r) {
     console.warn(`sem caminho OSM ${de} → ${para}`);
+    continue;
+  }
+  if (r.caminho.some((n) => !pos.has(n))) {
+    console.warn(
+      `caminho inválido ${de} → ${para}`,
+      snapId.get(de),
+      snapId.get(para),
+      r.caminho.slice(0, 3),
+    );
     continue;
   }
   const id = `${de}__${para}`;

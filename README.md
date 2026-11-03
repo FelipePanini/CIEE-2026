@@ -168,6 +168,8 @@ Gerada a partir de `data/*.json` por `npm run validar-dados`.
 | e-esteio-448__e-poa-448 › km (`rede-viaria.json`) | ATUAL | OpenStreetMap — comprimento da geometria da BR-448 | [link](https://www.openstreetmap.org/) | 2026-11-03 |
 | e-poa-448__e-poa-norte › km (`rede-viaria.json`) | ATUAL | OpenStreetMap — comprimento da geometria da BR-290 | [link](https://www.openstreetmap.org/) | 2026-11-03 |
 | e-poa-norte__e-ponte-guaiba › km (`rede-viaria.json`) | ATUAL | OpenStreetMap — comprimento da geometria da BR-116/BR-290 | [link](https://www.openstreetmap.org/) | 2026-11-03 |
+| e-lajeado__e-encantado › km (`rede-viaria.json`) | ATUAL | OpenStreetMap — comprimento da geometria da ERS-130 | [link](https://www.openstreetmap.org/) | 2026-11-03 |
+| e-estrela__e-colinas › km (`rede-viaria.json`) | ATUAL | OpenStreetMap — comprimento da geometria da ERS-129 | [link](https://www.openstreetmap.org/) | 2026-11-03 |
 | q-poa-aramy__e-guaiba › km (`rede-viaria.json`) | ATUAL | Estimativa: distância em linha reta × 1,3 (último trecho urbano) | [link](https://www.openstreetmap.org/) | 2026-11-03 |
 | Guaíba — Cais Mauá (Porto Alegre) › cota_alerta (`rios.json`) | HISTÓRICO | Defesa Civil de Porto Alegre — cota de alerta do Guaíba no Cais Mauá | [link](https://www.jornaldocomercio.com/geral/2025/06/1207737-defesa-civil-informa-que-guaiba-esta-em-cota-de-alerta-mas-sem-previsao-de-inundacao.html) | 2025-06 |
 | Guaíba — Cais Mauá (Porto Alegre) › cota_inundacao (`rios.json`) | HISTÓRICO | Defesa Civil RS, via O Timoneiro (24/06/2025): cota de inundação do Cais Mauá | [link](https://jornaltimoneiro.com.br/index.php/2025/06/24/chuvas-mais-de-7-mil-pessoas-desalojadas-quatro-mortos-e-146-municipios-afetados-no-rs/) | 2025-06-24 |

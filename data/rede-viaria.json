@@ -98,6 +98,30 @@
       "ref": "BR-116"
     },
     {
+      "id": "e-encantado",
+      "nome": "Encantado — ERS-130",
+      "tipo": "entroncamento",
+      "lat": -29.26546,
+      "lon": -51.87531,
+      "ref": "ERS-130"
+    },
+    {
+      "id": "e-colinas",
+      "nome": "Colinas — ERS-129",
+      "tipo": "entroncamento",
+      "lat": -29.39096,
+      "lon": -51.87064,
+      "ref": "ERS-129"
+    },
+    {
+      "id": "e-bom-retiro",
+      "nome": "Bom Retiro do Sul — ERS-129",
+      "tipo": "entroncamento",
+      "lat": -29.60773,
+      "lon": -51.94673,
+      "ref": "ERS-129"
+    },
+    {
       "id": "q-poa-aramy",
       "nome": "EMEF Aramy Silva",
       "tipo": "quadra",
@@ -409,6 +433,74 @@
       "velocidade_kmh": 60
     },
     {
+      "id": "e-lajeado__e-encantado",
+      "de": "e-lajeado",
+      "para": "e-encantado",
+      "via": "ERS-130",
+      "km": {
+        "valor": 26.6,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da ERS-130",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-estrela__e-colinas",
+      "de": "e-estrela",
+      "para": "e-colinas",
+      "via": "ERS-129",
+      "km": {
+        "valor": 15.5,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da ERS-129",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-colinas__e-encantado",
+      "de": "e-colinas",
+      "para": "e-encantado",
+      "via": "ERS-129",
+      "km": {
+        "valor": 16.4,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da ERS-129",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-estrela__e-bom-retiro",
+      "de": "e-estrela",
+      "para": "e-bom-retiro",
+      "via": "ERS-129",
+      "km": {
+        "valor": 21.6,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da ERS-129",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
       "id": "q-poa-aramy__e-guaiba",
       "de": "q-poa-aramy",
       "para": "e-guaiba",
@@ -613,12 +705,12 @@
       "velocidade_kmh": 30
     },
     {
-      "id": "q-encantado-scalabrini__e-lajeado",
+      "id": "q-encantado-scalabrini__e-encantado",
       "de": "q-encantado-scalabrini",
-      "para": "e-lajeado",
+      "para": "e-encantado",
       "via": "vias urbanas",
       "km": {
-        "valor": 33.4,
+        "valor": 4.2,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -630,12 +722,12 @@
       "velocidade_kmh": 30
     },
     {
-      "id": "q-encantado-scalabrini__e-estrela",
+      "id": "q-encantado-scalabrini__e-colinas",
       "de": "q-encantado-scalabrini",
-      "para": "e-estrela",
+      "para": "e-colinas",
       "via": "vias urbanas",
       "km": {
-        "valor": 38.4,
+        "valor": 22.4,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -955,6 +1047,24 @@
       "fonte": "Brasil de Fato (maio/2024)",
       "url": "https://www.brasildefato.com.br/?p=599325",
       "data_referencia": "2024-05"
+    },
+    {
+      "id": "b26-ers129-bom-retiro",
+      "aresta": "e-estrela__e-bom-retiro",
+      "descricao": "ERS-129, km 11 e 12, Bom Retiro do Sul: bloqueio total pela elevação do Rio Taquari.",
+      "evento": "2026-07",
+      "fonte": "Rodovias estaduais com alterações no fluxo — atualização 22/07/2026 16h (cópia Poder360)",
+      "url": "https://static.poder360.com.br/uploads/2026/07/bloqueios-2026-07-22.pdf",
+      "data_referencia": "2026-07-22T16:00"
+    },
+    {
+      "id": "b26-ers129-colinas",
+      "aresta": "e-estrela__e-colinas",
+      "descricao": "ERS-129, km 48 e 50, Colinas: bloqueio total pela elevação do Rio Taquari (trecho representado entre Estrela e Colinas).",
+      "evento": "2026-07",
+      "fonte": "Rodovias estaduais com alterações no fluxo — atualização 22/07/2026 16h (cópia Poder360)",
+      "url": "https://static.poder360.com.br/uploads/2026/07/bloqueios-2026-07-22.pdf",
+      "data_referencia": "2026-07-22T16:00"
     }
   ]
 }
