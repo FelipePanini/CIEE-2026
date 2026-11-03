@@ -6,6 +6,8 @@
 export interface Alvo {
   id: string;
   url: string;
+  /** URLs alternativas tentadas em sequência se a principal falhar (5xx/429/erro de rede). */
+  espelhos?: string[];
   tipo: 'json' | 'html' | 'xml' | 'pdf' | 'csv' | 'txt';
   metodo?: 'GET' | 'POST';
   corpo?: string;
@@ -15,6 +17,18 @@ export interface Alvo {
 
 const BBOX = '-30.45,-52.45,-28.95,-50.80'; // sul, oeste, norte, leste — Vale do Taquari → RMPA
 const overpass = (q: string): Alvo['corpo'] => 'data=' + encodeURIComponent(q);
+const OVERPASS = 'https://overpass-api.de/api/interpreter';
+const OVERPASS_ESPELHOS = [
+  'https://overpass.kumi.systems/api/interpreter',
+  'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+  'https://overpass.private.coffee/api/interpreter',
+];
+const serieANA = (id: string, codigo: string, ini: string, fim: string, nota: string): Alvo => ({
+  id,
+  url: `https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=${codigo}&dataInicio=${ini}&dataFim=${fim}`,
+  tipo: 'xml',
+  nota,
+});
 
 const inventarioANA = (municipio: string): Alvo => ({
   id: `ana-inventario-${municipio.toLowerCase().replace(/[^a-z]+/g, '-')}`,
@@ -86,7 +100,8 @@ export const ALVOS: Alvo[] = [
   // OpenStreetMap (Overpass) — geometria
   {
     id: 'osm-rios',
-    url: 'https://overpass-api.de/api/interpreter',
+    url: OVERPASS,
+    espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
     corpo: overpass(
@@ -96,7 +111,8 @@ export const ALVOS: Alvo[] = [
   },
   {
     id: 'osm-guaiba',
-    url: 'https://overpass-api.de/api/interpreter',
+    url: OVERPASS,
+    espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
     corpo: overpass(
@@ -105,7 +121,8 @@ export const ALVOS: Alvo[] = [
   },
   {
     id: 'osm-rodovias',
-    url: 'https://overpass-api.de/api/interpreter',
+    url: OVERPASS,
+    espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
     corpo: overpass(
@@ -114,7 +131,8 @@ export const ALVOS: Alvo[] = [
   },
   {
     id: 'osm-escolas',
-    url: 'https://overpass-api.de/api/interpreter',
+    url: OVERPASS,
+    espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
     corpo: overpass(
@@ -124,7 +142,8 @@ export const ALVOS: Alvo[] = [
   },
   {
     id: 'osm-abrigos-ginasios',
-    url: 'https://overpass-api.de/api/interpreter',
+    url: OVERPASS,
+    espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
     corpo: overpass(
@@ -138,4 +157,46 @@ export const ALVOS: Alvo[] = [
   { id: 'legisweb-antt-6076-2026', url: 'https://www.legisweb.com.br/legislacao/?id=489672', tipo: 'html' },
   // Manual Esfera (português, se existir)
   { id: 'esfera-manual-2018-pt', url: 'https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf', tipo: 'pdf' },
+  // ANA — séries adicionais (picos de 2024/2025 e nível atual do Guaíba)
+  serieANA('ana-telemetria-87450004-caismaua-2026', '87450004', '01/07/2026', '03/11/2026', 'Guaíba — Cais Mauá C6, jul–nov/2026'),
+  serieANA('ana-telemetria-87450004-caismaua-2024', '87450004', '25/04/2024', '15/06/2024', 'Guaíba — Cais Mauá C6, enchente de 2024'),
+  serieANA('ana-telemetria-87450004-caismaua-2025', '87450004', '10/06/2025', '10/07/2025', 'Guaíba — Cais Mauá C6, cheia de jun/2025'),
+  serieANA('ana-telemetria-86879300-estrela-2024', '86879300', '25/04/2024', '20/05/2024', 'Taquari — Estrela/Lajeado, enchente de 2024'),
+  serieANA('ana-telemetria-86879300-estrela-2025', '86879300', '10/06/2025', '10/07/2025', 'Taquari — Estrela/Lajeado, cheia de jun/2025'),
+  // Bloqueios de rodovias (jul/2026)
+  {
+    id: 'poder360-bloqueios-2026-07-22',
+    url: 'https://static.poder360.com.br/uploads/2026/07/bloqueios-2026-07-22.pdf',
+    tipo: 'pdf',
+    nota: 'Boletim de bloqueios em rodovias do RS — 22/07/2026 (cópia publicada pelo Poder360)',
+  },
+  {
+    id: 'viasul-br386-2026-07',
+    url: 'https://rodovias.motiva.com.br/viasul/noticias/2026/julho/viasul-registra-bloqueios-pontuais-preventivos-na-br-386-e-freew/',
+    tipo: 'html',
+  },
+  // DIEESE — banco de dados por produto (exploração da página de consulta)
+  { id: 'dieese-cesta-index', url: 'https://www.dieese.org.br/cesta/', tipo: 'html' },
+  { id: 'dieese-cesta-produto', url: 'https://www.dieese.org.br/cesta/produto', tipo: 'html' },
+  // Manual Esfera via Internet Archive (o site original bloqueia robôs)
+  {
+    id: 'esfera-handbook-2018-en-arquivo',
+    url: 'https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf',
+    tipo: 'pdf',
+  },
+  // Preços de higiene/limpeza em supermercados online (catálogo público VTEX)
+  ...['sabonete%2085g', 'creme%20dental%2090g', 'escova%20dental', 'papel%20higienico%2012%20rolos', 'absorvente', 'sabao%20em%20barra', 'agua%20sanitaria%202l', 'agua%20mineral%205l', 'cobertor%20solteiro'].flatMap((q) => [
+    {
+      id: `vtex-carrefour-${q.replace(/%20/g, '-')}`,
+      url: `https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=${q}&_from=0&_to=4`,
+      tipo: 'json' as const,
+      nota: 'Catálogo público do Carrefour Mercado (VTEX) — preço de referência',
+    },
+    {
+      id: `vtex-atacadao-${q.replace(/%20/g, '-')}`,
+      url: `https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=${q}&_from=0&_to=4`,
+      tipo: 'json' as const,
+      nota: 'Catálogo público do Atacadão (VTEX) — preço de referência',
+    },
+  ]),
 ];

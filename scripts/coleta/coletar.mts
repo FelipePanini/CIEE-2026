@@ -24,7 +24,7 @@ interface Registro {
   nota?: string;
 }
 
-const filtro = process.argv[2];
+const filtro = process.argv[2] ?? process.env.FILTRO_COLETA;
 const manifestoPath = join(DIR, 'manifesto.json');
 const anterior: Record<string, Registro> = existsSync(manifestoPath)
   ? JSON.parse(readFileSync(manifestoPath, 'utf8'))
@@ -39,8 +39,24 @@ async function baixar(alvo: (typeof ALVOS)[number]): Promise<Registro> {
     data_consulta: new Date().toISOString(),
     ...(alvo.nota ? { nota: alvo.nota } : {}),
   };
+  const urls = [alvo.url, ...(alvo.espelhos ?? [])];
+  let ultimoErro: Registro | null = null;
+  for (const url of urls) {
+    const r = await tentar(alvo, url, base);
+    if (r.status === 200 || (typeof r.status === 'number' && r.status < 500 && r.status !== 429)) return r;
+    ultimoErro = r;
+    await new Promise((ok) => setTimeout(ok, 8000));
+  }
+  return ultimoErro!;
+}
+
+async function tentar(
+  alvo: (typeof ALVOS)[number],
+  url: string,
+  base: Omit<Registro, 'status' | 'bytes' | 'sha256' | 'arquivo'>,
+): Promise<Registro> {
   try {
-    const res = await fetch(alvo.url, {
+    const res = await fetch(url, {
       method: alvo.metodo ?? 'GET',
       headers: {
         'User-Agent': UA,
@@ -48,7 +64,7 @@ async function baixar(alvo: (typeof ALVOS)[number]): Promise<Registro> {
         ...alvo.cabecalhos,
       },
       body: alvo.corpo,
-      signal: AbortSignal.timeout(240_000),
+      signal: AbortSignal.timeout(120_000),
     });
     const buf = Buffer.from(await res.arrayBuffer());
     const sha256 = createHash('sha256').update(buf).digest('hex');
@@ -68,15 +84,23 @@ async function baixar(alvo: (typeof ALVOS)[number]): Promise<Registro> {
         writeFileSync(join(DIR, arquivo), buf);
       }
     }
-    return { ...base, status: res.status, bytes: buf.length, sha256, arquivo };
+    return { ...base, url, status: res.status, bytes: buf.length, sha256, arquivo };
   } catch (e) {
     return { ...base, status: 'erro', bytes: 0, sha256: null, arquivo: null, erro: String(e) };
   }
 }
 
+const forcar = process.env.FORCAR_COLETA === '1';
 const manifesto: Record<string, Registro> = { ...anterior };
 for (const alvo of ALVOS.filter((a) => !filtro || a.id.includes(filtro))) {
+  // Por padrão só baixa o que ainda não foi obtido com sucesso (FORCAR_COLETA=1 refaz tudo).
+  if (!forcar && anterior[alvo.id]?.status === 200) continue;
   const r = await baixar(alvo);
+  // Nunca substitui uma coleta bem-sucedida por uma falha.
+  if (r.status !== 200 && anterior[alvo.id]?.status === 200) {
+    console.log(`mantido ${alvo.id} (nova tentativa: ${r.status})`);
+    continue;
+  }
   manifesto[alvo.id] = r;
   console.log(`${String(r.status).padEnd(5)} ${String(r.bytes).padStart(9)} B  ${alvo.id}${r.erro ? '  ' + r.erro : ''}`);
   // Overpass pede intervalo entre consultas
