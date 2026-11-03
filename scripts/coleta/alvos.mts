@@ -199,4 +199,27 @@ export const ALVOS: Alvo[] = [
       nota: 'Catálogo público do Atacadão (VTEX) — preço de referência',
     },
   ]),
+  // DIEESE — preço médio por produto em Porto Alegre (formulário "por cidade")
+  {
+    id: 'dieese-preco-medio-poa-2026-09',
+    url: 'https://www.dieese.org.br/cesta/cidade',
+    metodo: 'POST',
+    tipo: 'html',
+    corpo: 'farinha=true&cidades=5&tipoDado=4&produtos=0&dataInicial=082026&dataFinal=092026',
+    nota: 'DIEESE — preço médio de cada produto da cesta em Porto Alegre, ago–set/2026',
+  },
+  {
+    id: 'dieese-gasto-mensal-poa-2026-09',
+    url: 'https://www.dieese.org.br/cesta/cidade',
+    metodo: 'POST',
+    tipo: 'html',
+    corpo: 'farinha=true&cidades=5&tipoDado=5&produtos=0&dataInicial=082026&dataFinal=092026',
+    nota: 'DIEESE — gasto mensal por produto em Porto Alegre, ago–set/2026',
+  },
+  ...['escova%20de%20dente', 'cobertor', 'colchonete'].map((q) => ({
+    id: `vtex-atacadao-${q.replace(/%20/g, '-')}`,
+    url: `https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=${q}&_from=0&_to=4`,
+    tipo: 'json' as const,
+    nota: 'Catálogo público do Atacadão (VTEX) — preço de referência',
+  })),
 ];

@@ -43,7 +43,7 @@ async function baixar(alvo: (typeof ALVOS)[number]): Promise<Registro> {
   let ultimoErro: Registro | null = null;
   for (const url of urls) {
     const r = await tentar(alvo, url, base);
-    if (r.status === 200 || (typeof r.status === 'number' && r.status < 500 && r.status !== 429)) return r;
+    if (typeof r.status === 'number' && r.status < 500 && r.status !== 429) return r;
     ultimoErro = r;
     await new Promise((ok) => setTimeout(ok, 8000));
   }
@@ -94,10 +94,10 @@ const forcar = process.env.FORCAR_COLETA === '1';
 const manifesto: Record<string, Registro> = { ...anterior };
 for (const alvo of ALVOS.filter((a) => !filtro || a.id.includes(filtro))) {
   // Por padrão só baixa o que ainda não foi obtido com sucesso (FORCAR_COLETA=1 refaz tudo).
-  if (!forcar && anterior[alvo.id]?.status === 200) continue;
+  if (!forcar && [200, 206].includes(anterior[alvo.id]?.status as number)) continue;
   const r = await baixar(alvo);
   // Nunca substitui uma coleta bem-sucedida por uma falha.
-  if (r.status !== 200 && anterior[alvo.id]?.status === 200) {
+  if (![200, 206].includes(r.status as number) && [200, 206].includes(anterior[alvo.id]?.status as number)) {
     console.log(`mantido ${alvo.id} (nova tentativa: ${r.status})`);
     continue;
   }
