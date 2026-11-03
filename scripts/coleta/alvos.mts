@@ -222,4 +222,23 @@ export const ALVOS: Alvo[] = [
     tipo: 'json' as const,
     nota: 'Catálogo público do Atacadão (VTEX) — preço de referência',
   })),
+  // OSM — bairros (localização dos parceiros fictícios) e locais de abrigo citados em boletins
+  {
+    id: 'osm-bairros',
+    url: OVERPASS,
+    espelhos: OVERPASS_ESPELHOS,
+    metodo: 'POST',
+    tipo: 'json',
+    corpo: overpass(
+      `[out:json][timeout:180];area["boundary"="administrative"]["admin_level"="8"]["name"~"^(Porto Alegre|Canoas|Eldorado do Sul|Lajeado|Estrela|Encantado|Montenegro|Guaíba)$"]->.a;(node["place"~"^(suburb|neighbourhood|quarter)$"](area.a);relation["boundary"="administrative"]["admin_level"="10"](area.a););out center tags;`,
+    ),
+  },
+  {
+    id: 'osm-ulbra-canoas',
+    url: OVERPASS,
+    espelhos: OVERPASS_ESPELHOS,
+    metodo: 'POST',
+    tipo: 'json',
+    corpo: overpass(`[out:json][timeout:120];nwr["amenity"="university"]["name"~"ULBRA|Luterana",i](-29.99,-51.25,-29.85,-51.10);out center tags;`),
+  },
 ];
