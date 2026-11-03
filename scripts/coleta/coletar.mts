@@ -64,7 +64,7 @@ async function tentar(
         ...alvo.cabecalhos,
       },
       body: alvo.corpo,
-      signal: AbortSignal.timeout(120_000),
+      signal: AbortSignal.timeout(alvo.timeoutMs ?? 120_000),
     });
     const buf = Buffer.from(await res.arrayBuffer());
     const sha256 = createHash('sha256').update(buf).digest('hex');

@@ -8,6 +8,7 @@ export interface Alvo {
   url: string;
   /** URLs alternativas tentadas em sequência se a principal falhar (5xx/429/erro de rede). */
   espelhos?: string[];
+  timeoutMs?: number;
   tipo: 'json' | 'html' | 'xml' | 'pdf' | 'csv' | 'txt';
   metodo?: 'GET' | 'POST';
   corpo?: string;
@@ -313,8 +314,9 @@ export const ALVOS: Alvo[] = [
     espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
+    timeoutMs: 240_000,
     corpo: overpass(
-      `[out:json][timeout:180];area["boundary"="administrative"]["admin_level"="8"]["name"~"^(Porto Alegre|Canoas|Eldorado do Sul|Lajeado|Estrela|Encantado|Montenegro|Guaíba)$"]->.a;(node["place"~"^(suburb|neighbourhood|quarter)$"](area.a););out tags;`,
+      `[out:json][timeout:120];(node["place"~"^(suburb|neighbourhood|quarter)$"](${BBOX}););out tags;`,
     ),
   },
   {
@@ -333,9 +335,10 @@ export const ALVOS: Alvo[] = [
     espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
+    timeoutMs: 240_000,
     corpo: overpass(
-      `[out:json][timeout:180];(way["highway"~"^(motorway|trunk|primary|secondary)$"]["ref"~"(ERS|RS)-(129|130|287|401|453)"](${BBOX}););out geom;`,
+      `[out:json][timeout:120];(way["highway"]["ref"~"^E?RS-(129|130)$"](-29.95,-52.25,-29.05,-51.55););out geom;`,
     ),
-    nota: 'Rodovias estaduais citadas nos boletins de bloqueio de jul/2026 (ERS-129, ERS-130) e ligações regionais',
+    nota: 'ERS-129 e ERS-130 (Vale do Taquari), citadas no boletim de bloqueios de 22/07/2026',
   },
 ];
