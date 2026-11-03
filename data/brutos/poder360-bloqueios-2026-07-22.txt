@@ -1,0 +1,70 @@
+                  RODOVIAS ESTADUAIS COM ALTERAÇÕES NO FLUXO
+
+                                                   ATUALIZAÇÃO - 22/07/2026 16:00
+                                                          BLOQUEIO TOTAL
+Nº    DATA        BRBM MUNICÍPIO                          RODOVIA                                      INFORMAÇÕES
+                                                                         Ponte bloqueada no município de Feliz. Há rotas alternativas dentro do
+1    30/04/2024    3º    Feliz                  ERS 843 Km 0
+                                                                         município de Feliz.
+                                                                         A decisão foi tomada pela Defesa Civil, após a água atingir o limite da estrutura,
+2    02/07/2026    3º    Bento Goncalves        ERS 431 KM 10
+                                                                         oferecendo risco à travessia.
+                                                                         Obras do Governo no km 7, sem relação com as chuvas. Há rotas alternativas
+3    03/07/2026    3º    Vila Flores            ERS 437 KM 01 AO 15
+                                                                         que ligam os municípios de Vila Flores, Antônio Prado e Flores da Cunha.
+                                                                         Rodovia em construção, com desvio no próprio local por via paralela situada na
+4    18/07/2026    2º    Venancio Aires         ERS 130 KM 36
+                                                                         área urbana.
+                                                                         RS-348, entre Agudo e Dona Francisca (localidade Sangrador): desvio com
+5    18/07/2026    2º    Agudo                  ERS 348 KM 48 ao KM 54
+                                                                         água sobre a pista, em razão do elevado volume de água. Trânsito com cautela.
+                                                                         ERS-431, km 21: bloqueio total em razão da interdição da ponte. O local
+6    18/07/2026    3º    Sao Valentim do Sul    ERS 431 Km 21
+                                                                         encontra-se devidamente sinalizado.
+                                                                         Ponte Bloqueada. Rota alternativa, recomenda-se o desvio pela BR-386, via
+7    21/07/2026    1º    Barra Funda            ERS 569 KM 28
+                                                                         Sarandi.
+                                                                         A Ponte da Estiva, entre os municípios de Encantado e Relvado, encontra-se
+                                                                         submersa pelas águas do Arroio Jacaré, com trânsito totalmente bloqueado. O
+8    21/07/2026    2º    Relvado                ERS 433 KM 08
+                                                                         local está devidamente sinalizado, e o desvio pode ser realizado por vias
+                                                                         secundárias ou pelo município de Nova Bréscia.
+                                                                         A ponte sobre o Rio Camargo encontra-se bloqueada devido à água sobre a
+9    22/07/2026    1º    Camargo                ERS 132 KM 05            estrutura, com a rodovia totalmente interditada. O local está devidamente
+                                                                         sinalizado.
+                                                                         Ponte sobre o Rio Carreiro (Serafina Corrêa – Nova Bassano): interditada no
+10   22/07/2026    1º    Serafina Correa        VRS 851 KM 09            momento. Como rota alternativa, recomenda-se o desvio pela ERS-324, via
+                                                                         Nova Bassano
+11   22/07/2026    2º    Bom Retiro do Sul      ERS 129 KM 11            Bloqueio total: rodovia interditada devido à elevação das águas do Rio Taquari.
+12   22/07/2026    2º    Bom Retiro do Sul      ERS 129 KM 12            Bloqueio total: rodovia interditada devido à elevação das águas do Rio Taquari.
+13   22/07/2026    2º    Colinas                ERS 129 KM 48            Bloqueio total: rodovia interditada devido à elevação das águas do Rio Taquari.
+14   22/07/2026    2º    Colinas                ERS 129 KM 50            Bloqueio total: rodovia interditada devido à elevação das águas do Rio Taquari.
+                                                                         ERS-130, no km 26, no sentido General Câmara, encontra-se com bloqueio
+15   22/07/2026    2º    General Camara         ERS 130 KM 26
+                                                                         total devido a alagamento na pista, ocasionado pelas fortes chuvas.
+                                                                         ERS-130, no km 31, no sentido Cruzeiro do Sul, na localidade de Linha
+16   22/07/2026    2º    Cruzeiro do Sul        ERS 130 KM 31            Chafariz, encontra-se com bloqueio total devido ao alagamento da pista,
+                                                                         causado pelas fortes chuvas.
+                                                                         ERS-130, no km 56, em Cruzeiro do Sul, encontra-se com bloqueio total devido
+17   22/07/2026    2º    Cruzeiro do Sul        ERS 130 KM 56
+                                                                         à elevação das águas do Rio Taquari, em decorrência das fortes chuvas.
+                                                                         A ponte sobre o Rio das Antas encontra-se totalmente interditada devido à
+18   22/07/2026    3º    Santa Tereza           ERS 431 KM 10            elevação do nível do rio, com água sobre a estrutura da ponte, impossibilitando
+                                                                         a passagem de veículos.
+
+
+
+                                                      BLOQUEIOS PARCIAIS
+Nº    DATA        BRBM           MUNICÍPIO                RODOVIA                                      INFORMAÇÕES
+                                                                         Ponte de ferro com passagem em sentido alternado, permitindo a travessia de
+1    17/06/2024    2º    Dilermando de Aguiar   ERS 530 KM 104           apenas um veículo por vez. A estrutura suporta a passagem de caminhões com
+                                                                         peso de até 45 toneladas.
+                                                                         Tráfego em sistema de "siga e pare", controlado por semáforos com ciclo
+                                                                         aproximado de 7 (sete) minutos para cada sentido, na ERS-344, km 101, sobre
+2    18/07/2026    1º    Santo Angelo           ERS-344, Km 101
+                                                                         a ponte localizada entre os municípios de Santo Ângelo e Entre-Ijuís, em razão
+                                                                         das obras de reforma da estrutura.
+                                                                         Contorno Sul de Passo Fundo: queda de barreira com meia pista interrompida.
+3    22/07/2026    1º    Passo Fundo            ERS 324 KM 182
+                                                                         O tráfego flui em sistema de pare e siga, com sinalização no local.
+

@@ -82,10 +82,10 @@
   "sgb-sace-taquari-ultimo-boletim": {
     "id": "sgb-sace-taquari-ultimo-boletim",
     "url": "https://www.sgb.gov.br/sace/taquari/ultimo_boletim.php",
-    "data_consulta": "2026-11-03T14:37:40.117Z",
+    "data_consulta": "2026-11-03T14:45:29.349Z",
     "status": 404,
     "bytes": 70886,
-    "sha256": "fe4ba7af55dba89c2fa171019fc6b9ef18fdf7d317f7c8a5a87d11ff38a4ccf3",
+    "sha256": "118dfd680b94b35cd288a1367974ee6f3f40feaf08082bd01af2fe19915283a2",
     "arquivo": null
   },
   "sgb-sace-index": {
@@ -164,7 +164,7 @@
   "dieese-cesta-2026-10": {
     "id": "dieese-cesta-2026-10",
     "url": "https://www.dieese.org.br/analisecestabasica/2026/202610cestabasica.pdf",
-    "data_consulta": "2026-11-03T14:37:59.167Z",
+    "data_consulta": "2026-11-03T14:45:30.979Z",
     "status": 404,
     "bytes": 280,
     "sha256": "0c33a759892a35ea8b5831e75d42be14bde14706c363fec644557956fa179042",
@@ -173,7 +173,7 @@
   "antt-pisos-minimos": {
     "id": "antt-pisos-minimos",
     "url": "https://www.gov.br/antt/pt-br/assuntos/cargas/pisos-minimos-de-frete",
-    "data_consulta": "2026-11-03T14:37:59.728Z",
+    "data_consulta": "2026-11-03T14:45:31.799Z",
     "status": 404,
     "bytes": 26,
     "sha256": "6bbcea2b37bd092cc60604157a0ceec8944866fc2478f7af8aea3c3df40bc258",
@@ -182,21 +182,21 @@
   "esfera-handbook-2018-en": {
     "id": "esfera-handbook-2018-en",
     "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf",
-    "data_consulta": "2026-11-03T14:38:00.591Z",
+    "data_consulta": "2026-11-03T14:45:32.510Z",
     "status": 403,
-    "bytes": 5708,
-    "sha256": "4b52a1b26f593d25c94b77b5470b5b9529b42ef98bbfb8e2112fe5adc73b2281",
+    "bytes": 5729,
+    "sha256": "a3131517c8333aa1d8d5c2ca16036a10b2113c1080e14e97ada74a36d95f46ae",
     "arquivo": null
   },
   "osm-rios": {
     "id": "osm-rios",
     "url": "https://overpass-api.de/api/interpreter",
-    "data_consulta": "2026-11-03T14:38:00.821Z",
+    "data_consulta": "2026-11-03T14:45:32.600Z",
     "nota": "Rios principais da bacia do Guaíba (OSM)",
-    "status": 502,
-    "bytes": 534,
-    "sha256": "8084e21e11df846a2e41bb93ddaf66961aa2ef71e9a9fc1f46debc960b303042",
-    "arquivo": null
+    "status": 200,
+    "bytes": 435594,
+    "sha256": "61fe1e9d8cfec0cc444f37461cffae826da7f59d7990426970971922d23a5eb8",
+    "arquivo": "osm-rios.json"
   },
   "osm-guaiba": {
     "id": "osm-guaiba",
@@ -210,21 +210,21 @@
   "osm-rodovias": {
     "id": "osm-rodovias",
     "url": "https://overpass-api.de/api/interpreter",
-    "data_consulta": "2026-11-03T14:38:39.108Z",
-    "status": 502,
-    "bytes": 534,
-    "sha256": "8084e21e11df846a2e41bb93ddaf66961aa2ef71e9a9fc1f46debc960b303042",
-    "arquivo": null
+    "data_consulta": "2026-11-03T14:46:22.844Z",
+    "status": 200,
+    "bytes": 1548655,
+    "sha256": "a914a035f8a04ccb8e537be248a60f9f7982d76599f55584f1489fc81ea0cf2d",
+    "arquivo": "osm-rodovias.json"
   },
   "osm-escolas": {
     "id": "osm-escolas",
     "url": "https://overpass-api.de/api/interpreter",
-    "data_consulta": "2026-11-03T14:38:44.470Z",
+    "data_consulta": "2026-11-03T14:47:13.813Z",
     "nota": "Escolas (OSM) para localizar as escolas-base reais",
-    "status": 502,
-    "bytes": 534,
-    "sha256": "8084e21e11df846a2e41bb93ddaf66961aa2ef71e9a9fc1f46debc960b303042",
-    "arquivo": null
+    "status": 200,
+    "bytes": 282583,
+    "sha256": "0f662577baf72795c1f4f1fc4ac2b9195b417bbfc8d541d7f708931bc1005023",
+    "arquivo": "osm-escolas.json"
   },
   "osm-abrigos-ginasios": {
     "id": "osm-abrigos-ginasios",
@@ -238,12 +238,11 @@
   "sosenchentes-sobre-o-pix": {
     "id": "sosenchentes-sobre-o-pix",
     "url": "https://sosenchentes.rs.gov.br/sobre-o-pix",
-    "data_consulta": "2026-11-03T14:40:27.645Z",
-    "status": "erro",
-    "bytes": 0,
-    "sha256": null,
-    "arquivo": null,
-    "erro": "TypeError: fetch failed"
+    "data_consulta": "2026-11-03T14:49:02.171Z",
+    "status": 200,
+    "bytes": 52855,
+    "sha256": "00be71212c11b70b39f0ea3314deedda7ca3b8c8e186977297b820e55e522ee4",
+    "arquivo": "sosenchentes-sobre-o-pix.html"
   },
   "planoriogrande-pix": {
     "id": "planoriogrande-pix",
@@ -266,10 +265,286 @@
   "esfera-manual-2018-pt": {
     "id": "esfera-manual-2018-pt",
     "url": "https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf",
-    "data_consulta": "2026-11-03T14:40:41.242Z",
+    "data_consulta": "2026-11-03T14:49:03.809Z",
     "status": 403,
-    "bytes": 5680,
-    "sha256": "26e85fab52248ecaedab41b9ae79bd0f5a37be169e724460d3ff849606b1a641",
+    "bytes": 5702,
+    "sha256": "f72f855cbdb998e3830777b54e3b635e3923ea9b138a4b063e2fcfbf1e3eadfd",
     "arquivo": null
+  },
+  "ana-telemetria-87450004-caismaua-2026": {
+    "id": "ana-telemetria-87450004-caismaua-2026",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=01/07/2026&dataFim=03/11/2026",
+    "data_consulta": "2026-11-03T14:49:03.862Z",
+    "nota": "Guaíba — Cais Mauá C6, jul–nov/2026",
+    "status": 200,
+    "bytes": 839835,
+    "sha256": "ee1a5d48dba3ba3ac1f397c64cbbdbca6613693138474ec756927d2e3e88f045",
+    "arquivo": "ana-telemetria-87450004-caismaua-2026.xml"
+  },
+  "ana-telemetria-87450004-caismaua-2024": {
+    "id": "ana-telemetria-87450004-caismaua-2024",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=25/04/2024&dataFim=15/06/2024",
+    "data_consulta": "2026-11-03T14:49:05.263Z",
+    "nota": "Guaíba — Cais Mauá C6, enchente de 2024",
+    "status": 200,
+    "bytes": 234445,
+    "sha256": "183658c5577be5c948d3c3ea2e28f260ecdc923e22a6880de3764b1661c2e0ba",
+    "arquivo": "ana-telemetria-87450004-caismaua-2024.xml"
+  },
+  "ana-telemetria-87450004-caismaua-2025": {
+    "id": "ana-telemetria-87450004-caismaua-2025",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=10/06/2025&dataFim=10/07/2025",
+    "data_consulta": "2026-11-03T14:49:06.304Z",
+    "nota": "Guaíba — Cais Mauá C6, cheia de jun/2025",
+    "status": 200,
+    "bytes": 850885,
+    "sha256": "09e42a18373beeb2dd355a7f753f97c0ad148e8a0c6bbdf1a8b18ddc7c88a1cb",
+    "arquivo": "ana-telemetria-87450004-caismaua-2025.xml"
+  },
+  "ana-telemetria-86879300-estrela-2024": {
+    "id": "ana-telemetria-86879300-estrela-2024",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=25/04/2024&dataFim=20/05/2024",
+    "data_consulta": "2026-11-03T14:49:06.949Z",
+    "nota": "Taquari — Estrela/Lajeado, enchente de 2024",
+    "status": 200,
+    "bytes": 409834,
+    "sha256": "1cb7726989d6ebc418f4d787eb8a18e83f99e18f71827fb6cd7b704445a985d7",
+    "arquivo": "ana-telemetria-86879300-estrela-2024.xml"
+  },
+  "ana-telemetria-86879300-estrela-2025": {
+    "id": "ana-telemetria-86879300-estrela-2025",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=10/06/2025&dataFim=10/07/2025",
+    "data_consulta": "2026-11-03T14:49:07.535Z",
+    "nota": "Taquari — Estrela/Lajeado, cheia de jun/2025",
+    "status": 200,
+    "bytes": 925368,
+    "sha256": "db784aada2549956c3acad1c4d101bd5e813512ea13d25c0a5fa62d2fc61fe44",
+    "arquivo": "ana-telemetria-86879300-estrela-2025.xml"
+  },
+  "poder360-bloqueios-2026-07-22": {
+    "id": "poder360-bloqueios-2026-07-22",
+    "url": "https://static.poder360.com.br/uploads/2026/07/bloqueios-2026-07-22.pdf",
+    "data_consulta": "2026-11-03T14:49:08.462Z",
+    "nota": "Boletim de bloqueios em rodovias do RS — 22/07/2026 (cópia publicada pelo Poder360)",
+    "status": 200,
+    "bytes": 512394,
+    "sha256": "c9be64c3e52fbcfcbd95d2a88bd7cf9967f97ebc851050f7afe47b7e901db2a7",
+    "arquivo": "poder360-bloqueios-2026-07-22.txt"
+  },
+  "viasul-br386-2026-07": {
+    "id": "viasul-br386-2026-07",
+    "url": "https://rodovias.motiva.com.br/viasul/noticias/2026/julho/viasul-registra-bloqueios-pontuais-preventivos-na-br-386-e-freew/",
+    "data_consulta": "2026-11-03T14:49:08.858Z",
+    "status": 200,
+    "bytes": 178747,
+    "sha256": "5c41a53f2abee85e61b8768560cb496ac5aa4aa6d921c4dbbc561a73a4feec18",
+    "arquivo": "viasul-br386-2026-07.html"
+  },
+  "dieese-cesta-index": {
+    "id": "dieese-cesta-index",
+    "url": "https://www.dieese.org.br/cesta/",
+    "data_consulta": "2026-11-03T14:49:09.799Z",
+    "status": 200,
+    "bytes": 15432,
+    "sha256": "ada26b10c23766f7bdeb7606f2bba5ef3eda04091deb75a9d0b69dd03eb3d4c8",
+    "arquivo": "dieese-cesta-index.html"
+  },
+  "dieese-cesta-produto": {
+    "id": "dieese-cesta-produto",
+    "url": "https://www.dieese.org.br/cesta/produto",
+    "data_consulta": "2026-11-03T14:49:10.639Z",
+    "status": 400,
+    "bytes": 1101,
+    "sha256": "3c10e0ed2340cb5d16483d023492cfd295c3cc4655c1d14951ff6b0640474eea",
+    "arquivo": null
+  },
+  "esfera-handbook-2018-en-arquivo": {
+    "id": "esfera-handbook-2018-en-arquivo",
+    "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf",
+    "data_consulta": "2026-11-03T14:49:10.773Z",
+    "status": 200,
+    "bytes": 6274447,
+    "sha256": "eeb7e680c296e15389ca8a1e5882a3796f23cbba31cfb21dd4661332c4c8cf63",
+    "arquivo": "esfera-handbook-2018-en-arquivo.txt"
+  },
+  "vtex-carrefour-sabonete-85g": {
+    "id": "vtex-carrefour-sabonete-85g",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=sabonete%2085g&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:13.669Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 403,
+    "bytes": 196328,
+    "sha256": "6724bd038a37e38fc5811d34d3334dea8488f44c45165f6e29695e880d3c99d3",
+    "arquivo": null
+  },
+  "vtex-atacadao-sabonete-85g": {
+    "id": "vtex-atacadao-sabonete-85g",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=sabonete%2085g&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:13.866Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 206,
+    "bytes": 53355,
+    "sha256": "a20a368d20e97f40caf4222e6e20828c153a7bd2d6d09a7ad37cf04b562d6dc7",
+    "arquivo": "vtex-atacadao-sabonete-85g.json"
+  },
+  "vtex-carrefour-creme-dental-90g": {
+    "id": "vtex-carrefour-creme-dental-90g",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=creme%20dental%2090g&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:14.897Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "arquivo": null
+  },
+  "vtex-atacadao-creme-dental-90g": {
+    "id": "vtex-atacadao-creme-dental-90g",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=creme%20dental%2090g&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:22.974Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 206,
+    "bytes": 55904,
+    "sha256": "235e37ed2f3d70f582475e15b375c95b234e9a66ac90d1fd88416345182c83be",
+    "arquivo": "vtex-atacadao-creme-dental-90g.json"
+  },
+  "vtex-carrefour-escova-dental": {
+    "id": "vtex-carrefour-escova-dental",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=escova%20dental&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:23.308Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "arquivo": null
+  },
+  "vtex-atacadao-escova-dental": {
+    "id": "vtex-atacadao-escova-dental",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=escova%20dental&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:31.513Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 500,
+    "bytes": 29,
+    "sha256": "7192fe2222ee9854f8f70cae64cea507f4173a8eccce8d6de9c4b56039e4c326",
+    "arquivo": null
+  },
+  "vtex-carrefour-papel-higienico-12-rolos": {
+    "id": "vtex-carrefour-papel-higienico-12-rolos",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=papel%20higienico%2012%20rolos&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:41.875Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "arquivo": null
+  },
+  "vtex-atacadao-papel-higienico-12-rolos": {
+    "id": "vtex-atacadao-papel-higienico-12-rolos",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=papel%20higienico%2012%20rolos&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:50.093Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 206,
+    "bytes": 51797,
+    "sha256": "fb659ec5e56c69a46f3145634b2db5c77308fb73327c2644a5484ac6ae3bce59",
+    "arquivo": "vtex-atacadao-papel-higienico-12-rolos.json"
+  },
+  "vtex-carrefour-absorvente": {
+    "id": "vtex-carrefour-absorvente",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=absorvente&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:50.494Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "arquivo": null
+  },
+  "vtex-atacadao-absorvente": {
+    "id": "vtex-atacadao-absorvente",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=absorvente&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:58.715Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 206,
+    "bytes": 51262,
+    "sha256": "ad60044ad0725b4889f186db09b2e82ff296793546ffd2657ae4528ac3399a33",
+    "arquivo": "vtex-atacadao-absorvente.json"
+  },
+  "vtex-carrefour-sabao-em-barra": {
+    "id": "vtex-carrefour-sabao-em-barra",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=sabao%20em%20barra&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:49:59.042Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "arquivo": null
+  },
+  "vtex-atacadao-sabao-em-barra": {
+    "id": "vtex-atacadao-sabao-em-barra",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=sabao%20em%20barra&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:50:07.254Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 206,
+    "bytes": 51322,
+    "sha256": "85a6543683169d93fdaa2ec4ab9c032c642b3684a4226753afa10eb77fb03605",
+    "arquivo": "vtex-atacadao-sabao-em-barra.json"
+  },
+  "vtex-carrefour-agua-sanitaria-2l": {
+    "id": "vtex-carrefour-agua-sanitaria-2l",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=agua%20sanitaria%202l&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:50:07.607Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "arquivo": null
+  },
+  "vtex-atacadao-agua-sanitaria-2l": {
+    "id": "vtex-atacadao-agua-sanitaria-2l",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=agua%20sanitaria%202l&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:50:15.851Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 206,
+    "bytes": 49877,
+    "sha256": "31171f36da0e16883cca65cc3a937cd1b824a3dfefaf56efbca64868aeda2c4f",
+    "arquivo": "vtex-atacadao-agua-sanitaria-2l.json"
+  },
+  "vtex-carrefour-agua-mineral-5l": {
+    "id": "vtex-carrefour-agua-mineral-5l",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=agua%20mineral%205l&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:50:16.660Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "arquivo": null
+  },
+  "vtex-atacadao-agua-mineral-5l": {
+    "id": "vtex-atacadao-agua-mineral-5l",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=agua%20mineral%205l&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:50:24.860Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 206,
+    "bytes": 50723,
+    "sha256": "361d945014fb3de16fd5691ca8ed6975c963fa21d963af93bc525c27eda7b98d",
+    "arquivo": "vtex-atacadao-agua-mineral-5l.json"
+  },
+  "vtex-carrefour-cobertor-solteiro": {
+    "id": "vtex-carrefour-cobertor-solteiro",
+    "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=cobertor%20solteiro&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:50:25.368Z",
+    "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "arquivo": null
+  },
+  "vtex-atacadao-cobertor-solteiro": {
+    "id": "vtex-atacadao-cobertor-solteiro",
+    "url": "https://www.atacadao.com.br/api/catalog_system/pub/products/search?ft=cobertor%20solteiro&_from=0&_to=4",
+    "data_consulta": "2026-11-03T14:50:33.570Z",
+    "nota": "Catálogo público do Atacadão (VTEX) — preço de referência",
+    "status": 200,
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "arquivo": "vtex-atacadao-cobertor-solteiro.json"
   }
 }
