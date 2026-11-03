@@ -27,14 +27,22 @@ function CameraRig() {
   const reduzido = useOperacao((s) => s.movimentoReduzido);
   const recolhido = useOperacao((s) => s.painelRecolhido);
   const qualidade = useOperacao((s) => s.qualidade);
+  const size = useThree((s) => s.size);
+  const apresentando = etapa.ativa;
   useEffect(() => {
     const c = ref.current;
     if (!c) return;
-    // o painel ocupa a direita: desloca o foco para o centro da área visível (proporcional à distância)
+    // o painel ocupa a direita: desloca o foco para o centro da área visível. Na distância d, a largura
+    // visível é 2·d·tan(fov/2)·aspecto; o centro livre fica f/2 dessa largura à esquerda (f = fração do painel).
     const p = presetDaTela(tela, cenario, null);
     const dist = Math.hypot(p.pos[0] - p.alvo[0], p.pos[1] - p.alvo[1], p.pos[2] - p.alvo[2]);
-    void c.setFocalOffset(recolhido || window.innerWidth < 900 ? 0 : dist * 0.11, 0, 0, !reduzido);
-  }, [recolhido, reduzido, qualidade, tela, cenario]);
+    const painel = document.querySelector('[data-modo="3d"]')?.getBoundingClientRect().width ?? 544;
+    const f = size.width > 0 ? painel / size.width : 0;
+    const semPainel = recolhido || apresentando || window.innerWidth < 900 || f > 0.6;
+    const meiaAltura = Math.tan(((38 / 2) * Math.PI) / 180);
+    const desloc = semPainel ? 0 : f * dist * meiaAltura * (size.width / Math.max(1, size.height));
+    void c.setFocalOffset(desloc, 0, 0, !reduzido);
+  }, [recolhido, reduzido, qualidade, tela, cenario, size.width, size.height, apresentando]);
   useEffect(() => {
     const c = ref.current;
     if (!c) return;

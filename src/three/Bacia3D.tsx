@@ -13,6 +13,9 @@ import { elevacao, paraMundo, Y_POR_METRO, type Relevo } from './mundo';
 import { Terreno } from './Terreno';
 import { PlanoAgua, Regua3D } from './Agua';
 import { OndasImpacto } from './CartaCrise3D';
+import { LinhaTempo3D } from './LinhaTempo3D';
+import { Prontidao3D } from './Prontidao3D';
+import { Parceiros3D } from './Parceiros3D';
 
 type Geo = Record<string, [number, number][]>;
 let cacheRotas: Promise<Geo> | null = null;
@@ -274,6 +277,9 @@ export function Bacia3D({
       <Municipios relevo={relevo} visivel={rotulos} />
       <Rotas3D relevo={relevo} />
       <OndasImpacto posicao={(lat, lon) => ponto3D(relevo, lat, lon)} />
+      <LinhaTempo3D relevo={relevo} />
+      <Prontidao3D relevo={relevo} />
+      <Parceiros3D relevo={relevo} />
     </group>
   );
 }

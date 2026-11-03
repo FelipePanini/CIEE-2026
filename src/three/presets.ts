@@ -24,7 +24,7 @@ function foco(cenario: CenarioId): [number, number] {
 
 export const PRESET_TELA: Record<string, (c: CenarioId) => Preset> = {
   panorama: () => ({ pos: [0, 82, 92], alvo: [2, 0, 4] }),
-  'linha-do-tempo': () => ({ pos: [-8, 68, 84], alvo: [0, 0, 0] }),
+  'linha-do-tempo': () => ({ pos: [-4, 80, 92], alvo: [3, 0, 3] }),
   urgencia: () => em('prateleira', [0, 11, 24], [0, 3.5, 0]),
   arrecadacao: (c) => {
     const [x, z] = foco(c);
@@ -34,10 +34,8 @@ export const PRESET_TELA: Record<string, (c: CenarioId) => Preset> = {
   quadra: () => em('quadra', [0, 26, 34], [0, 0, 1]),
   gastos: () => em('kit', [0, 9, 21], [0, 3.6, 0]),
   administracao: () => em('organograma', [0, 26, 34], [0, 2, 0]),
-  parceiros: (c) => {
-    const [x, z] = foco(c);
-    return { pos: [x + 4, 40, z + 48], alvo: [x, 0, z] };
-  },
+  // a rede de parceiros cobre as duas regiões (RMPA e Vale): visão da bacia inteira
+  parceiros: () => ({ pos: [3, 78, 90], alvo: [3, 0, 4] }),
   fontes: () => em('bastidores', [0, 20, 36], [0, 6, 0]),
 };
 

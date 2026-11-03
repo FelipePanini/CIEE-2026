@@ -6,10 +6,18 @@ import { Navegacao, useRotaURL } from './ui/Navegacao';
 import { AvisoModoLeve, SeletorQualidade } from './ui/Qualidade';
 import { moduloPorId } from './modules/registro';
 import { useOperacao } from './store';
+import { PaginaRastreio } from './modules/humano/Rastreio';
 
 const Palco = lazy(() => import('./three/Palco'));
 
+/** /rastreio/KIT-AAAA-NNNN abre a página pública do doador (aberta pelo QR); o resto é a Central. */
 export function App() {
+  const rastreio = /^\/rastreio\/([^/]+)\/?$/.exec(window.location.pathname);
+  if (rastreio) return <PaginaRastreio codigo={rastreio[1]!.toUpperCase()} />;
+  return <Central />;
+}
+
+function Central() {
   useRotaURL();
   const tela = useOperacao((s) => s.tela);
   const qualidade = useOperacao((s) => s.qualidade);

@@ -22,6 +22,7 @@ export function Quadra3D() {
   const r = useResultado();
   const rotulos = useOperacao((s) => s.tela) === 'quadra';
   const pausado = useOperacao((s) => s.animacoesPausadas);
+  const ultimoBilhete = useOperacao((s) => s.bilhetes[0]);
   const pr = r.producao;
   const gargaloIdx = ZONAS.findIndex((z) => z.id === pr.gargalo);
   const maxVazao = Math.max(...pr.porZona.map((z) => z.kitsHora), 1);
@@ -159,6 +160,18 @@ export function Quadra3D() {
                 {gargalo && <div className="font-bold">GARGALO</div>}
               </div>
             </Rotulo>
+            {z.zona === 'bilhete' && (
+              <Rotulo
+                visivel={rotulos && !!ultimoBilhete}
+                position={[0, 2.2, PROF / 2 - 1]}
+                center
+                distanceFactor={22}
+              >
+                <div className="w-[190px] rotate-[-2deg] rounded bg-creme-100 px-2 py-1 text-[11px] font-semibold leading-snug text-navy-900 shadow-lg">
+                  “{ultimoBilhete}”
+                </div>
+              </Rotulo>
+            )}
           </group>
         );
       })}

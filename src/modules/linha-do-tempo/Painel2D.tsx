@@ -16,6 +16,7 @@ import { fmt } from '../../ui/formato';
 import { SERIES } from '../../ui/cores';
 import { formatarDataCurta } from '../../engine/camadas';
 import type { Dado } from '../../engine/tipos';
+import { useOperacao } from '../../store';
 
 const n = (d?: Dado) => (d && typeof d.valor === 'number' ? d.valor : null);
 const COR_EVENTO: Record<string, string> = {
@@ -167,6 +168,9 @@ function PicosTaquari() {
 
 export function Painel2DLinhaDoTempo() {
   const eventos = DADOS.eventos.eventos;
+  const selecionado = useOperacao((s) => s.eventoTimeline);
+  const selecionar = useOperacao((s) => s.setEventoTimeline);
+  const com3d = useOperacao((s) => s.qualidade) !== '2d';
   const cotas = Object.fromEntries(DADOS.rios.estacoes.map((e) => [e.id, n(e.cota_inundacao)!]));
   const nPicos = eventos
     .flatMap((e) => e.picos)
@@ -184,6 +188,34 @@ export function Painel2DLinhaDoTempo() {
         nas réguas do Guaíba (Cais Mauá) e do Taquari (Estrela/Lajeado). A crise mudou de lugar — da
         Região Metropolitana para o Vale do Taquari — mas não acabou.
       </p>
+      {com3d && (
+        <div
+          className="flex flex-wrap items-center gap-1.5"
+          role="group"
+          aria-label="Evento mostrado nas colunas 3D"
+        >
+          <span className="text-xs text-creme-200">Colunas 3D:</span>
+          {eventos.map((e) => (
+            <button
+              key={e.id}
+              type="button"
+              onClick={() => selecionar(e.id)}
+              aria-pressed={selecionado === e.id}
+              className={`rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ${selecionado === e.id ? 'bg-creme-100 text-navy-900 ring-creme-100' : 'text-creme-100 ring-piscina-300/40 hover:bg-navy-800'}`}
+            >
+              <span
+                aria-hidden
+                className="mr-1 inline-block h-2 w-2 rounded-full"
+                style={{ background: COR_EVENTO[e.id] }}
+              />
+              {e.rotulo_curto}
+            </button>
+          ))}
+          <span className="text-[0.66rem] text-creme-200/80">
+            altura = desabrigados (√) e pico acima da cota
+          </span>
+        </div>
+      )}
       <ol
         className="grid gap-3"
         style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(230px,100%), 1fr))' }}
@@ -191,11 +223,19 @@ export function Painel2DLinhaDoTempo() {
         {eventos.map((e) => (
           <li
             key={e.id}
-            className="painel relative flex flex-col gap-2 p-4"
+            className={`painel relative flex flex-col gap-2 p-4 ${selecionado === e.id ? 'ring-2 ring-creme-100/80' : ''}`}
             style={{ borderTop: `4px solid ${COR_EVENTO[e.id]}` }}
           >
-            <div className="flex items-baseline justify-between">
-              <span className="font-display text-xl">{e.rotulo_curto}</span>
+            <div className="flex items-baseline justify-between gap-2">
+              <button
+                type="button"
+                onClick={() => selecionar(e.id)}
+                aria-pressed={selecionado === e.id}
+                className="font-display text-left text-xl underline decoration-dotted underline-offset-4 hover:text-piscina-300"
+                title={com3d ? 'Mostrar este evento nas colunas 3D' : 'Selecionar evento'}
+              >
+                {e.rotulo_curto}
+              </button>
               <SeloDoDado dado={e.indicadores.municipios_afetados} />
             </div>
             <p className="text-[0.72rem] leading-snug text-creme-200">{e.resumo}</p>

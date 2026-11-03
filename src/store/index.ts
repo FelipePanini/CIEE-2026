@@ -37,6 +37,8 @@ export interface Estado {
   apresentacao: { ativa: boolean; etapa: number };
   sugestaoModoLeve: boolean;
   setSugestaoModoLeve: (v: boolean) => void;
+  eventoTimeline: string;
+  setEventoTimeline: (id: string) => void;
   abrigoSelecionado: string | null;
   setAbrigoSelecionado: (id: string | null) => void;
   painelRecolhido: boolean;
@@ -131,6 +133,8 @@ export const useOperacao = create<Estado>((set, get) => {
     apresentacao: { ativa: false, etapa: 0 },
     sugestaoModoLeve: false,
     setSugestaoModoLeve: (sugestaoModoLeve) => set({ sugestaoModoLeve }),
+    eventoTimeline: '2024-05',
+    setEventoTimeline: (eventoTimeline) => set({ eventoTimeline }),
     abrigoSelecionado: null,
     setAbrigoSelecionado: (abrigoSelecionado) => set({ abrigoSelecionado }),
     painelRecolhido: false,

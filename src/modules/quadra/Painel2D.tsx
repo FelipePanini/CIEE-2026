@@ -5,6 +5,7 @@ import { Numero } from '../../ui/Numero';
 import { fmt } from '../../ui/formato';
 import { ZONAS, type Zona } from '../../engine/producao';
 import { FraseKit } from '../urgencia/Painel2D';
+import { EtiquetaKit } from '../humano/Rastreio';
 
 export function ControleVoluntarios({ zona }: { zona: Zona }) {
   const v = useOperacao((s) => s.entrada.voluntarios[zona]);
@@ -138,7 +139,10 @@ export function Painel2DQuadra() {
           vazão, o tempo de produção, o ETA das rotas e o semáforo da Produção mudarem juntos.
         </p>
       </Painel>
-      <EstacaoBilhete />
+      <Grade min={360}>
+        <EstacaoBilhete />
+        <EtiquetaKit />
+      </Grade>
     </div>
   );
 }

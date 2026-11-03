@@ -4,6 +4,7 @@ import { Grade, Painel, TituloTela } from '../../ui/blocos';
 import { SeloCamada } from '../../ui/SeloCamada';
 import { fmt } from '../../ui/formato';
 import { itemPorId, type IdItem } from '../../engine/urgencia';
+import { MuralRelatos } from '../humano/Mural';
 
 const TIPO = {
   produto: 'Produto',
@@ -121,6 +122,7 @@ export function Painel2DParceiros() {
           </article>
         ))}
       </Grade>
+      <MuralRelatos />
     </div>
   );
 }
