@@ -82,10 +82,10 @@
   "sgb-sace-taquari-ultimo-boletim": {
     "id": "sgb-sace-taquari-ultimo-boletim",
     "url": "https://www.sgb.gov.br/sace/taquari/ultimo_boletim.php",
-    "data_consulta": "2026-11-03T14:56:30.128Z",
+    "data_consulta": "2026-11-03T15:10:29.519Z",
     "status": 404,
     "bytes": 70886,
-    "sha256": "b536d6b1f43048730aa413fc0b7a8d812823357eb2074ad75909aae7273d2fa5",
+    "sha256": "37564d595a547f5778bfaa32ffd35860bc2eb5151710d144428899a0537f479d",
     "arquivo": null
   },
   "sgb-sace-index": {
@@ -164,7 +164,7 @@
   "dieese-cesta-2026-10": {
     "id": "dieese-cesta-2026-10",
     "url": "https://www.dieese.org.br/analisecestabasica/2026/202610cestabasica.pdf",
-    "data_consulta": "2026-11-03T14:56:31.486Z",
+    "data_consulta": "2026-11-03T15:10:31.566Z",
     "status": 404,
     "bytes": 280,
     "sha256": "0c33a759892a35ea8b5831e75d42be14bde14706c363fec644557956fa179042",
@@ -173,7 +173,7 @@
   "antt-pisos-minimos": {
     "id": "antt-pisos-minimos",
     "url": "https://www.gov.br/antt/pt-br/assuntos/cargas/pisos-minimos-de-frete",
-    "data_consulta": "2026-11-03T14:56:32.384Z",
+    "data_consulta": "2026-11-03T15:10:32.728Z",
     "status": 404,
     "bytes": 26,
     "sha256": "6bbcea2b37bd092cc60604157a0ceec8944866fc2478f7af8aea3c3df40bc258",
@@ -182,10 +182,10 @@
   "esfera-handbook-2018-en": {
     "id": "esfera-handbook-2018-en",
     "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf",
-    "data_consulta": "2026-11-03T14:56:33.133Z",
+    "data_consulta": "2026-11-03T15:10:33.305Z",
     "status": 403,
     "bytes": 5708,
-    "sha256": "d2bf3be0891c1fc9bfa044c9ecebe4344b120e12f76835602d4da5dbc6fa168d",
+    "sha256": "5b1f2e4fd23423a7a284e0620993e83353370440167c882d90bea03065935b18",
     "arquivo": null
   },
   "osm-rios": {
@@ -265,10 +265,10 @@
   "esfera-manual-2018-pt": {
     "id": "esfera-manual-2018-pt",
     "url": "https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf",
-    "data_consulta": "2026-11-03T14:56:33.382Z",
+    "data_consulta": "2026-11-03T15:10:33.369Z",
     "status": 403,
     "bytes": 5680,
-    "sha256": "e0e86b826523dfa398a542de909f1899ff34db0991b7ad94d80f543050d7a1b2",
+    "sha256": "73cbbbeaa352e9e549d1c5945e2f4a960d68ac1717dba4b605732bd16c01c980",
     "arquivo": null
   },
   "ana-telemetria-87450004-caismaua-2026": {
@@ -352,7 +352,7 @@
   "dieese-cesta-produto": {
     "id": "dieese-cesta-produto",
     "url": "https://www.dieese.org.br/cesta/produto",
-    "data_consulta": "2026-11-03T14:56:33.458Z",
+    "data_consulta": "2026-11-03T15:10:33.407Z",
     "status": 400,
     "bytes": 1101,
     "sha256": "3c10e0ed2340cb5d16483d023492cfd295c3cc4655c1d14951ff6b0640474eea",
@@ -370,11 +370,11 @@
   "vtex-carrefour-sabonete-85g": {
     "id": "vtex-carrefour-sabonete-85g",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=sabonete%2085g&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:56:33.602Z",
+    "data_consulta": "2026-11-03T15:10:33.578Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
-    "status": 403,
-    "bytes": 196326,
-    "sha256": "7d5bcdf8e71816deaaa3ca6c478a19556944369c6a6352eac648c5f516b55c85",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "arquivo": null
   },
   "vtex-atacadao-sabonete-85g": {
@@ -390,7 +390,7 @@
   "vtex-carrefour-creme-dental-90g": {
     "id": "vtex-carrefour-creme-dental-90g",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=creme%20dental%2090g&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:56:33.855Z",
+    "data_consulta": "2026-11-03T15:10:41.880Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -410,11 +410,11 @@
   "vtex-carrefour-escova-dental": {
     "id": "vtex-carrefour-escova-dental",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=escova%20dental&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:56:42.206Z",
+    "data_consulta": "2026-11-03T15:10:50.329Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
-    "status": 403,
-    "bytes": 196329,
-    "sha256": "110de52fc04ad32c80187e0270966ca2bc5ca4031a5a8e44451565808a01e3a8",
+    "status": 503,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "arquivo": null
   },
   "vtex-atacadao-escova-dental": {
@@ -430,7 +430,7 @@
   "vtex-carrefour-papel-higienico-12-rolos": {
     "id": "vtex-carrefour-papel-higienico-12-rolos",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=papel%20higienico%2012%20rolos&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:56:42.417Z",
+    "data_consulta": "2026-11-03T15:10:58.639Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -450,7 +450,7 @@
   "vtex-carrefour-absorvente": {
     "id": "vtex-carrefour-absorvente",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=absorvente&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:56:50.671Z",
+    "data_consulta": "2026-11-03T15:11:06.767Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -470,7 +470,7 @@
   "vtex-carrefour-sabao-em-barra": {
     "id": "vtex-carrefour-sabao-em-barra",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=sabao%20em%20barra&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:56:58.917Z",
+    "data_consulta": "2026-11-03T15:11:15.068Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -490,7 +490,7 @@
   "vtex-carrefour-agua-sanitaria-2l": {
     "id": "vtex-carrefour-agua-sanitaria-2l",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=agua%20sanitaria%202l&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:57:07.275Z",
+    "data_consulta": "2026-11-03T15:11:23.357Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -510,7 +510,7 @@
   "vtex-carrefour-agua-mineral-5l": {
     "id": "vtex-carrefour-agua-mineral-5l",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=agua%20mineral%205l&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:57:15.538Z",
+    "data_consulta": "2026-11-03T15:11:31.480Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -530,7 +530,7 @@
   "vtex-carrefour-cobertor-solteiro": {
     "id": "vtex-carrefour-cobertor-solteiro",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=cobertor%20solteiro&_from=0&_to=4",
-    "data_consulta": "2026-11-03T14:57:23.682Z",
+    "data_consulta": "2026-11-03T15:11:39.767Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -600,7 +600,7 @@
   "osm-bairros": {
     "id": "osm-bairros",
     "url": "https://overpass-api.de/api/interpreter",
-    "data_consulta": "2026-11-03T14:57:31.825Z",
+    "data_consulta": "2026-11-03T15:11:47.877Z",
     "status": "erro",
     "bytes": 0,
     "sha256": null,
@@ -615,5 +615,16 @@
     "bytes": 990,
     "sha256": "b99761217bab23e25473d83948a98bcaa521857ca0b3ae601f90f65595351fc3",
     "arquivo": "osm-ulbra-canoas.json"
+  },
+  "osm-rodovias-estaduais": {
+    "id": "osm-rodovias-estaduais",
+    "url": "https://overpass-api.de/api/interpreter",
+    "data_consulta": "2026-11-03T15:16:26.896Z",
+    "nota": "Rodovias estaduais citadas nos boletins de bloqueio de jul/2026 (ERS-129, ERS-130) e ligações regionais",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TimeoutError: The operation was aborted due to timeout"
   }
 }
