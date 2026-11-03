@@ -29,9 +29,11 @@ function CameraRig() {
   useEffect(() => {
     const c = ref.current;
     if (!c) return;
-    // o painel ocupa a direita: desloca o foco para o centro da área visível
-    void c.setFocalOffset(recolhido || window.innerWidth < 900 ? 0 : 9, 0, 0, !reduzido);
-  }, [recolhido, reduzido, qualidade]);
+    // o painel ocupa a direita: desloca o foco para o centro da área visível (proporcional à distância)
+    const p = presetDaTela(tela, cenario, null);
+    const dist = Math.hypot(p.pos[0] - p.alvo[0], p.pos[1] - p.alvo[1], p.pos[2] - p.alvo[2]);
+    void c.setFocalOffset(recolhido || window.innerWidth < 900 ? 0 : dist * 0.11, 0, 0, !reduzido);
+  }, [recolhido, reduzido, qualidade, tela, cenario]);
   useEffect(() => {
     const c = ref.current;
     if (!c) return;
@@ -65,8 +67,11 @@ function Registro() {
   return null;
 }
 
-function Mundo({ passo, rotulos }: { passo: number; rotulos: boolean }) {
+const TELAS_BACIA = ['panorama', 'linha-do-tempo', 'rotas', 'arrecadacao', 'parceiros'];
+
+function Mundo({ passo }: { passo: number }) {
   const relevo = useRelevo();
+  const rotulos = TELAS_BACIA.includes(useOperacao((s) => s.tela));
   return (
     <>
       {relevo && <Bacia3D relevo={relevo} passo={passo} rotulos={rotulos} />}
@@ -97,7 +102,7 @@ export function Palco() {
       <directionalLight position={[-60, 90, -40]} intensity={1.5} color="#fff2e0" />
       <PerformanceMonitor onDecline={() => qualidade === 'alta' && sugerir(true)} flipflops={2} />
       <Suspense fallback={null}>
-        <Mundo passo={alta ? 2 : 3} rotulos />
+        <Mundo passo={alta ? 2 : 3} />
       </Suspense>
       <CameraRig />
       {alta && (

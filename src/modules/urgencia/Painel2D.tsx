@@ -29,6 +29,8 @@ export function FraseKit() {
 export function Painel2DUrgencia() {
   const r = useResultado();
   const [filtro, setFiltro] = useState<IdItem | 'todos'>('todos');
+  const sel = useOperacao((s) => s.abrigoSelecionado);
+  const setSel = useOperacao((s) => s.setAbrigoSelecionado);
   const locais = r.locais
     .filter((l) => l.pessoasN > 0)
     .sort((a, b) => b.urgenciaMax - a.urgenciaMax);
@@ -55,7 +57,12 @@ export function Painel2DUrgencia() {
       </p>
       <Grade min={300}>
         {locais.map((l) => (
-          <article key={l.id} className="painel flex flex-col gap-2 p-3">
+          <article
+            key={l.id}
+            className={`painel flex cursor-pointer flex-col gap-2 p-3 ${sel === l.id ? 'ring-2 ring-piscina-300' : ''}`}
+            onClick={() => setSel(l.id)}
+            title="Mostrar este abrigo na prateleira 3D"
+          >
             <header className="flex items-start justify-between gap-2">
               <div>
                 <h3 className="text-sm font-bold leading-tight">{l.nome}</h3>

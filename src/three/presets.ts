@@ -25,14 +25,14 @@ function foco(cenario: CenarioId): [number, number] {
 export const PRESET_TELA: Record<string, (c: CenarioId) => Preset> = {
   panorama: () => ({ pos: [0, 82, 92], alvo: [2, 0, 4] }),
   'linha-do-tempo': () => ({ pos: [-8, 68, 84], alvo: [0, 0, 0] }),
-  urgencia: () => em('prateleira', [0, 9, 20], [0, 3, 0]),
+  urgencia: () => em('prateleira', [0, 11, 24], [0, 3.5, 0]),
   arrecadacao: (c) => {
     const [x, z] = foco(c);
     return { pos: [x + 8, 24, z + 30], alvo: [x, 0, z] };
   },
   rotas: () => ({ pos: [4, 52, 64], alvo: [4, 0, 2] }),
-  quadra: () => em('quadra', [0, 18, 28], [0, 0, 0]),
-  gastos: () => em('kit', [0, 6, 14], [0, 2, 0]),
+  quadra: () => em('quadra', [0, 26, 34], [0, 0, 1]),
+  gastos: () => em('kit', [0, 9, 21], [0, 3.6, 0]),
   administracao: () => em('organograma', [0, 26, 34], [0, 2, 0]),
   parceiros: (c) => {
     const [x, z] = foco(c);

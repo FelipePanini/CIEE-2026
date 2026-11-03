@@ -37,6 +37,8 @@ export interface Estado {
   apresentacao: { ativa: boolean; etapa: number };
   sugestaoModoLeve: boolean;
   setSugestaoModoLeve: (v: boolean) => void;
+  abrigoSelecionado: string | null;
+  setAbrigoSelecionado: (id: string | null) => void;
   painelRecolhido: boolean;
   setPainelRecolhido: (v: boolean) => void;
   mensagens: Mensagem[];
@@ -129,6 +131,8 @@ export const useOperacao = create<Estado>((set, get) => {
     apresentacao: { ativa: false, etapa: 0 },
     sugestaoModoLeve: false,
     setSugestaoModoLeve: (sugestaoModoLeve) => set({ sugestaoModoLeve }),
+    abrigoSelecionado: null,
+    setAbrigoSelecionado: (abrigoSelecionado) => set({ abrigoSelecionado }),
     painelRecolhido: false,
     setPainelRecolhido: (painelRecolhido) => set({ painelRecolhido }),
     mensagens: [],
@@ -238,3 +242,11 @@ export function useResultado(): Resultado {
   const entrada = useOperacao((s) => s.entrada);
   return useMemo(() => simular(DADOS, entrada), [entrada]);
 }
+
+// acesso para testes end-to-end (Playwright) e para o Modo Apresentação
+declare global {
+  interface Window {
+    __ccStore?: typeof useOperacao;
+  }
+}
+if (typeof window !== 'undefined') window.__ccStore = useOperacao;
