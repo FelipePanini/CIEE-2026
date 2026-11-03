@@ -309,14 +309,14 @@ export const ALVOS: Alvo[] = [
   })),
   // OSM — bairros (localização dos parceiros fictícios) e locais de abrigo citados em boletins
   {
-    id: 'osm-bairros',
+    id: 'osm-bairros-v2',
     url: OVERPASS,
     espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
     timeoutMs: 240_000,
     corpo: overpass(
-      `[out:json][timeout:120];(node["place"~"^(suburb|neighbourhood|quarter)$"](${BBOX}););out tags;`,
+      `[out:json][timeout:120];(node["place"~"^(suburb|neighbourhood|quarter)$"](${BBOX}););out;`,
     ),
   },
   {
