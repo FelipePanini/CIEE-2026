@@ -7,8 +7,8 @@
       "tipo_ajuda": "produto",
       "municipio_ibge": 4314902,
       "bairro": "Menino Deus",
-      "lat": -30.0318,
-      "lon": -51.2065,
+      "lat": -30.0557,
+      "lon": -51.22395,
       "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
       "recursos": {
         "agua": 4000,
@@ -22,7 +22,7 @@
         "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
         "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "fonte_localizacao": "OpenStreetMap — bairro Menino Deus (place=suburb/neighbourhood)",
       "ponto_coleta": "p-poa-menino-deus"
     },
     {
@@ -31,8 +31,8 @@
       "tipo_ajuda": "produto",
       "municipio_ibge": 4314902,
       "bairro": "Partenon",
-      "lat": -30.0318,
-      "lon": -51.2065,
+      "lat": -30.05716,
+      "lon": -51.19192,
       "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
       "recursos": {
         "agua": 2500,
@@ -46,7 +46,7 @@
         "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
         "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "fonte_localizacao": "OpenStreetMap — bairro Partenon (place=suburb/neighbourhood)",
       "ponto_coleta": "p-poa-partenon"
     },
     {
@@ -55,8 +55,8 @@
       "tipo_ajuda": "produto",
       "municipio_ibge": 4304606,
       "bairro": "Centro",
-      "lat": -29.9128,
-      "lon": -51.1857,
+      "lat": -29.91622,
+      "lon": -51.1845,
       "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
       "recursos": {
         "agua": 3000,
@@ -70,7 +70,7 @@
         "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
         "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "fonte_localizacao": "OpenStreetMap — bairro Centro (place=suburb/neighbourhood)",
       "ponto_coleta": "p-canoas-centro"
     },
     {
@@ -79,8 +79,8 @@
       "tipo_ajuda": "produto",
       "municipio_ibge": 4311403,
       "bairro": "Centro",
-      "lat": -29.4591,
-      "lon": -51.9644,
+      "lat": -29.46782,
+      "lon": -51.96267,
       "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
       "recursos": {
         "agua": 2000,
@@ -94,7 +94,7 @@
         "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
         "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "fonte_localizacao": "OpenStreetMap — bairro Centro (place=suburb/neighbourhood)",
       "ponto_coleta": "p-lajeado-centro"
     },
     {
@@ -103,8 +103,8 @@
       "tipo_ajuda": "produto",
       "municipio_ibge": 4307807,
       "bairro": "Centro",
-      "lat": -29.5002,
-      "lon": -51.9495,
+      "lat": -29.50107,
+      "lon": -51.96658,
       "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
       "recursos": {
         "agua": 1500,
@@ -118,7 +118,7 @@
         "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
         "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "fonte_localizacao": "OpenStreetMap — bairro Centro (place=suburb/neighbourhood)",
       "ponto_coleta": "p-estrela-centro"
     },
     {
@@ -127,8 +127,8 @@
       "tipo_ajuda": "produto",
       "municipio_ibge": 4312401,
       "bairro": "Centro",
-      "lat": -29.6824,
-      "lon": -51.4679,
+      "lat": -29.68719,
+      "lon": -51.46074,
       "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja. Atacado no eixo da BR-386, entre o Vale e a Região Metropolitana.",
       "recursos": {
         "agua": 8000,
@@ -142,7 +142,7 @@
         "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
         "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "fonte_localizacao": "OpenStreetMap — bairro Centro (place=suburb/neighbourhood)",
       "ponto_coleta": "p-montenegro-centro"
     },
     {
@@ -151,8 +151,8 @@
       "tipo_ajuda": "veiculo",
       "municipio_ibge": 4304606,
       "bairro": "Niterói",
-      "lat": -29.9128,
-      "lon": -51.1857,
+      "lat": -29.95124,
+      "lon": -51.16488,
       "base_real": "Capacidade real das categorias de veículo (data/veiculos.json) e frete pelo piso ANTT (data/frete.json).",
       "recursos": {
         "vuc": 0,
@@ -164,31 +164,22 @@
         "2-alerta": "Coloca os veículos de prontidão nas janelas acordadas.",
         "3-critico": "Cede os veículos sem custo de frete (frete doado) enquanto durar a resposta."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "fonte_localizacao": "OpenStreetMap — bairro Niterói (place=suburb/neighbourhood)",
       "veiculos": [
         {
           "id": "v-truck-1",
           "categoria": "truck",
-          "janela": [
-            "06:00",
-            "18:00"
-          ]
+          "janela": ["06:00", "18:00"]
         },
         {
           "id": "v-truck-2",
           "categoria": "truck",
-          "janela": [
-            "08:00",
-            "20:00"
-          ]
+          "janela": ["08:00", "20:00"]
         },
         {
           "id": "v-toco-1",
           "categoria": "toco",
-          "janela": [
-            "07:00",
-            "19:00"
-          ]
+          "janela": ["07:00", "19:00"]
         }
       ]
     },
@@ -198,8 +189,8 @@
       "tipo_ajuda": "veiculo",
       "municipio_ibge": 4311403,
       "bairro": "Conventos",
-      "lat": -29.4591,
-      "lon": -51.9644,
+      "lat": -29.43102,
+      "lon": -52.03868,
       "base_real": "Capacidade real das categorias de veículo (data/veiculos.json) e frete pelo piso ANTT (data/frete.json).",
       "recursos": {
         "vuc": 2,
@@ -211,31 +202,22 @@
         "2-alerta": "Coloca os veículos de prontidão nas janelas acordadas.",
         "3-critico": "Cede os veículos sem custo de frete (frete doado) enquanto durar a resposta."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "fonte_localizacao": "OpenStreetMap — bairro Conventos (place=suburb/neighbourhood)",
       "veiculos": [
         {
           "id": "v-vuc-1",
           "categoria": "vuc",
-          "janela": [
-            "06:00",
-            "14:00"
-          ]
+          "janela": ["06:00", "14:00"]
         },
         {
           "id": "v-vuc-2",
           "categoria": "vuc",
-          "janela": [
-            "12:00",
-            "20:00"
-          ]
+          "janela": ["12:00", "20:00"]
         },
         {
           "id": "v-toco-2",
           "categoria": "toco",
-          "janela": [
-            "07:00",
-            "19:00"
-          ]
+          "janela": ["07:00", "19:00"]
         }
       ]
     },
@@ -245,8 +227,8 @@
       "tipo_ajuda": "espaco",
       "municipio_ibge": 4307807,
       "bairro": "Centro",
-      "lat": -29.5002,
-      "lon": -51.9495,
+      "lat": -29.50107,
+      "lon": -51.96658,
       "base_real": "Ginásio usado como depósito de apoio; área real a confirmar com o clube.",
       "recursos": {
         "m2": 400
@@ -256,7 +238,7 @@
         "2-alerta": "Abre o ginásio como depósito de apoio.",
         "3-critico": "Abre o ginásio 24 h como depósito e ponto de triagem."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)"
+      "fonte_localizacao": "OpenStreetMap — bairro Centro (place=suburb/neighbourhood)"
     },
     {
       "id": "ass-j",
@@ -264,8 +246,8 @@
       "tipo_ajuda": "voluntarios",
       "municipio_ibge": 4314902,
       "bairro": "Centro Histórico",
-      "lat": -30.0318,
-      "lon": -51.2065,
+      "lat": -30.0325,
+      "lon": -51.23033,
       "base_real": "Voluntários cadastrados para turnos de 4 h.",
       "recursos": {
         "pessoas": 30
@@ -275,7 +257,7 @@
         "2-alerta": "Envia 15 voluntários para as quadras.",
         "3-critico": "Envia 30 voluntários em dois turnos."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)"
+      "fonte_localizacao": "OpenStreetMap — bairro Centro Histórico (place=suburb/neighbourhood)"
     },
     {
       "id": "igr-k",
@@ -283,8 +265,8 @@
       "tipo_ajuda": "voluntarios",
       "municipio_ibge": 4311403,
       "bairro": "Centro",
-      "lat": -29.4591,
-      "lon": -51.9644,
+      "lat": -29.46782,
+      "lon": -51.96267,
       "base_real": "Voluntários cadastrados para turnos de 4 h.",
       "recursos": {
         "pessoas": 20
@@ -294,7 +276,7 @@
         "2-alerta": "Envia 10 voluntários para o abrigo.",
         "3-critico": "Envia 20 voluntários e abre a cozinha comunitária."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)"
+      "fonte_localizacao": "OpenStreetMap — bairro Centro (place=suburb/neighbourhood)"
     },
     {
       "id": "far-l",
@@ -302,8 +284,8 @@
       "tipo_ajuda": "produto",
       "municipio_ibge": 4304606,
       "bairro": "Marechal Rondon",
-      "lat": -29.9128,
-      "lon": -51.1857,
+      "lat": -29.92233,
+      "lon": -51.16301,
       "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
       "recursos": {
         "agua": 0,
@@ -317,7 +299,7 @@
         "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
         "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
       },
-      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)"
+      "fonte_localizacao": "OpenStreetMap — bairro Marechal Rondon (place=suburb/neighbourhood)"
     }
   ]
 }

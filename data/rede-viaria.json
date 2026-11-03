@@ -188,43 +188,43 @@
       "id": "p-poa-menino-deus",
       "nome": "Ponto de coleta — Supermercado Parceiro A",
       "tipo": "coleta",
-      "lat": -30.0318,
-      "lon": -51.2065
+      "lat": -30.0557,
+      "lon": -51.22395
     },
     {
       "id": "p-poa-partenon",
       "nome": "Ponto de coleta — Supermercado Parceiro B",
       "tipo": "coleta",
-      "lat": -30.0318,
-      "lon": -51.2065
+      "lat": -30.05716,
+      "lon": -51.19192
     },
     {
       "id": "p-canoas-centro",
       "nome": "Ponto de coleta — Supermercado Parceiro C",
       "tipo": "coleta",
-      "lat": -29.9128,
-      "lon": -51.1857
+      "lat": -29.91622,
+      "lon": -51.1845
     },
     {
       "id": "p-lajeado-centro",
       "nome": "Ponto de coleta — Supermercado Parceiro D",
       "tipo": "coleta",
-      "lat": -29.4591,
-      "lon": -51.9644
+      "lat": -29.46782,
+      "lon": -51.96267
     },
     {
       "id": "p-estrela-centro",
       "nome": "Ponto de coleta — Supermercado Parceiro E",
       "tipo": "coleta",
-      "lat": -29.5002,
-      "lon": -51.9495
+      "lat": -29.50107,
+      "lon": -51.96658
     },
     {
       "id": "p-montenegro-centro",
       "nome": "Ponto de coleta — Atacado Parceiro F",
       "tipo": "coleta",
-      "lat": -29.6824,
-      "lon": -51.4679
+      "lat": -29.68719,
+      "lon": -51.46074
     }
   ],
   "arestas": [
@@ -807,12 +807,12 @@
       "velocidade_kmh": 30
     },
     {
-      "id": "p-poa-menino-deus__e-poa-norte",
+      "id": "p-poa-menino-deus__e-ponte-guaiba",
       "de": "p-poa-menino-deus",
-      "para": "e-poa-norte",
+      "para": "e-ponte-guaiba",
       "via": "vias urbanas",
       "km": {
-        "valor": 9,
+        "valor": 11.3,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -824,12 +824,12 @@
       "velocidade_kmh": 30
     },
     {
-      "id": "p-poa-menino-deus__e-poa-448",
+      "id": "p-poa-menino-deus__e-poa-norte",
       "de": "p-poa-menino-deus",
-      "para": "e-poa-448",
+      "para": "e-poa-norte",
       "via": "vias urbanas",
       "km": {
-        "valor": 9.6,
+        "valor": 12.9,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -846,7 +846,7 @@
       "para": "e-poa-norte",
       "via": "vias urbanas",
       "km": {
-        "valor": 9,
+        "valor": 12.4,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -863,7 +863,7 @@
       "para": "e-poa-448",
       "via": "vias urbanas",
       "km": {
-        "valor": 9.6,
+        "valor": 13.3,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -880,7 +880,7 @@
       "para": "e-canoas-centro",
       "via": "vias urbanas",
       "km": {
-        "valor": 1.1,
+        "valor": 0.8,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -897,7 +897,7 @@
       "para": "e-canoas-386",
       "via": "vias urbanas",
       "km": {
-        "valor": 2.9,
+        "valor": 3.4,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -914,7 +914,7 @@
       "para": "e-lajeado",
       "via": "vias urbanas",
       "km": {
-        "valor": 0.8,
+        "valor": 2,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -931,7 +931,7 @@
       "para": "e-estrela",
       "via": "vias urbanas",
       "km": {
-        "valor": 5.1,
+        "valor": 3.8,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -948,7 +948,7 @@
       "para": "e-estrela",
       "via": "vias urbanas",
       "km": {
-        "valor": 1.1,
+        "valor": 2.2,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -982,7 +982,7 @@
       "para": "e-montenegro",
       "via": "vias urbanas",
       "km": {
-        "valor": 19.2,
+        "valor": 19.6,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
@@ -999,7 +999,7 @@
       "para": "e-tabai",
       "via": "vias urbanas",
       "km": {
-        "valor": 23.5,
+        "valor": 24.3,
         "unidade": "km",
         "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
         "url": "https://www.openstreetmap.org/",
