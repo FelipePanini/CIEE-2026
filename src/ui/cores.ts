@@ -30,3 +30,6 @@ export const corUrgencia = (u: number, critico: boolean) =>
     : u >= 0.25
       ? 'var(--color-alerta)'
       : 'var(--color-ok)';
+
+/** Paleta categórica dos gráficos (validada: scripts do skill dataviz, superfície #102A35 — todas as checagens passam). */
+export const SERIES = ['#E8603F', '#2FA8A3', '#BD8413', '#8F7AE0'] as const;

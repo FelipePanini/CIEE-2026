@@ -102,6 +102,19 @@
             "camada": "HISTORICO",
             "nota": "Cota nivelada pelo SGB em Lajeado, 02/05/2024 13h30. Pela primeira vez em 150 anos o Taquari passou de 30 m."
           }
+        },
+        {
+          "estacao": "taquari-lajeado",
+          "nivel": {
+            "valor": 27.75,
+            "unidade": "m",
+            "fonte": "ANA/SGB — telemetria da estação Estrela (86879300), 2º pico em 13/05/2024 05h00",
+            "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=25/04/2024&dataFim=20/05/2024",
+            "data_referencia": "2024-05-13T05:00",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "Segunda onda de cheia de maio de 2024."
+          }
         }
       ],
       "municipios": [
@@ -198,8 +211,8 @@
       "rotulo_curto": "Jun/2025",
       "periodo": "2025-06-16/2025-07-02",
       "camada": "HISTORICO",
-      "bacia_principal": "Jacuí e Guaíba",
-      "resumo": "Chuvas acima de 400 mm na bacia do Jacuí levaram o Guaíba de novo à cota de inundação no Cais Mauá. Eldorado do Sul voltou a ter desalojados.",
+      "bacia_principal": "Jacuí, Taquari e Guaíba",
+      "resumo": "Chuvas acima de 400 mm na bacia do Jacuí levaram o Guaíba de novo à cota de inundação no Cais Mauá (3,01 m). O Taquari passou de 19 m em Lajeado duas vezes (22,65 m e 21,84 m). Eldorado do Sul voltou a ter desalojados.",
       "indicadores": {
         "municipios_afetados": {
           "valor": 146,
@@ -251,12 +264,43 @@
           "nivel": {
             "valor": 3.01,
             "unidade": "m",
-            "fonte": "Jornal do Comércio — Guaíba ultrapassa os 3 m da cota de inundação no Cais Mauá (25/06/2025)",
-            "url": "https://www.jornaldocomercio.com/geral/2025/06/1207922-guaiba-ultrapassa-os-3m-da-cota-de-inundacao-no-cais-maua-de-porto-alegre.html",
-            "data_referencia": "2025-06-25",
+            "fonte": "ANA — telemetria Cais Mauá C6 (87450004), máximo em 25/06/2025 08h00",
+            "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=10/06/2025&dataFim=10/07/2025",
+            "data_referencia": "2025-06-25T08:00",
             "data_consulta": "2026-11-03",
             "camada": "HISTORICO",
-            "nota": "Leitura das 9h de 25/06/2025. O Sul21 registrou depois máximo de 2,94 m na régua do Cais Mauá — há divergência entre réguas."
+            "nota": "Cota de inundação do Cais Mauá: 3,00 m. O Sul21 registrou depois 2,94 m na régua manual.",
+            "confirmacoes": [
+              {
+                "fonte": "Jornal do Comércio — Guaíba ultrapassa os 3 m da cota de inundação no Cais Mauá (25/06/2025)",
+                "url": "https://www.jornaldocomercio.com/geral/2025/06/1207922-guaiba-ultrapassa-os-3m-da-cota-de-inundacao-no-cais-maua-de-porto-alegre.html"
+              }
+            ]
+          }
+        },
+        {
+          "estacao": "taquari-lajeado",
+          "nivel": {
+            "valor": 22.65,
+            "unidade": "m",
+            "fonte": "ANA/SGB — telemetria da estação Estrela (86879300), máximo em 19/06/2025 11h15",
+            "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=10/06/2025&dataFim=10/07/2025",
+            "data_referencia": "2025-06-19T11:15",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "Acima da cota de inundação de 19 m em Lajeado."
+          }
+        },
+        {
+          "estacao": "taquari-lajeado",
+          "nivel": {
+            "valor": 21.84,
+            "unidade": "m",
+            "fonte": "ANA/SGB — telemetria da estação Estrela (86879300), 2º pico em 30/06/2025 06h30",
+            "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=10/06/2025&dataFim=10/07/2025",
+            "data_referencia": "2025-06-30T06:30",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO"
           }
         }
       ],

@@ -37,6 +37,14 @@ export interface Estado {
   apresentacao: { ativa: boolean; etapa: number };
   mensagens: Mensagem[];
   bilhetes: string[];
+  organograma: Record<string, string>;
+  cronometro: { inicio: number | null; acumuladoMs: number };
+  marcos: string[];
+  setNomePapel: (papel: string, nome: string) => void;
+  iniciarCronometro: () => void;
+  pausarCronometro: () => void;
+  zerarCronometro: () => void;
+  alternarMarco: (id: string) => void;
   // ações
   setCenario: (c: CenarioId) => void;
   setBoletim: (b: BoletimAtual) => void;
@@ -47,6 +55,7 @@ export interface Estado {
   alternarBloqueio: (aresta: string) => void;
   setImportarBloqueios: (v: boolean) => void;
   setNivel: (estacao: string, v: number | null) => void;
+  registrarVolume: (ponto: string, deltaM3: number) => void;
   dispararCarta: (carta: string) => string;
   desfazerCarta: (uid?: string) => void;
   registrarAjuste: (a: Omit<AjusteCoordenador, 'uid' | 'em'>) => void;
@@ -78,8 +87,26 @@ export const entradaInicial = (cenario: CenarioId = 'case'): Entrada => {
     ajustes: [],
     eventos: [],
     niveis: {},
+    volumes: {},
     agora: agoraISO(),
   };
+};
+
+/** localStorage só para conveniências deste navegador (nomes do organograma); sempre com try/catch. */
+const lerLocal = <T>(chave: string, padrao: T): T => {
+  try {
+    const v = window.localStorage.getItem(chave);
+    return v ? (JSON.parse(v) as T) : padrao;
+  } catch {
+    return padrao;
+  }
+};
+const gravarLocal = (chave: string, v: unknown) => {
+  try {
+    window.localStorage.setItem(chave, JSON.stringify(v));
+  } catch {
+    /* modo privado ou armazenamento bloqueado: segue sem persistir */
+  }
 };
 
 const movimentoReduzidoInicial = () =>
@@ -102,6 +129,36 @@ export const useOperacao = create<Estado>((set, get) => {
       'Força, Rio Grande! — doador de Canoas',
       'Cada caixa foi montada com cuidado. — equipe da linha',
     ],
+    organograma:
+      typeof window === 'undefined' ? {} : lerLocal<Record<string, string>>('cc-organograma', {}),
+    cronometro: { inicio: null, acumuladoMs: 0 },
+    marcos: [],
+    setNomePapel: (papel, nome) =>
+      set((s) => {
+        const organograma = { ...s.organograma, [papel]: nome.slice(0, 40) };
+        gravarLocal('cc-organograma', organograma);
+        return { organograma };
+      }),
+    iniciarCronometro: () =>
+      set((s) =>
+        s.cronometro.inicio ? s : { cronometro: { ...s.cronometro, inicio: Date.now() } },
+      ),
+    pausarCronometro: () =>
+      set((s) =>
+        s.cronometro.inicio
+          ? {
+              cronometro: {
+                inicio: null,
+                acumuladoMs: s.cronometro.acumuladoMs + Date.now() - s.cronometro.inicio,
+              },
+            }
+          : s,
+      ),
+    zerarCronometro: () => set({ cronometro: { inicio: null, acumuladoMs: 0 } }),
+    alternarMarco: (id) =>
+      set((s) => ({
+        marcos: s.marcos.includes(id) ? s.marcos.filter((x) => x !== id) : [...s.marcos, id],
+      })),
     setCenario: (cenario) =>
       set((s) => {
         const c = CENARIOS.find((x) => x.id === cenario)!;
@@ -139,6 +196,10 @@ export const useOperacao = create<Estado>((set, get) => {
         else niveis[estacao] = v;
         return { niveis };
       }),
+    registrarVolume: (ponto, d) =>
+      mudar((e) => ({
+        volumes: { ...e.volumes, [ponto]: Math.round(((e.volumes?.[ponto] ?? 0) + d) * 10) / 10 },
+      })),
     dispararCarta: (carta) => {
       const ev: EventoAtivo = { uid: uid('carta'), carta, em: agoraISO() };
       mudar((e) => ({ eventos: [...e.eventos, ev] }));

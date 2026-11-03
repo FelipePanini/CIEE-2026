@@ -57,6 +57,8 @@ export interface Entrada {
   ajustes: AjusteCoordenador[];
   eventos: EventoAtivo[];
   niveis: Partial<Record<string, number>>;
+  /** Volume extra registrado nos pontos de coleta (m³), por ponto. */
+  volumes?: Record<string, number>;
   /** hora de referência da simulação (ISO) — usada nos alertas */
   agora: string;
 }
@@ -185,6 +187,8 @@ const hav = (a: [number, number], b: [number, number]) => {
     Math.cos((a[0] * Math.PI) / 180) * Math.cos((b[0] * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(s));
 };
+const br = (v: number, casas = 1) =>
+  v.toLocaleString('pt-BR', { maximumFractionDigits: casas, minimumFractionDigits: casas });
 const num = (d: Dado<number> | Calculado) => (typeof d.valor === 'number' ? d.valor : 0);
 const VOLUNTARIOS_REF = [
   'Equipe Âmbar',
@@ -370,17 +374,35 @@ export function simular(dados: Dados, e: Entrada): Resultado {
       const id = pa.ponto_coleta!;
       const est = dados.estoques.estoques.find((x) => x.local === id)?.itens.volume_m3 as
         Dado<number> | undefined;
+      const extra = e.volumes?.[id] ?? 0;
+      const base0 =
+        est ??
+        ({
+          valor: 0,
+          unidade: 'm³',
+          fonte: 'Simulação',
+          url: null,
+          data_referencia: '2026-11-03',
+          data_consulta: '2026-11-03',
+          camada: 'SIMULADO',
+        } as Dado<number>);
       const volume: Dado<number> = pontosLotados.has(id)
-        ? { ...(est as Dado<number>), valor: capPonto, nota: 'Ponto lotado (Carta de Crise)' }
-        : (est ?? {
-            valor: 0,
-            unidade: 'm³',
-            fonte: 'Simulação',
-            url: null,
-            data_referencia: '2026-11-03',
-            data_consulta: '2026-11-03',
-            camada: 'SIMULADO',
-          });
+        ? { ...base0, valor: capPonto, nota: 'Ponto lotado (Carta de Crise)' }
+        : extra
+          ? {
+              ...base0,
+              valor: Math.max(0, num(base0) + extra),
+              nota: `Inclui ${br(extra)} m³ registrados no ponto (simulado)`,
+            }
+          : (est ?? {
+              valor: 0,
+              unidade: 'm³',
+              fonte: 'Simulação',
+              url: null,
+              data_referencia: '2026-11-03',
+              data_consulta: '2026-11-03',
+              camada: 'SIMULADO',
+            });
       const ocup = num(volume) / capPonto;
       return {
         id,
@@ -826,7 +848,7 @@ export function simular(dados: Dados, e: Entrada): Resultado {
       nivel: 'atencao',
       area: 'logistica',
       titulo: `Rota de ${nomeNo(r.base)} não cabe na janela`,
-      mensagem: `${r.viagens} viagem(ns) de ${r.horas.toFixed(1)} h excedem a janela ${r.veiculo?.janela.join('–') ?? ''}. Acionar segundo veículo.`,
+      mensagem: `${r.viagens} viagem(ns) de ${br(r.horas)} h excedem a janela ${r.veiculo?.janela.join('–') ?? ''}. Acionar segundo veículo.`,
     });
   const criticos = locais.flatMap((l) =>
     l.urgencias.filter((u) => u.critico && u.urgencia.valor >= 0.5).map((u) => ({ l, u })),
@@ -838,7 +860,7 @@ export function simular(dados: Dados, e: Entrada): Resultado {
       nivel: u.urgencia.valor >= 0.8 ? 'critico' : 'alerta',
       area: 'comercio',
       titulo: `${ITENS.find((i) => i.id === u.item)!.nome} crítico em ${l.nome}`,
-      mensagem: `Cobertura de ${u.coberturaNaChegada.valor.toFixed(1)} dia(s) na chegada da reposição; prazo crítico ${u.prazo} dia(s). Meta de arrecadação ajustada nos pontos.`,
+      mensagem: `Cobertura de ${br(u.coberturaNaChegada.valor)} dia(s) na chegada da reposição; prazo crítico ${u.prazo} dia(s). Meta de arrecadação ajustada nos pontos.`,
     });
 
   const cor = (verm: boolean, amar: boolean) =>

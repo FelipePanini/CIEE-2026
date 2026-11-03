@@ -9,6 +9,7 @@
  * Uso: npm run gerar-relevo   (no container de dev: NODE_USE_ENV_PROXY=1)
  */
 import { fromUrl } from 'geotiff';
+import { PNG } from 'pngjs';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -109,10 +110,40 @@ async function main() {
     data_geracao: new Date().toISOString().slice(0, 10),
   };
   writeFileSync(join(dir, 'relevo.json'), JSON.stringify(meta, null, 2) + '\n');
+  writeFileSync(join(dir, 'relevo-2d.png'), sombreado(i16, LARGURA, ALTURA));
   console.log(`relevo ${LARGURA}×${ALTURA}, min ${min} m, max ${max} m`);
 }
 
-main().catch((e) => {
+/** Relevo sombreado na paleta dos slides, para o mapa 2D (fallback) e o card do LinkedIn. */
+export function sombreado(z: Int16Array, w: number, h: number): Buffer {
+  const png = new PNG({ width: w, height: h });
+  const cor = (t: number): [number, number, number] => {
+    // navy → piscina escuro → creme (maquete)
+    const a = [23, 52, 61];
+    const b = [74, 120, 118];
+    const c = [214, 205, 186];
+    const m = (x: number[], y: number[], k: number) => x.map((v, i) => v + (y[i]! - v) * k) as [number, number, number];
+    return t < 0.35 ? m(a, b, t / 0.35) : m(b, c, Math.min(1, (t - 0.35) / 0.65));
+  };
+  for (let y = 0; y < h; y++)
+    for (let x = 0; x < w; x++) {
+      const i = y * w + x;
+      const v = z[i]!;
+      const gx = (z[y * w + Math.min(w - 1, x + 1)]! - z[y * w + Math.max(0, x - 1)]!) / 2;
+      const gy = (z[Math.min(h - 1, y + 1) * w + x]! - z[Math.max(0, y - 1) * w + x]!) / 2;
+      const luz = Math.max(0.35, Math.min(1.25, 0.85 + (-gx + gy) * 0.012));
+      let [r, g, b] = v <= 1 ? [16, 42, 53] : cor(Math.min(1, Math.sqrt(v / 900)));
+      if (v > 1) [r, g, b] = [r * luz, g * luz, b * luz];
+      const o = i * 4;
+      png.data[o] = Math.min(255, r);
+      png.data[o + 1] = Math.min(255, g);
+      png.data[o + 2] = Math.min(255, b);
+      png.data[o + 3] = 255;
+    }
+  return PNG.sync.write(png);
+}
+
+if (process.argv[1]?.endsWith("gerar-relevo.ts")) main().catch((e) => {
   console.error(e);
   process.exit(1);
 });

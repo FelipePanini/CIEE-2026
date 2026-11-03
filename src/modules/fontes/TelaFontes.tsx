@@ -6,7 +6,7 @@ import { fmt } from '../../ui/formato';
 export function TelaFontes() {
   const { eventos, rios, previsao, orcamento, precos, esfera } = DADOS;
   return (
-    <div className="mx-auto flex max-w-6xl flex-col gap-6 p-4 pb-16">
+    <div className="flex flex-col gap-6">
       <section className="flex flex-col gap-2">
         <h1 className="font-display text-3xl text-creme-100 sm:text-4xl">
           A enchente não acabou em 2024.
