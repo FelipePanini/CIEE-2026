@@ -1,0 +1,62 @@
+{
+  "leptospirose": [
+    {
+      "evento": "2024-05",
+      "indicadores": {
+        "notificados": {
+          "valor": 5439,
+          "unidade": "casos notificados",
+          "fonte": "SES-RS, via Agência Brasil (19/06/2024)",
+          "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2024-06/rio-grande-do-sul-confirma-20a-morte-por-leptospirose-apos-enchentes",
+          "data_referencia": "2024-06-19",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO"
+        },
+        "confirmados": {
+          "valor": 353,
+          "unidade": "casos confirmados",
+          "fonte": "SES-RS, via Agência Brasil (19/06/2024)",
+          "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2024-06/rio-grande-do-sul-confirma-20a-morte-por-leptospirose-apos-enchentes",
+          "data_referencia": "2024-06-19",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO"
+        },
+        "obitos": {
+          "valor": 20,
+          "unidade": "óbitos",
+          "fonte": "SES-RS, via Agência Brasil (19/06/2024)",
+          "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2024-06/rio-grande-do-sul-confirma-20a-morte-por-leptospirose-apos-enchentes",
+          "data_referencia": "2024-06-19",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "Óbitos confirmados por leptospirose após as enchentes."
+        },
+        "casos_2023_ano": {
+          "valor": 477,
+          "unidade": "casos (ano de 2023 inteiro)",
+          "fonte": "SES-RS, via Agência Brasil (19/06/2024)",
+          "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2024-06/rio-grande-do-sul-confirma-20a-morte-por-leptospirose-apos-enchentes",
+          "data_referencia": "2023",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "Base de comparação: 477 casos e 25 mortes em todo o ano de 2023."
+        }
+      }
+    },
+    {
+      "evento": "2026-07",
+      "indicadores": {
+        "confirmados": {
+          "valor": "A CONFIRMAR",
+          "unidade": "casos confirmados",
+          "fonte": "SES-RS / CEVS — informes epidemiológicos de leptospirose",
+          "url": "https://saude.rs.gov.br/",
+          "data_referencia": "2026-07-17/2026-10-31",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL",
+          "nota": "Não foram localizados números de leptospirose associados às cheias de 2026."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "escolas": [
+    {
+      "id": "q-poa-aramy",
+      "nome": "EMEF Aramy Silva",
+      "rede": "municipal",
+      "codigo_inep": "A CONFIRMAR",
+      "municipio_ibge": 4314902,
+      "bairro": "Cristal",
+      "endereco": "Rua Chico Pedro, 390 — Porto Alegre",
+      "lat": -30.0976546,
+      "lon": -51.2417408,
+      "fonte": {
+        "fonte": "OpenStreetMap — escola (amenity=school), localização e endereço",
+        "url": "https://overpass-api.de/api/interpreter",
+        "data_consulta": "2026-11-03",
+        "nota": "Funcionou como abrigo temporário da Prefeitura em maio/2024 (SMED-POA, 09 e 11/05/2024)."
+      },
+      "uso": "uso simulado na operação"
+    },
+    {
+      "id": "q-poa-grande-oriente",
+      "nome": "EMEF Grande Oriente do Rio Grande do Sul",
+      "rede": "municipal",
+      "codigo_inep": "A CONFIRMAR",
+      "municipio_ibge": 4314902,
+      "bairro": "Rubem Berta",
+      "endereco": "Rua Wolfram Metzler, 600 — Porto Alegre",
+      "lat": -30.0240085,
+      "lon": -51.1037605,
+      "fonte": {
+        "fonte": "OpenStreetMap — escola (amenity=school), localização e endereço",
+        "url": "https://overpass-api.de/api/interpreter",
+        "data_consulta": "2026-11-03",
+        "nota": "Funcionou como abrigo temporário da Prefeitura em maio/2024 (SMED-POA)."
+      },
+      "uso": "uso simulado na operação"
+    },
+    {
+      "id": "q-canoas-marechal",
+      "nome": "Colégio Estadual Marechal Rondon",
+      "rede": "estadual",
+      "codigo_inep": "A CONFIRMAR",
+      "municipio_ibge": 4304606,
+      "bairro": "Marechal Rondon",
+      "endereco": "Rua Santini Longoni, 147 — Canoas",
+      "lat": -29.9191868,
+      "lon": -51.1758163,
+      "fonte": {
+        "fonte": "OpenStreetMap — escola (amenity=school), localização e endereço",
+        "url": "https://overpass-api.de/api/interpreter",
+        "data_consulta": "2026-11-03"
+      },
+      "uso": "uso simulado na operação"
+    },
+    {
+      "id": "q-eldorado-getulio",
+      "nome": "EMEF Getúlio Vargas",
+      "rede": "municipal",
+      "codigo_inep": "A CONFIRMAR",
+      "municipio_ibge": 4306767,
+      "bairro": "Centro Novo",
+      "endereco": "Rua Vacaria, 455 — Eldorado do Sul",
+      "lat": -29.9956668,
+      "lon": -51.3242653,
+      "fonte": {
+        "fonte": "OpenStreetMap — escola (amenity=school), localização e endereço",
+        "url": "https://overpass-api.de/api/interpreter",
+        "data_consulta": "2026-11-03",
+        "nota": "Área urbana de Eldorado do Sul junto ao delta do Jacuí, inundada em 2024 — o mapa 3D mostra o risco para a própria quadra-base."
+      },
+      "uso": "uso simulado na operação"
+    },
+    {
+      "id": "q-lajeado-pedro-scherer",
+      "nome": "EEEF Pedro Scherer",
+      "rede": "estadual",
+      "codigo_inep": "43083412",
+      "municipio_ibge": 4311403,
+      "bairro": "Montanha",
+      "endereco": "Rua Irmando R. Weishelmer, 681 — Lajeado",
+      "lat": -29.4433979,
+      "lon": -51.9859046,
+      "fonte": {
+        "fonte": "OpenStreetMap — escola (amenity=school), localização e endereço",
+        "url": "https://overpass-api.de/api/interpreter",
+        "data_consulta": "2026-11-03",
+        "nota": "Código INEP registrado no OpenStreetMap (ref:INEP) — conferir no Catálogo de Escolas do INEP."
+      },
+      "uso": "uso simulado na operação"
+    },
+    {
+      "id": "q-estrela-iee",
+      "nome": "Instituto Estadual de Educação Estrela da Manhã",
+      "rede": "estadual",
+      "codigo_inep": "A CONFIRMAR",
+      "municipio_ibge": 4307807,
+      "bairro": "Centro",
+      "endereco": "Estrela",
+      "lat": -29.5117154,
+      "lon": -51.9679046,
+      "fonte": {
+        "fonte": "OpenStreetMap — escola (amenity=school), localização e endereço",
+        "url": "https://overpass-api.de/api/interpreter",
+        "data_consulta": "2026-11-03"
+      },
+      "uso": "uso simulado na operação"
+    },
+    {
+      "id": "q-encantado-scalabrini",
+      "nome": "Instituto Estadual de Educação Monsenhor Scalabrini",
+      "rede": "estadual",
+      "codigo_inep": "A CONFIRMAR",
+      "municipio_ibge": 4306809,
+      "bairro": "Centro",
+      "endereco": "Encantado",
+      "lat": -29.2363095,
+      "lon": -51.8723119,
+      "fonte": {
+        "fonte": "OpenStreetMap — escola (amenity=school), localização e endereço",
+        "url": "https://overpass-api.de/api/interpreter",
+        "data_consulta": "2026-11-03"
+      },
+      "uso": "uso simulado na operação"
+    }
+  ]
+}

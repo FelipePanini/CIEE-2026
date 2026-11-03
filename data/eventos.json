@@ -1,0 +1,572 @@
+{
+  "eventos": [
+    {
+      "id": "2024-05",
+      "nome": "Enchente de abril–maio de 2024",
+      "rotulo_curto": "Mai/2024",
+      "periodo": "2024-04-27/2024-06-30",
+      "camada": "HISTORICO",
+      "bacia_principal": "Taquari, Jacuí, Caí, Sinos e Gravataí → Guaíba",
+      "resumo": "O maior desastre climático da história do RS. A água ficou acima da cota de inundação no Cais Mauá por cerca de um mês e atingiu Porto Alegre, Canoas e Eldorado do Sul — os três municípios do case.",
+      "indicadores": {
+        "municipios_afetados": {
+          "valor": 478,
+          "unidade": "municípios",
+          "fonte": "Defesa Civil RS — balanço das enchentes (09/06/2024)",
+          "url": "https://www.estado.rs.gov.br/defesa-civil-atualiza-balanco-das-enchentes-no-rs-9-6-9h",
+          "data_referencia": "2024-06-09",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "confirmacoes": [
+            {
+              "fonte": "Jornal do Comércio — 182 óbitos, 478 municípios (07/2024)",
+              "url": "https://www.jornaldocomercio.com/geral/2024/07/1161960-numero-de-obitos-devido-as-enchentes-do-rs-sobe-para-182.html"
+            }
+          ]
+        },
+        "desabrigados": {
+          "valor": 81285,
+          "unidade": "pessoas em abrigos (pico)",
+          "fonte": "Defesa Civil RS, via Jornal do Comércio (12/05/2024, tarde)",
+          "url": "https://www.jornaldocomercio.com/geral/2024/05/1154325-mais-de-80-mil-gauchos-estao-em-abrigos-538-mil-estao-desalojados.html",
+          "data_referencia": "2024-05-12",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "Pico de pessoas em abrigos. A SES/Defesa Civil citou depois \"cerca de 81,2 mil\" como o pico de abril–maio.",
+          "confirmacoes": [
+            {
+              "fonte": "SBT News — abrigos caem 89% após o pico de 81,2 mil",
+              "url": "https://sbtnews.sbt.com.br/noticia/brasil/numero-de-pessoas-em-abrigos-cai-89-apos-tregua-de-chuvas-no-rs"
+            }
+          ]
+        },
+        "desalojados": {
+          "valor": 581638,
+          "unidade": "pessoas desalojadas (pico)",
+          "fonte": "Defesa Civil RS, via SBT News (26/05/2024)",
+          "url": "https://sbtnews.sbt.com.br/noticia/brasil/impacto-das-chuvas-no-rs-nao-mostra-reducao-ao-longo-deste-domingo",
+          "data_referencia": "2024-05-26",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "Maior número de desalojados registrado nos boletins."
+        },
+        "obitos": {
+          "valor": 185,
+          "unidade": "óbitos",
+          "fonte": "Defesa Civil RS — painel SOS Rio Grande do Sul (situação nos municípios)",
+          "url": "https://sosenchentes.rs.gov.br/situacao-nos-municipios",
+          "data_referencia": "2024-04-27/2024-06-30",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "Balanço consolidado do painel oficial (185 óbitos e 23 desaparecidos após revisões); a página não informa a data da última revisão.",
+          "confirmacoes": [
+            {
+              "fonte": "Agora RS — Defesa Civil atualiza número de vítimas",
+              "url": "https://agorars.com/agora-no-tempo/enchentes-rs-2024-atualizacao-obitos-desaparecidos/"
+            }
+          ]
+        },
+        "pessoas_afetadas": {
+          "valor": 2398255,
+          "unidade": "pessoas afetadas",
+          "fonte": "Defesa Civil RS — painel SOS Rio Grande do Sul",
+          "url": "https://sosenchentes.rs.gov.br/situacao-nos-municipios",
+          "data_referencia": "2024-04-27/2024-06-30",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO"
+        }
+      },
+      "picos": [
+        {
+          "estacao": "guaiba-cais-maua",
+          "nivel": {
+            "valor": 5.35,
+            "unidade": "m",
+            "fonte": "Agência Brasil — Guaíba atinge 5,35 m no Cais Mauá (05/05/2024)",
+            "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-06/nivel-do-guaiba-fica-abaixo-da-cota-de-inundacao-pela-1a-vez-em-um-mes",
+            "data_referencia": "2024-05-05",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "Maior marca da história. O levantamento do SGB registra 5,37 m na estação Cais Mauá C6."
+          }
+        },
+        {
+          "estacao": "taquari-lajeado",
+          "nivel": {
+            "valor": 33.66,
+            "unidade": "m",
+            "fonte": "SGB — apresentação na Sala de Crise ANA/Sul (18/09/2024)",
+            "url": "https://www.gov.br/ana/pt-br/assuntos/monitoramento-e-eventos-criticos/eventos-criticos/apresentacoes-das-reunioes/2024_09_18_sala-de-crise-ana-sul_sgb.pdf",
+            "data_referencia": "2024-05-02",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "Cota nivelada pelo SGB em Lajeado, 02/05/2024 13h30. Pela primeira vez em 150 anos o Taquari passou de 30 m."
+          }
+        }
+      ],
+      "municipios": [
+        {
+          "ibge": 4304606,
+          "desabrigados": {
+            "valor": 21294,
+            "unidade": "pessoas em abrigos",
+            "fonte": "Agência Brasil (14/05/2024), reproduzida pelo IHU-Unisinos",
+            "url": "https://ihu.unisinos.br/639424-rs-com-3-da-populacao-gaucha-canoas-lidera-ranking-de-desabrigados",
+            "data_referencia": "2024-05-14",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "Canoas tinha 80 abrigos e quase 27% de todos os abrigados do estado."
+          },
+          "abrigos": {
+            "valor": 80,
+            "unidade": "abrigos em funcionamento",
+            "fonte": "Agência Brasil (14/05/2024), reproduzida pelo IHU-Unisinos",
+            "url": "https://ihu.unisinos.br/639424-rs-com-3-da-populacao-gaucha-canoas-lidera-ranking-de-desabrigados",
+            "data_referencia": "2024-05-14",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO"
+          }
+        },
+        {
+          "ibge": 4314902,
+          "desabrigados": {
+            "valor": 14632,
+            "unidade": "pessoas em abrigos (pico)",
+            "fonte": "Prefeitura de Porto Alegre — Central de Abrigos",
+            "url": "https://prefeitura.poa.br/smds/noticias/numero-de-acolhidos-em-abrigos-reduz-para-98-mil",
+            "data_referencia": "2024-05-13",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "Pico de ocupação em 13/05/2024. Em 12/05 eram 14.225 pessoas em 162 estruturas emergenciais.",
+            "confirmacoes": [
+              {
+                "fonte": "Prefeitura de Porto Alegre — 14,2 mil em abrigos (12/05/2024)",
+                "url": "https://prefeitura.poa.br/defesa-civil/noticias/total-de-pessoas-em-abrigos-chega-142-mil-neste-domingo"
+              }
+            ]
+          },
+          "abrigos": {
+            "valor": 162,
+            "unidade": "estruturas emergenciais",
+            "fonte": "Prefeitura de Porto Alegre (12/05/2024)",
+            "url": "https://prefeitura.poa.br/defesa-civil/noticias/total-de-pessoas-em-abrigos-chega-142-mil-neste-domingo",
+            "data_referencia": "2024-05-12",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO"
+          }
+        },
+        {
+          "ibge": 4306767,
+          "desabrigados": {
+            "valor": 6500,
+            "unidade": "pessoas em abrigos (mínimo)",
+            "fonte": "Agência Brasil — Eldorado do Sul tem 75% dos moradores desalojados",
+            "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-05/eldorado-do-sul-rs-tem-75-dos-moradores-desalojados-pelas-enchentes",
+            "data_referencia": "2024-05",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "\"Mais de 6.500\" moradores em abrigos de sete cidades vizinhas, segundo boletim da prefeitura."
+          },
+          "desalojados": {
+            "valor": 30000,
+            "unidade": "pessoas desalojadas",
+            "fonte": "Agência Brasil — boletim da Prefeitura de Eldorado do Sul",
+            "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-05/eldorado-do-sul-rs-tem-75-dos-moradores-desalojados-pelas-enchentes",
+            "data_referencia": "2024-05",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "Cerca de 75% da população; ~90% da cidade ficou sob a água."
+          }
+        }
+      ],
+      "licoes": [
+        {
+          "texto": "Abrigos da capital lotaram nos primeiros dias: o planejamento precisa prever onde acolher antes da cheia.",
+          "fonte": "Jornal do Comércio (05/05/2024)",
+          "url": "https://www.jornaldocomercio.com/geral/2024/05/1153212-todos-os-abrigos-disponibilizados-pela-prefeitura-em-porto-alegre-estao-lotados.html"
+        },
+        {
+          "texto": "Leptospirose após a água baixar: 20 mortes confirmadas até 19/06/2024.",
+          "fonte": "Agência Brasil (19/06/2024)",
+          "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2024-06/rio-grande-do-sul-confirma-20a-morte-por-leptospirose-apos-enchentes"
+        }
+      ]
+    },
+    {
+      "id": "2025-06",
+      "nome": "Cheia de junho de 2025",
+      "rotulo_curto": "Jun/2025",
+      "periodo": "2025-06-16/2025-07-02",
+      "camada": "HISTORICO",
+      "bacia_principal": "Jacuí e Guaíba",
+      "resumo": "Chuvas acima de 400 mm na bacia do Jacuí levaram o Guaíba de novo à cota de inundação no Cais Mauá. Eldorado do Sul voltou a ter desalojados.",
+      "indicadores": {
+        "municipios_afetados": {
+          "valor": 146,
+          "unidade": "municípios",
+          "fonte": "Defesa Civil RS, via O Timoneiro (24/06/2025)",
+          "url": "https://jornaltimoneiro.com.br/index.php/2025/06/24/chuvas-mais-de-7-mil-pessoas-desalojadas-quatro-mortos-e-146-municipios-afetados-no-rs/",
+          "data_referencia": "2025-06-24",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "confirmacoes": [
+            {
+              "fonte": "Metrópoles — 132 cidades atingidas (23/06/2025)",
+              "url": "https://www.metropoles.com/brasil/rs-132-cidades-sao-atingidas-pela-chuva-guaiba-passa-cota-de-alerta"
+            }
+          ]
+        },
+        "desabrigados": {
+          "valor": 1583,
+          "unidade": "pessoas em abrigos (pico)",
+          "fonte": "Defesa Civil RS, via Jornal do Comércio (19/06/2025)",
+          "url": "https://www.jornaldocomercio.com/geral/2025/06/1207243-rio-grande-do-sul-soma-quase-3-mil-pessoas-fora-de-casa-por-causa-das-chuvas.html",
+          "data_referencia": "2025-06-19",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "Em 23/06/2025 eram 1.071 pessoas em 41 abrigos."
+        },
+        "desalojados": {
+          "valor": 7098,
+          "unidade": "pessoas desalojadas",
+          "fonte": "Defesa Civil RS, via O Timoneiro (24/06/2025)",
+          "url": "https://jornaltimoneiro.com.br/index.php/2025/06/24/chuvas-mais-de-7-mil-pessoas-desalojadas-quatro-mortos-e-146-municipios-afetados-no-rs/",
+          "data_referencia": "2025-06-24",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO"
+        },
+        "obitos": {
+          "valor": 4,
+          "unidade": "óbitos",
+          "fonte": "Agência Brasil — Defesa Civil confirma quarta morte (23/06/2025)",
+          "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2025-06/defesa-civil-confirma-quarta-morte-apos-chuvas-no-rio-grande-do-sul",
+          "data_referencia": "2025-06-23",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO"
+        }
+      },
+      "picos": [
+        {
+          "estacao": "guaiba-cais-maua",
+          "nivel": {
+            "valor": 3.01,
+            "unidade": "m",
+            "fonte": "Jornal do Comércio — Guaíba ultrapassa os 3 m da cota de inundação no Cais Mauá (25/06/2025)",
+            "url": "https://www.jornaldocomercio.com/geral/2025/06/1207922-guaiba-ultrapassa-os-3m-da-cota-de-inundacao-no-cais-maua-de-porto-alegre.html",
+            "data_referencia": "2025-06-25",
+            "data_consulta": "2026-11-03",
+            "camada": "HISTORICO",
+            "nota": "Leitura das 9h de 25/06/2025. O Sul21 registrou depois máximo de 2,94 m na régua do Cais Mauá — há divergência entre réguas."
+          }
+        }
+      ],
+      "municipios": [
+        {
+          "ibge": 4306767,
+          "nota": "Em 28/06/2025 a Defesa Civil de Eldorado do Sul pediu que os desalojados não voltassem para casa (Agência Brasil)."
+        }
+      ]
+    },
+    {
+      "id": "2026-07",
+      "nome": "Cheias de julho de 2026 no Vale do Taquari",
+      "rotulo_curto": "Jul/2026",
+      "periodo": "2026-07-17/2026-07-31",
+      "camada": "ATUAL",
+      "bacia_principal": "Taquari-Antas",
+      "resumo": "Primeira cheia acima da cota de inundação desde 2024. O Taquari passou de 19 m em Lajeado em 22/07 e chegou a 24,77 m — acima da projeção divulgada na véspera. Uma segunda onda chegou a 23,99 m em 29/07.",
+      "indicadores": {
+        "municipios_afetados": {
+          "valor": 194,
+          "unidade": "municípios com danos",
+          "fonte": "Defesa Civil RS — boletim de 23/07/2026, via DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4336999/chuva-no-rs-mais-de-1200-pessoas-estao-desabrigadas-e-quase-200-cidades-registram-danos",
+          "data_referencia": "2026-07-23",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL",
+          "nota": "No relatório do Aviso Hidrometeorológico 10/2026 (24/07, manhã) a lista chegou a 206 municípios com danos reportados.",
+          "confirmacoes": [
+            {
+              "fonte": "InfoMoney — 1.200 desabrigados e quase 200 cidades com danos",
+              "url": "https://www.infomoney.com.br/brasil/chuva-no-rs-mais-de-1200-pessoas-estao-desabrigadas-e-quase-200-cidades-tem-danos/"
+            }
+          ]
+        },
+        "desabrigados": {
+          "valor": 1207,
+          "unidade": "pessoas desabrigadas",
+          "fonte": "Defesa Civil RS — boletim de 23/07/2026, via DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4336999/chuva-no-rs-mais-de-1200-pessoas-estao-desabrigadas-e-quase-200-cidades-registram-danos",
+          "data_referencia": "2026-07-23",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL",
+          "nota": "Em 16 cidades. Em 27/07 o total caiu para 488 desabrigados (Poder360).",
+          "confirmacoes": [
+            {
+              "fonte": "ClimaInfo (23/07/2026)",
+              "url": "https://climainfo.org.br/2026/07/23/chuvas-no-rs-deixam-mais-de-16-mil-desabrigados-e-desalojados/"
+            }
+          ]
+        },
+        "desalojados": {
+          "valor": 419,
+          "unidade": "pessoas desalojadas",
+          "fonte": "Defesa Civil RS — boletim de 23/07/2026 (manhã), via DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4336999/chuva-no-rs-mais-de-1200-pessoas-estao-desabrigadas-e-quase-200-cidades-registram-danos",
+          "data_referencia": "2026-07-23",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL"
+        }
+      },
+      "picos": [
+        {
+          "estacao": "taquari-lajeado",
+          "nivel": {
+            "valor": 24.77,
+            "unidade": "m",
+            "fonte": "ANA/SGB — telemetria da estação Estrela (86879300), máximo em 23/07/2026 00h45",
+            "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=01/07/2026&dataFim=03/11/2026",
+            "data_referencia": "2026-07-23T00:45",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "nota": "Primeira cheia do ano. Cota de inundação em Lajeado: 19 m.",
+            "confirmacoes": [
+              {
+                "fonte": "Portal Adesso — Taquari estabiliza em 24,77 m",
+                "url": "https://www.portaladesso.com.br/noticias/19888/rio-taquari-estabiliza-em-24-77-metros-apos-madrugada-de-tensao-em-lajeado-e-estrela.html"
+              }
+            ]
+          }
+        },
+        {
+          "estacao": "taquari-lajeado",
+          "nivel": {
+            "valor": 23.99,
+            "unidade": "m",
+            "fonte": "ANA/SGB — telemetria da estação Estrela (86879300), máximo em 29/07/2026 20h15",
+            "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=01/07/2026&dataFim=03/11/2026",
+            "data_referencia": "2026-07-29T20:15",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "nota": "Segunda cheia do ano.",
+            "confirmacoes": [
+              {
+                "fonte": "Prefeitura de Lajeado — pico de 23,99 m",
+                "url": "http://www.lajeado.rs.gov.br/noticia/14585/892"
+              }
+            ]
+          }
+        }
+      ],
+      "municipios": [
+        {
+          "ibge": 4311403,
+          "desabrigados": {
+            "valor": 540,
+            "unidade": "pessoas desabrigadas",
+            "fonte": "Defesa Civil RS — boletim de 23/07/2026, via DGABC",
+            "url": "https://www.dgabc.com.br/Noticia/4336999/chuva-no-rs-mais-de-1200-pessoas-estao-desabrigadas-e-quase-200-cidades-registram-danos",
+            "data_referencia": "2026-07-23",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "nota": "169 famílias no Abrigo Parque do Imigrante (CNN Brasil, 23/07/2026).",
+            "confirmacoes": [
+              {
+                "fonte": "CNN Brasil — abrigo com mais de 500 pessoas em Lajeado",
+                "url": "https://www.cnnbrasil.com.br/nacional/sul/rs/inundacao-no-rs-veja-como-e-abrigo-com-mais-de-500-pessoas-em-lajeado/"
+              }
+            ]
+          }
+        },
+        {
+          "ibge": 4315107,
+          "desabrigados": {
+            "valor": 200,
+            "unidade": "pessoas desabrigadas",
+            "fonte": "Defesa Civil RS — boletim de 23/07/2026, via DGABC",
+            "url": "https://www.dgabc.com.br/Noticia/4336999/chuva-no-rs-mais-de-1200-pessoas-estao-desabrigadas-e-quase-200-cidades-registram-danos",
+            "data_referencia": "2026-07-23",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "nota": "Cheia do Rio Uruguai (Noroeste) — fora da bacia do Guaíba."
+          }
+        },
+        {
+          "ibge": 4306809,
+          "desabrigados": {
+            "valor": 152,
+            "unidade": "pessoas desabrigadas",
+            "fonte": "Defesa Civil RS — boletim de 23/07/2026, via DGABC",
+            "url": "https://www.dgabc.com.br/Noticia/4336999/chuva-no-rs-mais-de-1200-pessoas-estao-desabrigadas-e-quase-200-cidades-registram-danos",
+            "data_referencia": "2026-07-23",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL"
+          }
+        },
+        {
+          "ibge": 4306205,
+          "desabrigados": {
+            "valor": 55,
+            "unidade": "pessoas desabrigadas",
+            "fonte": "Defesa Civil RS — boletim de 23/07/2026, via DGABC",
+            "url": "https://www.dgabc.com.br/Noticia/4336999/chuva-no-rs-mais-de-1200-pessoas-estao-desabrigadas-e-quase-200-cidades-registram-danos",
+            "data_referencia": "2026-07-23",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL"
+          }
+        },
+        {
+          "ibge": 4301008,
+          "desabrigados": {
+            "valor": 32,
+            "unidade": "pessoas removidas para abrigo",
+            "fonte": "Defesa Civil RS — relatório do Aviso Hidrometeorológico 10/2026 (24/07/2026)",
+            "url": "https://static.poder360.com.br/uploads/2026/07/relatorio-defesa-civil-rs-24jul.pdf",
+            "data_referencia": "2026-07-22",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "nota": "Remoção preventiva da Barra da Forqueta para o ginásio da comunidade."
+          }
+        },
+        {
+          "ibge": 4306767,
+          "desabrigados": {
+            "valor": 720,
+            "unidade": "pessoas desabrigadas",
+            "fonte": "Defesa Civil de Eldorado do Sul, via Jornal do Brasil (13/07/2026)",
+            "url": "https://www.jb.com.br/brasil/2026/07/1060273-temporal-em-eldorado-do-sul-deixa-720-desabrigados-e-causa-danos-no-rs.html",
+            "data_referencia": "2026-07-13",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "nota": "Temporal com granizo em 11/07/2026 — anterior à cheia do Taquari. Abrigo montado em escola municipal."
+          }
+        }
+      ],
+      "licoes": [
+        {
+          "texto": "Documentos de 21/07 da Defesa Civil, SGB e IPH indicavam que o Taquari não chegaria à cota de inundação; o rio passou dela no dia seguinte.",
+          "fonte": "CNN Brasil (24/07/2026)",
+          "url": "https://www.cnnbrasil.com.br/nacional/sul/rs/rs-dados-meteorologicos-nao-apontavam-inundacao-diz-eduardo-leite/"
+        },
+        {
+          "texto": "O governo do Estado admitiu falha na comunicação dos alertas à população.",
+          "fonte": "Jornal do Comércio (24/07/2026)",
+          "url": "https://www.jornaldocomercio.com/jornal-cidades/2026/07/1257468-leite-visita-vale-do-taquari-e-admite-falha-na-comunicacao-de-alertas.html"
+        },
+        {
+          "texto": "Na véspera, o SGB projetava o Taquari abaixo da cota de inundação.",
+          "fonte": "Grupo A Hora (21/07/2026)",
+          "url": "https://grupoahora.net.br/conteudos/2026/07/21/rio-taquari-deve-se-manter-abaixo-da-cota-de-inundacao-diz-sgb/"
+        }
+      ]
+    },
+    {
+      "id": "2026-09",
+      "nome": "Cheias de setembro de 2026 no Vale do Taquari",
+      "rotulo_curto": "Set/2026",
+      "periodo": "2026-09-20/2026-10-02",
+      "camada": "ATUAL",
+      "bacia_principal": "Taquari-Antas",
+      "resumo": "Terceira e quarta cheias do ano acima da cota em Lajeado/Estrela: 24,46 m em 22/09 e 23,32 m em 30/09. A Defesa Civil manteve avisos hidrometeorológicos para o Vale.",
+      "indicadores": {
+        "municipios_afetados": {
+          "valor": "A CONFIRMAR",
+          "unidade": "municípios",
+          "fonte": "Defesa Civil RS — boletins de setembro/2026",
+          "url": "https://www.defesacivil.rs.gov.br/avisos-e-boletins",
+          "data_referencia": "2026-09-22",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL",
+          "nota": "Total de municípios afetados em setembro/2026 não localizado nos boletins consultados."
+        },
+        "desabrigados": {
+          "valor": "A CONFIRMAR",
+          "unidade": "pessoas desabrigadas",
+          "fonte": "Defesa Civil RS — boletins de setembro/2026",
+          "url": "https://www.defesacivil.rs.gov.br/avisos-e-boletins",
+          "data_referencia": "2026-09-22",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL",
+          "nota": "Ver \"fora de casa\": a reportagem regional não separa desabrigados de desalojados."
+        },
+        "desalojados": {
+          "valor": "A CONFIRMAR",
+          "unidade": "pessoas desalojadas",
+          "fonte": "Defesa Civil RS — boletins de setembro/2026",
+          "url": "https://www.defesacivil.rs.gov.br/avisos-e-boletins",
+          "data_referencia": "2026-09-22",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL"
+        },
+        "fora_de_casa": {
+          "valor": 467,
+          "unidade": "pessoas fora de casa (7 municípios)",
+          "fonte": "Jornal Força do Vale (22/09/2026)",
+          "url": "https://jornalforcadovale.com.br/enchentes/vale-taquari-467-pessoas-desabrigadas-enchente/",
+          "data_referencia": "2026-09-22",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL",
+          "nota": "\"Ao menos 467 moradores precisaram deixar suas casas em sete municípios do Vale do Taquari.\""
+        }
+      },
+      "picos": [
+        {
+          "estacao": "taquari-lajeado",
+          "nivel": {
+            "valor": 24.46,
+            "unidade": "m",
+            "fonte": "ANA/SGB — telemetria da estação Estrela (86879300), máximo em 22/09/2026 12h15",
+            "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=01/07/2026&dataFim=03/11/2026",
+            "data_referencia": "2026-09-22T12:15",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "confirmacoes": [
+              {
+                "fonte": "Grupo A Hora — após pico de 24,46 m, Taquari começa a baixar",
+                "url": "https://grupoahora.net.br/conteudos/2026/09/22/apos-pico-de-2446-metros-em-lajeado-taquari-comeca-a-baixar/"
+              }
+            ]
+          }
+        },
+        {
+          "estacao": "taquari-lajeado",
+          "nivel": {
+            "valor": 23.32,
+            "unidade": "m",
+            "fonte": "ANA/SGB — telemetria da estação Estrela (86879300), máximo em 30/09/2026 06h00",
+            "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=01/07/2026&dataFim=03/11/2026",
+            "data_referencia": "2026-09-30T06:00",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "nota": "Quarta cheia do ano acima da cota de 19 m.",
+            "confirmacoes": [
+              {
+                "fonte": "Rádio Planalto — pico de 23,32 m na quarta enchente do ano",
+                "url": "https://rdplanalto.com/apos-chegar-ao-pico-de-2332m-rio-taquari-comeca-a-baixar-em-lajeado-e-estrela-na-quarta-enchente-do-ano/"
+              }
+            ]
+          }
+        }
+      ],
+      "municipios": [
+        {
+          "ibge": 4311403,
+          "desabrigados": {
+            "valor": 255,
+            "unidade": "pessoas em abrigo",
+            "fonte": "Jornal do Comércio (22/09/2026)",
+            "url": "https://www.jornaldocomercio.com/jornal-cidades/2026/09/1264200-rio-taquari-baixa-apos-pico-de-2446-metros-e-limpeza-comeca-em-lajeado.html",
+            "data_referencia": "2026-09-22",
+            "data_consulta": "2026-11-03",
+            "camada": "ATUAL",
+            "nota": "Abrigo Parque do Imigrante, com alimentação, roupas, assistência social e saúde."
+          }
+        },
+        {
+          "ibge": 4307807,
+          "nota": "Em 29/09/2026 Estrela não tinha famílias no abrigo municipal, mas a cheia interditou sete vias (Agora no Vale)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "estacoes": [
+    {
+      "id": "guaiba-cais-maua",
+      "nome": "Guaíba — Cais Mauá (Porto Alegre)",
+      "rio": "Guaíba",
+      "municipio_ibge": 4314902,
+      "lat": -30.0211,
+      "lon": -51.2211,
+      "codigo_ana": "87450004",
+      "cota_alerta": {
+        "valor": "A CONFIRMAR",
+        "unidade": "m",
+        "fonte": "Defesa Civil de Porto Alegre — cota de alerta do Guaíba no Cais Mauá",
+        "url": "https://www.jornaldocomercio.com/geral/2025/06/1207737-defesa-civil-informa-que-guaiba-esta-em-cota-de-alerta-mas-sem-previsao-de-inundacao.html",
+        "data_referencia": "2025-06",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO",
+        "nota": "Valor numérico da cota de alerta não confirmado na fonte."
+      },
+      "cota_inundacao": {
+        "valor": 3,
+        "unidade": "m",
+        "fonte": "Defesa Civil RS, via O Timoneiro (24/06/2025): cota de inundação do Cais Mauá",
+        "url": "https://jornaltimoneiro.com.br/index.php/2025/06/24/chuvas-mais-de-7-mil-pessoas-desalojadas-quatro-mortos-e-146-municipios-afetados-no-rs/",
+        "data_referencia": "2025-06-24",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO",
+        "nota": "Na Usina do Gasômetro a cota de inundação é 3,6 m (régua instalada em 2024).",
+        "confirmacoes": [
+          {
+            "fonte": "Agência Brasil — mudança da referência para 3,6 m no Gasômetro",
+            "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-06/nivel-do-guaiba-fica-abaixo-da-cota-de-inundacao-pela-1a-vez-em-um-mes"
+          }
+        ]
+      },
+      "nivel_normal": {
+        "valor": "A CONFIRMAR",
+        "unidade": "m",
+        "fonte": "ANA — telemetria Cais Mauá C6",
+        "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=01/07/2026&dataFim=03/11/2026",
+        "data_referencia": "2026",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Sem referência oficial de \"nível normal\"; o painel usa a série recente como base."
+      },
+      "nivel_atual": {
+        "valor": 1.18,
+        "unidade": "m",
+        "fonte": "ANA — telemetria Guaíba — Cais Mauá C6 (87450004), leitura de 03/11/2026 11:00",
+        "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=01/07/2026&dataFim=03/11/2026",
+        "data_referencia": "2026-11-03T11:00",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Leitura telemétrica mais recente disponível (dado bruto, sujeito a consistência pela ANA/SGB)."
+      }
+    },
+    {
+      "id": "taquari-lajeado",
+      "nome": "Rio Taquari — Estrela/Lajeado",
+      "rio": "Taquari",
+      "municipio_ibge": 4311403,
+      "lat": -29.4717,
+      "lon": -51.965,
+      "codigo_ana": "86879300",
+      "cota_alerta": {
+        "valor": "A CONFIRMAR",
+        "unidade": "m",
+        "fonte": "Defesa Civil de Lajeado — cota de alerta do Taquari",
+        "url": "https://www.lajeado.rs.gov.br/",
+        "data_referencia": "2026",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Valor numérico da cota de alerta não confirmado na fonte."
+      },
+      "cota_inundacao": {
+        "valor": 19,
+        "unidade": "m",
+        "fonte": "Prefeitura de Lajeado / Grupo A Hora — cota de inundação do Taquari em Lajeado",
+        "url": "https://grupoahora.net.br/conteudos/2026/07/28/defesa-civil-emite-alerta-para-risco-de-inundacao-do-taquari/",
+        "data_referencia": "2026-07-28",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "\"Quando o rio sai do leito e invade ruas.\" Em Estrela a cota de inundação é 19,5 m."
+      },
+      "nivel_normal": {
+        "valor": 13,
+        "unidade": "m",
+        "fonte": "Jornal do Comércio — nível normal do Taquari em Lajeado",
+        "url": "https://www.jornaldocomercio.com/geral/2024/05/1152737-rio-taquari-atinge-pela-primeira-vez-na-historia-marca-de-30-metros.html",
+        "data_referencia": "2024-05",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      },
+      "nivel_atual": {
+        "valor": 12.86,
+        "unidade": "m",
+        "fonte": "ANA — telemetria Rio Taquari — Estrela/Lajeado (86879300), leitura de 03/11/2026 11:15",
+        "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=01/07/2026&dataFim=03/11/2026",
+        "data_referencia": "2026-11-03T11:15",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Leitura telemétrica mais recente disponível (dado bruto, sujeito a consistência pela ANA/SGB)."
+      }
+    }
+  ]
+}

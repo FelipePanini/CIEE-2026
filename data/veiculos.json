@@ -1,0 +1,64 @@
+{
+  "categorias": [
+    {
+      "id": "vuc",
+      "nome": "VUC (Veículo Urbano de Carga)",
+      "eixos": 2,
+      "descricao": "Caminhão leve para área urbana: até 2,20 m de largura e 6,30 m de comprimento.",
+      "capacidade_kg": {
+        "valor": 3000,
+        "unidade": "kg de carga",
+        "fonte": "Bsoft — o que é VUC (capacidade de carga de até 3 t)",
+        "url": "https://bsoft.com.br/blog/vuc",
+        "data_referencia": "2026",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Em São Paulo o VUC regulamentado tem capacidade média de 3,5 t (SETCESP). Usamos o valor menor.",
+        "confirmacoes": [
+          {
+            "fonte": "SETCESP — VUC essencial para o abastecimento urbano",
+            "url": "https://setcesp.org.br/noticias/vuc-essencial-para-o-abastecimento-urbano/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "toco",
+      "nome": "Caminhão toco",
+      "eixos": 2,
+      "descricao": "Caminhão rígido de 2 eixos (um dianteiro e um traseiro simples); PBT até 16 t.",
+      "capacidade_kg": {
+        "valor": 6000,
+        "unidade": "kg de carga",
+        "fonte": "Chiptronic — tipos de caminhão mais usados",
+        "url": "https://chiptronic.com.br/blog/tipos-de-caminhao-mais-usados",
+        "data_referencia": "2026",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Capacidade de carga típica de 6 t; PBT máximo de 16 t."
+      }
+    },
+    {
+      "id": "truck",
+      "nome": "Caminhão truck",
+      "eixos": 3,
+      "descricao": "Caminhão rígido 6x2 ou 6x4; PBT de 23 t (Res. Contran 882/2021).",
+      "capacidade_kg": {
+        "valor": 10000,
+        "unidade": "kg de carga",
+        "fonte": "Consulta de Placa — caminhão truck: quanto pode carregar",
+        "url": "https://consultadeplaca.net/blog/caminhao-truck",
+        "data_referencia": "2026",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Faixa de 10 a 14 t de carga útil conforme a tara do modelo; usamos o limite inferior.",
+        "confirmacoes": [
+          {
+            "fonte": "Bsoft — tabela de capacidade de carga",
+            "url": "https://bsoft.com.br/blog/tabela-de-capacidade-de-carga"
+          }
+        ]
+      }
+    }
+  ]
+}

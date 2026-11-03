@@ -1,0 +1,64 @@
+{
+  "kcal_100g": {
+    "arroz": {
+      "valor": 358,
+      "unidade": "kcal/100 g",
+      "fonte": "TACO — arroz tipo 1, cru",
+      "url": "https://www.tabelatacoonline.com.br/tabela-nutricional/taco/arroz-tipo-1-cru",
+      "data_referencia": "2011",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Valores da TACO (NEPA/UNICAMP, 4ª ed.) reproduzidos pelo site Tabela TACO Online."
+    },
+    "feijao": {
+      "valor": 324,
+      "unidade": "kcal/100 g",
+      "fonte": "TACO — feijão preto, cru",
+      "url": "https://www.tabelatacoonline.com.br/tabela-nutricional/taco/feijao-preto-cru",
+      "data_referencia": "2011",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Valores da TACO (NEPA/UNICAMP, 4ª ed.) reproduzidos pelo site Tabela TACO Online."
+    },
+    "oleo": {
+      "valor": 884,
+      "unidade": "kcal/100 g",
+      "fonte": "TACO — óleo de soja",
+      "url": "https://www.tabelatacoonline.com.br/tabela-nutricional/taco/oleo-de-soja",
+      "data_referencia": "2011",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Valores da TACO (NEPA/UNICAMP, 4ª ed.) reproduzidos pelo site Tabela TACO Online."
+    },
+    "farinha": {
+      "valor": 360,
+      "unidade": "kcal/100 g",
+      "fonte": "TACO — farinha de trigo",
+      "url": "https://www.tabelatacoonline.com.br/tabela-nutricional/taco/farinha-de-trigo",
+      "data_referencia": "2011",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Valores da TACO (NEPA/UNICAMP, 4ª ed.) reproduzidos pelo site Tabela TACO Online."
+    },
+    "acucar": {
+      "valor": "A CONFIRMAR",
+      "unidade": "kcal/100 g",
+      "fonte": "TACO — açúcar refinado",
+      "url": "https://www.tabelatacoonline.com.br/tabela-nutricional/taco/acucar-refinado",
+      "data_referencia": "2011",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Não confirmado na fonte; o kit não conta essas calorias."
+    },
+    "leite": {
+      "valor": "A CONFIRMAR",
+      "unidade": "kcal/100 g",
+      "fonte": "TACO — leite de vaca integral",
+      "url": "https://www.tabelatacoonline.com.br/tabela-nutricional/taco/leite-de-vaca-integral",
+      "data_referencia": "2011",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Não confirmado na fonte; o kit não conta essas calorias."
+    }
+  }
+}

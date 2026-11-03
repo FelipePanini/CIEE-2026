@@ -1,0 +1,136 @@
+{
+  "abrigos": [
+    {
+      "id": "a-lajeado-imigrante",
+      "nome": "Abrigo Parque do Imigrante",
+      "municipio_ibge": 4311403,
+      "endereco": "Av. Parque do Imigrante, Alto do Parque — Lajeado",
+      "lat": -29.4550045,
+      "lon": -51.954401,
+      "fonte_local": {
+        "fonte": "CNN Brasil (endereço) e OpenStreetMap (localização do Parque do Imigrante)",
+        "url": "https://www.cnnbrasil.com.br/nacional/sul/rs/inundacao-no-rs-veja-como-e-abrigo-com-mais-de-500-pessoas-em-lajeado/",
+        "data_consulta": "2026-11-03"
+      },
+      "eventos": [
+        "2026-07",
+        "2026-09"
+      ],
+      "tipo": "abrigo-oficial",
+      "pessoas": {
+        "2026-07": {
+          "valor": 540,
+          "unidade": "pessoas abrigadas",
+          "fonte": "CNN Brasil — abrigo com mais de 500 pessoas em Lajeado (23/07/2026, 9h)",
+          "url": "https://www.cnnbrasil.com.br/nacional/sul/rs/inundacao-no-rs-veja-como-e-abrigo-com-mais-de-500-pessoas-em-lajeado/",
+          "data_referencia": "2026-07-23T09:00",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL",
+          "nota": "169 famílias. Às 10h30 de 22/07 eram 99 pessoas."
+        },
+        "2026-09": {
+          "valor": 255,
+          "unidade": "pessoas abrigadas",
+          "fonte": "Jornal do Comércio (22/09/2026)",
+          "url": "https://www.jornaldocomercio.com/jornal-cidades/2026/09/1264200-rio-taquari-baixa-apos-pico-de-2446-metros-e-limpeza-comeca-em-lajeado.html",
+          "data_referencia": "2026-09-22",
+          "data_consulta": "2026-11-03",
+          "camada": "ATUAL"
+        }
+      }
+    },
+    {
+      "id": "a-canoas-ulbra",
+      "nome": "Abrigo na Ulbra (campus Canoas)",
+      "municipio_ibge": 4304606,
+      "endereco": "Av. Farroupilha, 8001, São José — Canoas",
+      "lat": -29.8869159,
+      "lon": -51.1628055,
+      "fonte_local": {
+        "fonte": "OpenStreetMap (campus da Ulbra, amenity=university) e Governo do RS — \"maior abrigo do Estado\"",
+        "url": "https://estado.rs.gov.br/em-canoas-vice-governador-visita-maior-abrigo-do-estado-e-debate-instalacao-de-estrutura-internacional",
+        "data_consulta": "2026-11-03"
+      },
+      "eventos": [
+        "2024-05"
+      ],
+      "tipo": "abrigo-oficial",
+      "pessoas": {
+        "2024-05": {
+          "valor": 7500,
+          "unidade": "pessoas acolhidas",
+          "fonte": "Diário de Canoas — edição especial (27/06/2024)",
+          "url": "https://pdf.gruposinos.com.br/diariodecanoas/2024/06/27/0856a9/pdf/15XD-27-DIG.pdf",
+          "data_referencia": "2024-05",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "Outras fontes citam 6 mil (Poder360) a 8 mil (SBT News) em datas diferentes; ~1 mil voluntários.",
+          "confirmacoes": [
+            {
+              "fonte": "SBT News — abrigo para oito mil pessoas",
+              "url": "https://sbtnews.sbt.com.br/noticia/brasil/universidade-em-canoas-se-torna-abrigo-para-oito-mil-pessoas-durante-chuvas"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q-poa-aramy",
+      "nome": "EMEF Aramy Silva (abrigo temporário)",
+      "municipio_ibge": 4314902,
+      "endereco": "Rua Chico Pedro, 390, Cristal — Porto Alegre",
+      "lat": -30.0976546,
+      "lon": -51.2417408,
+      "fonte_local": {
+        "fonte": "Prefeitura de Porto Alegre — SMED",
+        "url": "https://prefeitura.poa.br/smed/noticias/quatro-escolas-municipais-atuam-como-abrigos-temporarios",
+        "data_consulta": "2026-11-03"
+      },
+      "eventos": [
+        "2024-05"
+      ],
+      "tipo": "escola-abrigo",
+      "pessoas": {
+        "2024-05": {
+          "valor": "A CONFIRMAR",
+          "unidade": "pessoas abrigadas",
+          "fonte": "Prefeitura de Porto Alegre — SMED",
+          "url": "https://prefeitura.poa.br/smed/noticias/quatro-escolas-municipais-atuam-como-abrigos-temporarios",
+          "data_referencia": "2024-05-11",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "A Prefeitura não divulgou a lotação por escola; o motor usa a média por abrigo da capital."
+        }
+      }
+    },
+    {
+      "id": "q-poa-grande-oriente",
+      "nome": "EMEF Grande Oriente do RS (abrigo temporário)",
+      "municipio_ibge": 4314902,
+      "endereco": "Rua Wolfram Metzler, 600, Rubem Berta — Porto Alegre",
+      "lat": -30.0240085,
+      "lon": -51.1037605,
+      "fonte_local": {
+        "fonte": "Prefeitura de Porto Alegre — SMED",
+        "url": "https://prefeitura.poa.br/smed/noticias/quatro-escolas-municipais-atuam-como-abrigos-temporarios",
+        "data_consulta": "2026-11-03"
+      },
+      "eventos": [
+        "2024-05"
+      ],
+      "tipo": "escola-abrigo",
+      "pessoas": {
+        "2024-05": {
+          "valor": "A CONFIRMAR",
+          "unidade": "pessoas abrigadas",
+          "fonte": "Prefeitura de Porto Alegre — SMED",
+          "url": "https://prefeitura.poa.br/smed/noticias/quatro-escolas-municipais-atuam-como-abrigos-temporarios",
+          "data_referencia": "2024-05-11",
+          "data_consulta": "2026-11-03",
+          "camada": "HISTORICO",
+          "nota": "A Prefeitura não divulgou a lotação por escola; o motor usa a média por abrigo da capital."
+        }
+      }
+    }
+  ]
+}

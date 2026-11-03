@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  push:
+    paths-ignore:
+      - 'data/brutos/**'
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Validar dados (Regra nº 1)
+        run: npm run validar-dados
+      - name: Testes
+        run: npm test
+      - name: Build
+        run: npm run build

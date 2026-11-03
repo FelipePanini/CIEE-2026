@@ -1,0 +1,29 @@
+{
+  "bbox": {
+    "oeste": -52.45,
+    "leste": -50.8,
+    "sul": -30.45,
+    "norte": -28.95
+  },
+  "largura": 660,
+  "altura": 691,
+  "formato": "Int16LE, metros acima do nível do mar, linha 0 = borda norte",
+  "min": 0,
+  "max": 974,
+  "fonte": "Copernicus DEM GLO-30 (ESA/Airbus), AWS Open Data Registry",
+  "url": "https://registry.opendata.aws/copernicus-dem/",
+  "licenca": "Copernicus DEM © DLR e.V. 2010-2014 e © Airbus Defence and Space GmbH 2014-2018, licença Copernicus",
+  "tiles": [
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S31_00_W053_00_DEM/Copernicus_DSM_COG_10_S31_00_W053_00_DEM.tif",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S31_00_W052_00_DEM/Copernicus_DSM_COG_10_S31_00_W052_00_DEM.tif",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S31_00_W051_00_DEM/Copernicus_DSM_COG_10_S31_00_W051_00_DEM.tif",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S30_00_W053_00_DEM/Copernicus_DSM_COG_10_S30_00_W053_00_DEM.tif",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S30_00_W052_00_DEM/Copernicus_DSM_COG_10_S30_00_W052_00_DEM.tif",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S30_00_W051_00_DEM/Copernicus_DSM_COG_10_S30_00_W051_00_DEM.tif",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S29_00_W053_00_DEM/Copernicus_DSM_COG_10_S29_00_W053_00_DEM.tif",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S29_00_W052_00_DEM/Copernicus_DSM_COG_10_S29_00_W052_00_DEM.tif",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S29_00_W051_00_DEM/Copernicus_DSM_COG_10_S29_00_W051_00_DEM.tif"
+  ],
+  "resolucao_aprox_m": 242,
+  "data_geracao": "2026-11-03"
+}

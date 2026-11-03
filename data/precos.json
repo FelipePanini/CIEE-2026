@@ -1,0 +1,286 @@
+{
+  "cesta_dieese_total": {
+    "valor": 889.15,
+    "unidade": "R$",
+    "fonte": "DIEESE — cesta básica de Porto Alegre (setembro/2026)",
+    "url": "https://www.dieese.org.br/analisecestabasica/2026/202609cestabasica.pdf",
+    "data_referencia": "2026-09",
+    "data_consulta": "2026-11-03",
+    "camada": "ATUAL",
+    "nota": "Alta de 5,93% sobre agosto. Equivale a 120h40min de trabalho para quem recebe salário mínimo (R$ 1.621,00)."
+  },
+  "produtos": [
+    {
+      "id": "arroz",
+      "nome": "Arroz agulhinha",
+      "categoria": "alimentos",
+      "embalagem": "1 kg",
+      "preco": {
+        "valor": 4.71,
+        "unidade": "R$/kg",
+        "fonte": "DIEESE — Pesquisa Nacional da Cesta Básica, preço médio em Porto Alegre (09/2026)",
+        "url": "https://www.dieese.org.br/cesta/",
+        "data_referencia": "2026-09",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Consulta \"por cidade\" no banco de dados da cesta: Porto Alegre, preço médio, 09/2026."
+      }
+    },
+    {
+      "id": "feijao",
+      "nome": "Feijão preto",
+      "categoria": "alimentos",
+      "embalagem": "1 kg",
+      "preco": {
+        "valor": 6.91,
+        "unidade": "R$/kg",
+        "fonte": "DIEESE — Pesquisa Nacional da Cesta Básica, preço médio em Porto Alegre (09/2026)",
+        "url": "https://www.dieese.org.br/cesta/",
+        "data_referencia": "2026-09",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Consulta \"por cidade\" no banco de dados da cesta: Porto Alegre, preço médio, 09/2026."
+      }
+    },
+    {
+      "id": "oleo",
+      "nome": "Óleo de soja",
+      "categoria": "alimentos",
+      "embalagem": "900 ml",
+      "preco": {
+        "valor": 7.81,
+        "unidade": "R$/900 ml",
+        "fonte": "DIEESE — Pesquisa Nacional da Cesta Básica, preço médio em Porto Alegre (09/2026)",
+        "url": "https://www.dieese.org.br/cesta/",
+        "data_referencia": "2026-09",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Consulta \"por cidade\" no banco de dados da cesta: Porto Alegre, preço médio, 09/2026."
+      }
+    },
+    {
+      "id": "acucar",
+      "nome": "Açúcar refinado",
+      "categoria": "alimentos",
+      "embalagem": "1 kg",
+      "preco": {
+        "valor": 4.09,
+        "unidade": "R$/kg",
+        "fonte": "DIEESE — Pesquisa Nacional da Cesta Básica, preço médio em Porto Alegre (09/2026)",
+        "url": "https://www.dieese.org.br/cesta/",
+        "data_referencia": "2026-09",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Consulta \"por cidade\" no banco de dados da cesta: Porto Alegre, preço médio, 09/2026."
+      }
+    },
+    {
+      "id": "cafe",
+      "nome": "Café em pó",
+      "categoria": "alimentos",
+      "embalagem": "1 kg",
+      "preco": {
+        "valor": 55.08,
+        "unidade": "R$/kg",
+        "fonte": "DIEESE — Pesquisa Nacional da Cesta Básica, preço médio em Porto Alegre (09/2026)",
+        "url": "https://www.dieese.org.br/cesta/",
+        "data_referencia": "2026-09",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Consulta \"por cidade\" no banco de dados da cesta: Porto Alegre, preço médio, 09/2026."
+      }
+    },
+    {
+      "id": "farinha",
+      "nome": "Farinha de trigo",
+      "categoria": "alimentos",
+      "embalagem": "1 kg",
+      "preco": {
+        "valor": 4.1,
+        "unidade": "R$/kg",
+        "fonte": "DIEESE — Pesquisa Nacional da Cesta Básica, preço médio em Porto Alegre (09/2026)",
+        "url": "https://www.dieese.org.br/cesta/",
+        "data_referencia": "2026-09",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Consulta \"por cidade\" no banco de dados da cesta: Porto Alegre, preço médio, 09/2026."
+      }
+    },
+    {
+      "id": "leite",
+      "nome": "Leite integral",
+      "categoria": "alimentos",
+      "embalagem": "1 L",
+      "preco": {
+        "valor": 5.67,
+        "unidade": "R$/L",
+        "fonte": "DIEESE — Pesquisa Nacional da Cesta Básica, preço médio em Porto Alegre (09/2026)",
+        "url": "https://www.dieese.org.br/cesta/",
+        "data_referencia": "2026-09",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Consulta \"por cidade\" no banco de dados da cesta: Porto Alegre, preço médio, 09/2026."
+      }
+    },
+    {
+      "id": "agua5l",
+      "nome": "Água mineral sem gás 5 L",
+      "categoria": "agua",
+      "embalagem": "galão 5 L",
+      "preco": {
+        "valor": 11.69,
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online (preço de referência coletado em 03/11/2026) — Água mineral sem gás 5 L",
+        "url": "https://secure.atacadao.com.br/agua-mineral-crystal-sem-gas-63831/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Preço do catálogo nacional do site (canal padrão, sem CEP); pode variar por loja. Loja citada apenas como referência de preço, não como doadora."
+      }
+    },
+    {
+      "id": "sabonete",
+      "nome": "Sabonete em barra 85 g",
+      "categoria": "higiene",
+      "embalagem": "1 un (85 g)",
+      "preco": {
+        "valor": 0.99,
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online (preço de referência coletado em 03/11/2026) — Sabonete em barra 85 g",
+        "url": "https://secure.atacadao.com.br/sabonete-siene-erva-doce-74266/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Preço do catálogo nacional do site (canal padrão, sem CEP); pode variar por loja. Loja citada apenas como referência de preço, não como doadora."
+      }
+    },
+    {
+      "id": "creme_dental",
+      "nome": "Creme dental 90 g (pacote com 4)",
+      "categoria": "higiene",
+      "embalagem": "4 × 90 g",
+      "preco": {
+        "valor": 29.8,
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online (preço de referência coletado em 03/11/2026) — Creme dental 90 g (pacote com 4)",
+        "url": "https://secure.atacadao.com.br/creme-dental-colgate-total-original-mint-8890/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Preço do catálogo nacional do site (canal padrão, sem CEP); pode variar por loja. Loja citada apenas como referência de preço, não como doadora."
+      }
+    },
+    {
+      "id": "escova",
+      "nome": "Escova de dente (pacote com 2)",
+      "categoria": "higiene",
+      "embalagem": "2 un",
+      "preco": {
+        "valor": 14.9,
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online (preço de referência coletado em 03/11/2026) — Escova de dente (pacote com 2)",
+        "url": "https://secure.atacadao.com.br/escova-dental-colgate-pro-cuidado-sensitive-13604/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Preço do catálogo nacional do site (canal padrão, sem CEP); pode variar por loja. Loja citada apenas como referência de preço, não como doadora."
+      }
+    },
+    {
+      "id": "papel_higienico",
+      "nome": "Papel higiênico folha dupla 30 m (12 rolos)",
+      "categoria": "higiene",
+      "embalagem": "12 rolos",
+      "preco": {
+        "valor": 17.3,
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online (preço de referência coletado em 03/11/2026) — Papel higiênico folha dupla 30 m (12 rolos)",
+        "url": "https://secure.atacadao.com.br/papel-higienico-bulnez-folha-dupla-30m-13794/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Preço do catálogo nacional do site (canal padrão, sem CEP); pode variar por loja. Loja citada apenas como referência de preço, não como doadora."
+      }
+    },
+    {
+      "id": "absorvente",
+      "nome": "Absorvente com abas (16 un)",
+      "categoria": "higiene",
+      "embalagem": "16 un",
+      "preco": {
+        "valor": 6.5,
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online (preço de referência coletado em 03/11/2026) — Absorvente com abas (16 un)",
+        "url": "https://secure.atacadao.com.br/absorvente-diana-suave-com-abas-62142/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Preço do catálogo nacional do site (canal padrão, sem CEP); pode variar por loja. Loja citada apenas como referência de preço, não como doadora."
+      }
+    },
+    {
+      "id": "sabao_barra",
+      "nome": "Sabão em barra 800 g",
+      "categoria": "limpeza",
+      "embalagem": "800 g",
+      "preco": {
+        "valor": 12.9,
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online (preço de referência coletado em 03/11/2026) — Sabão em barra 800 g",
+        "url": "https://secure.atacadao.com.br/sabao-em-pedaco-ype-neutro-3396/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Preço do catálogo nacional do site (canal padrão, sem CEP); pode variar por loja. Loja citada apenas como referência de preço, não como doadora."
+      }
+    },
+    {
+      "id": "agua_sanitaria",
+      "nome": "Água sanitária 1 L",
+      "categoria": "limpeza",
+      "embalagem": "1 L",
+      "preco": {
+        "valor": 2.49,
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online (preço de referência coletado em 03/11/2026) — Água sanitária 1 L",
+        "url": "https://secure.atacadao.com.br/agua-sanitaria-tay-3309/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Preço do catálogo nacional do site (canal padrão, sem CEP); pode variar por loja. Loja citada apenas como referência de preço, não como doadora."
+      }
+    },
+    {
+      "id": "cobertor",
+      "nome": "Cobertor de solteiro",
+      "categoria": "abrigo",
+      "embalagem": "1 un",
+      "preco": {
+        "valor": "A CONFIRMAR",
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online",
+        "url": "https://secure.atacadao.com.br/cobertor-luster-corttex-casal-96392/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Item indisponível no catálogo consultado (preço zerado). Coletar em outro supermercado com loja, data e link."
+      }
+    },
+    {
+      "id": "colchonete",
+      "nome": "Colchonete",
+      "categoria": "abrigo",
+      "embalagem": "1 un",
+      "preco": {
+        "valor": "A CONFIRMAR",
+        "unidade": "R$",
+        "fonte": "Atacadão — catálogo online",
+        "url": "https://secure.atacadao.com.br/colchonete-camping-ortobom-mochila-unidade-24248/p",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Item indisponível no catálogo consultado (preço zerado)."
+      }
+    }
+  ]
+}

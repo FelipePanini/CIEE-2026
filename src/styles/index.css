@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens — extraídos do PDF dos slides do grupo (docs/referencia/slides-acao-social-rs.pdf):
+ *   fundo navy #102A35 · texto escuro #17343D · coral #EF6A4B · creme #F3EFE6 · piscina #8CC7C5
+ *   títulos: Archivo Black · texto: Archivo (substituto livre da Aptos usada nos slides)
+ */
+@theme {
+  --color-navy-950: #0b1e26;
+  --color-navy-900: #102a35;
+  --color-navy-800: #17343d;
+  --color-navy-700: #1f4350;
+  --color-navy-600: #2c5566;
+  --color-coral-500: #ef6a4b;
+  --color-coral-400: #f3876d;
+  --color-coral-600: #d9553a;
+  --color-creme-100: #f3efe6;
+  --color-creme-200: #e7e0d2;
+  --color-piscina-300: #8cc7c5;
+  --color-piscina-400: #6fb3b1;
+  --color-piscina-200: #b5dcdb;
+  --color-alerta: #f2b84b;
+  --color-ok: #6cc28f;
+
+  /* Camadas de dado — selos */
+  --color-camada-historico: #b9a98c;
+  --color-camada-atual: #ef6a4b;
+  --color-camada-previsao: #8cc7c5;
+  --color-camada-simulado: #c6b4e6;
+  --color-camada-parametro: #f2b84b;
+
+  --font-display: 'Archivo Black', 'Archivo Variable', system-ui, sans-serif;
+  --font-sans: 'Archivo Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  --altura-cabecalho: 4.25rem;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-navy-900);
+  color: var(--color-creme-100);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'tnum' 1;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+/* Painéis HTML por cima do Canvas 3D */
+.painel {
+  background: color-mix(in oklab, var(--color-navy-900) 88%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-piscina-300) 22%, transparent);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.painel-claro {
+  background: var(--color-creme-100);
+  color: var(--color-navy-800);
+  border-radius: 14px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-coral-500);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes pulso {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+.anima-pulso {
+  animation: pulso 1.4s ease-in-out infinite;
+}
+
+/* Modo apresentação: texto grande para projetor */
+.modo-apresentacao {
+  font-size: 1.25rem;
+}

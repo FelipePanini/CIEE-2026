@@ -1,0 +1,574 @@
+{
+  "descricao": "Estoques internos e orçamento da operação da Solução Distribuidora — SIMULADO (não existe dado público).",
+  "estoques": [
+    {
+      "local": "a-canoas-ulbra",
+      "itens": {
+        "agua": {
+          "valor": 9000,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 9000,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 400,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 3200,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 5000,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "q-canoas-marechal",
+      "itens": {
+        "agua": {
+          "valor": 800,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 1200,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 40,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 90,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 300,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "q-poa-aramy",
+      "itens": {
+        "agua": {
+          "valor": 450,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 800,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 30,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 60,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 200,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "q-poa-grande-oriente",
+      "itens": {
+        "agua": {
+          "valor": 300,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 500,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 20,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 90,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 250,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "q-eldorado-getulio",
+      "itens": {
+        "agua": {
+          "valor": 250,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 600,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 15,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 40,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 150,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "a-lajeado-imigrante",
+      "itens": {
+        "agua": {
+          "valor": 1800,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 2600,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 120,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 300,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 900,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "q-lajeado-pedro-scherer",
+      "itens": {
+        "agua": {
+          "valor": 900,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 1400,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 60,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 150,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 500,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "q-estrela-iee",
+      "itens": {
+        "agua": {
+          "valor": 600,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 900,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 40,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 80,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 300,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "q-encantado-scalabrini",
+      "itens": {
+        "agua": {
+          "valor": 350,
+          "unidade": "L",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "alimentos": {
+          "valor": 700,
+          "unidade": "rações (2.100 kcal)",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "higiene": {
+          "valor": 25,
+          "unidade": "kits pessoa-mês",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "cobertores": {
+          "valor": 60,
+          "unidade": "un",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        },
+        "papel_roupas": {
+          "valor": 200,
+          "unidade": "rolos",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "p-poa-menino-deus",
+      "itens": {
+        "volume_m3": {
+          "valor": 1.8,
+          "unidade": "m³",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "p-poa-partenon",
+      "itens": {
+        "volume_m3": {
+          "valor": 2.6,
+          "unidade": "m³",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "p-canoas-centro",
+      "itens": {
+        "volume_m3": {
+          "valor": 3.1,
+          "unidade": "m³",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "p-lajeado-centro",
+      "itens": {
+        "volume_m3": {
+          "valor": 2.2,
+          "unidade": "m³",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "p-estrela-centro",
+      "itens": {
+        "volume_m3": {
+          "valor": 1.1,
+          "unidade": "m³",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "p-montenegro-centro",
+      "itens": {
+        "volume_m3": {
+          "valor": 3.4,
+          "unidade": "m³",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO"
+        }
+      }
+    },
+    {
+      "local": "operacao",
+      "itens": {
+        "orcamento_rs": {
+          "valor": 250000,
+          "unidade": "R$",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO",
+          "nota": "Verba da Solução Distribuidora para a ação (simulada)."
+        },
+        "doacoes_produto_rs": {
+          "valor": 38000,
+          "unidade": "R$",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO",
+          "nota": "Valor estimado das doações em produto recebidas dos parceiros."
+        },
+        "frete_doado_rs": {
+          "valor": 6500,
+          "unidade": "R$",
+          "fonte": "Simulação da operação da Solução Distribuidora (estoque interno)",
+          "url": null,
+          "data_referencia": "2026-11-03",
+          "data_consulta": "2026-11-03",
+          "camada": "SIMULADO",
+          "nota": "Fretes cedidos sem custo por transportadoras parceiras."
+        }
+      }
+    }
+  ]
+}

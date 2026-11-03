@@ -1,0 +1,118 @@
+{
+  "prognosticos": [
+    {
+      "id": "inmet-ond-2026",
+      "orgao": "INMET / INPE (Nota Técnica Conjunta)",
+      "titulo": "Prognóstico climático de primavera 2026 — outubro, novembro e dezembro",
+      "periodo": "2026-10-01/2026-12-31",
+      "url": "https://portal.inmet.gov.br/uploads/notastecnicas/Prognostico_Primavera_2026.pdf",
+      "resumo": "Excesso de chuva em todos os estados do Sul. No RS e em SC os acumulados podem superar a média histórica do trimestre em até 200 mm. Temperaturas próximas da média no RS.",
+      "indicadores": [
+        {
+          "id": "anomalia_chuva_max",
+          "rotulo": "Chuva acima da média no trimestre (até)",
+          "dado": {
+            "valor": 200,
+            "unidade": "mm",
+            "fonte": "INMET/INPE — Prognóstico climático de primavera 2026",
+            "url": "https://portal.inmet.gov.br/uploads/notastecnicas/Prognostico_Primavera_2026.pdf",
+            "data_referencia": "2026-10-01/2026-12-31",
+            "data_consulta": "2026-11-03",
+            "camada": "PREVISAO",
+            "nota": "Anomalia máxima prevista para RS e SC no trimestre OND."
+          }
+        },
+        {
+          "id": "prob_el_nino_muito_forte",
+          "rotulo": "Probabilidade de El Niño muito forte em OND",
+          "dado": {
+            "valor": 98,
+            "unidade": "%",
+            "fonte": "INMET/INPE — Prognóstico de primavera 2026, citando NOAA/CPC",
+            "url": "https://portal.inmet.gov.br/uploads/notastecnicas/Prognostico_Primavera_2026.pdf",
+            "data_referencia": "2026-10-01/2026-12-31",
+            "data_consulta": "2026-11-03",
+            "camada": "PREVISAO",
+            "nota": "Índice Oceânico Niño Relativo ≥ 2 °C na região Niño 3.4."
+          }
+        }
+      ],
+      "regioes_destaque": [
+        "Rio Grande do Sul",
+        "Santa Catarina"
+      ]
+    },
+    {
+      "id": "consenso-rs-ond-2026",
+      "orgao": "UFPel · FURG · SIMAGRO · INMET (Fórum Regional de Previsão Climática)",
+      "titulo": "Boletim de Consenso Climático RS — outubro-novembro-dezembro 2026",
+      "periodo": "2026-10-01/2026-12-31",
+      "url": "https://wp.ufpel.edu.br/cppmet/files/2026/09/Boletim_climatico_consenso_OND.pdf",
+      "resumo": "Precipitação bem acima da média histórica em todo o RS no trimestre, com maior risco de tempo severo, alagamentos e inundações nas bacias do Rio Uruguai e do sistema Mirim-Patos. El Niño em intensificação.",
+      "indicadores": [
+        {
+          "id": "prob_el_nino_muito_forte",
+          "rotulo": "Probabilidade de El Niño muito forte",
+          "dado": {
+            "valor": 77,
+            "unidade": "%",
+            "fonte": "Boletim de Consenso Climático RS (set/2026), citando NOAA/CPC",
+            "url": "https://wp.ufpel.edu.br/cppmet/files/2026/09/Boletim_climatico_consenso_OND.pdf",
+            "data_referencia": "2026-10-01/2026-12-31",
+            "data_consulta": "2026-11-03",
+            "camada": "PREVISAO",
+            "nota": "Categorias NOAA/CPC: forte 23%, muito forte 77%."
+          }
+        }
+      ],
+      "regioes_destaque": [
+        "Bacia do Rio Uruguai",
+        "Sistema Mirim-Patos",
+        "Todo o RS"
+      ]
+    }
+  ],
+  "avisos_recentes": [
+    {
+      "data": "2026-11-02",
+      "titulo": "Alertas para tempestade com vento e granizo (Vacaria, Lagoa Vermelha, Nonoai)",
+      "regioes": [
+        "Campos de Cima da Serra",
+        "Norte"
+      ],
+      "fonte": "Defesa Civil RS — avisos e alertas em vigor",
+      "url": "https://www.defesacivil.rs.gov.br/avisos-e-boletins"
+    },
+    {
+      "data": "2026-10-21",
+      "titulo": "Aviso Hidrometeorológico 21/2026: chuva que pode superar 150 mm, granizo e rajadas acima de 80 km/h (21 a 23/10)",
+      "regioes": [
+        "Missões",
+        "Noroeste",
+        "Norte"
+      ],
+      "fonte": "Defesa Civil RS, via Mixvale",
+      "url": "https://www.mixvale.com.br/2026/10/21/defesa-civil-alerta-para-cheias-no-rs-ate-sexta-feira-23/"
+    },
+    {
+      "data": "2026-09-29",
+      "titulo": "Aviso Hidrometeorológico 18/2026 atualizado: risco de inundação do Taquari a partir de Lajeado e repique a partir de Encantado",
+      "regioes": [
+        "Vale do Taquari"
+      ],
+      "fonte": "Defesa Civil RS, via Agora no Vale",
+      "url": "https://agoranovale.com.br/noticias/valedotaquari/defesa-civil-alerta-para-repique-no-rio-taquari-com-elevacao-do-volume/"
+    },
+    {
+      "data": "2026-07-24",
+      "titulo": "Aviso Hidrometeorológico 10/2026: 206 municípios com danos reportados",
+      "regioes": [
+        "Vale do Taquari",
+        "Noroeste",
+        "RMPA"
+      ],
+      "fonte": "Defesa Civil RS — relatório CMDEC/CODEC (24/07/2026)",
+      "url": "https://static.poder360.com.br/uploads/2026/07/relatorio-defesa-civil-rs-24jul.pdf"
+    }
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "fonte_coordenadas": {
+    "fonte": "IBGE — coordenadas das sedes municipais (compilação kelvins/municipios-brasileiros)",
+    "url": "https://github.com/kelvins/municipios-brasileiros",
+    "data_consulta": "2026-11-03"
+  },
+  "media_moradores_domicilio_rs": {
+    "valor": 2.54,
+    "unidade": "pessoas por domicílio",
+    "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4712)",
+    "url": "https://apisidra.ibge.gov.br/values/t/4712/n3/43/v/all/p/2022",
+    "data_referencia": "2022-08-01",
+    "data_consulta": "2026-11-03",
+    "camada": "HISTORICO",
+    "nota": "Média de moradores em domicílios particulares permanentes ocupados no RS."
+  },
+  "municipios": [
+    {
+      "ibge": 4314902,
+      "nome": "Porto Alegre",
+      "regiao": "RMPA",
+      "lat": -30.0318,
+      "lon": -51.2065,
+      "populacao": {
+        "valor": 1332845,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4304606,
+      "nome": "Canoas",
+      "regiao": "RMPA",
+      "lat": -29.9128,
+      "lon": -51.1857,
+      "populacao": {
+        "valor": 347657,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4306767,
+      "nome": "Eldorado do Sul",
+      "regiao": "RMPA",
+      "lat": -30.0847,
+      "lon": -51.6187,
+      "populacao": {
+        "valor": 39559,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4309308,
+      "nome": "Guaíba",
+      "regiao": "RMPA",
+      "lat": -30.1086,
+      "lon": -51.3233,
+      "populacao": {
+        "valor": 92924,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4318705,
+      "nome": "São Leopoldo",
+      "regiao": "RMPA",
+      "lat": -29.7545,
+      "lon": -51.1498,
+      "populacao": {
+        "valor": 217409,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4313409,
+      "nome": "Novo Hamburgo",
+      "regiao": "RMPA",
+      "lat": -29.6875,
+      "lon": -51.1328,
+      "populacao": {
+        "valor": 227646,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4307708,
+      "nome": "Esteio",
+      "regiao": "RMPA",
+      "lat": -29.852,
+      "lon": -51.1841,
+      "populacao": {
+        "valor": 76137,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4320008,
+      "nome": "Sapucaia do Sul",
+      "regiao": "RMPA",
+      "lat": -29.8276,
+      "lon": -51.145,
+      "populacao": {
+        "valor": 132107,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4303103,
+      "nome": "Cachoeirinha",
+      "regiao": "RMPA",
+      "lat": -29.9472,
+      "lon": -51.1016,
+      "populacao": {
+        "valor": 136258,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4300604,
+      "nome": "Alvorada",
+      "regiao": "RMPA",
+      "lat": -29.9914,
+      "lon": -51.0809,
+      "populacao": {
+        "valor": 187315,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4309209,
+      "nome": "Gravataí",
+      "regiao": "RMPA",
+      "lat": -29.9413,
+      "lon": -50.9869,
+      "populacao": {
+        "valor": 265074,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4305355,
+      "nome": "Charqueadas",
+      "regiao": "RMPA",
+      "lat": -29.9625,
+      "lon": -51.6289,
+      "populacao": {
+        "valor": 35012,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4318408,
+      "nome": "São Jerônimo",
+      "regiao": "RMPA",
+      "lat": -29.9716,
+      "lon": -51.7251,
+      "populacao": {
+        "valor": 21028,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4322004,
+      "nome": "Triunfo",
+      "regiao": "RMPA",
+      "lat": -29.9291,
+      "lon": -51.7075,
+      "populacao": {
+        "valor": 27498,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4301107,
+      "nome": "Arroio dos Ratos",
+      "regiao": "RMPA",
+      "lat": -30.0875,
+      "lon": -51.7275,
+      "populacao": {
+        "valor": 14601,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4311403,
+      "nome": "Lajeado",
+      "regiao": "Vale do Taquari",
+      "lat": -29.4591,
+      "lon": -51.9644,
+      "populacao": {
+        "valor": 93646,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4307807,
+      "nome": "Estrela",
+      "regiao": "Vale do Taquari",
+      "lat": -29.5002,
+      "lon": -51.9495,
+      "populacao": {
+        "valor": 32183,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4306809,
+      "nome": "Encantado",
+      "regiao": "Vale do Taquari",
+      "lat": -29.2351,
+      "lon": -51.8703,
+      "populacao": {
+        "valor": 22962,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4312609,
+      "nome": "Muçum",
+      "regiao": "Vale do Taquari",
+      "lat": -29.163,
+      "lon": -51.8714,
+      "populacao": {
+        "valor": 4601,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4315800,
+      "nome": "Roca Sales",
+      "regiao": "Vale do Taquari",
+      "lat": -29.2884,
+      "lon": -51.8658,
+      "populacao": {
+        "valor": 10418,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4306205,
+      "nome": "Cruzeiro do Sul",
+      "regiao": "Vale do Taquari",
+      "lat": -29.5148,
+      "lon": -51.9928,
+      "populacao": {
+        "valor": 11600,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4301008,
+      "nome": "Arroio do Meio",
+      "regiao": "Vale do Taquari",
+      "lat": -29.4014,
+      "lon": -51.9557,
+      "populacao": {
+        "valor": 21958,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4305587,
+      "nome": "Colinas",
+      "regiao": "Vale do Taquari",
+      "lat": -29.3948,
+      "lon": -51.8556,
+      "populacao": {
+        "valor": 2423,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4302402,
+      "nome": "Bom Retiro do Sul",
+      "regiao": "Vale do Taquari",
+      "lat": -29.6071,
+      "lon": -51.9456,
+      "populacao": {
+        "valor": 12294,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4321303,
+      "nome": "Taquari",
+      "regiao": "Vale do Taquari",
+      "lat": -29.7943,
+      "lon": -51.8653,
+      "populacao": {
+        "valor": 25198,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4317251,
+      "nome": "Santa Tereza",
+      "regiao": "Vale do Taquari",
+      "lat": -29.1655,
+      "lon": -51.7351,
+      "populacao": {
+        "valor": 1505,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4312401,
+      "nome": "Montenegro",
+      "regiao": "Vale do Caí",
+      "lat": -29.6824,
+      "lon": -51.4679,
+      "populacao": {
+        "valor": 64322,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4322608,
+      "nome": "Venâncio Aires",
+      "regiao": "Vale do Rio Pardo",
+      "lat": -29.6143,
+      "lon": -52.1932,
+      "populacao": {
+        "valor": 68763,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    },
+    {
+      "ibge": 4315107,
+      "nome": "Porto Xavier",
+      "regiao": "Noroeste",
+      "lat": -27.9082,
+      "lon": -55.1379,
+      "populacao": {
+        "valor": 9938,
+        "unidade": "habitantes",
+        "fonte": "IBGE — Censo Demográfico 2022 (SIDRA, tabela 4709)",
+        "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+        "data_referencia": "2022-08-01",
+        "data_consulta": "2026-11-03",
+        "camada": "HISTORICO"
+      }
+    }
+  ]
+}

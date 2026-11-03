@@ -1,0 +1,323 @@
+{
+  "aviso": "Parceiros com NOMES FICTÍCIOS (nenhuma empresa real como doadora). Capacidades, preços e localizações por bairro seguem fontes reais.",
+  "parceiros": [
+    {
+      "id": "sup-a",
+      "nome": "Supermercado Parceiro A",
+      "tipo_ajuda": "produto",
+      "municipio_ibge": 4314902,
+      "bairro": "Menino Deus",
+      "lat": -30.0318,
+      "lon": -51.2065,
+      "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
+      "recursos": {
+        "agua": 4000,
+        "alimentos": 1500,
+        "higiene": 120,
+        "cobertores": 0,
+        "papel_roupas": 600
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Libera o ponto de coleta na entrada da loja e divulga a lista de itens prioritários.",
+        "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
+        "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "ponto_coleta": "p-poa-menino-deus"
+    },
+    {
+      "id": "sup-b",
+      "nome": "Supermercado Parceiro B",
+      "tipo_ajuda": "produto",
+      "municipio_ibge": 4314902,
+      "bairro": "Partenon",
+      "lat": -30.0318,
+      "lon": -51.2065,
+      "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
+      "recursos": {
+        "agua": 2500,
+        "alimentos": 1000,
+        "higiene": 80,
+        "cobertores": 40,
+        "papel_roupas": 400
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Libera o ponto de coleta na entrada da loja e divulga a lista de itens prioritários.",
+        "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
+        "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "ponto_coleta": "p-poa-partenon"
+    },
+    {
+      "id": "sup-c",
+      "nome": "Supermercado Parceiro C",
+      "tipo_ajuda": "produto",
+      "municipio_ibge": 4304606,
+      "bairro": "Centro",
+      "lat": -29.9128,
+      "lon": -51.1857,
+      "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
+      "recursos": {
+        "agua": 3000,
+        "alimentos": 1200,
+        "higiene": 100,
+        "cobertores": 60,
+        "papel_roupas": 500
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Libera o ponto de coleta na entrada da loja e divulga a lista de itens prioritários.",
+        "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
+        "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "ponto_coleta": "p-canoas-centro"
+    },
+    {
+      "id": "sup-d",
+      "nome": "Supermercado Parceiro D",
+      "tipo_ajuda": "produto",
+      "municipio_ibge": 4311403,
+      "bairro": "Centro",
+      "lat": -29.4591,
+      "lon": -51.9644,
+      "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
+      "recursos": {
+        "agua": 2000,
+        "alimentos": 900,
+        "higiene": 70,
+        "cobertores": 80,
+        "papel_roupas": 300
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Libera o ponto de coleta na entrada da loja e divulga a lista de itens prioritários.",
+        "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
+        "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "ponto_coleta": "p-lajeado-centro"
+    },
+    {
+      "id": "sup-e",
+      "nome": "Supermercado Parceiro E",
+      "tipo_ajuda": "produto",
+      "municipio_ibge": 4307807,
+      "bairro": "Centro",
+      "lat": -29.5002,
+      "lon": -51.9495,
+      "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
+      "recursos": {
+        "agua": 1500,
+        "alimentos": 700,
+        "higiene": 50,
+        "cobertores": 30,
+        "papel_roupas": 250
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Libera o ponto de coleta na entrada da loja e divulga a lista de itens prioritários.",
+        "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
+        "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "ponto_coleta": "p-estrela-centro"
+    },
+    {
+      "id": "ata-f",
+      "nome": "Atacado Parceiro F",
+      "tipo_ajuda": "produto",
+      "municipio_ibge": 4312401,
+      "bairro": "Centro",
+      "lat": -29.6824,
+      "lon": -51.4679,
+      "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja. Atacado no eixo da BR-386, entre o Vale e a Região Metropolitana.",
+      "recursos": {
+        "agua": 8000,
+        "alimentos": 4000,
+        "higiene": 300,
+        "cobertores": 200,
+        "papel_roupas": 1500
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Libera o ponto de coleta na entrada da loja e divulga a lista de itens prioritários.",
+        "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
+        "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "ponto_coleta": "p-montenegro-centro"
+    },
+    {
+      "id": "tra-g",
+      "nome": "Transportadora Parceira G",
+      "tipo_ajuda": "veiculo",
+      "municipio_ibge": 4304606,
+      "bairro": "Niterói",
+      "lat": -29.9128,
+      "lon": -51.1857,
+      "base_real": "Capacidade real das categorias de veículo (data/veiculos.json) e frete pelo piso ANTT (data/frete.json).",
+      "recursos": {
+        "vuc": 0,
+        "toco": 1,
+        "truck": 2
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Confirma a escala de motoristas para as próximas 48 h.",
+        "2-alerta": "Coloca os veículos de prontidão nas janelas acordadas.",
+        "3-critico": "Cede os veículos sem custo de frete (frete doado) enquanto durar a resposta."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "veiculos": [
+        {
+          "id": "v-truck-1",
+          "categoria": "truck",
+          "janela": [
+            "06:00",
+            "18:00"
+          ]
+        },
+        {
+          "id": "v-truck-2",
+          "categoria": "truck",
+          "janela": [
+            "08:00",
+            "20:00"
+          ]
+        },
+        {
+          "id": "v-toco-1",
+          "categoria": "toco",
+          "janela": [
+            "07:00",
+            "19:00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tra-h",
+      "nome": "Transportadora Parceira H",
+      "tipo_ajuda": "veiculo",
+      "municipio_ibge": 4311403,
+      "bairro": "Conventos",
+      "lat": -29.4591,
+      "lon": -51.9644,
+      "base_real": "Capacidade real das categorias de veículo (data/veiculos.json) e frete pelo piso ANTT (data/frete.json).",
+      "recursos": {
+        "vuc": 2,
+        "toco": 1,
+        "truck": 0
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Confirma a escala de motoristas para as próximas 48 h.",
+        "2-alerta": "Coloca os veículos de prontidão nas janelas acordadas.",
+        "3-critico": "Cede os veículos sem custo de frete (frete doado) enquanto durar a resposta."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)",
+      "veiculos": [
+        {
+          "id": "v-vuc-1",
+          "categoria": "vuc",
+          "janela": [
+            "06:00",
+            "14:00"
+          ]
+        },
+        {
+          "id": "v-vuc-2",
+          "categoria": "vuc",
+          "janela": [
+            "12:00",
+            "20:00"
+          ]
+        },
+        {
+          "id": "v-toco-2",
+          "categoria": "toco",
+          "janela": [
+            "07:00",
+            "19:00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clu-i",
+      "nome": "Clube Parceiro I",
+      "tipo_ajuda": "espaco",
+      "municipio_ibge": 4307807,
+      "bairro": "Centro",
+      "lat": -29.5002,
+      "lon": -51.9495,
+      "base_real": "Ginásio usado como depósito de apoio; área real a confirmar com o clube.",
+      "recursos": {
+        "m2": 400
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Reserva o ginásio para a operação.",
+        "2-alerta": "Abre o ginásio como depósito de apoio.",
+        "3-critico": "Abre o ginásio 24 h como depósito e ponto de triagem."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)"
+    },
+    {
+      "id": "ass-j",
+      "nome": "Associação Parceira J",
+      "tipo_ajuda": "voluntarios",
+      "municipio_ibge": 4314902,
+      "bairro": "Centro Histórico",
+      "lat": -30.0318,
+      "lon": -51.2065,
+      "base_real": "Voluntários cadastrados para turnos de 4 h.",
+      "recursos": {
+        "pessoas": 30
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Confirma a escala de voluntários.",
+        "2-alerta": "Envia 15 voluntários para as quadras.",
+        "3-critico": "Envia 30 voluntários em dois turnos."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)"
+    },
+    {
+      "id": "igr-k",
+      "nome": "Igreja Parceira K",
+      "tipo_ajuda": "voluntarios",
+      "municipio_ibge": 4311403,
+      "bairro": "Centro",
+      "lat": -29.4591,
+      "lon": -51.9644,
+      "base_real": "Voluntários cadastrados para turnos de 4 h.",
+      "recursos": {
+        "pessoas": 20
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Confirma a escala de voluntários.",
+        "2-alerta": "Envia 10 voluntários para o abrigo.",
+        "3-critico": "Envia 20 voluntários e abre a cozinha comunitária."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)"
+    },
+    {
+      "id": "far-l",
+      "nome": "Farmácia Parceira L",
+      "tipo_ajuda": "produto",
+      "municipio_ibge": 4304606,
+      "bairro": "Marechal Rondon",
+      "lat": -29.9128,
+      "lon": -51.1857,
+      "base_real": "Preços reais: DIEESE (Porto Alegre, set/2026) e catálogo online de atacado (nov/2026). Localização: bairro real, sem endereço de loja.",
+      "recursos": {
+        "agua": 0,
+        "alimentos": 0,
+        "higiene": 200,
+        "cobertores": 0,
+        "papel_roupas": 300
+      },
+      "compromisso_pre_acordado": {
+        "1-atencao": "Libera o ponto de coleta na entrada da loja e divulga a lista de itens prioritários.",
+        "2-alerta": "Doa 10% do estoque de água e alimentos não perecíveis e amplia o ponto de coleta.",
+        "3-critico": "Libera o estoque reservado da operação (compromisso pré-acordado) e reforça a equipe do ponto."
+      },
+      "fonte_localizacao": "IBGE — sede municipal (bairro não localizado no OSM)"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "aviso": "Relatos ilustrativos escritos para o exercício. Não representam pessoas reais; nenhum nome, foto ou dado pessoal é usado (LGPD).",
+  "relatos": [
+    {
+      "id": "r1",
+      "local": "Quadra-base em Lajeado",
+      "texto": "Chegamos de madrugada só com a roupa do corpo. O primeiro kit tinha um bilhete dizendo \"vocês não estão sozinhos\" — guardei na carteira.",
+      "selo": "relato ilustrativo"
+    },
+    {
+      "id": "r2",
+      "local": "Ponto de coleta em Canoas",
+      "texto": "A fila de doação dobrou depois do aviso de que faltava água. Quando o ponto encheu, o caminhão chegou em quarenta minutos.",
+      "selo": "relato ilustrativo"
+    },
+    {
+      "id": "r3",
+      "local": "Linha de montagem",
+      "texto": "Na triagem, separar por validade fez diferença: nenhum item vencido saiu da quadra.",
+      "selo": "relato ilustrativo"
+    },
+    {
+      "id": "r4",
+      "local": "Abrigo em Porto Alegre",
+      "texto": "Com a frente fria, o pedido mudou de comida para cobertor em uma noite. A coordenação avisou pelo painel e a meta da arrecadação mudou junto.",
+      "selo": "relato ilustrativo"
+    },
+    {
+      "id": "r5",
+      "local": "Doador em Estrela",
+      "texto": "Recebi a mensagem de que a minha doação virou kits entregues no abrigo. Dá vontade de voltar no sábado.",
+      "selo": "relato ilustrativo"
+    },
+    {
+      "id": "r6",
+      "local": "Voluntária da expedição",
+      "texto": "O mapa mostrou que a ponte estava fechada antes de o motorista sair. Mudamos a rota e ninguém ficou parado na estrada.",
+      "selo": "relato ilustrativo"
+    }
+  ]
+}

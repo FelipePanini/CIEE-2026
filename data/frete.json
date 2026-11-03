@@ -1,0 +1,80 @@
+{
+  "norma": {
+    "titulo": "Resolução ANTT nº 6.076, de 19/01/2026 — Anexo II, Tabela A",
+    "fonte": "ANTT — texto publicado no LegisWeb",
+    "url": "https://www.legisweb.com.br/legislacao/?id=489672",
+    "data_consulta": "2026-11-03"
+  },
+  "formula": "piso = distância (km) × CCD + CC",
+  "pisos": [
+    {
+      "eixos": 2,
+      "ccd": {
+        "valor": 3.6815,
+        "unidade": "R$/km",
+        "fonte": "ANTT — Res. 6.076/2026, Tabela A, carga geral, 2 eixos",
+        "url": "https://www.legisweb.com.br/legislacao/?id=489672",
+        "data_referencia": "2026-01-19",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Tabela A (carga lotação, contratação de caminhão simples), carga geral. Conferir se houve atualização posterior dos coeficientes no portal da ANTT."
+      },
+      "cc": {
+        "valor": 436.39,
+        "unidade": "R$",
+        "fonte": "ANTT — Res. 6.076/2026, Tabela A, carga geral, 2 eixos",
+        "url": "https://www.legisweb.com.br/legislacao/?id=489672",
+        "data_referencia": "2026-01-19",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Tabela A (carga lotação, contratação de caminhão simples), carga geral. Conferir se houve atualização posterior dos coeficientes no portal da ANTT."
+      }
+    },
+    {
+      "eixos": 3,
+      "ccd": {
+        "valor": 4.7062,
+        "unidade": "R$/km",
+        "fonte": "ANTT — Res. 6.076/2026, Tabela A, carga geral, 3 eixos",
+        "url": "https://www.legisweb.com.br/legislacao/?id=489672",
+        "data_referencia": "2026-01-19",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Tabela A (carga lotação, contratação de caminhão simples), carga geral. Conferir se houve atualização posterior dos coeficientes no portal da ANTT."
+      },
+      "cc": {
+        "valor": 523.33,
+        "unidade": "R$",
+        "fonte": "ANTT — Res. 6.076/2026, Tabela A, carga geral, 3 eixos",
+        "url": "https://www.legisweb.com.br/legislacao/?id=489672",
+        "data_referencia": "2026-01-19",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Tabela A (carga lotação, contratação de caminhão simples), carga geral. Conferir se houve atualização posterior dos coeficientes no portal da ANTT."
+      }
+    },
+    {
+      "eixos": 4,
+      "ccd": {
+        "valor": 5.3386,
+        "unidade": "R$/km",
+        "fonte": "ANTT — Res. 6.076/2026, Tabela A, carga geral, 4 eixos",
+        "url": "https://www.legisweb.com.br/legislacao/?id=489672",
+        "data_referencia": "2026-01-19",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Tabela A (carga lotação, contratação de caminhão simples), carga geral. Conferir se houve atualização posterior dos coeficientes no portal da ANTT."
+      },
+      "cc": {
+        "valor": 568.72,
+        "unidade": "R$",
+        "fonte": "ANTT — Res. 6.076/2026, Tabela A, carga geral, 4 eixos",
+        "url": "https://www.legisweb.com.br/legislacao/?id=489672",
+        "data_referencia": "2026-01-19",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Tabela A (carga lotação, contratação de caminhão simples), carga geral. Conferir se houve atualização posterior dos coeficientes no portal da ANTT."
+      }
+    }
+  ]
+}

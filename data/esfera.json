@@ -1,0 +1,190 @@
+{
+  "padroes": {
+    "agua_beber_min_l": {
+      "valor": 2.5,
+      "unidade": "L/pessoa/dia",
+      "fonte": "Manual Esfera 2018 — WASH, necessidades básicas de água (sobrevivência: beber e alimentos) (p. 132 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=132",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Faixa 2,5–3 L conforme clima e fisiologia.",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "agua_beber_max_l": {
+      "valor": 3,
+      "unidade": "L/pessoa/dia",
+      "fonte": "Manual Esfera 2018 — WASH, necessidades básicas de água (sobrevivência: beber e alimentos) (p. 132 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=132",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "agua_higiene_min_l": {
+      "valor": 2,
+      "unidade": "L/pessoa/dia",
+      "fonte": "Manual Esfera 2018 — WASH, práticas de higiene (p. 132 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=132",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Faixa 2–6 L.",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "agua_higiene_max_l": {
+      "valor": 6,
+      "unidade": "L/pessoa/dia",
+      "fonte": "Manual Esfera 2018 — WASH, práticas de higiene (p. 132 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=132",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "agua_cozinhar_min_l": {
+      "valor": 3,
+      "unidade": "L/pessoa/dia",
+      "fonte": "Manual Esfera 2018 — WASH, cozinhar (p. 132 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=132",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Faixa 3–6 L.",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "agua_total_min_l": {
+      "valor": 15,
+      "unidade": "L/pessoa/dia",
+      "fonte": "Manual Esfera 2018 — Abastecimento de água, padrão 2.1 — indicador-chave (p. 131 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=131",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "\"Mínimo de 15 litros por pessoa por dia\" para beber e higiene doméstica.",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "energia_kcal": {
+      "valor": 2100,
+      "unidade": "kcal/pessoa/dia",
+      "fonte": "Manual Esfera 2018 — Segurança alimentar — necessidades nutricionais (p. 228 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=228",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "sabonete_banho_g_mes": {
+      "valor": 250,
+      "unidade": "g/pessoa/mês",
+      "fonte": "Manual Esfera 2018 — Promoção da higiene, padrão 2 — itens de higiene (p. 125 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=125",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "sabao_roupa_g_mes": {
+      "valor": 200,
+      "unidade": "g/pessoa/mês",
+      "fonte": "Manual Esfera 2018 — Promoção da higiene, padrão 2 — itens de higiene (p. 125 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=125",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "cobertor_por_pessoa": {
+      "valor": 1,
+      "unidade": "cobertor/pessoa",
+      "fonte": "Manual Esfera 2018 — Itens domésticos — roupas e cama (p. 294 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=294",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Mínimo de um cobertor e roupa de cama por pessoa; cobertores adicionais em clima frio.",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "espaco_min_m2": {
+      "valor": 3.5,
+      "unidade": "m²/pessoa",
+      "fonte": "Manual Esfera 2018 — Abrigo, padrão 3 — espaço de vida (p. 289 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=289",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    },
+    "espaco_frio_m2": {
+      "valor": 4.5,
+      "unidade": "m²/pessoa",
+      "fonte": "Manual Esfera 2018 — Abrigo, padrão 3 — espaço de vida em clima frio ou urbano (p. 289 do PDF)",
+      "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf#page=289",
+      "data_referencia": "2018",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "Faixa 4,5–5,5 m² em clima frio ou urbano.",
+      "confirmacoes": [
+        {
+          "fonte": "Cópia do Internet Archive",
+          "url": "https://web.archive.org/web/2024id_/https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf"
+        }
+      ]
+    }
+  }
+}

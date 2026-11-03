@@ -1,0 +1,62 @@
+{
+  "pix_sos_rs": {
+    "arrecadado": {
+      "valor": 142353433.36,
+      "unidade": "R$",
+      "fonte": "Governo do RS — painel da campanha Pix SOS Rio Grande do Sul",
+      "url": "https://sosenchentes.rs.gov.br/sobre-o-pix",
+      "data_referencia": "2024-05-01/2024-12-31",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "\"A campanha foi encerrada.\" Total arrecadado (inclui contas internacionais convertidas para real), conforme o painel oficial."
+    },
+    "destinado": {
+      "valor": 136456014.13,
+      "unidade": "R$",
+      "fonte": "Governo do RS — painel da campanha Pix SOS Rio Grande do Sul",
+      "url": "https://sosenchentes.rs.gov.br/sobre-o-pix",
+      "data_referencia": "2024-05-01/2024-12-31",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "A diferença entre arrecadado e destinado é explicada na página oficial da campanha."
+    },
+    "familias_beneficiadas": {
+      "valor": 36876,
+      "unidade": "famílias",
+      "fonte": "Governo do RS — Plano Rio Grande, Pix SOS Rio Grande do Sul (22/07/2024)",
+      "url": "https://planoriogrande.rs.gov.br/pix-sos-rio-grande-do-sul",
+      "data_referencia": "2024-07-03",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "R$ 2.000 por família, creditados entre 17/05 e 03/07/2024, em 89 municípios com calamidade pública."
+    },
+    "valor_por_familia": {
+      "valor": 2000,
+      "unidade": "R$",
+      "fonte": "Governo do RS — Plano Rio Grande, Pix SOS Rio Grande do Sul (22/07/2024)",
+      "url": "https://planoriogrande.rs.gov.br/pix-sos-rio-grande-do-sul",
+      "data_referencia": "2024-07-03",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO"
+    },
+    "total_familias": {
+      "valor": 73752000,
+      "unidade": "R$",
+      "fonte": "Governo do RS — Plano Rio Grande, Pix SOS Rio Grande do Sul (22/07/2024)",
+      "url": "https://planoriogrande.rs.gov.br/pix-sos-rio-grande-do-sul",
+      "data_referencia": "2024-07-03",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO"
+    },
+    "mei_rs_calamidades": {
+      "valor": 33000000,
+      "unidade": "R$",
+      "fonte": "Governo do RS — Plano Rio Grande, Pix SOS Rio Grande do Sul (22/07/2024)",
+      "url": "https://planoriogrande.rs.gov.br/pix-sos-rio-grande-do-sul",
+      "data_referencia": "2024-07-22",
+      "data_consulta": "2026-11-03",
+      "camada": "HISTORICO",
+      "nota": "R$ 1,5 mil por MEI atingido, pago em 22/07/2024."
+    }
+  }
+}

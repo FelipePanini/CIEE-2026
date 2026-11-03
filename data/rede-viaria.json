@@ -1,0 +1,923 @@
+{
+  "metodo_distancia": "Trechos de rodovia: comprimento da geometria OSM (Overpass). Último trecho urbano: linha reta × 1,3 (estimado).",
+  "nos": [
+    {
+      "id": "e-lajeado",
+      "nome": "Lajeado — acesso BR-386",
+      "tipo": "entroncamento",
+      "lat": -29.45434,
+      "lon": -51.96066,
+      "ref": "BR-386"
+    },
+    {
+      "id": "e-estrela",
+      "nome": "Estrela — acesso BR-386 (ponte sobre o Taquari)",
+      "tipo": "entroncamento",
+      "lat": -29.49259,
+      "lon": -51.95166,
+      "ref": "BR-386"
+    },
+    {
+      "id": "e-tabai",
+      "nome": "Tabaí — entroncamento BR-386 / BR-287",
+      "tipo": "entroncamento",
+      "lat": -29.70527,
+      "lon": -51.65351,
+      "ref": "BR-386"
+    },
+    {
+      "id": "e-montenegro",
+      "nome": "Montenegro — entroncamento BR-386 / BR-470",
+      "tipo": "entroncamento",
+      "lat": -29.75887,
+      "lon": -51.59316,
+      "ref": "BR-386"
+    },
+    {
+      "id": "e-canoas-386",
+      "nome": "Canoas — entroncamento BR-386 / BR-116",
+      "tipo": "entroncamento",
+      "lat": -29.89317,
+      "lon": -51.18043,
+      "ref": "BR-386"
+    },
+    {
+      "id": "e-esteio-448",
+      "nome": "Esteio/Sapucaia — BR-116 / BR-448",
+      "tipo": "entroncamento",
+      "lat": -29.83231,
+      "lon": -51.17774,
+      "ref": "BR-448"
+    },
+    {
+      "id": "e-canoas-centro",
+      "nome": "Canoas — BR-116 (centro)",
+      "tipo": "entroncamento",
+      "lat": -29.91683,
+      "lon": -51.1779,
+      "ref": "BR-116"
+    },
+    {
+      "id": "e-poa-norte",
+      "nome": "Porto Alegre — BR-116 / BR-290 (Freeway)",
+      "tipo": "entroncamento",
+      "lat": -29.97107,
+      "lon": -51.19111,
+      "ref": "BR-290"
+    },
+    {
+      "id": "e-poa-448",
+      "nome": "Porto Alegre — início da BR-448 (Rodovia do Parque)",
+      "tipo": "entroncamento",
+      "lat": -29.96557,
+      "lon": -51.20226,
+      "ref": "BR-448"
+    },
+    {
+      "id": "e-ponte-guaiba",
+      "nome": "Ponte do Guaíba / Rio Jacuí (BR-116 / BR-290)",
+      "tipo": "entroncamento",
+      "lat": -29.99399,
+      "lon": -51.27934,
+      "ref": "BR-290"
+    },
+    {
+      "id": "e-eldorado",
+      "nome": "Eldorado do Sul — BR-290 / BR-116",
+      "tipo": "entroncamento",
+      "lat": -30.00418,
+      "lon": -51.31081,
+      "ref": "BR-290"
+    },
+    {
+      "id": "e-guaiba",
+      "nome": "Guaíba — BR-116",
+      "tipo": "entroncamento",
+      "lat": -30.11077,
+      "lon": -51.34403,
+      "ref": "BR-116"
+    },
+    {
+      "id": "q-poa-aramy",
+      "nome": "EMEF Aramy Silva",
+      "tipo": "quadra",
+      "lat": -30.09765,
+      "lon": -51.24174
+    },
+    {
+      "id": "q-poa-grande-oriente",
+      "nome": "EMEF Grande Oriente do Rio Grande do Sul",
+      "tipo": "quadra",
+      "lat": -30.02401,
+      "lon": -51.10376
+    },
+    {
+      "id": "q-canoas-marechal",
+      "nome": "Colégio Estadual Marechal Rondon",
+      "tipo": "quadra",
+      "lat": -29.91919,
+      "lon": -51.17582
+    },
+    {
+      "id": "q-eldorado-getulio",
+      "nome": "EMEF Getúlio Vargas",
+      "tipo": "quadra",
+      "lat": -29.99567,
+      "lon": -51.32427
+    },
+    {
+      "id": "q-lajeado-pedro-scherer",
+      "nome": "EEEF Pedro Scherer",
+      "tipo": "quadra",
+      "lat": -29.4434,
+      "lon": -51.9859
+    },
+    {
+      "id": "q-estrela-iee",
+      "nome": "Instituto Estadual de Educação Estrela da Manhã",
+      "tipo": "quadra",
+      "lat": -29.51172,
+      "lon": -51.9679
+    },
+    {
+      "id": "q-encantado-scalabrini",
+      "nome": "Instituto Estadual de Educação Monsenhor Scalabrini",
+      "tipo": "quadra",
+      "lat": -29.23631,
+      "lon": -51.87231
+    },
+    {
+      "id": "a-lajeado-imigrante",
+      "nome": "Abrigo Parque do Imigrante",
+      "tipo": "abrigo",
+      "lat": -29.455,
+      "lon": -51.9544
+    },
+    {
+      "id": "a-canoas-ulbra",
+      "nome": "Abrigo na Ulbra (campus Canoas)",
+      "tipo": "abrigo",
+      "lat": -29.88692,
+      "lon": -51.16281
+    },
+    {
+      "id": "p-poa-menino-deus",
+      "nome": "Ponto de coleta — Supermercado Parceiro A",
+      "tipo": "coleta",
+      "lat": -30.0318,
+      "lon": -51.2065
+    },
+    {
+      "id": "p-poa-partenon",
+      "nome": "Ponto de coleta — Supermercado Parceiro B",
+      "tipo": "coleta",
+      "lat": -30.0318,
+      "lon": -51.2065
+    },
+    {
+      "id": "p-canoas-centro",
+      "nome": "Ponto de coleta — Supermercado Parceiro C",
+      "tipo": "coleta",
+      "lat": -29.9128,
+      "lon": -51.1857
+    },
+    {
+      "id": "p-lajeado-centro",
+      "nome": "Ponto de coleta — Supermercado Parceiro D",
+      "tipo": "coleta",
+      "lat": -29.4591,
+      "lon": -51.9644
+    },
+    {
+      "id": "p-estrela-centro",
+      "nome": "Ponto de coleta — Supermercado Parceiro E",
+      "tipo": "coleta",
+      "lat": -29.5002,
+      "lon": -51.9495
+    },
+    {
+      "id": "p-montenegro-centro",
+      "nome": "Ponto de coleta — Atacado Parceiro F",
+      "tipo": "coleta",
+      "lat": -29.6824,
+      "lon": -51.4679
+    }
+  ],
+  "arestas": [
+    {
+      "id": "e-lajeado__e-estrela",
+      "de": "e-lajeado",
+      "para": "e-estrela",
+      "via": "BR-386",
+      "km": {
+        "valor": 4.5,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-386",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-estrela__e-tabai",
+      "de": "e-estrela",
+      "para": "e-tabai",
+      "via": "BR-386",
+      "km": {
+        "valor": 40.2,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-386",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-tabai__e-montenegro",
+      "de": "e-tabai",
+      "para": "e-montenegro",
+      "via": "BR-386",
+      "km": {
+        "valor": 8.8,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-386",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-montenegro__e-canoas-386",
+      "de": "e-montenegro",
+      "para": "e-canoas-386",
+      "via": "BR-386",
+      "km": {
+        "valor": 44.9,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-386",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-canoas-386__e-esteio-448",
+      "de": "e-canoas-386",
+      "para": "e-esteio-448",
+      "via": "BR-116",
+      "km": {
+        "valor": 7.3,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-116",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-canoas-386__e-canoas-centro",
+      "de": "e-canoas-386",
+      "para": "e-canoas-centro",
+      "via": "BR-116",
+      "km": {
+        "valor": 3,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-116",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-canoas-centro__e-poa-norte",
+      "de": "e-canoas-centro",
+      "para": "e-poa-norte",
+      "via": "BR-116",
+      "km": {
+        "valor": 7.3,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-116",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-esteio-448__e-poa-448",
+      "de": "e-esteio-448",
+      "para": "e-poa-448",
+      "via": "BR-448",
+      "km": {
+        "valor": 18.7,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-448",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-poa-448__e-poa-norte",
+      "de": "e-poa-448",
+      "para": "e-poa-norte",
+      "via": "BR-290",
+      "km": {
+        "valor": 1.6,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-290",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-poa-norte__e-ponte-guaiba",
+      "de": "e-poa-norte",
+      "para": "e-ponte-guaiba",
+      "via": "BR-116/BR-290",
+      "km": {
+        "valor": 10.1,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-116/BR-290",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-ponte-guaiba__e-eldorado",
+      "de": "e-ponte-guaiba",
+      "para": "e-eldorado",
+      "via": "BR-116/BR-290",
+      "km": {
+        "valor": 3.3,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-116/BR-290",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "e-eldorado__e-guaiba",
+      "de": "e-eldorado",
+      "para": "e-guaiba",
+      "via": "BR-116",
+      "km": {
+        "valor": 12.5,
+        "unidade": "km",
+        "fonte": "OpenStreetMap — comprimento da geometria da BR-116",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Calculado sobre a geometria das rodovias no OSM (Overpass API). Alças de acesso aproximadas."
+      },
+      "velocidade_kmh": 60
+    },
+    {
+      "id": "q-poa-aramy__e-guaiba",
+      "de": "q-poa-aramy",
+      "para": "e-guaiba",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 12.9,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-poa-aramy__e-ponte-guaiba",
+      "de": "q-poa-aramy",
+      "para": "e-ponte-guaiba",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 15.7,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-poa-grande-oriente__e-poa-norte",
+      "de": "q-poa-grande-oriente",
+      "para": "e-poa-norte",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 13.3,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-poa-grande-oriente__e-poa-448",
+      "de": "q-poa-grande-oriente",
+      "para": "e-poa-448",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 14.9,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-canoas-marechal__e-canoas-centro",
+      "de": "q-canoas-marechal",
+      "para": "e-canoas-centro",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 0.4,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-canoas-marechal__e-canoas-386",
+      "de": "q-canoas-marechal",
+      "para": "e-canoas-386",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 3.8,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-eldorado-getulio__e-eldorado",
+      "de": "q-eldorado-getulio",
+      "para": "e-eldorado",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 2.1,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-eldorado-getulio__e-ponte-guaiba",
+      "de": "q-eldorado-getulio",
+      "para": "e-ponte-guaiba",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 5.6,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-lajeado-pedro-scherer__e-lajeado",
+      "de": "q-lajeado-pedro-scherer",
+      "para": "e-lajeado",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 3.5,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-lajeado-pedro-scherer__e-estrela",
+      "de": "q-lajeado-pedro-scherer",
+      "para": "e-estrela",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 8.3,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-estrela-iee__e-estrela",
+      "de": "q-estrela-iee",
+      "para": "e-estrela",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 3.4,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-estrela-iee__e-lajeado",
+      "de": "q-estrela-iee",
+      "para": "e-lajeado",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 8.3,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-encantado-scalabrini__e-lajeado",
+      "de": "q-encantado-scalabrini",
+      "para": "e-lajeado",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 33.4,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "q-encantado-scalabrini__e-estrela",
+      "de": "q-encantado-scalabrini",
+      "para": "e-estrela",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 38.4,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "a-lajeado-imigrante__e-lajeado",
+      "de": "a-lajeado-imigrante",
+      "para": "e-lajeado",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 0.8,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "a-lajeado-imigrante__e-estrela",
+      "de": "a-lajeado-imigrante",
+      "para": "e-estrela",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 5.4,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "a-canoas-ulbra__e-canoas-386",
+      "de": "a-canoas-ulbra",
+      "para": "e-canoas-386",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 2.4,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "a-canoas-ulbra__e-canoas-centro",
+      "de": "a-canoas-ulbra",
+      "para": "e-canoas-centro",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 4.7,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-poa-menino-deus__e-poa-norte",
+      "de": "p-poa-menino-deus",
+      "para": "e-poa-norte",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 9,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-poa-menino-deus__e-poa-448",
+      "de": "p-poa-menino-deus",
+      "para": "e-poa-448",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 9.6,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-poa-partenon__e-poa-norte",
+      "de": "p-poa-partenon",
+      "para": "e-poa-norte",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 9,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-poa-partenon__e-poa-448",
+      "de": "p-poa-partenon",
+      "para": "e-poa-448",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 9.6,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-canoas-centro__e-canoas-centro",
+      "de": "p-canoas-centro",
+      "para": "e-canoas-centro",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 1.1,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-canoas-centro__e-canoas-386",
+      "de": "p-canoas-centro",
+      "para": "e-canoas-386",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 2.9,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-lajeado-centro__e-lajeado",
+      "de": "p-lajeado-centro",
+      "para": "e-lajeado",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 0.8,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-lajeado-centro__e-estrela",
+      "de": "p-lajeado-centro",
+      "para": "e-estrela",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 5.1,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-estrela-centro__e-estrela",
+      "de": "p-estrela-centro",
+      "para": "e-estrela",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 1.1,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-estrela-centro__e-lajeado",
+      "de": "p-estrela-centro",
+      "para": "e-lajeado",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 6.8,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-montenegro-centro__e-montenegro",
+      "de": "p-montenegro-centro",
+      "para": "e-montenegro",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 19.2,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    },
+    {
+      "id": "p-montenegro-centro__e-tabai",
+      "de": "p-montenegro-centro",
+      "para": "e-tabai",
+      "via": "vias urbanas",
+      "km": {
+        "valor": 23.5,
+        "unidade": "km",
+        "fonte": "Estimativa: distância em linha reta × 1,3 (último trecho urbano)",
+        "url": "https://www.openstreetmap.org/",
+        "data_referencia": "2026-11-03",
+        "data_consulta": "2026-11-03",
+        "camada": "ATUAL",
+        "nota": "Distância estimada. Rodar npm run gerar-rotas na Action (OSRM) para obter a distância pelas ruas."
+      },
+      "velocidade_kmh": 30
+    }
+  ],
+  "bloqueios_reais": []
+}

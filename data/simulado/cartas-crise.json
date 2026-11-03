@@ -1,0 +1,198 @@
+{
+  "aviso": "Eventos hipotéticos para treinar a resposta à crise. Quando inspirados em situações reais, trazem o selo \"inspirado em fato real\" e o link da fonte. Os números de efeito são parte da simulação.",
+  "cartas": [
+    {
+      "id": "taquari-cota",
+      "titulo": "Taquari passa da cota de inundação em Lajeado",
+      "area": "logistica",
+      "severidade": "critico",
+      "descricao": "O rio passa de 19 m e sobe rápido. A Defesa Civil remove famílias de áreas de risco para o abrigo.",
+      "inspirado_em": {
+        "texto": "Em 22/07/2026 o Taquari passou da cota de 19 m em Lajeado e chegou a 24,77 m; cerca de 220 pessoas foram removidas preventivamente.",
+        "fonte": "ANA/SGB — telemetria 86879300 e relatório da Defesa Civil RS (24/07/2026)",
+        "url": "https://static.poder360.com.br/uploads/2026/07/relatorio-defesa-civil-rs-24jul.pdf"
+      },
+      "efeitos": [
+        {
+          "tipo": "nivel",
+          "estacao": "taquari-lajeado",
+          "valor": 24.77
+        },
+        {
+          "tipo": "pessoas",
+          "local": "a-lajeado-imigrante",
+          "delta": 220
+        },
+        {
+          "tipo": "fase",
+          "valor": "cheia"
+        },
+        {
+          "tipo": "alerta",
+          "valor": 3
+        }
+      ],
+      "resposta_sugerida": "Acionar o compromisso pré-acordado dos parceiros do Vale, antecipar a próxima rota para o Parque do Imigrante e priorizar água e cobertores."
+    },
+    {
+      "id": "projecao-subestimada",
+      "titulo": "A cheia supera a projeção oficial — o alerta chegou atrasado",
+      "area": "administracao",
+      "severidade": "critico",
+      "descricao": "A projeção da véspera indicava que o rio não chegaria à cota. As equipes perdem horas de preparação.",
+      "inspirado_em": {
+        "texto": "Documentos de 21/07/2026 indicavam que o Taquari não atingiria a cota de inundação; o governo admitiu falha na comunicação dos alertas.",
+        "fonte": "CNN Brasil e Jornal do Comércio (24/07/2026)",
+        "url": "https://www.cnnbrasil.com.br/nacional/sul/rs/rs-dados-meteorologicos-nao-apontavam-inundacao-diz-eduardo-leite/"
+      },
+      "efeitos": [
+        {
+          "tipo": "atraso_global_h",
+          "valor": 6
+        },
+        {
+          "tipo": "alerta",
+          "valor": 3
+        },
+        {
+          "tipo": "fase",
+          "valor": "cheia"
+        }
+      ],
+      "resposta_sugerida": "Disparar mensagem única e datada para todas as áreas, assumir o pior cenário (pico de 2024 como teto) e não esperar a confirmação da cota para mover estoque."
+    },
+    {
+      "id": "br116-canoas",
+      "titulo": "BR-116 bloqueada em Canoas",
+      "area": "logistica",
+      "severidade": "alerta",
+      "descricao": "O trecho urbano da BR-116 em Canoas fica alagado. As rotas precisam desviar pela BR-448 ou pela Freeway.",
+      "inspirado_em": {
+        "texto": "Boletim da PRF de 10/05/2024: BR-116 km 270 bloqueada em Canoas no sentido do aeroporto, com desvio pela Freeway; BR-448 e alça da BR-386 também alagadas.",
+        "fonte": "PRF — bloqueios de rodovias federais no RS (10/05/2024, 12h)",
+        "url": "https://serranossa.com.br/wp-content/uploads/2024/05/Bloqueios-de-Rodovias-Federais-RS-10MAIO-12hs.pdf"
+      },
+      "efeitos": [
+        {
+          "tipo": "bloquear",
+          "via": "BR-116",
+          "trecho": "canoas"
+        }
+      ],
+      "resposta_sugerida": "Recalcular as rotas (Dijkstra) e avisar os pontos de coleta de Canoas sobre a nova janela de recolhimento."
+    },
+    {
+      "id": "frente-fria",
+      "titulo": "Frente fria derruba a temperatura nos abrigos",
+      "area": "comercio",
+      "severidade": "alerta",
+      "descricao": "Massa de ar polar chega na sequência da cheia. Cobertores passam a ser o item mais urgente.",
+      "inspirado_em": {
+        "texto": "A Defesa Civil RS emitiu alerta de frio intenso em julho/2026 e aviso de geada com mínimas negativas em agosto/2026.",
+        "fonte": "Jornal do Comércio (06/07/2026) e Defesa Civil RS — Aviso Meteorológico de Frio 14/2026",
+        "url": "https://www.jornaldocomercio.com/geral/2026/07/1255226-defesa-civil-emite-alerta-para-frio-intenso-no-rio-grande-do-sul.html"
+      },
+      "efeitos": [
+        {
+          "tipo": "peso",
+          "item": "cobertores",
+          "valor": 1.0
+        },
+        {
+          "tipo": "espaco_frio",
+          "valor": true
+        }
+      ],
+      "resposta_sugerida": "Subir a meta de cobertores nos pontos de coleta e aplicar 4,5 m² por pessoa (Esfera, clima frio) na lotação das quadras."
+    },
+    {
+      "id": "ponto-lotado",
+      "titulo": "Ponto de coleta lotado",
+      "area": "comercio",
+      "severidade": "atencao",
+      "descricao": "Um supermercado parceiro atinge a capacidade máxima de doações e não tem como armazenar mais.",
+      "inspirado_em": {
+        "texto": "Em maio/2024 doações se acumularam em um grande abrigo por dificuldade de logística para redistribuí-las.",
+        "fonte": "Poder360 (2024)",
+        "url": "https://www.poder360.com.br/brasil/universidade-privada-acumula-doacoes-por-dificuldade-de-logistica-no-rs/"
+      },
+      "efeitos": [
+        {
+          "tipo": "lotar_ponto",
+          "ponto": "p-canoas-centro"
+        }
+      ],
+      "resposta_sugerida": "Alerta automático para a Logística: incluir o ponto na próxima rota e redirecionar doadores para o ponto mais próximo com espaço."
+    },
+    {
+      "id": "mais-500",
+      "titulo": "+500 desabrigados chegam a um abrigo",
+      "area": "producao",
+      "severidade": "critico",
+      "descricao": "Em poucas horas o abrigo recebe mais 500 pessoas. A cobertura de água e alimentos despenca.",
+      "inspirado_em": {
+        "texto": "O Abrigo Parque do Imigrante, em Lajeado, passou de 99 pessoas (22/07, 10h30) para 540 (23/07, 9h).",
+        "fonte": "CNN Brasil (23/07/2026)",
+        "url": "https://www.cnnbrasil.com.br/nacional/sul/rs/inundacao-no-rs-veja-como-e-abrigo-com-mais-de-500-pessoas-em-lajeado/"
+      },
+      "efeitos": [
+        {
+          "tipo": "pessoas",
+          "local": "a-lajeado-imigrante",
+          "delta": 500
+        }
+      ],
+      "resposta_sugerida": "Montar kits extras na quadra mais próxima, chamar voluntários de reserva e pedir ao parceiro de produto a liberação do compromisso de alerta máximo."
+    },
+    {
+      "id": "caminhao-cancelado",
+      "titulo": "Parceiro cancela o caminhão",
+      "area": "logistica",
+      "severidade": "alerta",
+      "descricao": "A transportadora parceira avisa que o truck da manhã não vai sair. A capacidade de entrega cai.",
+      "inspirado_em": null,
+      "efeitos": [
+        {
+          "tipo": "remover_veiculo",
+          "veiculo": "v-truck-1"
+        }
+      ],
+      "resposta_sugerida": "Redistribuir a carga nos veículos restantes, priorizar paradas com urgência crítica e acionar a segunda transportadora."
+    },
+    {
+      "id": "faltam-voluntarios",
+      "titulo": "Faltam voluntários na triagem",
+      "area": "producao",
+      "severidade": "atencao",
+      "descricao": "Metade dos voluntários da triagem não aparece no turno. A zona vira gargalo da linha.",
+      "inspirado_em": null,
+      "efeitos": [
+        {
+          "tipo": "voluntarios",
+          "zona": "triagem",
+          "fator": 0.5
+        }
+      ],
+      "resposta_sugerida": "Remanejar voluntários da expedição para a triagem e chamar a associação parceira de voluntários."
+    },
+    {
+      "id": "queda-energia",
+      "titulo": "Queda de energia na quadra",
+      "area": "producao",
+      "severidade": "alerta",
+      "descricao": "A rede elétrica cai durante a montagem. Sem luz, a conferência fica mais lenta.",
+      "inspirado_em": {
+        "texto": "O relatório da Defesa Civil de 24/07/2026 registra municípios sem energia elétrica, água e internet após as chuvas e os ventos.",
+        "fonte": "Defesa Civil RS — relatório do Aviso Hidrometeorológico 10/2026",
+        "url": "https://static.poder360.com.br/uploads/2026/07/relatorio-defesa-civil-rs-24jul.pdf"
+      },
+      "efeitos": [
+        {
+          "tipo": "producao",
+          "fator": 0.6
+        }
+      ],
+      "resposta_sugerida": "Ativar gerador ou mover a conferência para a área com luz natural; registrar o atraso no cronograma e avisar a expedição."
+    }
+  ]
+}
