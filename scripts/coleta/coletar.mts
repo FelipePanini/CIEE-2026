@@ -97,12 +97,17 @@ for (const alvo of ALVOS.filter((a) => !filtro || a.id.includes(filtro))) {
   if (!forcar && [200, 206].includes(anterior[alvo.id]?.status as number)) continue;
   const r = await baixar(alvo);
   // Nunca substitui uma coleta bem-sucedida por uma falha.
-  if (![200, 206].includes(r.status as number) && [200, 206].includes(anterior[alvo.id]?.status as number)) {
+  if (
+    ![200, 206].includes(r.status as number) &&
+    [200, 206].includes(anterior[alvo.id]?.status as number)
+  ) {
     console.log(`mantido ${alvo.id} (nova tentativa: ${r.status})`);
     continue;
   }
   manifesto[alvo.id] = r;
-  console.log(`${String(r.status).padEnd(5)} ${String(r.bytes).padStart(9)} B  ${alvo.id}${r.erro ? '  ' + r.erro : ''}`);
+  console.log(
+    `${String(r.status).padEnd(5)} ${String(r.bytes).padStart(9)} B  ${alvo.id}${r.erro ? '  ' + r.erro : ''}`,
+  );
   // Overpass pede intervalo entre consultas
   if (alvo.url.includes('overpass')) await new Promise((ok) => setTimeout(ok, 5000));
 }

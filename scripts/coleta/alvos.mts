@@ -67,12 +67,24 @@ export const ALVOS: Alvo[] = [
     nota: 'Série telemétrica Rio Taquari em Estrela/Lajeado (86879300)',
   },
   // SGB — SACE
-  { id: 'sgb-sace-taquari-ultimo-boletim', url: 'https://www.sgb.gov.br/sace/taquari/ultimo_boletim.php', tipo: 'html' },
+  {
+    id: 'sgb-sace-taquari-ultimo-boletim',
+    url: 'https://www.sgb.gov.br/sace/taquari/ultimo_boletim.php',
+    tipo: 'html',
+  },
   { id: 'sgb-sace-index', url: 'https://www.sgb.gov.br/sace/', tipo: 'html' },
   // Defesa Civil RS
-  { id: 'defesacivil-avisos-e-boletins', url: 'https://www.defesacivil.rs.gov.br/avisos-e-boletins', tipo: 'html' },
+  {
+    id: 'defesacivil-avisos-e-boletins',
+    url: 'https://www.defesacivil.rs.gov.br/avisos-e-boletins',
+    tipo: 'html',
+  },
   { id: 'defesacivil-home', url: 'https://www.defesacivil.rs.gov.br/', tipo: 'html' },
-  { id: 'sosenchentes-situacao-municipios', url: 'https://sosenchentes.rs.gov.br/situacao-nos-municipios', tipo: 'html' },
+  {
+    id: 'sosenchentes-situacao-municipios',
+    url: 'https://sosenchentes.rs.gov.br/situacao-nos-municipios',
+    tipo: 'html',
+  },
   {
     id: 'poder360-relatorio-defesa-civil-24jul2026',
     url: 'https://static.poder360.com.br/uploads/2026/07/relatorio-defesa-civil-rs-24jul.pdf',
@@ -91,12 +103,28 @@ export const ALVOS: Alvo[] = [
     tipo: 'pdf',
   },
   // DIEESE — cesta básica
-  { id: 'dieese-cesta-2026-09', url: 'https://www.dieese.org.br/analisecestabasica/2026/202609cestabasica.pdf', tipo: 'pdf' },
-  { id: 'dieese-cesta-2026-10', url: 'https://www.dieese.org.br/analisecestabasica/2026/202610cestabasica.pdf', tipo: 'pdf' },
+  {
+    id: 'dieese-cesta-2026-09',
+    url: 'https://www.dieese.org.br/analisecestabasica/2026/202609cestabasica.pdf',
+    tipo: 'pdf',
+  },
+  {
+    id: 'dieese-cesta-2026-10',
+    url: 'https://www.dieese.org.br/analisecestabasica/2026/202610cestabasica.pdf',
+    tipo: 'pdf',
+  },
   // ANTT — piso mínimo de frete
-  { id: 'antt-pisos-minimos', url: 'https://www.gov.br/antt/pt-br/assuntos/cargas/pisos-minimos-de-frete', tipo: 'html' },
+  {
+    id: 'antt-pisos-minimos',
+    url: 'https://www.gov.br/antt/pt-br/assuntos/cargas/pisos-minimos-de-frete',
+    tipo: 'html',
+  },
   // Manual Esfera
-  { id: 'esfera-handbook-2018-en', url: 'https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf', tipo: 'pdf' },
+  {
+    id: 'esfera-handbook-2018-en',
+    url: 'https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf',
+    tipo: 'pdf',
+  },
   // OpenStreetMap (Overpass) — geometria
   {
     id: 'osm-rios',
@@ -151,18 +179,64 @@ export const ALVOS: Alvo[] = [
     ),
   },
   // PIX SOS RS — arrecadação e destinação
-  { id: 'sosenchentes-sobre-o-pix', url: 'https://sosenchentes.rs.gov.br/sobre-o-pix', tipo: 'html' },
-  { id: 'planoriogrande-pix', url: 'https://planoriogrande.rs.gov.br/pix-sos-rio-grande-do-sul', tipo: 'html' },
+  {
+    id: 'sosenchentes-sobre-o-pix',
+    url: 'https://sosenchentes.rs.gov.br/sobre-o-pix',
+    tipo: 'html',
+  },
+  {
+    id: 'planoriogrande-pix',
+    url: 'https://planoriogrande.rs.gov.br/pix-sos-rio-grande-do-sul',
+    tipo: 'html',
+  },
   // ANTT — texto da resolução de pisos (cópia LegisWeb)
-  { id: 'legisweb-antt-6076-2026', url: 'https://www.legisweb.com.br/legislacao/?id=489672', tipo: 'html' },
+  {
+    id: 'legisweb-antt-6076-2026',
+    url: 'https://www.legisweb.com.br/legislacao/?id=489672',
+    tipo: 'html',
+  },
   // Manual Esfera (português, se existir)
-  { id: 'esfera-manual-2018-pt', url: 'https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf', tipo: 'pdf' },
+  {
+    id: 'esfera-manual-2018-pt',
+    url: 'https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf',
+    tipo: 'pdf',
+  },
   // ANA — séries adicionais (picos de 2024/2025 e nível atual do Guaíba)
-  serieANA('ana-telemetria-87450004-caismaua-2026', '87450004', '01/07/2026', '03/11/2026', 'Guaíba — Cais Mauá C6, jul–nov/2026'),
-  serieANA('ana-telemetria-87450004-caismaua-2024', '87450004', '25/04/2024', '15/06/2024', 'Guaíba — Cais Mauá C6, enchente de 2024'),
-  serieANA('ana-telemetria-87450004-caismaua-2025', '87450004', '10/06/2025', '10/07/2025', 'Guaíba — Cais Mauá C6, cheia de jun/2025'),
-  serieANA('ana-telemetria-86879300-estrela-2024', '86879300', '25/04/2024', '20/05/2024', 'Taquari — Estrela/Lajeado, enchente de 2024'),
-  serieANA('ana-telemetria-86879300-estrela-2025', '86879300', '10/06/2025', '10/07/2025', 'Taquari — Estrela/Lajeado, cheia de jun/2025'),
+  serieANA(
+    'ana-telemetria-87450004-caismaua-2026',
+    '87450004',
+    '01/07/2026',
+    '03/11/2026',
+    'Guaíba — Cais Mauá C6, jul–nov/2026',
+  ),
+  serieANA(
+    'ana-telemetria-87450004-caismaua-2024',
+    '87450004',
+    '25/04/2024',
+    '15/06/2024',
+    'Guaíba — Cais Mauá C6, enchente de 2024',
+  ),
+  serieANA(
+    'ana-telemetria-87450004-caismaua-2025',
+    '87450004',
+    '10/06/2025',
+    '10/07/2025',
+    'Guaíba — Cais Mauá C6, cheia de jun/2025',
+  ),
+  serieANA(
+    'ana-telemetria-86879300-estrela-2024',
+    '86879300',
+    '25/04/2024',
+    '20/05/2024',
+    'Taquari — Estrela/Lajeado, enchente de 2024',
+  ),
+  serieANA(
+    'ana-telemetria-86879300-estrela-2025',
+    '86879300',
+    '10/06/2025',
+    '10/07/2025',
+    'Taquari — Estrela/Lajeado, cheia de jun/2025',
+  ),
   // Bloqueios de rodovias (jul/2026)
   {
     id: 'poder360-bloqueios-2026-07-22',
@@ -185,7 +259,17 @@ export const ALVOS: Alvo[] = [
     tipo: 'pdf',
   },
   // Preços de higiene/limpeza em supermercados online (catálogo público VTEX)
-  ...['sabonete%2085g', 'creme%20dental%2090g', 'escova%20dental', 'papel%20higienico%2012%20rolos', 'absorvente', 'sabao%20em%20barra', 'agua%20sanitaria%202l', 'agua%20mineral%205l', 'cobertor%20solteiro'].flatMap((q) => [
+  ...[
+    'sabonete%2085g',
+    'creme%20dental%2090g',
+    'escova%20dental',
+    'papel%20higienico%2012%20rolos',
+    'absorvente',
+    'sabao%20em%20barra',
+    'agua%20sanitaria%202l',
+    'agua%20mineral%205l',
+    'cobertor%20solteiro',
+  ].flatMap((q) => [
     {
       id: `vtex-carrefour-${q.replace(/%20/g, '-')}`,
       url: `https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=${q}&_from=0&_to=4`,
@@ -230,7 +314,7 @@ export const ALVOS: Alvo[] = [
     metodo: 'POST',
     tipo: 'json',
     corpo: overpass(
-      `[out:json][timeout:180];area["boundary"="administrative"]["admin_level"="8"]["name"~"^(Porto Alegre|Canoas|Eldorado do Sul|Lajeado|Estrela|Encantado|Montenegro|Guaíba)$"]->.a;(node["place"~"^(suburb|neighbourhood|quarter)$"](area.a);relation["boundary"="administrative"]["admin_level"="10"](area.a););out center tags;`,
+      `[out:json][timeout:180];area["boundary"="administrative"]["admin_level"="8"]["name"~"^(Porto Alegre|Canoas|Eldorado do Sul|Lajeado|Estrela|Encantado|Montenegro|Guaíba)$"]->.a;(node["place"~"^(suburb|neighbourhood|quarter)$"](area.a););out tags;`,
     ),
   },
   {
@@ -239,7 +323,9 @@ export const ALVOS: Alvo[] = [
     espelhos: OVERPASS_ESPELHOS,
     metodo: 'POST',
     tipo: 'json',
-    corpo: overpass(`[out:json][timeout:120];nwr["amenity"="university"]["name"~"ULBRA|Luterana",i](-29.99,-51.25,-29.85,-51.10);out center tags;`),
+    corpo: overpass(
+      `[out:json][timeout:120];nwr["amenity"="university"]["name"~"ULBRA|Luterana",i](-29.99,-51.25,-29.85,-51.10);out center tags;`,
+    ),
   },
   {
     id: 'osm-rodovias-estaduais',
