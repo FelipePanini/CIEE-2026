@@ -1,13 +1,20 @@
 {
   "version": 0.6,
-  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-03T15:23:58Z",
-    "timestamp_areas_base": "2026-11-03T13:52:13Z",
+    "timestamp_osm_base": "2026-11-03T15:29:05Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 286330089,
+  "tags": {
+    "name": "Ana Rech",
+    "place": "suburb"
+  }
+},
 {
   "type": "node",
   "id": 416646843,
@@ -15,6 +22,91 @@
     "name": "Palmas",
     "place": "suburb",
     "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416646999,
+  "tags": {
+    "name": "Fazenda São José",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416647006,
+  "tags": {
+    "name": "Cocão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 416647007,
+  "tags": {
+    "name": "Viamópolis",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 4"
+  }
+},
+{
+  "type": "node",
+  "id": 416647008,
+  "tags": {
+    "name": "Passo do Sabão",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 4"
+  }
+},
+{
+  "type": "node",
+  "id": 416647172,
+  "tags": {
+    "name": "Juá",
+    "place": "quarter",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416658118,
+  "tags": {
+    "name": "Barnabé",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 416658130,
+  "tags": {
+    "name": "Galópolis",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 416658131,
+  "tags": {
+    "name": "Forqueta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 416766832,
+  "tags": {
+    "name": "Torino",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416766833,
+  "tags": {
+    "name": "Garibaldina",
+    "place": "suburb"
   }
 },
 {
@@ -32,6 +124,35 @@
   "tags": {
     "name": "Medianeira",
     "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416766880,
+  "tags": {
+    "alt_name": "Araripe",
+    "name": "Linha Araripe",
+    "place": "suburb",
+    "source": "IBGE; survey"
+  }
+},
+{
+  "type": "node",
+  "id": 416766881,
+  "tags": {
+    "addr:city": "Gramado",
+    "name": "Caracol",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 416766886,
+  "tags": {
+    "name": "Rincão do Cascalho",
+    "place": "suburb",
     "source": "IBGE"
   }
 },
@@ -58,6 +179,15 @@
 },
 {
   "type": "node",
+  "id": 416766947,
+  "tags": {
+    "name": "Passo do Vigário",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
   "id": 416766950,
   "tags": {
     "name": "Lami",
@@ -70,19 +200,263 @@
 },
 {
   "type": "node",
-  "id": 1148841838,
+  "id": 446239439,
   "tags": {
-    "name": "Lapa",
-    "place": "neighbourhood",
-    "wikidata": "Q137402454"
+    "name": "Centro",
+    "place": "suburb"
   }
 },
 {
   "type": "node",
-  "id": 1946238529,
+  "id": 446242895,
   "tags": {
-    "name": "Betania",
+    "name": "Santo Antão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 446243181,
+  "tags": {
+    "name": "Conceição",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 446244172,
+  "tags": {
+    "name": "Humaitá",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 449184030,
+  "tags": {
+    "name": "Botafogo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 449184889,
+  "tags": {
+    "name": "Santa Rita",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566339334,
+  "tags": {
+    "name": "São Roque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566340288,
+  "tags": {
+    "name": "Aparecida",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566340550,
+  "tags": {
+    "name": "Universitário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566340996,
+  "tags": {
+    "name": "Progresso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566341067,
+  "tags": {
+    "name": "São Vendelino",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566341323,
+  "tags": {
+    "name": "Maria Goretti",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566342474,
+  "tags": {
+    "name": "São Francisco",
+    "place": "suburb",
+    "population": "3076",
+    "source:population": "https://applocal.com.br/bairro/sao-francisco/bento-goncalves/rs"
+  }
+},
+{
+  "type": "node",
+  "id": 566342545,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566342551,
+  "tags": {
+    "name": "Planalto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566342744,
+  "tags": {
+    "name": "Licorsul",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566344049,
+  "tags": {
+    "name": "São Bento",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566346651,
+  "tags": {
+    "name": "Imigrante",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566346731,
+  "tags": {
+    "name": "Jardim Glória",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566346847,
+  "tags": {
+    "name": "Santa Marta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566347209,
+  "tags": {
+    "name": "Fenavinho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566504235,
+  "tags": {
+    "name": "Pomarosa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 566504304,
+  "tags": {
+    "name": "Vinosul",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 985871909,
+  "tags": {
+    "name": "Centro",
     "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 1068570107,
+  "tags": {
+    "name": "Três Pinheiros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1069304965,
+  "tags": {
+    "name": "Nove Colônias",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1590223527,
+  "tags": {
+    "name": "Lomba do Tarumã",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 1601634503,
+  "tags": {
+    "name": "Santa Isabel",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 1881281054,
+  "tags": {
+    "IBGE:GEOCODIGO": "430110705005",
+    "name": "Poço Três",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1918838760,
+  "tags": {
+    "alt_name": "Quarenta e Oito Baixa",
+    "name": "48 Baixa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 1985537752,
+  "tags": {
+    "name": "Joaneta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1985537802,
+  "tags": {
+    "name": "Pinhal Alto",
+    "place": "suburb"
   }
 },
 {
@@ -988,14 +1362,6 @@
 },
 {
   "type": "node",
-  "id": 2081756586,
-  "tags": {
-    "name": "Villa Darizara",
-    "place": "neighbourhood"
-  }
-},
-{
-  "type": "node",
   "id": 2109623643,
   "tags": {
     "name": "Jardim dos Lagos",
@@ -1037,6 +1403,71 @@
 },
 {
   "type": "node",
+  "id": 2158291103,
+  "tags": {
+    "name": "Lago Parque Clube",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2178851803,
+  "tags": {
+    "name": "Jammerthal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2178890289,
+  "tags": {
+    "name": "Passo Fundo Eck",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2188928445,
+  "tags": {
+    "name": "São Martim",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2191487280,
+  "tags": {
+    "name": "Feliz Lembrança",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2191487305,
+  "tags": {
+    "name": "Santa Inês",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2256145783,
+  "tags": {
+    "ele": "304",
+    "name": "Morro do Paula",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2264791689,
+  "tags": {
+    "name": "Rincão dos Américos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
   "id": 2275340450,
   "tags": {
     "name": "Guaíba Country Club",
@@ -1048,6 +1479,54 @@
   "id": 2278742383,
   "tags": {
     "name": "Igara",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2310530993,
+  "tags": {
+    "name": "Três Vendas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2334127279,
+  "tags": {
+    "name": "Tangará",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2334128129,
+  "tags": {
+    "name": "Mate Doce",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2334128134,
+  "tags": {
+    "name": "Pavão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2334128192,
+  "tags": {
+    "name": "Picada",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2369791660,
+  "tags": {
+    "name": "Centro",
     "place": "suburb"
   }
 },
@@ -1238,6 +1717,15 @@
 },
 {
   "type": "node",
+  "id": 2438494569,
+  "tags": {
+    "name": "Jardim Outeiral",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
   "id": 2441127410,
   "tags": {
     "name": "Passo das Pedras",
@@ -1245,6 +1733,362 @@
     "source:name": "Lei 12112",
     "wikidata": "Q10345956",
     "wikipedia": "pt:Passo das Pedras"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105851,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105852,
+  "tags": {
+    "name": "Cristo Redentor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105853,
+  "tags": {
+    "name": "Exposição",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105854,
+  "tags": {
+    "name": "Floresta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105855,
+  "tags": {
+    "name": "Medianeira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105856,
+  "tags": {
+    "name": "Panazzolo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105857,
+  "tags": {
+    "alt_name": "Pio Décimo",
+    "name": "Pio X",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105858,
+  "tags": {
+    "name": "São Leopoldo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2447105859,
+  "tags": {
+    "name": "São Pelegrino",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2498016878,
+  "tags": {
+    "name": "Nossa Senhora do Carmo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2498016880,
+  "tags": {
+    "alt_name": "São Valentim",
+    "name": "São Valentin",
+    "place": "suburb",
+    "source:name": "LM 5212"
+  }
+},
+{
+  "type": "node",
+  "id": 2498037464,
+  "tags": {
+    "name": "Caminhos da Eulália",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2498037465,
+  "tags": {
+    "name": "São João",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2502427614,
+  "tags": {
+    "name": "Porto Verde",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2511108251,
+  "tags": {
+    "name": "Condomínio Maria Helena",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2511112138,
+  "tags": {
+    "name": "Condado de Valença",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2511112139,
+  "tags": {
+    "name": "Condado de Bragança",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2511112140,
+  "tags": {
+    "name": "Área Popular Kwait",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2511112141,
+  "tags": {
+    "name": "Jardim Estalagem",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2511112142,
+  "tags": {
+    "name": "Loteamentro Eldorado",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2512326521,
+  "tags": {
+    "name": "Fiúza",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2512373826,
+  "tags": {
+    "name": "Lisboa",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2512373828,
+  "tags": {
+    "name": "Krahe",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2512373830,
+  "tags": {
+    "name": "Sítio São José",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2512373832,
+  "tags": {
+    "name": "Promorar",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2512373834,
+  "tags": {
+    "name": "Recanto Residencial da Figueira",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017795,
+  "tags": {
+    "name": "Colorado",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017796,
+  "tags": {
+    "name": "Cinturão Azul",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017797,
+  "tags": {
+    "name": "Sítio São Vicente",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017798,
+  "tags": {
+    "name": "Dom Feliciano",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017799,
+  "tags": {
+    "name": "Center Park",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017800,
+  "tags": {
+    "name": "Jardim do Castelo",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017803,
+  "tags": {
+    "name": "Condado de Castela",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017804,
+  "tags": {
+    "name": "Elsa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2517017805,
+  "tags": {
+    "name": "Vila Helenita",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2517024712,
+  "tags": {
+    "name": "Vida Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2533409172,
+  "tags": {
+    "name": "Municipal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2533409173,
+  "tags": {
+    "name": "Vinhedos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2545972210,
+  "tags": {
+    "name": "Merlot",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2545972217,
+  "tags": {
+    "name": "Verona",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2546025427,
+  "tags": {
+    "name": "Santa Helena",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2556576062,
+  "tags": {
+    "name": "Borgo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2598221688,
+  "tags": {
+    "name": "Lomba Grande",
+    "place": "suburb"
   }
 },
 {
@@ -1265,13 +2109,475 @@
 },
 {
   "type": "node",
-  "id": 3170762215,
+  "id": 2623033122,
   "tags": {
-    "name": "Arábia",
-    "place": "neighbourhood",
-    "population": "71",
-    "population:date": "2021",
-    "source:population": "INE"
+    "name": "Barracão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033123,
+  "tags": {
+    "name": "Cohab",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033124,
+  "tags": {
+    "name": "Cruzeiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033125,
+  "tags": {
+    "name": "Eucaliptos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033126,
+  "tags": {
+    "name": "Fátima",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033127,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033128,
+  "tags": {
+    "name": "Ouro Verde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033129,
+  "tags": {
+    "name": "Pradel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033130,
+  "tags": {
+    "name": "Salgado",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033131,
+  "tags": {
+    "alt_name": "Vila Nova Dois",
+    "name": "Vila Nova II",
+    "place": "suburb",
+    "short_name": "Vila Nova 2"
+  }
+},
+{
+  "type": "node",
+  "id": 2623033132,
+  "tags": {
+    "name": "Zatt",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735052898,
+  "tags": {
+    "name": "Princesa Isabel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735052924,
+  "tags": {
+    "name": "Alto da Bela Vista",
+    "place": "suburb",
+    "population": "672"
+  }
+},
+{
+  "type": "node",
+  "id": 2736607065,
+  "tags": {
+    "name": "Santa Bárbara",
+    "place": "suburb",
+    "population": "1477"
+  }
+},
+{
+  "type": "node",
+  "id": 2739621976,
+  "tags": {
+    "alt_name": "Bairro dos Estados",
+    "name": "Estados",
+    "place": "suburb",
+    "population": "1343"
+  }
+},
+{
+  "type": "node",
+  "id": 2739622053,
+  "tags": {
+    "name": "Três Figueiras",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2740714327,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb",
+    "population": "2516"
+  }
+},
+{
+  "type": "node",
+  "id": 2744122551,
+  "tags": {
+    "name": "Cecília",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 2748746846,
+  "tags": {
+    "name": "Nossa Senhora Aparecida",
+    "place": "suburb",
+    "population": "1940"
+  }
+},
+{
+  "type": "node",
+  "id": 2748796692,
+  "tags": {
+    "name": "Collovini",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2750776166,
+  "tags": {
+    "name": "Liberal",
+    "place": "suburb",
+    "population": "1308"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002207,
+  "tags": {
+    "name": "Goiás",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002208,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002209,
+  "tags": {
+    "name": "Santo Inácio",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002210,
+  "tags": {
+    "name": "Universitário",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002211,
+  "tags": {
+    "name": "Independência",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002212,
+  "tags": {
+    "name": "Avenida",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002213,
+  "tags": {
+    "name": "Renascença",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002214,
+  "tags": {
+    "name": "Jardim Europa",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760002215,
+  "tags": {
+    "name": "Country",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760009813,
+  "tags": {
+    "alt_name": "Vila Schulz",
+    "name": "Schulz",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760009814,
+  "tags": {
+    "name": "Higienópolis",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760009815,
+  "tags": {
+    "alt_name": "Margarida - Aurora",
+    "name": "Margarida",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760009816,
+  "tags": {
+    "name": "Belvedere",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2760009817,
+  "tags": {
+    "name": "Monte Verde",
+    "place": "suburb",
+    "source": "pmscs"
+  }
+},
+{
+  "type": "node",
+  "id": 2791833644,
+  "tags": {
+    "name": "Areal",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2791833645,
+  "tags": {
+    "name": "Vila Pinho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2791833646,
+  "tags": {
+    "name": "Vila Ferraz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2791833647,
+  "tags": {
+    "alt_name": "Vila Doze",
+    "name": "São Cristóvão",
+    "place": "suburb",
+    "source": "IBGE Setores Censitários",
+    "source:name": "Lei Ordinária 1768/99"
+  }
+},
+{
+  "type": "node",
+  "id": 2801548685,
+  "tags": {
+    "name": "Vila Garcia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2801549106,
+  "tags": {
+    "name": "Parque Farroupilha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372177,
+  "tags": {
+    "name": "Nova Cachoeirinha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372178,
+  "tags": {
+    "name": "Granja Esperança",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372179,
+  "tags": {
+    "alt_name": "Vila Nair",
+    "name": "Anair",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372180,
+  "tags": {
+    "name": "Águas Mortas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372181,
+  "tags": {
+    "name": "Jardim do Bosque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372182,
+  "tags": {
+    "name": "Parque da Matriz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372183,
+  "tags": {
+    "name": "Jardim América",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372184,
+  "tags": {
+    "name": "Morada do Vale I",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372185,
+  "tags": {
+    "name": "Morada do Vale II",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2925372186,
+  "tags": {
+    "name": "Morada do Vale III",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2932030213,
+  "tags": {
+    "name": "Jardim Betânia",
+    "old_name": "Jardim Bethania",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2959918524,
+  "tags": {
+    "name": "Lindos Ares",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2959945890,
+  "tags": {
+    "name": "Passo da Cruz",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3198615048,
+  "tags": {
+    "name": "Hamburgo Velho",
+    "old_name": "Hamburgerberg",
+    "place": "suburb",
+    "source": "survey"
   }
 },
 {
@@ -1284,17 +2590,6 @@
     "source:name": "Lei 12112",
     "wikidata": "Q5614184",
     "wikipedia": "pt:Guarujá (Porto Alegre)"
-  }
-},
-{
-  "type": "node",
-  "id": 3304314985,
-  "tags": {
-    "name": "Santos-o-Velho",
-    "place": "neighbourhood",
-    "wikidata": "Q1890230",
-    "wikimedia_commons": "Category:Santos-o-Velho (Lisbon)",
-    "wikipedia": "en:Santos-o-Velho, Lisbon"
   }
 },
 {
@@ -1406,6 +2701,100 @@
 },
 {
   "type": "node",
+  "id": 3451288408,
+  "tags": {
+    "fixme": "Aproximado pelo mapa do DAER, confirmar.",
+    "name": "Passo do Varejão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3498301603,
+  "tags": {
+    "name": "Barra do Forqueta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3498301604,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3498301605,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3498301606,
+  "tags": {
+    "name": "Rui Barbosa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3544622136,
+  "tags": {
+    "name": "Canudos",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 3570730993,
+  "tags": {
+    "name": "São Lucas",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3570730994,
+  "tags": {
+    "name": "Orieta",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3570730995,
+  "tags": {
+    "name": "Jaguaribe",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3570730996,
+  "tags": {
+    "name": "Florescente",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3618510731,
+  "tags": {
+    "name": "Vila Reforma",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
   "id": 3618663200,
   "tags": {
     "name": "Jardim Botânico",
@@ -1430,34 +2819,606 @@
 },
 {
   "type": "node",
-  "id": 3635883985,
+  "id": 3622776638,
   "tags": {
-    "name": "La Bomba",
-    "place": "neighbourhood"
+    "name": "Parque Residencial Araçá",
+    "place": "neighbourhood",
+    "source": "LM 4190"
   }
 },
 {
   "type": "node",
-  "id": 3635889916,
+  "id": 3622776639,
   "tags": {
-    "name": "El Cartín",
-    "place": "neighbourhood"
+    "name": "Arbon",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
   }
 },
 {
   "type": "node",
-  "id": 3635891400,
+  "id": 3622776640,
   "tags": {
-    "name": "San Jorge Sur",
-    "place": "neighbourhood"
+    "name": "Augusta Fiel",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
   }
 },
 {
   "type": "node",
-  "id": 3635892910,
+  "id": 3622776641,
   "tags": {
-    "name": "Ciudadela El Triunfo",
-    "place": "neighbourhood"
+    "name": "Augusta Marina",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776642,
+  "tags": {
+    "name": "Augusta Meneghini",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776643,
+  "tags": {
+    "name": "Bernadete",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776644,
+  "tags": {
+    "name": "Boa Vista",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776645,
+  "tags": {
+    "name": "Bonanza",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776646,
+  "tags": {
+    "name": "COHAB",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776647,
+  "tags": {
+    "alt_name": "Campos da Colina",
+    "name": "Campus da Colina",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776649,
+  "tags": {
+    "name": "Diamantina",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776650,
+  "tags": {
+    "name": "Dom Quixote",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776651,
+  "tags": {
+    "name": "Chácara Dona Carlota",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776652,
+  "tags": {
+    "name": "Ecovillage 2",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776653,
+  "tags": {
+    "name": "Eletra",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776654,
+  "tags": {
+    "name": "Esmeralda",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776655,
+  "tags": {
+    "name": "Jardim Esplanda",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776656,
+  "tags": {
+    "name": "Florença",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776657,
+  "tags": {
+    "name": "Gaúcha",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776658,
+  "tags": {
+    "name": "Iara",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776659,
+  "tags": {
+    "name": "Império",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776660,
+  "tags": {
+    "name": "Jardim Elizabete",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776661,
+  "tags": {
+    "name": "Jardim Ipiranga",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776662,
+  "tags": {
+    "name": "Jardim Itapema",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776663,
+  "tags": {
+    "name": "Jardim Lacy",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776664,
+  "tags": {
+    "name": "Jardim Maratá",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776666,
+  "tags": {
+    "name": "Jardim dos Cristais",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776667,
+  "tags": {
+    "name": "Martinica",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776668,
+  "tags": {
+    "name": "Medianeira",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776669,
+  "tags": {
+    "name": "Nossa Senhora de Copacabana",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776671,
+  "tags": {
+    "name": "Monte Alegre",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776672,
+  "tags": {
+    "name": "Monte Castelo",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776673,
+  "tags": {
+    "name": "Nossa Senhora Aparecida",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776674,
+  "tags": {
+    "name": "Nossa Senhora da Conceição",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776675,
+  "tags": {
+    "name": "Nova Esperança",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776676,
+  "tags": {
+    "name": "Novo Horizonte",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776677,
+  "tags": {
+    "name": "Oriente",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776678,
+  "tags": {
+    "name": "Paraíso",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776679,
+  "tags": {
+    "name": "Parque Farroupilha",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776680,
+  "tags": {
+    "name": "Parque Residencial Schönwald",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776681,
+  "tags": {
+    "name": "Parque do Sol",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776682,
+  "tags": {
+    "name": "Planalto",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776683,
+  "tags": {
+    "name": "Pérola",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776684,
+  "tags": {
+    "name": "Querência",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776685,
+  "tags": {
+    "name": "Recanto da Lagoa",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776686,
+  "tags": {
+    "name": "Represa",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776687,
+  "tags": {
+    "name": "Santa Maria",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776688,
+  "tags": {
+    "name": "Santa Rita",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776689,
+  "tags": {
+    "name": "Santa Úrsula",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776690,
+  "tags": {
+    "name": "Santo Onofre",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776691,
+  "tags": {
+    "name": "Sepé Tiaraju",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622776692,
+  "tags": {
+    "name": "São Jorge",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777493,
+  "tags": {
+    "name": "São João Batista",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777494,
+  "tags": {
+    "name": "São Leonardo",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777495,
+  "tags": {
+    "name": "São Miguel",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777496,
+  "tags": {
+    "name": "São Tomé",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 4"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777497,
+  "tags": {
+    "name": "Parque Residencial Três Figueiras",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777498,
+  "tags": {
+    "name": "Universal",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777499,
+  "tags": {
+    "name": "Jardim Universitário",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777500,
+  "tags": {
+    "name": "Vera Cruz",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777501,
+  "tags": {
+    "name": "Vitória",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777502,
+  "tags": {
+    "name": "Vivendas do Parque",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3622777503,
+  "tags": {
+    "name": "Parque Índio Jari",
+    "place": "neighbourhood",
+    "source": "Plano Diretor de Viamão - Anexo 7"
+  }
+},
+{
+  "type": "node",
+  "id": 3657658352,
+  "tags": {
+    "name": "Várzea Grande",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3658934622,
+  "tags": {
+    "name": "Passo dos Negros",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3659474152,
+  "tags": {
+    "name": "Vila Charrua",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3667145227,
+  "tags": {
+    "name": "Morretes",
+    "place": "suburb",
+    "source": "IBGE"
   }
 },
 {
@@ -1466,6 +3427,33 @@
   "tags": {
     "name": "Vila Colúmbia",
     "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3667145244,
+  "tags": {
+    "name": "Vila Maria",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3667145245,
+  "tags": {
+    "name": "Vila Piratini",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3667145246,
+  "tags": {
+    "name": "São Miguel",
+    "place": "suburb",
     "source": "IBGE"
   }
 },
@@ -1480,10 +3468,157 @@
 },
 {
   "type": "node",
+  "id": 3672552847,
+  "tags": {
+    "alt_name": "Estância Grande",
+    "loc_name": "Distrito Industrial",
+    "name": "DIAV - Distrito Industrial Alvorada-Viamão",
+    "place": "neighbourhood",
+    "ref": "MZ11",
+    "source:alt_name": "Lei 2316",
+    "source:loc_name": "Prefeitura",
+    "source:name": "Lei 1137;IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195135,
+  "tags": {
+    "name": "Lajeana",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195137,
+  "tags": {
+    "name": "Linha Carazal",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195139,
+  "tags": {
+    "name": "Linha Furna",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195142,
+  "tags": {
+    "name": "Linha Marcondes",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195143,
+  "tags": {
+    "name": "Linha Nova",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195144,
+  "tags": {
+    "name": "Pedancino",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195147,
+  "tags": {
+    "name": "Mato Queimado",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195166,
+  "tags": {
+    "name": "Sitinho",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3674195172,
+  "tags": {
+    "name": "Tapera Italiana",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 3681697585,
+  "tags": {
+    "name": "Granja dos Sinos (\"AFBI\")",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4006246151,
+  "tags": {
+    "name": "São Thomás",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4006347089,
+  "tags": {
+    "name": "Atafona",
+    "place": "suburb",
+    "population": "471",
+    "wikidata": "Q20052671",
+    "wikipedia": "pt:Atafona (Arroio dos Ratos)"
+  }
+},
+{
+  "type": "node",
+  "id": 4095753891,
+  "tags": {
+    "name": "Campina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4095753894,
+  "tags": {
+    "name": "Vista Alegre",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
   "id": 4108477604,
   "tags": {
     "name": "São José",
     "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4139552263,
+  "tags": {
+    "name": "Loteamento Arco-Íris",
+    "place": "neighbourhood",
+    "source": "IBGE"
   }
 },
 {
@@ -1496,9 +3631,390 @@
 },
 {
   "type": "node",
-  "id": 4360242988,
+  "id": 4254892060,
   "tags": {
-    "name": "Prazeres",
+    "name": "Charqueadas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892061,
+  "tags": {
+    "name": "Desvio Rizzo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892062,
+  "tags": {
+    "name": "Cidade Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892063,
+  "tags": {
+    "name": "São Giácomo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892064,
+  "tags": {
+    "name": "Santa Catarina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892065,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892066,
+  "tags": {
+    "name": "Nossa Senhora de Fátima",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892067,
+  "tags": {
+    "name": "Pioneiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892068,
+  "tags": {
+    "name": "Pôr-do-Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892069,
+  "tags": {
+    "name": "Santa Fé",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892070,
+  "tags": {
+    "name": "Centenário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892071,
+  "tags": {
+    "name": "Nossa Senhora do Rosário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892072,
+  "tags": {
+    "name": "Interlagos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892073,
+  "tags": {
+    "name": "De Lazzer",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892074,
+  "tags": {
+    "alt_name": "Saint-Étienne",
+    "name": "Saint Etienne",
+    "place": "neighbourhood",
+    "source:name": "Decreto 18981"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892075,
+  "tags": {
+    "name": "Universitário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892076,
+  "tags": {
+    "name": "Madureira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892077,
+  "tags": {
+    "name": "Jardim América",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892078,
+  "tags": {
+    "name": "Jardelino Ramos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892079,
+  "tags": {
+    "name": "Nossa Senhora de Lourdes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892080,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892081,
+  "tags": {
+    "name": "Cruzeiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254892082,
+  "tags": {
+    "name": "Diamantino",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921643,
+  "tags": {
+    "name": "Presidente Vargas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921644,
+  "tags": {
+    "alt_name": "São Luís",
+    "name": "São Luiz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921645,
+  "tags": {
+    "name": "Jardim Eldorado",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921646,
+  "tags": {
+    "name": "São Cristóvão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921647,
+  "tags": {
+    "name": "Planalto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921648,
+  "tags": {
+    "alt_name": "São Vítor Cohab",
+    "name": "São Victor Cohab",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921650,
+  "tags": {
+    "name": "Rio Branco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921651,
+  "tags": {
+    "name": "Cinquentenário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921652,
+  "tags": {
+    "name": "Marechal Floriano",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921653,
+  "tags": {
+    "name": "Nossa Senhora da Saúde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921654,
+  "tags": {
+    "name": "Kayser",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921655,
+  "tags": {
+    "name": "Esplanada",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921656,
+  "tags": {
+    "name": "Salgado Filho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254921657,
+  "tags": {
+    "name": "São Caetano",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254941421,
+  "tags": {
+    "name": "Nossa Senhora das Graças",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254941422,
+  "tags": {
+    "name": "Santa Corona",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254941423,
+  "tags": {
+    "name": "Sanvitto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4254941425,
+  "tags": {
+    "name": "Samuara",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4263201791,
+  "tags": {
+    "alt_name": "São Virgílio da Sexta Légua",
+    "name": "São Virgílio da 6ª Légua",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4263201792,
+  "tags": {
+    "name": "Jardim Iracema",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4263201793,
+  "tags": {
+    "name": "Serrano",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4263201794,
+  "tags": {
+    "name": "Pedancino",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4263201795,
+  "tags": {
+    "name": "Brandalise",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4263205680,
+  "tags": {
+    "name": "Maestra",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4263205681,
+  "tags": {
+    "name": "Monte Bérico",
     "place": "suburb"
   }
 },
@@ -1532,6 +4048,628 @@
 },
 {
   "type": "node",
+  "id": 4552227317,
+  "tags": {
+    "name": "Augusta",
+    "place": "suburb",
+    "source": "Plano Diretor de Viamão - Anexo 5"
+  }
+},
+{
+  "type": "node",
+  "id": 4570843819,
+  "tags": {
+    "alt_name": "Cádiz",
+    "name": "Cadiz",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4570843820,
+  "tags": {
+    "fixme": "confirm",
+    "name": "Vila Nova Conquista",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4633869756,
+  "tags": {
+    "name": "Monte Pasqual",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4703823544,
+  "tags": {
+    "name": "Vila do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4705219502,
+  "tags": {
+    "name": "Linha Bonita",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4705971631,
+  "tags": {
+    "name": "Aspen Mountain",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4705971633,
+  "tags": {
+    "name": "Piratini",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4705993137,
+  "tags": {
+    "name": "Floresta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4705993138,
+  "tags": {
+    "name": "Moura",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4708562960,
+  "tags": {
+    "name": "Campestre do Tigre",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4709175515,
+  "tags": {
+    "name": "Dutra",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4712551378,
+  "tags": {
+    "name": "Linha 15 de Novembro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4712565226,
+  "tags": {
+    "name": "Lagos do Bosque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4712595183,
+  "tags": {
+    "name": "Parque dos Pinheiros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4712595495,
+  "tags": {
+    "name": "São Roque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4719537688,
+  "tags": {
+    "name": "Suíça",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4719537689,
+  "tags": {
+    "name": "Suzana",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4719537690,
+  "tags": {
+    "name": "Vila Luiza",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4719537691,
+  "tags": {
+    "name": "Jardim dos Pinheiros",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4721332977,
+  "tags": {
+    "name": "Jardim dos Ipês",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4721332978,
+  "tags": {
+    "name": "Carniel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4721379958,
+  "tags": {
+    "name": "Alpes Verdes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4722511869,
+  "tags": {
+    "name": "Vila Jardim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4731367942,
+  "tags": {
+    "name": "Linha 28",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4731367943,
+  "tags": {
+    "addr:city": "Gramado",
+    "name": "Quilombo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4731367944,
+  "tags": {
+    "name": "Belvedere",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4731367945,
+  "tags": {
+    "name": "Tapera Alemã",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4731367947,
+  "tags": {
+    "name": "Nova Renânia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4741896941,
+  "tags": {
+    "name": "Piá",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4741896942,
+  "tags": {
+    "name": "Vila Juriti",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4741896943,
+  "tags": {
+    "name": "Logradouro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4741896944,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4741896945,
+  "tags": {
+    "name": "Pousada da Neve",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4746102310,
+  "tags": {
+    "name": "Vale Verde",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 4746102311,
+  "tags": {
+    "alt_name": "Vila Germania",
+    "name": "Vila Germânia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4746102312,
+  "tags": {
+    "name": "Vila Olinda",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4746197869,
+  "tags": {
+    "name": "Linha Tirol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4751157076,
+  "tags": {
+    "name": "Linha Araripe",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4751195736,
+  "tags": {
+    "name": "BR 116",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4751255399,
+  "tags": {
+    "name": "Chapadão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4775938706,
+  "tags": {
+    "alt_name": "Bavaria",
+    "name": "Bavária",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4779174745,
+  "tags": {
+    "name": "Zona Birk",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4795458048,
+  "tags": {
+    "name": "Juventude da Enologia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4814489029,
+  "tags": {
+    "name": "Santa Cecília",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 4814489030,
+  "tags": {
+    "name": "Figueira",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 4814489031,
+  "tags": {
+    "name": "Passo da Taquara",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 4821657795,
+  "tags": {
+    "name": "Esperança",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4821713390,
+  "tags": {
+    "name": "Moinho Velho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4821713391,
+  "tags": {
+    "name": "São Miguel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4827385182,
+  "tags": {
+    "name": "Centro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827385183,
+  "tags": {
+    "name": "Cidade d'Água",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827736579,
+  "tags": {
+    "name": "Centro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827736581,
+  "tags": {
+    "name": "Jardim Cidade Alta",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827736604,
+  "tags": {
+    "name": "Fátima",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827736619,
+  "tags": {
+    "name": "São José",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827736821,
+  "tags": {
+    "name": "Guaporé",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827965684,
+  "tags": {
+    "name": "Canto Krewer",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827965686,
+  "tags": {
+    "name": "Morro Paris",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827966323,
+  "tags": {
+    "name": "Krindges",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4827966324,
+  "tags": {
+    "name": "Imigrante",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4829293918,
+  "tags": {
+    "name": "Recosta",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4829305399,
+  "tags": {
+    "name": "Centro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4829305400,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4829364124,
+  "tags": {
+    "name": "Centro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4829364126,
+  "tags": {
+    "name": "Feldmann",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4831650884,
+  "tags": {
+    "name": "Operário",
+    "place": "neighbourhood",
+    "source": "LO 251/1993"
+  }
+},
+{
+  "type": "node",
+  "id": 4831651436,
+  "tags": {
+    "name": "São Luiz",
+    "place": "neighbourhood",
+    "source": "LO 2033/2015"
+  }
+},
+{
+  "type": "node",
+  "id": 4831651441,
+  "tags": {
+    "name": "Loteamento Mirante do Lago",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 4839385111,
+  "tags": {
+    "name": "Santo Inácio",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4839385112,
+  "tags": {
+    "name": "Linha do Meio",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4839385113,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4839385114,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4839385115,
+  "tags": {
+    "name": "Liberdade",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4839385116,
+  "tags": {
+    "name": "Centro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4839385117,
+  "tags": {
+    "alt_name": "Bairro da Estação São Salvador",
+    "name": "Estação São Salvador",
+    "old_name": "Estação",
+    "place": "neighbourhood",
+    "source:name": "LM 3133/14"
+  }
+},
+{
+  "type": "node",
   "id": 4854494445,
   "tags": {
     "name": "Industrial",
@@ -1550,9 +4688,281 @@
 },
 {
   "type": "node",
+  "id": 4856517921,
+  "tags": {
+    "name": "Vila Rosa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856517922,
+  "tags": {
+    "name": "Operário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856517927,
+  "tags": {
+    "name": "Guarani",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856517942,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856517961,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856517970,
+  "tags": {
+    "name": "São Jorge",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856517979,
+  "tags": {
+    "name": "Diehl",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856518071,
+  "tags": {
+    "name": "Roselândia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856518072,
+  "tags": {
+    "name": "Alpes do Vale",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
   "id": 4856559784,
   "tags": {
     "name": "São Luís",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856582770,
+  "tags": {
+    "name": "Canudos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856626864,
+  "tags": {
+    "name": "Liberdade",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856626868,
+  "tags": {
+    "name": "Rondônia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856626869,
+  "tags": {
+    "name": "Santo Afonso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856632555,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856830609,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856897293,
+  "tags": {
+    "name": "Ouro Branco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856897295,
+  "tags": {
+    "name": "Pátria Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856897298,
+  "tags": {
+    "name": "Boa Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856897299,
+  "tags": {
+    "name": "Mauá",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856912011,
+  "tags": {
+    "name": "Rio Branco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4856920961,
+  "tags": {
+    "name": "Ideal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4857802406,
+  "tags": {
+    "name": "Rincão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4857818493,
+  "tags": {
+    "name": "Petrópolis",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4857871443,
+  "tags": {
+    "name": "Boa Saúde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4857871444,
+  "tags": {
+    "name": "Primavera",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858025567,
+  "tags": {
+    "name": "Scharlau",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858025577,
+  "tags": {
+    "name": "Boa Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858525155,
+  "tags": {
+    "name": "Rio dos Sinos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858525158,
+  "tags": {
+    "name": "Santos Dumont",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858622802,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858622819,
+  "tags": {
+    "name": "Rio Branco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858623129,
+  "tags": {
+    "name": "Santo André",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858623138,
+  "tags": {
+    "name": "Pinheiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4858623163,
+  "tags": {
+    "name": "Feitoria",
     "place": "suburb"
   }
 },
@@ -1593,6 +5003,191 @@
   "id": 4862711021,
   "tags": {
     "name": "Olaria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862963659,
+  "tags": {
+    "name": "Morro do Espelho",
+    "name:de": "Spiegelberg",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862963660,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862963664,
+  "tags": {
+    "name": "Padre Reus",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862963666,
+  "tags": {
+    "name": "Santa Tereza",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862963677,
+  "tags": {
+    "name": "Jardim América",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862963686,
+  "tags": {
+    "name": "Vicentina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862963687,
+  "tags": {
+    "name": "Fião",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862998027,
+  "tags": {
+    "name": "Cristo Rei",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862998049,
+  "tags": {
+    "name": "São João Batista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4862998079,
+  "tags": {
+    "name": "São Miguel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4864748033,
+  "tags": {
+    "name": "Campestre",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4864748034,
+  "tags": {
+    "name": "Fazenda São Borja",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4864748088,
+  "tags": {
+    "name": "Duque de Caxias",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4864748098,
+  "tags": {
+    "name": "Arroio da Manteiga",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4882550141,
+  "tags": {
+    "name": "Centro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4882550142,
+  "tags": {
+    "name": "Santa Albina",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4882550143,
+  "tags": {
+    "name": "São José",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4882550145,
+  "tags": {
+    "name": "Recreio",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4882550146,
+  "tags": {
+    "name": "São Miguel",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 4886518589,
+  "tags": {
+    "name": "Sagrada Família",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4892998938,
+  "tags": {
+    "name": "Petrópolis",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4895443323,
+  "tags": {
+    "name": "São Ciro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4909261979,
+  "tags": {
+    "name": "Parada Cristal",
     "place": "suburb"
   }
 },
@@ -1741,33 +5336,1956 @@
 },
 {
   "type": "node",
-  "id": 4923342871,
+  "id": 4917194636,
   "tags": {
-    "name": "La Libertad",
+    "name": "Jardim das Hortênsias",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4933450420,
+  "tags": {
+    "alt_name": "Linha Quarenta",
+    "name": "Linha 40",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5026495978,
+  "tags": {
+    "name": "Vila Aparecida",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 4923342872,
+  "id": 5150794481,
   "tags": {
-    "name": "Carlín Rodríguez",
+    "name": "Averonice",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 4923342873,
+  "id": 5150794482,
   "tags": {
-    "name": "San Martín",
+    "name": "COHAB",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794483,
+  "tags": {
+    "name": "Canarinho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794484,
+  "tags": {
+    "name": "Carlos Wilkens",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794485,
+  "tags": {
+    "name": "Chácara das Rosas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794486,
+  "tags": {
+    "name": "Cruzeiro",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 4923342874,
+  "id": 5150794487,
   "tags": {
-    "name": "San Miguel",
+    "alt_name": "Distrito Industrial Ritter",
+    "name": "Industrial",
+    "note": "Notícias da prefeitura chamam preferencialmente de \"bairro Industrial\", e por vezes de \"bairro Distrito Industrial\" ou \"Distrito Industrial Ritter\".",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794489,
+  "tags": {
+    "name": "Fátima",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794491,
+  "tags": {
+    "name": "Imbuí",
+    "old_name": "Imbuhy",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794492,
+  "tags": {
+    "name": "Jardim Atlântico",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794493,
+  "tags": {
+    "name": "Jardim Colinas",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794494,
+  "tags": {
+    "name": "Jardim Conquista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794495,
+  "tags": {
+    "name": "Jardim Vitória",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794496,
+  "tags": {
+    "name": "Meu Rincão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794497,
+  "tags": {
+    "name": "Moradas do Bosque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794498,
+  "tags": {
+    "name": "Navegantes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794499,
+  "tags": {
+    "alt_name": "Vila dos Pescadores",
+    "name": "Olaria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794500,
+  "tags": {
+    "name": "Parque Brasília",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794501,
+  "tags": {
+    "name": "Parque Espírito Santo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794502,
+  "tags": {
+    "name": "Parque Marechal Rondon",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794503,
+  "tags": {
+    "name": "Princesa Isabel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794504,
+  "tags": {
+    "name": "Quitandinha",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794505,
+  "tags": {
+    "name": "Sítio Ipiranga",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794506,
+  "tags": {
+    "name": "Sítio Túnel Verde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794507,
+  "tags": {
+    "name": "Vila Assunção",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794510,
+  "tags": {
+    "name": "Vila City",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794511,
+  "tags": {
+    "name": "Vila Eunice",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794512,
+  "tags": {
+    "name": "Vila Mauá",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794513,
+  "tags": {
+    "alt_name": "Vila Monte Carlos",
+    "name": "Vila Monte Carlo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794514,
+  "tags": {
+    "name": "Vila Márcia",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794515,
+  "tags": {
+    "name": "Vila Ponta Porã",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794516,
+  "tags": {
+    "name": "Vila Regina",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794517,
+  "tags": {
+    "name": "Vila Santo Ângelo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794518,
+  "tags": {
+    "name": "Vila Veranópolis",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794519,
+  "tags": {
+    "name": "Vila da Paz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5150794520,
+  "tags": {
+    "name": "Vista Alegre",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315049,
+  "tags": {
+    "name": "Algarve",
+    "place": "suburb",
+    "ref": "MZ5"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315050,
+  "tags": {
+    "name": "Americana / Sumaré",
+    "place": "suburb",
+    "ref": "MZ2"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315051,
+  "tags": {
+    "name": "Jardim Alvorada",
+    "place": "suburb",
+    "ref": "MZ6"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315052,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb",
+    "ref": "MZ3"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315053,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb",
+    "ref": "MZ1"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315054,
+  "tags": {
+    "name": "Belo Horizonte",
+    "place": "neighbourhood",
+    "ref": "MZ7"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315055,
+  "tags": {
+    "name": "Formosa / Maria Regina",
+    "place": "suburb",
+    "ref": "MZ9"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315056,
+  "tags": {
+    "name": "Intersul",
+    "place": "suburb",
+    "ref": "MZ4"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315057,
+  "tags": {
+    "name": "Piratini",
+    "place": "suburb",
+    "ref": "MZ8"
+  }
+},
+{
+  "type": "node",
+  "id": 5154315058,
+  "tags": {
+    "name": "Umbú",
+    "place": "neighbourhood",
+    "ref": "MZ10"
+  }
+},
+{
+  "type": "node",
+  "id": 5244156073,
+  "tags": {
+    "alt_name": "São Valentim da Sexta Légua",
+    "name": "São Valentin da 6ª Légua",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5264599984,
+  "tags": {
+    "name": "Estância Grande",
+    "place": "suburb",
+    "population": "20183"
+  }
+},
+{
+  "type": "node",
+  "id": 5264733189,
+  "tags": {
+    "name": "Vale Ville",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5268445483,
+  "tags": {
+    "alt_name": "Vila Dona Cledi",
+    "name": "Vila Cledi",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5268862373,
+  "tags": {
+    "name": "Rincão da Madalena",
+    "note": "Abrange Auxiliadora, Nova Conquista e Nova Esperança: https://gravatai.atende.net/#!/tipo/noticia/valor/1893",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5268862374,
+  "tags": {
+    "name": "Nova Conquista",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5268862375,
+  "tags": {
+    "name": "Auxiliadora",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270541040,
+  "tags": {
+    "name": "Nova Esperança",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798737,
+  "tags": {
+    "name": "Dakar",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798738,
+  "tags": {
+    "name": "Estância Antiga",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798739,
+  "tags": {
+    "name": "Condado del Rey",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798740,
+  "tags": {
+    "name": "Xará",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798741,
+  "tags": {
+    "name": "Recanto de Morungava",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798742,
+  "tags": {
+    "name": "Granville",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798743,
+  "tags": {
+    "name": "Vila Neila",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798744,
+  "tags": {
+    "name": "Deolinda Goulart",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798745,
+  "tags": {
+    "name": "Cerro Azul",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798746,
+  "tags": {
+    "name": "Recanto do Itacolomi",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798747,
+  "tags": {
+    "name": "Parque São Cristóvão",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798748,
+  "tags": {
+    "name": "Palermo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798749,
+  "tags": {
+    "name": "Rincão da Natureza",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798751,
+  "tags": {
+    "name": "Vila Sônia",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798752,
+  "tags": {
+    "name": "Sítio Gaúcho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798754,
+  "tags": {
+    "name": "Dona Idalina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798756,
+  "tags": {
+    "name": "Parque dos Anjos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798757,
+  "tags": {
+    "name": "Parque Sinimbú",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798758,
+  "tags": {
+    "name": "Morada Gaúcha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798760,
+  "tags": {
+    "name": "Jardim das Palmeiras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798761,
+  "tags": {
+    "alt_name": "Parque Girassol",
+    "name": "Girassol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798762,
+  "tags": {
+    "alt_name": "Miraflores",
+    "name": "Mira Flores",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798764,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798765,
+  "tags": {
+    "name": "Mato Alto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798766,
+  "tags": {
+    "name": "Antonio Gomes Correa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798767,
+  "tags": {
+    "name": "Santa Rita de Cássia",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798768,
+  "tags": {
+    "name": "Recanto Verde",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798769,
+  "tags": {
+    "name": "Dona Mercedes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798770,
+  "tags": {
+    "alt_name": "Parque Santo Antônio",
+    "name": "Santo Antônio",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798771,
+  "tags": {
+    "name": "Granada",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798772,
+  "tags": {
+    "name": "Porto Seguro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798773,
+  "tags": {
+    "name": "São Marcos",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798774,
+  "tags": {
+    "name": "Sítio do Sobrado",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798775,
+  "tags": {
+    "alt_name": "Morada do Sobrado",
+    "name": "Moradas do Sobrado",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798776,
+  "tags": {
+    "name": "Loteamento da Lagoa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798777,
+  "tags": {
+    "name": "Costa Verde",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798779,
+  "tags": {
+    "name": "Altaville",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798780,
+  "tags": {
+    "name": "Sol Nascente",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798781,
+  "tags": {
+    "name": "Jardim do Cedro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798782,
+  "tags": {
+    "alt_name": "Parque Itatiaia",
+    "name": "Itatiaia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798783,
+  "tags": {
+    "name": "Jardim das Acácias",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798784,
+  "tags": {
+    "name": "Granjas Alto Gravataí",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798785,
+  "tags": {
+    "name": "Loteamento Princesa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798786,
+  "tags": {
+    "name": "Jardim dos Alpes",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798787,
+  "tags": {
+    "name": "Parque Itacolomi",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798788,
+  "tags": {
+    "alt_name": "Vila Neiva",
+    "name": "Dona Neiva",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798789,
+  "tags": {
+    "name": "Padre Réus",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798790,
+  "tags": {
+    "name": "Recanto do Ipiranga",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798791,
+  "tags": {
+    "name": "Sagrada Família",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798792,
+  "tags": {
+    "name": "Vila Imperial",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798793,
+  "tags": {
+    "name": "Guadalajara",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798794,
+  "tags": {
+    "name": "Passo dos Ferreiros",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5270798795,
+  "tags": {
+    "name": "Las Palmas",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5272472355,
+  "tags": {
+    "name": "Loteamento Delta I",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5276525193,
+  "tags": {
+    "name": "Santa Terezinha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5276525194,
+  "tags": {
+    "name": "Maggi",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5276525196,
+  "tags": {
+    "name": "Boeira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5276525197,
+  "tags": {
+    "name": "Loteamento Central",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5276525203,
+  "tags": {
+    "name": "Celulose",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5276525204,
+  "tags": {
+    "name": "Laje de Pedra",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5276525205,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350042,
+  "tags": {
+    "addr:city": "Gravataí",
+    "name": "Parque Ipiranga",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350043,
+  "tags": {
+    "name": "Garibaldino",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350044,
+  "tags": {
+    "name": "Ibiza",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350045,
+  "tags": {
+    "name": "Jardim Esplanada",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350046,
+  "tags": {
+    "name": "Monte Claro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350049,
+  "tags": {
+    "alt_name": "Vila Neópolis",
+    "name": "Neópolis",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350050,
+  "tags": {
+    "name": "Parque Ipiranga",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350051,
+  "tags": {
+    "name": "Parque Pioneiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350052,
+  "tags": {
+    "name": "Parque dos Eucaliptos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350053,
+  "tags": {
+    "name": "Planaltina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350054,
+  "tags": {
+    "name": "Pôr do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350055,
+  "tags": {
+    "name": "Quinta do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350056,
+  "tags": {
+    "name": "Recanto das Taquareiras",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350057,
+  "tags": {
+    "name": "Refúgio da Coxilha",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350058,
+  "tags": {
+    "name": "Rondon",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350059,
+  "tags": {
+    "name": "Rosa Maria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350060,
+  "tags": {
+    "name": "Sertanejo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350061,
+  "tags": {
+    "name": "Sítio Paquetá",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350062,
+  "tags": {
+    "alt_name": "Vila Tom Jobim",
+    "name": "Tom Jobim",
+    "official_name": "Antônio Carlos Jobim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5277350063,
+  "tags": {
+    "name": "Águas Claras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202391,
+  "tags": {
+    "name": "Bom Princípio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202392,
+  "tags": {
+    "name": "Boa Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202393,
+  "tags": {
+    "name": "Passo das Canoas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202394,
+  "tags": {
+    "alt_name": "Vila Eliza",
+    "name": "Vila Elisa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202395,
+  "tags": {
+    "name": "São Vicente",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202396,
+  "tags": {
+    "name": "São Judas Tadeu",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202397,
+  "tags": {
+    "name": "Monte Belo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202398,
+  "tags": {
+    "name": "Parque Olinda",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202399,
+  "tags": {
+    "name": "Cohab A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202400,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202401,
+  "tags": {
+    "name": "Bom Fim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202402,
+  "tags": {
+    "name": "São Geraldo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202403,
+  "tags": {
+    "name": "San Martin",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202404,
+  "tags": {
+    "name": "Fundos do Bom Fim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202405,
+  "tags": {
+    "name": "Província",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202406,
+  "tags": {
+    "name": "Vera Cruz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202408,
+  "tags": {
+    "name": "São Jerônimo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202409,
+  "tags": {
+    "name": "San Diego",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202410,
+  "tags": {
+    "name": "São Luiz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202411,
+  "tags": {
+    "name": "Vila Branca",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202412,
+  "tags": {
+    "alt_name": "Vila Cruzeiro II",
+    "name": "Cruzeiro II",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202413,
+  "tags": {
+    "alt_name": "Vila Cruzeiro I",
+    "name": "Cruzeiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202414,
+  "tags": {
+    "alt_name": "Sítio Santa Fé",
+    "name": "Santa Fé",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202415,
+  "tags": {
+    "alt_name": "Bom Sucesso",
+    "name": "Bonsucesso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202416,
+  "tags": {
+    "name": "Vila Central",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202417,
+  "tags": {
+    "name": "Nossa Chácara",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202418,
+  "tags": {
+    "name": "Parque do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202419,
+  "tags": {
+    "name": "Novo Mundo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202420,
+  "tags": {
+    "name": "Parque Florido",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202721,
+  "tags": {
+    "name": "Marrocos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202722,
+  "tags": {
+    "name": "Vila Rica",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202723,
+  "tags": {
+    "name": "Cohab B",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278202724,
+  "tags": {
+    "name": "Cohab C",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573072,
+  "tags": {
+    "name": "Villa Lucchesi",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573073,
+  "tags": {
+    "name": "Paraíso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573074,
+  "tags": {
+    "name": "Paradiso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573075,
+  "tags": {
+    "name": "Parque dos Búzios",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573076,
+  "tags": {
+    "name": "Vila Nara",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573077,
+  "tags": {
+    "name": "Parque São Vicente",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573078,
+  "tags": {
+    "name": "Vila Natal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573079,
+  "tags": {
+    "name": "Santa Luzia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573080,
+  "tags": {
+    "name": "Salgado Filho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573081,
+  "tags": {
+    "name": "Parque Conceição",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573082,
+  "tags": {
+    "alt_name": "Nossa Senhora de Lurdes",
+    "name": "Vila Lourdes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573083,
+  "tags": {
+    "name": "Oriçó",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573084,
+  "tags": {
+    "name": "Dom Feliciano",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573085,
+  "tags": {
+    "name": "Dom João Becker",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573086,
+  "tags": {
+    "name": "Diva Lessa de Jesus",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573087,
+  "tags": {
+    "name": "Vila Aliança",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573088,
+  "tags": {
+    "name": "Passo das Pedras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573089,
+  "tags": {
+    "alt_name": "Flamboiam",
+    "name": "Flamboyant",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573090,
+  "tags": {
+    "alt_name": "Jardim Timbaúva",
+    "name": "Timbaúva",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573091,
+  "tags": {
+    "name": "Castelo Branco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573092,
+  "tags": {
+    "alt_name": "Parque Eli",
+    "name": "Parque Ely",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573093,
+  "tags": {
+    "alt_name": "Parque Renascença",
+    "name": "Renascença",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573094,
+  "tags": {
+    "alt_name": "Vila Jansen",
+    "name": "Jansen",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573095,
+  "tags": {
+    "name": "Santa Cruz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573096,
+  "tags": {
+    "name": "Altos da Boa Vista",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573098,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573099,
+  "tags": {
+    "name": "Jardim Guaianuba",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573101,
+  "tags": {
+    "alt_name": "Vila União",
+    "name": "União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573102,
+  "tags": {
+    "alt_name": "Reserva do Arvoredo",
+    "name": "Parque do Arvoredo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573103,
+  "tags": {
+    "name": "Jardim da Figueira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5278573104,
+  "tags": {
+    "name": "Vila Angélica",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5308588361,
+  "tags": {
+    "name": "Boa Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5308588362,
+  "tags": {
+    "name": "Teutônia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5308588363,
+  "tags": {
+    "name": "Alesgut",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5308588364,
+  "tags": {
+    "name": "Languiru",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5308588365,
+  "tags": {
+    "name": "Canabarro",
+    "place": "suburb",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 5308588366,
+  "tags": {
+    "name": "Centro Administrativo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990905,
+  "tags": {
+    "name": "Figueira",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990906,
+  "tags": {
+    "name": "Pedreira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990907,
+  "tags": {
+    "name": "Ana Nery",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990908,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805019",
+    "name": "Faxinal",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990909,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805018",
+    "name": "Menino Deus",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990911,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990912,
+  "tags": {
+    "name": "São João",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990913,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805037",
+    "name": "Liberdade",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990914,
+  "tags": {
+    "name": "Esmeralda",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990915,
+  "tags": {
+    "name": "Dona Carlota",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990916,
+  "tags": {
+    "name": "Senai",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990917,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805038",
+    "name": "Capão da Cruz",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990918,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805042",
+    "name": "Cristal",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990919,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805041",
+    "name": "Glória",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990920,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805012",
+    "name": "Verena",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990922,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805043",
+    "name": "Harmonia",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990923,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805035",
+    "name": "Vila Nova",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990924,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805033",
+    "name": "Ohland",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990926,
+  "tags": {
+    "name": "Linha Santa Cruz",
+    "old_name": "Alte Pikade",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990927,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805006",
+    "name": "Piratini",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990928,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805040",
+    "name": "Imigrante",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990929,
+  "tags": {
+    "name": "Rauber",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990930,
+  "tags": {
+    "name": "Aliança",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990931,
+  "tags": {
+    "name": "Bom Fim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990932,
+  "tags": {
+    "name": "Bom Jesus",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990933,
+  "tags": {
+    "name": "Arroio Grande",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990934,
+  "tags": {
+    "name": "Várzea",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990935,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805026",
+    "name": "Entrada Rio Pardinho",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990936,
+  "tags": {
+    "IBGE:GEOCODIGO": "431680805027",
+    "name": "Linha Travessa Aeroporto",
     "place": "neighbourhood"
   }
 },
@@ -1785,6 +7303,14 @@
   "tags": {
     "alt_name": "Morro 25",
     "name": "Morro Vinte e Cinco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990939,
+  "tags": {
+    "name": "Navegantes",
     "place": "suburb"
   }
 },
@@ -1814,6 +7340,14 @@
 },
 {
   "type": "node",
+  "id": 5312990943,
+  "tags": {
+    "name": "Medianeira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
   "id": 5312990944,
   "tags": {
     "name": "Moinhos D'Água",
@@ -1830,9 +7364,76 @@
 },
 {
   "type": "node",
+  "id": 5312990946,
+  "tags": {
+    "name": "Rosa",
+    "old_name": "Vila Rosa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990947,
+  "tags": {
+    "name": "São Gabriel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
   "id": 5312990948,
   "tags": {
     "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990949,
+  "tags": {
+    "name": "Célia",
+    "old_name": "Vila Célia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990950,
+  "tags": {
+    "name": "Glucostarck",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990951,
+  "tags": {
+    "name": "Cascata",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990952,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990953,
+  "tags": {
+    "name": "Passo de Estrela",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990954,
+  "tags": {
+    "name": "Italiana",
+    "old_name": "Vila Italiana",
     "place": "suburb"
   }
 },
@@ -1846,9 +7447,66 @@
 },
 {
   "type": "node",
+  "id": 5312990956,
+  "tags": {
+    "name": "São Rafael",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990957,
+  "tags": {
+    "name": "Eleonora Haenssgen",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
   "id": 5312990958,
   "tags": {
     "name": "Indústrias",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990959,
+  "tags": {
+    "name": "Zwirtes",
+    "old_name": "Vila Zwirtes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990960,
+  "tags": {
+    "name": "Aimoré",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990961,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990962,
+  "tags": {
+    "name": "Dona Rita",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990963,
+  "tags": {
+    "name": "São Caetano",
     "place": "suburb"
   }
 },
@@ -1858,6 +7516,14 @@
   "tags": {
     "alt_name": "Bairro das Nações",
     "name": "Nações",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990965,
+  "tags": {
+    "name": "Dom Pedro II",
     "place": "suburb"
   }
 },
@@ -1895,9 +7561,480 @@
 },
 {
   "type": "node",
+  "id": 5312990970,
+  "tags": {
+    "name": "Novo Horizonte",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
   "id": 5312990971,
   "tags": {
     "name": "Bom Pastor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990972,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990981,
+  "tags": {
+    "name": "Casa de Pedra",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990983,
+  "tags": {
+    "name": "Invernada",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990985,
+  "tags": {
+    "alt_name": "Quinze de Novembro",
+    "name": "15 de Novembro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990988,
+  "tags": {
+    "name": "Bom Pastor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990998,
+  "tags": {
+    "name": "Liberdade",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312990999,
+  "tags": {
+    "alt_name": "Bairro da Estação",
+    "name": "Estação",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991001,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991002,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991003,
+  "tags": {
+    "name": "Progresso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991004,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991005,
+  "tags": {
+    "name": "Primavera",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991006,
+  "tags": {
+    "name": "Imigrante",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991007,
+  "tags": {
+    "name": "Imperatriz",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991008,
+  "tags": {
+    "name": "Campo da Brazina",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991009,
+  "tags": {
+    "alt_name": "Bairro das Rosas",
+    "name": "Rosas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991010,
+  "tags": {
+    "alt_name": "Bairro da Integração",
+    "name": "Integração",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991011,
+  "tags": {
+    "alt_name": "Bairro da Canoa",
+    "name": "Canoa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991012,
+  "tags": {
+    "name": "Emancipação",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991013,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991014,
+  "tags": {
+    "name": "Azaléia",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991015,
+  "tags": {
+    "name": "Quintas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991016,
+  "tags": {
+    "name": "Encosta do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991017,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991018,
+  "tags": {
+    "name": "Lira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991019,
+  "tags": {
+    "name": "Lago Azul",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991020,
+  "tags": {
+    "name": "União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991021,
+  "tags": {
+    "alt_name": "Bairro das Águas",
+    "name": "Águas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991022,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991023,
+  "tags": {
+    "name": "Harmonia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991024,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991025,
+  "tags": {
+    "name": "Concórdia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991026,
+  "tags": {
+    "name": "Morada do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991027,
+  "tags": {
+    "name": "Colinas Verdes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991028,
+  "tags": {
+    "name": "Bom Jardim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991029,
+  "tags": {
+    "name": "Jardim do Alto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991030,
+  "tags": {
+    "name": "Cidade Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991031,
+  "tags": {
+    "name": "Brasília",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991032,
+  "tags": {
+    "name": "Jardim Buhler",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991033,
+  "tags": {
+    "name": "Jardim Panorâmico",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991034,
+  "tags": {
+    "name": "Feitoria Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991035,
+  "tags": {
+    "name": "Sete de Setembro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991036,
+  "tags": {
+    "name": "Bom Pastor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991037,
+  "tags": {
+    "name": "Palmares",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991038,
+  "tags": {
+    "name": "Farroupilha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991039,
+  "tags": {
+    "name": "Vinte e Cinco de Julho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991040,
+  "tags": {
+    "name": "Vista Alegre",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991041,
+  "tags": {
+    "name": "Colina Verde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991042,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991043,
+  "tags": {
+    "name": "Rincão da Saudade",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991044,
+  "tags": {
+    "name": "Campo Grande",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991045,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991046,
+  "tags": {
+    "alt_name": "Bairro das Rosas",
+    "name": "Rosas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991047,
+  "tags": {
+    "name": "Rincão Gaúcho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991048,
+  "tags": {
+    "name": "Floresta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991049,
+  "tags": {
+    "name": "Sol Nascente",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991050,
+  "tags": {
+    "name": "Rincão dos Ilhéus",
     "place": "suburb"
   }
 },
@@ -2111,6 +8248,584 @@
 },
 {
   "type": "node",
+  "id": 5312991077,
+  "tags": {
+    "name": "Santa Terezinha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991078,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991079,
+  "tags": {
+    "name": "São Miguel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991080,
+  "tags": {
+    "name": "Aurora",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991081,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991082,
+  "tags": {
+    "name": "Três Lagoas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991083,
+  "tags": {
+    "name": "Rota do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991084,
+  "tags": {
+    "name": "Planalto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991085,
+  "tags": {
+    "name": "Chácaras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991086,
+  "tags": {
+    "name": "Sebben",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991087,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991088,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991089,
+  "tags": {
+    "name": "Nossa Senhora de Fátima",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991090,
+  "tags": {
+    "name": "Brasília",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991091,
+  "tags": {
+    "name": "Integração",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991092,
+  "tags": {
+    "name": "Borghetto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991093,
+  "tags": {
+    "name": "Triângulo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991095,
+  "tags": {
+    "name": "Vitória",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991096,
+  "tags": {
+    "name": "Tamandaré",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991097,
+  "tags": {
+    "name": "São Francisco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991098,
+  "tags": {
+    "name": "Navegantes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991099,
+  "tags": {
+    "name": "Aparecida",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991100,
+  "tags": {
+    "name": "Ponte Sêca",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991101,
+  "tags": {
+    "name": "Champanhe",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991102,
+  "tags": {
+    "name": "Alfândega",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991103,
+  "tags": {
+    "name": "Juventude",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991104,
+  "tags": {
+    "name": "Simonaggio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991105,
+  "tags": {
+    "name": "Ferroviário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991106,
+  "tags": {
+    "name": "Peterlongo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991107,
+  "tags": {
+    "alt_name": "Cairú",
+    "name": "Cairu",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991108,
+  "tags": {
+    "name": "Guarani",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991109,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991110,
+  "tags": {
+    "name": "Vale dos Pinheiros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991111,
+  "tags": {
+    "name": "Glória",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991112,
+  "tags": {
+    "name": "Floresta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991113,
+  "tags": {
+    "name": "União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991114,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991115,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991116,
+  "tags": {
+    "name": "Vale Verde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991117,
+  "tags": {
+    "name": "São Pedro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991118,
+  "tags": {
+    "name": "Portal da Serra",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991119,
+  "tags": {
+    "name": "Sete de Setembro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991120,
+  "tags": {
+    "name": "Becker",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991121,
+  "tags": {
+    "name": "Vila Rosa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991122,
+  "tags": {
+    "name": "Beira Rio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991123,
+  "tags": {
+    "name": "Primavera",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991124,
+  "tags": {
+    "name": "São João",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991125,
+  "tags": {
+    "name": "Alto Paulista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991126,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991127,
+  "tags": {
+    "name": "São Francisco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991128,
+  "tags": {
+    "name": "Belvedere",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991129,
+  "tags": {
+    "name": "Pio X",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991130,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991131,
+  "tags": {
+    "name": "Volta Grande",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991132,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991133,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991134,
+  "tags": {
+    "name": "Centenário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991135,
+  "tags": {
+    "name": "Imigrante",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991136,
+  "tags": {
+    "name": "Cinquentenário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991137,
+  "tags": {
+    "name": "Monte Verde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991138,
+  "tags": {
+    "name": "Santa Rita",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991139,
+  "tags": {
+    "name": "Santa Catarina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991140,
+  "tags": {
+    "name": "Primeiro de Maio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991141,
+  "tags": {
+    "name": "Vicentina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991142,
+  "tags": {
+    "alt_name": "Bairro do Parque",
+    "name": "Parque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991144,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991145,
+  "tags": {
+    "name": "Nova Vicenza",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991146,
+  "tags": {
+    "name": "Cruzeiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991147,
+  "tags": {
+    "name": "Planalto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991148,
+  "tags": {
+    "name": "São Roque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991149,
+  "tags": {
+    "name": "São Luís",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991150,
+  "tags": {
+    "name": "Medianeira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
   "id": 5312991151,
   "tags": {
     "name": "Jacarezinho",
@@ -2221,6 +8936,647 @@
   "id": 5312991164,
   "tags": {
     "name": "Lajeadinho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991165,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991166,
+  "tags": {
+    "name": "Fazenda Barros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991167,
+  "tags": {
+    "alt_name": "Imigrantes",
+    "name": "Imigrante",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991168,
+  "tags": {
+    "name": "São Jorge",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991169,
+  "tags": {
+    "name": "Alto da Bronze",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991170,
+  "tags": {
+    "name": "Getúlio Vargas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991171,
+  "tags": {
+    "name": "São Francisco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991172,
+  "tags": {
+    "name": "São João",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991173,
+  "tags": {
+    "name": "Laranjeiras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991174,
+  "tags": {
+    "name": "Centro Cidade Baixa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991175,
+  "tags": {
+    "name": "Águas Boas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991176,
+  "tags": {
+    "name": "Goiabeira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991177,
+  "tags": {
+    "name": "Brasília",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991192,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991193,
+  "tags": {
+    "name": "União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991194,
+  "tags": {
+    "name": "Xangrilá",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991195,
+  "tags": {
+    "name": "Santa Tecla",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991196,
+  "tags": {
+    "name": "São Francisco Xavier",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991197,
+  "tags": {
+    "name": "Coronel Brito",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991198,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991199,
+  "tags": {
+    "name": "Cidade Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991200,
+  "tags": {
+    "name": "Macedo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991201,
+  "tags": {
+    "name": "Brígida",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991202,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991203,
+  "tags": {
+    "name": "Universitário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991204,
+  "tags": {
+    "name": "Brands",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991205,
+  "tags": {
+    "name": "Morsch",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991206,
+  "tags": {
+    "name": "Leopoldina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991207,
+  "tags": {
+    "name": "Aviação",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991208,
+  "tags": {
+    "name": "Battisti",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991209,
+  "tags": {
+    "name": "Diettrich",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991210,
+  "tags": {
+    "name": "Cidade Alta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991211,
+  "tags": {
+    "name": "Cruzeiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991212,
+  "tags": {
+    "name": "Gressler",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991213,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991214,
+  "tags": {
+    "name": "Colônia Vinte de Setembro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991215,
+  "tags": {
+    "name": "Coqueiros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991216,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991217,
+  "tags": {
+    "name": "Olaria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991218,
+  "tags": {
+    "name": "União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991219,
+  "tags": {
+    "name": "Prado",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991220,
+  "tags": {
+    "name": "Passo da Aldeia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991221,
+  "tags": {
+    "name": "Léo Alvim Faller",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991222,
+  "tags": {
+    "name": "Caleira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991223,
+  "tags": {
+    "name": "São João",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991224,
+  "tags": {
+    "name": "Praia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991225,
+  "tags": {
+    "name": "Quininho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991226,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991227,
+  "tags": {
+    "name": "Padre Reus",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991228,
+  "tags": {
+    "name": "Passo D'Areia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991229,
+  "tags": {
+    "name": "São Francisco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991230,
+  "tags": {
+    "name": "Fátima",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991231,
+  "tags": {
+    "name": "Princesa Isabel",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991232,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991233,
+  "tags": {
+    "name": "Cidade Alta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991234,
+  "tags": {
+    "name": "Bandeira Branca",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991235,
+  "tags": {
+    "name": "Cidade Baixa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991236,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991238,
+  "tags": {
+    "name": "Vila Rosa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991239,
+  "tags": {
+    "name": "Otília",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991240,
+  "tags": {
+    "name": "Orvisa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991241,
+  "tags": {
+    "name": "Piratini",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991242,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991243,
+  "tags": {
+    "name": "Beira Rio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991244,
+  "tags": {
+    "name": "Parque dos Coqueiros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991245,
+  "tags": {
+    "name": "Cruz de Malta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991246,
+  "tags": {
+    "name": "Colônia Penal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991247,
+  "tags": {
+    "name": "Parque Primavera",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991248,
+  "tags": {
+    "name": "Olímpica",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991249,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991250,
+  "tags": {
+    "name": "Novo Esteio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991251,
+  "tags": {
+    "name": "Jardim Planalto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991252,
+  "tags": {
+    "name": "Três Portos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991253,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991254,
+  "tags": {
+    "name": "Santo Inácio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991255,
+  "tags": {
+    "name": "Liberdade",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991256,
+  "tags": {
+    "name": "São Sebastião",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991257,
+  "tags": {
+    "name": "Tamandaré",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991259,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991260,
+  "tags": {
+    "name": "Parque do Sabiá",
     "place": "suburb"
   }
 },
@@ -2362,11 +9718,879 @@
 },
 {
   "type": "node",
+  "id": 5312991280,
+  "tags": {
+    "name": "Santa Rita",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991281,
+  "tags": {
+    "name": "Vila Regilnei",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991282,
+  "tags": {
+    "name": "Medianeira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991283,
+  "tags": {
+    "name": "Cidade Baixa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991284,
+  "tags": {
+    "name": "R-1",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991285,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991286,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991287,
+  "tags": {
+    "name": "Vila Julieta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991288,
+  "tags": {
+    "name": "Poço 5",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991289,
+  "tags": {
+    "name": "Vila Custódio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991291,
+  "tags": {
+    "name": "Roberto Cardoso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991292,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991293,
+  "tags": {
+    "name": "Cidade Alta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991294,
+  "tags": {
+    "alt_name": "Centro (Sede)",
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991295,
+  "tags": {
+    "name": "Vila Motta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991296,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991297,
+  "tags": {
+    "name": "Auxiliadora",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991298,
+  "tags": {
+    "name": "Guerino",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991299,
+  "tags": {
+    "alt_name": "Bairro do Rosário",
+    "name": "Rosário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991300,
+  "tags": {
+    "name": "Fortaleza",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991301,
+  "tags": {
+    "name": "Ramiz Galvão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991302,
+  "tags": {
+    "name": "Jardim Boa Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991303,
+  "tags": {
+    "name": "Bom Fim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991304,
+  "tags": {
+    "name": "Boa Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991305,
+  "tags": {
+    "name": "São Jorge",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991306,
+  "tags": {
+    "name": "São João",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991307,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991308,
+  "tags": {
+    "name": "Quatorze de Julho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991309,
+  "tags": {
+    "name": "Cidade Baixa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991310,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991311,
+  "tags": {
+    "name": "Vindima",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991312,
+  "tags": {
+    "name": "Colina de Flores",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991313,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991314,
+  "tags": {
+    "name": "União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991315,
+  "tags": {
+    "name": "Aparecida",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991316,
+  "tags": {
+    "name": "Polo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991317,
+  "tags": {
+    "name": "Santini",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991318,
+  "tags": {
+    "name": "Henrique Pante",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991321,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991322,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991323,
+  "tags": {
+    "name": "Francisco Doncatto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991324,
+  "tags": {
+    "alt_name": "Medianeira III",
+    "name": "Sagrado Coração de Jesus",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991326,
+  "tags": {
+    "name": "Distrito Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5312991328,
+  "tags": {
+    "name": "Vila Azul",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5321097803,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5321097804,
+  "tags": {
+    "name": "Portão Novo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5321097805,
+  "tags": {
+    "name": "Vila Rica",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5321097818,
+  "tags": {
+    "name": "São Jorge",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5321097819,
+  "tags": {
+    "name": "Parque Neto",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5321097820,
+  "tags": {
+    "name": "Estação Portão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5321097821,
+  "tags": {
+    "name": "Vila Trilhos (Estação Portão)",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5371362393,
+  "tags": {
+    "name": "Castelo Branco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5371362399,
+  "tags": {
+    "alt_name": "Bairro do Parque",
+    "name": "do Parque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5371362403,
+  "tags": {
+    "name": "Progresso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5371362706,
+  "tags": {
+    "name": "João Alves",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5371362824,
+  "tags": {
+    "name": "Santa Vitória",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5371362825,
+  "tags": {
+    "name": "Faxinal Menino Deus",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5371569340,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5379444457,
+  "tags": {
+    "name": "Loteamento Mattioda",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5403798902,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5403799047,
+  "tags": {
+    "name": "São Paulo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5403799049,
+  "tags": {
+    "name": "Santa Clara",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5408126098,
+  "tags": {
+    "name": "Imigrantes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5426586103,
+  "tags": {
+    "name": "Aldeia São Nicolau",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5427698860,
+  "tags": {
+    "name": "Sul América",
+    "place": "suburb",
+    "source": "IBGE Setores Censitários;LM 490/1993"
+  }
+},
+{
+  "type": "node",
+  "id": 5427739054,
+  "tags": {
+    "name": "Vila Cohab",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5432297393,
+  "tags": {
+    "name": "Caça e Pesca",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5459512552,
+  "tags": {
+    "alt_name": "Loteamento Habitacional Cooperlaga",
+    "name": "Cooperlaga",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 5496686065,
+  "tags": {
+    "name": "Cidade Alta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074810,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074811,
+  "tags": {
+    "name": "Loteamento Leitão",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074812,
+  "tags": {
+    "name": "Vila Guerino",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074813,
+  "tags": {
+    "name": "Vila Militar",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074814,
+  "tags": {
+    "name": "Vila Fahrion",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074815,
+  "tags": {
+    "name": "Vila Santa Fé",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074816,
+  "tags": {
+    "name": "Vila Pinheiros",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074817,
+  "tags": {
+    "name": "Cohab",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074818,
+  "tags": {
+    "name": "Vila Nova Fahrion",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500074819,
+  "tags": {
+    "name": "Loteamento Barreto",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500075629,
+  "tags": {
+    "name": "Vila Progresso",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500075630,
+  "tags": {
+    "name": "Vila Asseio Público",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500075665,
+  "tags": {
+    "name": "Vila Hospital",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5500075671,
+  "tags": {
+    "name": "Loteamento São Jorge",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5583440972,
+  "tags": {
+    "fixme": "Confirmar localização.",
+    "name": "Loteamento Bela Vista",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
   "id": 5636236815,
   "tags": {
     "name": "Loteamento Parque Perolim",
     "place": "neighbourhood",
     "source": "LM 1266/1985"
+  }
+},
+{
+  "type": "node",
+  "id": 5638758313,
+  "tags": {
+    "name": "União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5638758314,
+  "tags": {
+    "name": "Colônia Japonesa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5673234264,
+  "tags": {
+    "name": "Moradas Parque Do Lago",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5723749394,
+  "tags": {
+    "name": "Loteamento Pedro Emília",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 5760665233,
+  "tags": {
+    "name": "Loteamento Villa Lobos",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5779750994,
+  "tags": {
+    "name": "Loteamento Residencial Boa Vista",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5790107918,
+  "tags": {
+    "name": "Vale Verde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5805647216,
+  "tags": {
+    "name": "Travessa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5805647217,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5805647253,
+  "tags": {
+    "name": "Canto do Cedro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5805647254,
+  "tags": {
+    "alt_name": "Bem Feita",
+    "name": "Linha Bem Feita",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5812511283,
+  "tags": {
+    "name": "Loteamento Rodolfo Diegel",
+    "place": "neighbourhood",
+    "source": "IBGE Urbano"
+  }
+},
+{
+  "type": "node",
+  "id": 5813953889,
+  "tags": {
+    "name": "Loteamento Colina Verde",
+    "place": "neighbourhood",
+    "source": "IBGE Urbano"
+  }
+},
+{
+  "type": "node",
+  "id": 5815248507,
+  "tags": {
+    "name": "Califórnia II",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5815248508,
+  "tags": {
+    "name": "Loteamento Popular",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5815248509,
+  "tags": {
+    "name": "Recanto da Quinta",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5815248510,
+  "tags": {
+    "name": "Loteamento Maria José",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5815248511,
+  "tags": {
+    "name": "Sanga Funda",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5815252653,
+  "tags": {
+    "name": "Califórnia",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5818716027,
+  "tags": {
+    "name": "Berto Círio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5826882761,
+  "tags": {
+    "alt_name": "San Diego",
+    "name": "San'Diego",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 5841904462,
+  "tags": {
+    "name": "Loteamento Alto das Graças",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5925128911,
+  "tags": {
+    "name": "Imigrante",
+    "place": "neighbourhood"
   }
 },
 {
@@ -2695,6 +10919,620 @@
 },
 {
   "type": "node",
+  "id": 6020442648,
+  "tags": {
+    "name": "Vila Pinhal",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6020442649,
+  "tags": {
+    "name": "Vila Adamati",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6026082125,
+  "tags": {
+    "name": "Condomínio Lagos das Flores",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 6026175125,
+  "tags": {
+    "name": "Condomínio residencial",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 6044890396,
+  "tags": {
+    "name": "Sampaio",
+    "place": "neighbourhood",
+    "source": "IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 6054188929,
+  "tags": {
+    "name": "Julieta",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6077186043,
+  "tags": {
+    "name": "Loteamento Campo dos Lírios",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6113873227,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6163871846,
+  "tags": {
+    "name": "Canto Klering",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6163871847,
+  "tags": {
+    "name": "Vale do Hermes",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6173792224,
+  "tags": {
+    "name": "Village Intral",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6177420171,
+  "tags": {
+    "name": "Condomínio de Chácaras Rota Do Sol",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393464,
+  "tags": {
+    "name": "Loteamento Schallemberger",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393465,
+  "tags": {
+    "name": "Loteamento Ilhéus",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393466,
+  "tags": {
+    "name": "Loteamento Bom Jardim",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393467,
+  "tags": {
+    "name": "Loteamento das Acácias",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393468,
+  "tags": {
+    "name": "Loteamento Bell Poente II e III",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393469,
+  "tags": {
+    "name": "Loteamento Campo Grande",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393470,
+  "tags": {
+    "name": "Loteamento Tresbe",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393471,
+  "tags": {
+    "name": "Loteamento Sol Nascente",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393472,
+  "tags": {
+    "name": "Loteamento Vale do Sol",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393473,
+  "tags": {
+    "name": "Loteamento Recanto do Sol",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393474,
+  "tags": {
+    "name": "Loteamento das Laranjeiras",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393475,
+  "tags": {
+    "name": "Loteamento Boa Vista",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393476,
+  "tags": {
+    "name": "Loteamento Residencial Vista Allegro",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393477,
+  "tags": {
+    "name": "Loteamento Bela Vista I, II e III",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393478,
+  "tags": {
+    "name": "Loteamento Campos",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393479,
+  "tags": {
+    "name": "Residencial Nova Estância",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393480,
+  "tags": {
+    "name": "Loteamento das Quintas",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393481,
+  "tags": {
+    "name": "Loteamento Bell Poente",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393482,
+  "tags": {
+    "name": "Loteamento da Lagoa",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254393483,
+  "tags": {
+    "name": "Loteamento Morada do Campo",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394885,
+  "tags": {
+    "name": "Loteamento Estância Park",
+    "place": "quarter",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394886,
+  "tags": {
+    "name": "Loteamento Bairro União",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394887,
+  "tags": {
+    "name": "Loteamento Lago Azul",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394888,
+  "tags": {
+    "name": "Loteamento Recanto dos Sabiás I, II e III",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394889,
+  "tags": {
+    "name": "Loteamento Weber",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394890,
+  "tags": {
+    "name": "Buraco do Ladrão",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394891,
+  "tags": {
+    "name": "Loteamento Verdes Campos",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394892,
+  "tags": {
+    "name": "Loteamento Veneza",
+    "place": "quarter",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394893,
+  "tags": {
+    "name": "Loteamento C. Lencina",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394894,
+  "tags": {
+    "name": "Loteamento dos Pássaros",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394895,
+  "tags": {
+    "name": "Loteamento Von Mühlen",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394896,
+  "tags": {
+    "name": "Loteamento Trespach",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394897,
+  "tags": {
+    "name": "Loteamento Altos do Floresta",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394898,
+  "tags": {
+    "name": "Loteamento Encosta do Sol II",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394899,
+  "tags": {
+    "name": "Loteamento Recanto Nova Estância",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394900,
+  "tags": {
+    "name": "Loteamento Novisol",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394901,
+  "tags": {
+    "name": "Loteamento Girasol I",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394902,
+  "tags": {
+    "name": "Residencial Boa Saudade",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394903,
+  "tags": {
+    "name": "Loteamento Rincão Gaúcho",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394904,
+  "tags": {
+    "name": "Loteamento Encosta do Sol",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394905,
+  "tags": {
+    "name": "Loteamento Vista Alegre",
+    "place": "neighbourhood",
+    "source": "Prefeitura Municipal 2014"
+  }
+},
+{
+  "type": "node",
+  "id": 6254394906,
+  "tags": {
+    "alt_name": "Bairro das Pedras",
+    "name": "Pedras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696209,
+  "tags": {
+    "name": "Vêneto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696210,
+  "tags": {
+    "name": "Nova Roma",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696211,
+  "tags": {
+    "name": "Morada do Camping",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696212,
+  "tags": {
+    "name": "Parque dos Pinheiros",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696213,
+  "tags": {
+    "name": "São Cristóvão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696214,
+  "tags": {
+    "name": "Villaggio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696215,
+  "tags": {
+    "name": "Pérola",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696216,
+  "tags": {
+    "name": "São Pedro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696217,
+  "tags": {
+    "name": "Videiras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696218,
+  "tags": {
+    "name": "Nova Trento",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696219,
+  "tags": {
+    "name": "Lagoa Bela",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6254696220,
+  "tags": {
+    "name": "Granja União",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6260869566,
+  "tags": {
+    "name": "América",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6379976332,
+  "tags": {
+    "name": "Monte Belo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6428955101,
+  "tags": {
+    "IBGE:GEOCODIGO": "430535505005",
+    "name": "Parque Santa Fé",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6537310317,
+  "tags": {
+    "alt_name": "Século Vinte",
+    "name": "Século XX",
+    "place": "suburb",
+    "short_name": "Século 20"
+  }
+},
+{
+  "type": "node",
+  "id": 6550055729,
+  "tags": {
+    "name": "Loteamento Terra Nobre",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
   "id": 6571899985,
   "tags": {
     "name": "Planalto Canoense",
@@ -2703,7 +11541,1039 @@
 },
 {
   "type": "node",
-  "id": 7247787750,
+  "id": 6591863772,
+  "tags": {
+    "name": "Vila Integração",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6611197881,
+  "tags": {
+    "name": "Vila Suíça",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6613326453,
+  "tags": {
+    "name": "Avenida Central",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6630262443,
+  "tags": {
+    "name": "Linha Ávila Baixa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6630262444,
+  "tags": {
+    "name": "Linha Ávila Alta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6632400977,
+  "tags": {
+    "name": "São Miguel",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6632418684,
+  "tags": {
+    "name": "Residencial Lagos de Gramado",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6632468456,
+  "tags": {
+    "name": "Altos da Viação Férrea",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6632474860,
+  "tags": {
+    "name": "Vila Paraíso",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6632474861,
+  "tags": {
+    "name": "Vila Olímpica",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6677750796,
+  "tags": {
+    "name": "Jardim Aparecida",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6754428908,
+  "tags": {
+    "name": "Breno Jardim Garcia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 6981793283,
+  "tags": {
+    "name": "Vila Militar",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6985926819,
+  "tags": {
+    "name": "Campos da Serra",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 6985926821,
+  "tags": {
+    "name": "Ouro Verde",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7036962106,
+  "tags": {
+    "name": "La Paloma",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7151549773,
+  "tags": {
+    "name": "São Virgílio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7477261543,
+  "tags": {
+    "name": "Vila Alvorada",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7477299261,
+  "tags": {
+    "name": "Vila Monte Carmelo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7699896996,
+  "tags": {
+    "name": "Parque das Orquídeas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7699897018,
+  "tags": {
+    "name": "Minuano",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7703385972,
+  "tags": {
+    "name": "Vila Kunst",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7703385973,
+  "tags": {
+    "name": "Vila Amizade",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727421635,
+  "tags": {
+    "name": "Dante",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727421660,
+  "tags": {
+    "name": "Reserva da Serra",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727442005,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727516093,
+  "tags": {
+    "name": "Caracol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727516116,
+  "tags": {
+    "name": "São Luiz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727516117,
+  "tags": {
+    "name": "Ulisses de Abreu",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727516125,
+  "tags": {
+    "name": "Pinheiro Grosso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727516126,
+  "tags": {
+    "name": "Hortênsias",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7727516127,
+  "tags": {
+    "name": "Santa Marta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7728634704,
+  "tags": {
+    "name": "Bom Jesus",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898244309,
+  "tags": {
+    "name": "Nova Sapucaia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898244313,
+  "tags": {
+    "name": "Capão da Cruz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898244314,
+  "tags": {
+    "name": "Walderes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898244321,
+  "tags": {
+    "name": "Boa Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898244322,
+  "tags": {
+    "name": "Costa do Morro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898244326,
+  "tags": {
+    "name": "Passo Sapucaia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855100,
+  "tags": {
+    "name": "Kurashiki",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855101,
+  "tags": {
+    "name": "Diehl",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855102,
+  "tags": {
+    "name": "Silva",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855103,
+  "tags": {
+    "name": "Getulio Vargas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855110,
+  "tags": {
+    "name": "Vacchi",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855112,
+  "tags": {
+    "name": "Primor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855113,
+  "tags": {
+    "name": "Santa Catarina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855124,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855125,
+  "tags": {
+    "name": "Jardim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855128,
+  "tags": {
+    "name": "Sete",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855130,
+  "tags": {
+    "name": "Lomba da Palmeira",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855160,
+  "tags": {
+    "name": "Ipiranga",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855163,
+  "tags": {
+    "name": "Pasqualini",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855170,
+  "tags": {
+    "name": "Camboim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898855172,
+  "tags": {
+    "name": "Paraiso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898973244,
+  "tags": {
+    "name": "Horto Florestal",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898973246,
+  "tags": {
+    "name": "Vargas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898973278,
+  "tags": {
+    "name": "Piratini",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7898973279,
+  "tags": {
+    "name": "COHAB",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7900921452,
+  "tags": {
+    "name": "Porto Blos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7900921465,
+  "tags": {
+    "name": "Vila Rica",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7900921483,
+  "tags": {
+    "name": "Lot. Solar do Campo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7900921484,
+  "tags": {
+    "name": "Lot. Industrial Norte",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981385,
+  "tags": {
+    "name": "Loteamento Industrial da Valetec",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981387,
+  "tags": {
+    "name": "Lot. Luckmann",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981388,
+  "tags": {
+    "name": "Lot. Vila Velha II",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981389,
+  "tags": {
+    "name": "Lot. Jardim das Flores",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981390,
+  "tags": {
+    "name": "Loteamento Recanto da Paz",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981391,
+  "tags": {
+    "name": "Loteamento Colina Ritzel",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981392,
+  "tags": {
+    "name": "25 de Julho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981427,
+  "tags": {
+    "name": "Celina Deuner",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981428,
+  "tags": {
+    "name": "Jardim do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981444,
+  "tags": {
+    "name": "COHAB Leste",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981464,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7900981484,
+  "tags": {
+    "name": "Paulista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033743,
+  "tags": {
+    "name": "Ipiranga",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033746,
+  "tags": {
+    "name": "Imigrante Norte",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033747,
+  "tags": {
+    "name": "Imigrante Sul",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033751,
+  "tags": {
+    "name": "Dona Augusta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033760,
+  "tags": {
+    "name": "Genuíno Sampaio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033761,
+  "tags": {
+    "name": "Celeste",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033763,
+  "tags": {
+    "name": "Metzler",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033768,
+  "tags": {
+    "name": "Lot. Panorâmico",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033769,
+  "tags": {
+    "name": "Loteamento Firenze",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033770,
+  "tags": {
+    "name": "Loteamento Renascer",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033771,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033772,
+  "tags": {
+    "name": "Operário",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033773,
+  "tags": {
+    "name": "Zona Industrial Sul",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033782,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7901033783,
+  "tags": {
+    "name": "Vila dos Gringos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7903326894,
+  "tags": {
+    "name": "Jari",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7903326895,
+  "tags": {
+    "name": "Parque Saint Hilaire",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7903326985,
+  "tags": {
+    "name": "Branquinha",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7903621843,
+  "tags": {
+    "name": "Cantegril I",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7903621844,
+  "tags": {
+    "name": "Cantegril III",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7903621845,
+  "tags": {
+    "name": "Cantegril II",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7903621846,
+  "tags": {
+    "name": "Cantegril IV",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7903642035,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7903642045,
+  "tags": {
+    "name": "Tarumã",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7903642086,
+  "tags": {
+    "name": "Fazenda Águas Belas",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7906709046,
+  "tags": {
+    "name": "Zoológico",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7906709047,
+  "tags": {
+    "name": "Carioca",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7906709049,
+  "tags": {
+    "name": "Colonial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7906722232,
+  "tags": {
+    "name": "Fortuna",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7906722236,
+  "tags": {
+    "name": "São Jorge",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7906722243,
+  "tags": {
+    "name": "Três Portos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7906722249,
+  "tags": {
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7906722264,
+  "tags": {
+    "name": "Freitas",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8003417157,
+  "tags": {
+    "name": "Serra Park",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8146895515,
+  "tags": {
+    "name": "Progresso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8147046357,
+  "tags": {
+    "name": "Santo Antônio",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8152408548,
+  "tags": {
+    "name": "Vila Esperança",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 8378957703,
+  "tags": {
+    "name": "Distrito Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8459321512,
+  "tags": {
+    "name": "Maria Hortência",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459321513,
+  "tags": {
+    "name": "Pomar da Lagoa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459321514,
+  "tags": {
+    "name": "Ponderossa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459321515,
+  "tags": {
+    "name": "Querência Pesqueiro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459321516,
+  "tags": {
+    "name": "Goufe II",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348217,
+  "tags": {
+    "name": "Pomar do Morro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348218,
+  "tags": {
+    "name": "El Rei",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348219,
+  "tags": {
+    "name": "Querência do Morro",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348220,
+  "tags": {
+    "name": "Goufe IV",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348221,
+  "tags": {
+    "name": "Santa Fé",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348222,
+  "tags": {
+    "name": "Lagoa Azul",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348223,
+  "tags": {
+    "name": "Pomar da Estância",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348224,
+  "tags": {
+    "name": "Quinta da Boa Vista",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348225,
+  "tags": {
+    "name": "Condomínio Fazenda",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348226,
+  "tags": {
+    "name": "Bonanza",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348227,
+  "tags": {
+    "name": "Vila Fraga",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348228,
+  "tags": {
+    "name": "Jardim Tropical",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348229,
   "tags": {
     "name": "Santa Marta",
     "place": "neighbourhood"
@@ -2711,100 +12581,533 @@
 },
 {
   "type": "node",
-  "id": 7247787771,
+  "id": 8459348231,
   "tags": {
-    "name": "Coloradito Sur",
+    "name": "Haras",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 7247856317,
+  "id": 8459348232,
   "tags": {
-    "name": "San Isidro",
+    "name": "Ferradura",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 7780221091,
+  "id": 8459348233,
   "tags": {
-    "name": "Ceuta Sul",
+    "name": "Sociedade Querência",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 8390838376,
+  "id": 8459348234,
   "tags": {
-    "name": "Las Torres",
+    "name": "Querência da Figueira",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 8391072659,
+  "id": 8459348235,
   "tags": {
-    "name": "Betel",
+    "name": "Rincão Gaudério",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 8391072660,
+  "id": 8459348236,
   "tags": {
-    "name": "Campo Bello",
+    "name": "Goufe III",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 8391072661,
+  "id": 8459348237,
   "tags": {
-    "name": "La Brigada",
+    "name": "Ipiranga",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 8391072662,
+  "id": 8459348247,
   "tags": {
-    "name": "San Gil",
+    "name": "Rancho Pimenta",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 8391072663,
+  "id": 8459348248,
   "tags": {
-    "name": "San Jorge Norte",
+    "name": "Esplanada",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 8391885912,
+  "id": 8459348249,
   "tags": {
-    "name": "San Cristóbal",
+    "name": "Val Paraíso",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 9254124719,
+  "id": 8459348251,
   "tags": {
-    "description": "El Corregimiento 2 de Soacha está ubicado en la parte norte del municipio de Soacha: Comprende las veredas de Alto de La Cruz, Bosatama, Canoas, Cascajal, El Charquito y San Francisco.",
-    "name": "Corregimiento 2 Norte",
-    "place": "suburb",
-    "wikidata": "Q128807804",
-    "wikipedia": "es:Corregimiento 2 (Soacha)"
+    "name": "Pomar da Estância",
+    "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 9283875826,
+  "id": 8459348253,
   "tags": {
-    "name": "Asentamiento Padilla",
+    "name": "Laredo",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459348258,
+  "tags": {
+    "name": "Loteamento Copernorte",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608327,
+  "tags": {
+    "name": "Gonçalves",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608328,
+  "tags": {
+    "name": "Jardim Santana",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608329,
+  "tags": {
+    "name": "Parque Residencial Casa Grande",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608330,
+  "tags": {
+    "name": "Bairro Açorianos",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608331,
+  "tags": {
+    "name": "Bairro Mendanha",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608332,
+  "tags": {
+    "name": "Recanto Sabiás",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608333,
+  "tags": {
+    "name": "Setembrina",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608334,
+  "tags": {
+    "name": "Coxilhas de Ibiamon",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608335,
+  "tags": {
+    "name": "Nossa Senhora de Fátima",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608336,
+  "tags": {
+    "name": "Charruas",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608337,
+  "tags": {
+    "name": "Inkas",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608338,
+  "tags": {
+    "name": "Mayas",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608339,
+  "tags": {
+    "name": "Vidigueiras",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608342,
+  "tags": {
+    "name": "Martinica",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608343,
+  "tags": {
+    "name": "Parque Arejano",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608344,
+  "tags": {
+    "name": "Jardim Viamar",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608345,
+  "tags": {
+    "name": "Parque São Cristóvão",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608346,
+  "tags": {
+    "name": "Dois Irmãos",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608347,
+  "tags": {
+    "name": "Parque Residencial Enasa",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608348,
+  "tags": {
+    "name": "Sítio Campo Grande",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608349,
+  "tags": {
+    "name": "Sítio Princesa do Vale",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608350,
+  "tags": {
+    "name": "Sítio Alvorada",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608351,
+  "tags": {
+    "name": "Vivendas São Tomé",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608352,
+  "tags": {
+    "name": "Gonçalves Santos",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608353,
+  "tags": {
+    "name": "Onofre",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608354,
+  "tags": {
+    "name": "Cinco Irmãos",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608355,
+  "tags": {
+    "name": "Chácara Pinheiros",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608357,
+  "tags": {
+    "name": "Concórdia",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608358,
+  "tags": {
+    "name": "Loteamento Piratini",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608359,
+  "tags": {
+    "name": "Loteamento Popular",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608360,
+  "tags": {
+    "name": "Santa Paula",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608361,
+  "tags": {
+    "name": "Minuano",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608362,
+  "tags": {
+    "name": "Jardim Schönwald",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608363,
+  "tags": {
+    "name": "Jardim Santa Laura",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608364,
+  "tags": {
+    "name": "Júlia",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608365,
+  "tags": {
+    "name": "S. Lomba do Sabão",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608366,
+  "tags": {
+    "name": "Irma",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608367,
+  "tags": {
+    "name": "Miguelina",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608368,
+  "tags": {
+    "name": "Luciana",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8459608369,
+  "tags": {
+    "name": "União",
+    "place": "neighbourhood",
+    "source": "LM 4190"
+  }
+},
+{
+  "type": "node",
+  "id": 8536822749,
+  "tags": {
+    "name": "Loteamento Morada Verde",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8663578228,
+  "tags": {
+    "name": "Reserva do Vale",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8663578229,
+  "tags": {
+    "name": "Villa Gaudi",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8729025351,
+  "tags": {
+    "name": "Navegantes",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8901120963,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8901133229,
+  "tags": {
+    "name": "Travessão",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8901151497,
+  "tags": {
+    "name": "Vale Direito",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8901151498,
+  "tags": {
+    "name": "Vale Esquerdo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 9153397649,
+  "tags": {
+    "name": "Incas",
     "place": "neighbourhood"
   }
 },
@@ -2818,6 +13121,63 @@
 },
 {
   "type": "node",
+  "id": 9525539413,
+  "tags": {
+    "name": "Vila Hípica",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9725719908,
+  "tags": {
+    "name": "Sítio Cacique",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9725719909,
+  "tags": {
+    "alt_name": "Vila Sítio Ideal",
+    "name": "Sítio Ideal",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9725719910,
+  "tags": {
+    "name": "Sítio Paloma",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9725719911,
+  "tags": {
+    "name": "Sítio Alegre",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9725719912,
+  "tags": {
+    "name": "Capororoca",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9725771841,
+  "tags": {
+    "name": "Loteamento Cristo Rei",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
   "id": 9728520719,
   "tags": {
     "name": "Monte Carlo",
@@ -2826,42 +13186,169 @@
 },
 {
   "type": "node",
-  "id": 9861177881,
+  "id": 9728520720,
   "tags": {
-    "name": "Quinta do Eucalipto",
-    "place": "neighbourhood",
-    "population": "381",
-    "population:date": "2021",
-    "source:population": "INE"
+    "name": "Passo das Quirinas",
+    "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 9861177882,
+  "id": 9818760739,
   "tags": {
-    "name": "Vale das Almas",
-    "place": "neighbourhood",
-    "population": "73",
-    "population:date": "2021",
-    "source:population": "INE"
+    "name": "Bom Fim Alto",
+    "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 9861204893,
+  "id": 9819771828,
   "tags": {
-    "name": "Gambelas",
-    "place": "neighbourhood",
-    "population": "2289",
-    "population:date": "2021",
-    "source:population": "INE"
+    "name": "Loteamento Colina Verde",
+    "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 10538555700,
+  "id": 9918123073,
   "tags": {
-    "name": "Veracruz",
+    "name": "Mariland",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 10585168576,
+  "tags": {
+    "name": "Vila Telli",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 10596778678,
+  "tags": {
+    "name": "Parque das Flores",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10596778690,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10596780978,
+  "tags": {
+    "name": "São Francisco",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10596781752,
+  "tags": {
+    "name": "Alto da Colina",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10596781848,
+  "tags": {
+    "name": "São Pedro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10596939746,
+  "tags": {
+    "name": "São Bento",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10720300053,
+  "tags": {
+    "name": "Pôr do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10720300061,
+  "tags": {
+    "name": "Dois Lajeados",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10720300063,
+  "tags": {
+    "name": "Sete de Setembro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10720300075,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10720300095,
+  "tags": {
+    "name": "Morada do Sol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10720300117,
+  "tags": {
+    "name": "Cidade Nova",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 10720300118,
+  "tags": {
+    "name": "Distrito Industrial",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 10759050609,
+  "tags": {
+    "name": "Vila Boa Esperança",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 10759112037,
+  "tags": {
+    "name": "Loteamento Vila União",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 10759579735,
+  "tags": {
+    "name": "Loteamento Colina do Sol",
     "place": "neighbourhood"
   }
 },
@@ -2870,6 +13357,178 @@
   "id": 10830920418,
   "tags": {
     "name": "Jardim Botânico",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11000262789,
+  "tags": {
+    "name": "Portão Velho",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11174444589,
+  "tags": {
+    "name": "Condomínio Laken",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607600,
+  "tags": {
+    "name": "Planalto",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607601,
+  "tags": {
+    "name": "Bavaria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607602,
+  "tags": {
+    "name": "Prinstrop",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607603,
+  "tags": {
+    "name": "Tirol",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607604,
+  "tags": {
+    "name": "Casagrande",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607605,
+  "tags": {
+    "name": "Ipê Amarelo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607606,
+  "tags": {
+    "name": "Vila do Bosque",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607607,
+  "tags": {
+    "name": "Jardim Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181607608,
+  "tags": {
+    "name": "Pórtico",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11181968146,
+  "tags": {
+    "name": "Vila Suíça",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11203815536,
+  "tags": {
+    "name": "Condomínio Vivendas do Arvoredo I",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11203820837,
+  "tags": {
+    "name": "Condomínio Vivendas do Arvoredo II",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11232268663,
+  "tags": {
+    "name": "Residencial Giardini D'Italia",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 11265685007,
+  "tags": {
+    "name": "Quinta da Serra",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11276369291,
+  "tags": {
+    "alt_name": "Residencial Cachoeirinha 01",
+    "name": "Residencial Cachoeirinha I",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11276369294,
+  "tags": {
+    "alt_name": "Residencial Cachoeirinha 02",
+    "name": "Residencial Cachoeirinha II",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11276369331,
+  "tags": {
+    "alt_name": "Residencial Caetanos 2",
+    "name": "Residencial Caetanos II",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11276369332,
+  "tags": {
+    "alt_name": "Residencial Caetanos 1",
+    "name": "Residencial Caetanos I",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11295744860,
+  "tags": {
+    "name": "Serrano",
     "place": "suburb"
   }
 },
@@ -2892,17 +13551,487 @@
 },
 {
   "type": "node",
-  "id": 13188966211,
+  "id": 11427465321,
   "tags": {
-    "name": "Villarreal",
+    "alt_name": "Loteamento da Cooperativa Habitacional Cooparroio",
+    "name": "Loteamento Cooparroio",
     "place": "neighbourhood"
   }
 },
 {
   "type": "node",
-  "id": 13198340909,
+  "id": 11459314124,
   "tags": {
-    "name": "Las Brisas",
+    "alt_name": "Loteamento Parque Residencial Morada da Serra",
+    "name": "Parque Residencial Morada da Serra",
+    "place": "neighbourhood",
+    "source": "LO 1616/1989"
+  }
+},
+{
+  "type": "node",
+  "id": 11459340777,
+  "tags": {
+    "fixme": "Checar nome",
+    "name": "Parque João XXIII Vasco do Gama",
+    "place": "neighbourhood",
+    "source": "LM 3071/1979"
+  }
+},
+{
+  "type": "node",
+  "id": 11534154424,
+  "tags": {
+    "alt_name": "Bairro Ferrabraz",
+    "name": "Ferrabraz",
+    "place": "suburb",
+    "source": "Plano Diretor de Araricá"
+  }
+},
+{
+  "type": "node",
+  "id": 11534154435,
+  "tags": {
+    "alt_name": "Bairro Ideal",
+    "name": "Ideal",
+    "place": "suburb",
+    "source": "Plano Diretor de Araricá"
+  }
+},
+{
+  "type": "node",
+  "id": 11534178854,
+  "tags": {
+    "name": "Jardim",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11534178859,
+  "tags": {
+    "alt_name": "Bairro São José",
+    "name": "São José",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11534178873,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11534178893,
+  "tags": {
+    "name": "Floresta",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11534178914,
+  "tags": {
+    "name": "Bela Vista",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11817552983,
+  "tags": {
+    "name": "Loteamento Bela Vista I",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11817552984,
+  "tags": {
+    "name": "Loteamento Bela Vista II",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11896944182,
+  "tags": {
+    "name": "Condomínio Pedra Rosada",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12007302665,
+  "tags": {
+    "name": "Paineiras",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12007302666,
+  "tags": {
+    "name": "Olaria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12007302667,
+  "tags": {
+    "name": "Vila Progresso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12007302668,
+  "tags": {
+    "name": "Estaleiro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12007309369,
+  "tags": {
+    "name": "Sol Nascente",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12007309370,
+  "tags": {
+    "name": "Centro",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843326,
+  "tags": {
+    "name": "Santa Lúcia",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843332,
+  "tags": {
+    "name": "Santa Bárbara",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843333,
+  "tags": {
+    "alt_name": "São Vítor",
+    "name": "São Víctor",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843342,
+  "tags": {
+    "name": "Nossa Senhora das Graças",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843350,
+  "tags": {
+    "name": "São Marcos",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843352,
+  "tags": {
+    "name": "Nossa Senhora da Conceição",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843353,
+  "tags": {
+    "name": "Nossa Senhora das Dores",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843355,
+  "tags": {
+    "name": "Festa da Uva",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843357,
+  "tags": {
+    "name": "Nossa Senhora do Pedancino",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843360,
+  "tags": {
+    "alt_name": "Vítor Emanuel",
+    "name": "Victor Emanoel",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043843363,
+  "tags": {
+    "alt_name": "Linha Sessenta",
+    "name": "Linha 60",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043863171,
+  "tags": {
+    "name": "Santa Bárbara",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12043863185,
+  "tags": {
+    "name": "São Romédio",
+    "place": "neighbourhood",
+    "wikipedia": "pt:Comunidade de São Romédio"
+  }
+},
+{
+  "type": "node",
+  "id": 12043863195,
+  "tags": {
+    "name": "Nossa Senhora das Neves",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12050347652,
+  "tags": {
+    "name": "Loteamento Frare",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12060544061,
+  "tags": {
+    "name": "Vinhedos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12060544062,
+  "tags": {
+    "name": "Colina Sorriso",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12061379811,
+  "tags": {
+    "name": "Industrial",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12061379826,
+  "tags": {
+    "name": "Reolon",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12061379838,
+  "tags": {
+    "name": "Tijuca",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12061579729,
+  "tags": {
+    "name": "Belo Horizonte",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12062506592,
+  "tags": {
+    "alt_name": "Villa-Lobos",
+    "name": "Vila Lobos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12062506597,
+  "tags": {
+    "name": "Vila Verde",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12062506653,
+  "tags": {
+    "name": "De Zorzi",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12155458755,
+  "tags": {
+    "name": "Loteamento Paraíso Cristal",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 12379434293,
+  "tags": {
+    "alt_name": "Jardim das Acácias",
+    "name": "Loteamento Novo Acácias",
+    "place": "neighbourhood",
+    "source:alt_name": "Citado na LM 1933/1977",
+    "source:name": "Citado na LM 4979/2001"
+  }
+},
+{
+  "type": "node",
+  "id": 12720751727,
+  "tags": {
+    "name": "Condomínio Esmeralda",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12783388979,
+  "tags": {
+    "name": "Vila Berger",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12783388980,
+  "tags": {
+    "alt_name": "Jardim Phoenix",
+    "name": "Jardim Fênix",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12783388981,
+  "tags": {
+    "name": "Vila Antonio Leite",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12833934319,
+  "tags": {
+    "name": "Luiza Corrêa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 12834945336,
+  "tags": {
+    "name": "Loteamento Lago da Califórnia",
+    "place": "neighbourhood",
+    "source": "LM 1437/2018"
+  }
+},
+{
+  "type": "node",
+  "id": 12834971968,
+  "tags": {
+    "name": "Pedreira",
+    "place": "suburb",
+    "source": "note/1882970"
+  }
+},
+{
+  "type": "node",
+  "id": 12839957812,
+  "tags": {
+    "name": "Vila Natal",
+    "place": "neighbourhood",
+    "source": "note/1527164"
+  }
+},
+{
+  "type": "node",
+  "id": 12899858453,
+  "tags": {
+    "name": "São Paulo",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13030524304,
+  "tags": {
+    "name": "Loteamento Villa Horn",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 13030528224,
+  "tags": {
+    "name": "Loteamento Reserva Toscana",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 13030566887,
+  "tags": {
+    "name": "Loteamento Verona",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 13416768180,
+  "tags": {
+    "name": "Recanto do Paraíso",
     "place": "neighbourhood"
   }
 },
@@ -2912,6 +14041,72 @@
   "tags": {
     "name": "Condominio Encosta do Cerro",
     "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 14069171454,
+  "tags": {
+    "name": "Zona Sul",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 14069171455,
+  "tags": {
+    "name": "Nossa Senhora de Fátima",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 14069171456,
+  "tags": {
+    "name": "Nossa Senhora Aparecida",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 14072459441,
+  "tags": {
+    "name": "São João",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 14072459442,
+  "tags": {
+    "name": "Vinhedos",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 14111480670,
+  "tags": {
+    "name": "Condado Angel",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 14271612240,
+  "tags": {
+    "alt_name": "Vila Jansen",
+    "name": "Jansen",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 14271612241,
+  "tags": {
+    "alt_name": "Vila Jansen",
+    "name": "Jansen",
+    "place": "suburb"
   }
 },
 {
@@ -2944,6 +14139,113 @@
   "tags": {
     "name": "Condomínio Alta Vista",
     "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 14301364946,
+  "tags": {
+    "name": "Parque Harmonia",
+    "place": "quarter"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382207,
+  "tags": {
+    "name": "Vila Unical",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382208,
+  "tags": {
+    "name": "Rio Grandino",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382209,
+  "tags": {
+    "name": "Vila Marques",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382210,
+  "tags": {
+    "name": "Vila Farol",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382211,
+  "tags": {
+    "name": "Vila Nova",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382213,
+  "tags": {
+    "name": "Vila Valderi",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382214,
+  "tags": {
+    "name": "Loteamento Unical",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382215,
+  "tags": {
+    "name": "Vila Frantz",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382216,
+  "tags": {
+    "name": "Vila Virgínia",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382217,
+  "tags": {
+    "name": "Vila da Mata",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
+  }
+},
+{
+  "type": "node",
+  "id": 14314382218,
+  "tags": {
+    "name": "Centro",
+    "place": "neighbourhood",
+    "source": "CNEFE 2022 / IBGE"
   }
 }
 
