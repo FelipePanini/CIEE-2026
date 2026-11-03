@@ -1,0 +1,210 @@
+          Nota Técnica Conjunta INMET / INPE
+
+        PROGNÓSTICO CLIMÁTICO DE PRIMAVERA
+
+CARACTERÍSTICAS DA PRIMAVERA
+
+       No Hemisfério Sul, a primavera começa no dia 22 de setembro de 2026, às 21h05,
+e termina no dia 21 de dezembro, às 18:50. Segundo a climatologia, a estação se
+posiciona no período de transição entre as estações seca e chuvosa, especialmente no
+setor central do Brasil.
+       Durante esses meses, a atmosfera intensifica o fluxo de umidade vinda da
+Amazônia. Esse fluxo alimenta o período chuvoso nas regiões Centro-Oeste e Sudeste,
+além de parte do centro-sul da Região Norte (conforme a Figura 1a). Em contrapartida,
+o norte da Região Nordeste, principalmente o norte do Piauí e o noroeste do Ceará,
+registra acumulados de precipitação inferiores a 100 milímetros (mm).
+       Os primeiros episódios da Zona de Convergência do Atlântico Sul (ZCAS) podem
+ocorrer durante a primavera, com chuva no Sudeste, Centro-Oeste, Acre e Rondônia. Já
+na Região Sul, podem ocorrer episódios de Complexos Convectivos de Mesoescala
+(CCM), comumente associados à ocorrência de chuvas fortes, rajadas de vento,
+descargas atmosféricas e eventual granizo. Com o gradativo aumento da chuva em
+grande parte do país nesta época do ano, ocorre o início do plantio das principais culturas
+de verão.
+       Em relação a temperatura, o calor supera os valores de inverno e eleva as
+temperaturas médias acima de 28ºC nas regiões Norte e Nordeste (Figura 1b), além de
+pontos isolados do interior do Brasil. Esse aquecimento progressivo favorece:
+       i) a intensificação de ondas de calor e maior desconforto térmico para a população;
+       ii) o aumento da evapotranspiração, que altera a umidade do solo; e,
+       iii) a formação rápida de tempestades severas, estimuladas pelo contraste entre
+o ar quente e as frentes frias.
+      (a)                                        (b)
+
+
+
+
+Figura 1: Climatologia de (a) precipitação (mm) e (b) temperatura média do ar (°C) para
+o trimestre outubro, novembro e dezembro. Período de referência: 1981-2010. Fonte:
+INMET.
+
+
+CONDIÇÕES OCEÂNICAS OBSERVADAS E TENDÊNCIA
+
+      No Oceano Pacífico Equatorial, as médias mensais da temperatura da superfície
+do mar (TSM) na região Niño 3.4 (170°W–120°W), área de referência para a
+caracterização do El Niño-Oscilação Sul (ENOS), vêm apresentando anomalias positivas
+desde março de 2026, indicando aquecimento das águas superficiais, com padrão
+espacial consistente com condições de El Niño.
+      As probabilidades previstas para as condições de El Niño, neutralidade e La Niña,
+divulgadas pela da NOAA/CPC indicam 98% de probabilidade de ocorrência de
+condições de El Niño muito forte, considerando o índice Oceânico Niño Relativo na
+região do Niño 3.4 iguais ou superiores a 2 °C, no trimestre outubro-novembro-dezembro
+(OND) de 2026 (Figura 2).
+Figura 2: Previsão probabilística do ENOS. Fonte: NOAA Climate Prediction Center (CPC) -
+ENSO Probabilities.
+
+
+
+PROGNÓSTICO CLIMÁTICO PARA OUTUBRO, NOVEMBRO E DEZEMBRO DE 2026
+
+
+Região Norte
+
+      A previsão climática, produzida pelo CPTEC/INMET/FUNCEME para os meses de
+outubro a dezembro de 2026, indica predomínio de déficit de chuvas, com condições
+favoráveis a ocorrência de valores abaixo da média climatológica (média histórica) em
+praticamente toda a região. Para os estados de Roraima, norte-nordeste do Amazonas
+e oeste e centro-sul do Pará a previsão indica acumulados de até 200 mm abaixo da
+média climatológica. A exceção ocorre no leste do Acre, extremo noroeste do Pará e
+norte do Amapá que apresentam previsão de chuva próxima as condições climatológicas
+(médias) para esta época do ano (Figura 3a).
+      A temperatura média do ar prevista indica condições favoráveis para a ocorrência
+de valores acima da média climatológica em toda a região (de até 2 °C). Entretanto, para
+o norte do Amapá e noroeste do Pará a previsão indica temperaturas próximas as
+condições (médias) climatológicas do período (Figura 3b).
+Região Nordeste
+
+      A previsão climática indica predomínio de déficit de chuvas na região. Também
+são previstos possíveis volumes de chuva levemente acima da média em parte do setor
+leste do Nordeste brasileiro, entre os estados do Rio Grande do Norte e Alagoas.
+      São previstas temperaturas do ar acima da média histórica com alguns estados
+da região Nordeste podendo registrar valores próximos ou acima de 2 °C acima da média
+climatológica (Figura 3b).
+
+Região Centro-Oeste
+
+      Para a Região Centro-Oeste, a previsão indica predomínio de déficit de chuva no
+centro-norte do Mato Grosso e no norte de Goiás. Já no estado de Mato Grosso do Sul,
+bem como no sul de Goiás, a previsão indica condições favoráveis para a ocorrência de
+excesso de chuvas.
+      Em relação às temperaturas, a previsão aponta para o predomínio de valores
+acima da média climatológica nos próximos meses (conforme a Figura 3b), com desvios
+de até 2 °C acima da média na faixa norte do Mato Grosso.
+
+
+Região Sudeste
+
+      Na Região Sudeste, a previsão indica possibilidade de excesso de chuvas em
+todo o Estado de São Paulo, no Rio de Janeiro e no centro-sul de Minas Gerais, com
+desvios de até 100 mm. Por outro lado, a previsão indica a possibilidade de chuvas
+irregular, com déficit de chuvas em grande parte do Espírito Santo, onde os desvios
+negativos podem chegar a 50 mm (Figura 3a).
+      Quanto à temperatura, a previsão aponta para predomínio de valores acima da
+média em toda a região, com os maiores desvios, até 1 °C, concentrados na região
+central de Minas Gerais e no nordeste de São Paulo (Figura 3b).
+
+
+
+Região Sul
+
+      A previsão indica condições favoráveis para excesso de chuvas em todos os
+estados da Região Sul. Os maiores volumes são previstos para o Rio Grande do Sul e
+Santa Catarina, onde os acumulados podem superar a média histórica do trimestre em
+até 200 mm (Figura 3a).
+      Em relação à temperatura, a previsão aponta para valores acima da média em
+grande parte da região, especialmente no leste do Paraná, onde os desvios positivos
+podem chegar a 1 °C. No Rio Grande do Sul, as temperaturas tendem a ficar próximas
+da média, com a região sul do estado podendo apresentar anomalias negativas de até
+0,5 °C.
+
+
+(a)                                       (b)
+
+
+
+
+Figura 3: Previsão de anomalias de (a) precipitação (mm) e (b) temperatura média do ar
+(°C) para o trimestre outubro, novembro, dezembro/2026, produzida conjuntamente pelo
+INMET, CPTEC/INPE e FUNCEME.
+
+
+
+PERSPECTIVAS AGROCLIMÁTICAS                 PARA     O    TRIMESTRE          OUTUBRO,
+NOVEMBRO, DEZEMBRO DE 2026
+
+      As previsões probabilísticas dos modelos climáticos indicam a manifestação de
+condições de El Niño durante o trimestre outubro-novembro-dezembro (OND) de 2026,
+com elevada probabilidade de persistência da fase quente do ENOS com intensidade
+muito forte nesse período. Dessa forma, o monitoramento contínuo das condições
+observadas e a atualização frequente das previsões climáticas permanecem
+fundamentais, especialmente para as principais regiões produtoras do país.
+      A previsão de redução das chuvas e temperaturas médias mais elevadas nos
+próximos meses em grande parte da porção centro-norte do país, tende a intensificar a
+demanda hídrica de plantas e animais, contribuindo para a redução da umidade do solo
+e dos níveis dos reservatórios, com tendência de diminuição significativa ao longo do
+trimestre. Nessas condições, as lavouras de sequeiro, como soja, milho, arroz de terras
+altas e feijão, merecem atenção, especialmente durante as fases de semeadura e
+estabelecimento inicial. Em períodos de déficit hídrico mais prolongado, culturas
+perenes, como mandioca, banana e cacau, também podem apresentar redução do
+crescimento e do potencial produtivo.
+      O mesmo cenário é previsto para a Região Nordeste, onde as condições previstas
+tendem a representar maiores desafios para o início da nova safra de grãos,
+especialmente no MATOPIBA em razão da maior irregularidade das chuvas e
+temperaturas mais elevadas. Nas áreas irrigadas, a situação tende a ser mais favorável;
+entretanto, a projeção de temperaturas elevadas poderá aumentar a demanda hídrica
+das culturas, afetando a emergência, o estabelecimento e o desenvolvimento vegetativo.
+Dessa forma, será necessário maior acompanhamento da disponibilidade de água e do
+momento adequado para a irrigação, de modo a suprir a demanda das plantas. Nas
+áreas de sequeiro, a previsão do início do período chuvoso mais irregular, caracterizado
+por grande variação dos acumulados entre locais próximos e, até mesmo, dentro de uma
+mesma propriedade. Além disso, a elevação das temperaturas, pode intensificar as
+perdas de água por evaporação e a transpiração das plantas, aumentando o risco de
+deficiência hídrica. A produção de pastagens também tende a ser impactada, com
+redução da taxa de rebrota e, consequentemente, menor disponibilidade de massa de
+forragem para a alimentação dos animais.
+      Na Região Centro-Oeste, os maiores acumulados de chuva tendem a favorecer
+condições mais adequadas para a semeadura, o estabelecimento e o desenvolvimento
+inicial da soja 2026/27, principalmente no Mato Grosso do Sul e nas áreas sul de Goiás
+e sul do Mato Grosso, mesmo diante da tendência de temperaturas acima da média. Por
+outro lado, a previsão de acumulados reduzidos no norte de Mato Grosso e de Goiás
+associada à alta demanda evapotranspirativa tende a elevar o risco de déficit hídrico no
+início do ciclo. Nesse cenário, o acompanhamento das previsões de curto prazo e o
+monitoramento da umidade do solo tornam-se imprescindíveis para a escolha da janela
+ideal de plantio, evitando falhas de emergência e necessidade de replantio.
+      No Sudeste, as áreas de São Paulo e do sul de Minas Gerais, a previsão indica
+condições favoráveis para a implantação das culturas de soja e milho, contribuindo para
+a manutenção de níveis mais elevados de armazenamento de água no solo. Por outro
+lado, nas áreas do norte e noroeste de Minas Gerais e do Espírito Santo, a redução dos
+volumes de chuva, associada ao aumento das temperaturas, tende a elevar a demanda
+evaporativa da atmosfera e, consequentemente, a necessidade hídrica de plantas e
+animais durante o período.
+      A condição de chuvas mais irregulares no início do período chuvoso, associada
+às temperaturas elevadas, tende a aumentar o risco para as áreas de cultivo de soja no
+norte e noroeste de Minas Gerais. Nessas áreas, recomenda-se o acompanhamento
+diário das previsões meteorológicas, de modo a auxiliar no planejamento da semeadura
+e reduzir os riscos associados à disponibilidade de água no solo durante o
+estabelecimento das lavouras. Em São Paulo, as condições previstas tendem a
+favorecer o desenvolvimento das culturas de cana-de-açúcar e de hortifruticultura.
+Apesar da tendência de temperaturas mais elevadas, os acumulados e a distribuição das
+chuvas deverão contribuir para atender à demanda hídrica dessas culturas.
+      Na Região Sul, a previsão é de chuvas acima da média, principalmente no Rio
+Grande do Sul e em Santa Catarina. A condição de chuvas frequentes e, por vezes,
+volumosas, associada a temperaturas próximas e acima da média, tende a favorecer o
+desenvolvimento das culturas de verão. Além das culturas de grãos, as pastagens
+também poderão ser beneficiadas, desde que apresentem condições adequadas de
+nutrição, favorecendo o rebrote e a disponibilidade de massa verde para a alimentação
+dos animais.
+      Contudo, a menor incidência de radiação ao longo do período poderá trazer
+desafios para o planejamento do plantio da safra 2026/27. A ocorrência de chuvas
+frequentes reduz os intervalos favoráveis para o manejo das lavouras e dificultam a
+entrada de máquinas nas áreas agrícolas. Esse cenário tende a comprometer a
+uniformidade na emergência das plantas e reduzir o estande das lavouras de soja e milho
+de primeira safra, fator importante para a produtividade final dessas culturas.
+      Nas áreas de cultivo de arroz irrigado, as condições tendem a ser mais
+desafiadoras, principalmente devido à ocorrência de áreas com drenagem deficiente. A
+combinação de solos com menor capacidade de drenagem e elevados acumulados de
+chuva poderá provocar excesso de água no solo e comprometer a emergência e o
+estabelecimento inicial das lavouras.
+
+
+Para mais detalhes, acesse: portal.inmet.gov.br
+

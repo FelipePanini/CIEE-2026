@@ -1,0 +1,275 @@
+{
+  "ibge-sidra-4709-populacao-rs": {
+    "id": "ibge-sidra-4709-populacao-rs",
+    "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2043/v/93/p/2022",
+    "data_consulta": "2026-11-03T14:37:15.827Z",
+    "nota": "População residente por município do RS — Censo 2022 (tabela SIDRA 4709)",
+    "status": 200,
+    "bytes": 129450,
+    "sha256": "30bb49793776364dc1041409eeb555dda28ed01eecee5f0b777376037577ce9c",
+    "arquivo": "ibge-sidra-4709-populacao-rs.json"
+  },
+  "ibge-sidra-4712-domicilios-rs": {
+    "id": "ibge-sidra-4712-domicilios-rs",
+    "url": "https://apisidra.ibge.gov.br/values/t/4712/n3/43/v/all/p/2022",
+    "data_consulta": "2026-11-03T14:37:16.675Z",
+    "nota": "Domicílios e média de moradores — RS — Censo 2022 (tabela SIDRA 4712)",
+    "status": 200,
+    "bytes": 1299,
+    "sha256": "587af0ea7c92694e997c2e07498a719480846970dd148480113cf3ed5265e172",
+    "arquivo": "ibge-sidra-4712-domicilios-rs.json"
+  },
+  "ana-inventario-lajeado": {
+    "id": "ana-inventario-lajeado",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroInventario?codEstDE=&codEstATE=&tpEst=1&nmEst=&nmRio=&codSubBacia=&codBacia=&nmMunicipio=LAJEADO&nmEstado=RIO%20GRANDE%20DO%20SUL&sgResp=&sgOper=&telemetrica=1",
+    "data_consulta": "2026-11-03T14:37:16.859Z",
+    "nota": "Inventário de estações fluviométricas telemétricas da ANA no município",
+    "status": 200,
+    "bytes": 17504,
+    "sha256": "0fe64f289bad5e17abd6870c20b479503964e6264066e63336de1a2395943d55",
+    "arquivo": "ana-inventario-lajeado.xml"
+  },
+  "ana-inventario-estrela": {
+    "id": "ana-inventario-estrela",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroInventario?codEstDE=&codEstATE=&tpEst=1&nmEst=&nmRio=&codSubBacia=&codBacia=&nmMunicipio=ESTRELA&nmEstado=RIO%20GRANDE%20DO%20SUL&sgResp=&sgOper=&telemetrica=1",
+    "data_consulta": "2026-11-03T14:37:18.256Z",
+    "nota": "Inventário de estações fluviométricas telemétricas da ANA no município",
+    "status": 200,
+    "bytes": 1094,
+    "sha256": "1032043c5d86468330ce37dcfb20cf1d740fc5255f52b39a7cf02c5b4f25111c",
+    "arquivo": "ana-inventario-estrela.xml"
+  },
+  "ana-inventario-porto-alegre": {
+    "id": "ana-inventario-porto-alegre",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroInventario?codEstDE=&codEstATE=&tpEst=1&nmEst=&nmRio=&codSubBacia=&codBacia=&nmMunicipio=PORTO%20ALEGRE&nmEstado=RIO%20GRANDE%20DO%20SUL&sgResp=&sgOper=&telemetrica=1",
+    "data_consulta": "2026-11-03T14:37:19.799Z",
+    "nota": "Inventário de estações fluviométricas telemétricas da ANA no município",
+    "status": 200,
+    "bytes": 20921,
+    "sha256": "5ca7f68c6f4b8a0b4139df730e5addcdc94a21ae3d3210b4af94d293d4520084",
+    "arquivo": "ana-inventario-porto-alegre.xml"
+  },
+  "ana-inventario-mu-um": {
+    "id": "ana-inventario-mu-um",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroInventario?codEstDE=&codEstATE=&tpEst=1&nmEst=&nmRio=&codSubBacia=&codBacia=&nmMunicipio=MU%C3%87UM&nmEstado=RIO%20GRANDE%20DO%20SUL&sgResp=&sgOper=&telemetrica=1",
+    "data_consulta": "2026-11-03T14:37:27.196Z",
+    "nota": "Inventário de estações fluviométricas telemétricas da ANA no município",
+    "status": 200,
+    "bytes": 14223,
+    "sha256": "4c9e7cb6a21cc8974dda5f224f7c07c0fa6be6601ca9cd3b0287b823605365e8",
+    "arquivo": "ana-inventario-mu-um.xml"
+  },
+  "ana-inventario-encantado": {
+    "id": "ana-inventario-encantado",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroInventario?codEstDE=&codEstATE=&tpEst=1&nmEst=&nmRio=&codSubBacia=&codBacia=&nmMunicipio=ENCANTADO&nmEstado=RIO%20GRANDE%20DO%20SUL&sgResp=&sgOper=&telemetrica=1",
+    "data_consulta": "2026-11-03T14:37:28.601Z",
+    "nota": "Inventário de estações fluviométricas telemétricas da ANA no município",
+    "status": 200,
+    "bytes": 17484,
+    "sha256": "06b5ee787b0f9d6a83039a4402688e67abfff6ea0afc774a6bcd32da4be94b9b",
+    "arquivo": "ana-inventario-encantado.xml"
+  },
+  "ana-telemetria-86879300-estrela": {
+    "id": "ana-telemetria-86879300-estrela",
+    "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=01/07/2026&dataFim=03/11/2026",
+    "data_consulta": "2026-11-03T14:37:37.321Z",
+    "nota": "Série telemétrica Rio Taquari em Estrela/Lajeado (86879300)",
+    "status": 200,
+    "bytes": 3700510,
+    "sha256": "ab7254647eb8630a29a4b4bb4392919a84e63a31315adbac6a83c2274a9c7c30",
+    "arquivo": "ana-telemetria-86879300-estrela.xml"
+  },
+  "sgb-sace-taquari-ultimo-boletim": {
+    "id": "sgb-sace-taquari-ultimo-boletim",
+    "url": "https://www.sgb.gov.br/sace/taquari/ultimo_boletim.php",
+    "data_consulta": "2026-11-03T14:37:40.117Z",
+    "status": 404,
+    "bytes": 70886,
+    "sha256": "fe4ba7af55dba89c2fa171019fc6b9ef18fdf7d317f7c8a5a87d11ff38a4ccf3",
+    "arquivo": null
+  },
+  "sgb-sace-index": {
+    "id": "sgb-sace-index",
+    "url": "https://www.sgb.gov.br/sace/",
+    "data_consulta": "2026-11-03T14:37:41.964Z",
+    "status": 200,
+    "bytes": 256221,
+    "sha256": "8101f9bea815c66eb87d6ff4c37f0ef2cf608e7169d54d73c98072ce9568bf2a",
+    "arquivo": "sgb-sace-index.html"
+  },
+  "defesacivil-avisos-e-boletins": {
+    "id": "defesacivil-avisos-e-boletins",
+    "url": "https://www.defesacivil.rs.gov.br/avisos-e-boletins",
+    "data_consulta": "2026-11-03T14:37:43.363Z",
+    "status": 200,
+    "bytes": 84208,
+    "sha256": "3fac320ca58908dc6534bb4d0601561e37ca63a221845daa346a2c3e26249d14",
+    "arquivo": "defesacivil-avisos-e-boletins.html"
+  },
+  "defesacivil-home": {
+    "id": "defesacivil-home",
+    "url": "https://www.defesacivil.rs.gov.br/",
+    "data_consulta": "2026-11-03T14:37:48.896Z",
+    "status": 200,
+    "bytes": 99166,
+    "sha256": "db9782ffa434a881cc446be1212e2d90691af5bab0dad9fd0ede29857d843366",
+    "arquivo": "defesacivil-home.html"
+  },
+  "sosenchentes-situacao-municipios": {
+    "id": "sosenchentes-situacao-municipios",
+    "url": "https://sosenchentes.rs.gov.br/situacao-nos-municipios",
+    "data_consulta": "2026-11-03T14:37:51.005Z",
+    "status": 200,
+    "bytes": 39099,
+    "sha256": "3c85284ed459fa3f92c70a18be6bf9fc3058925bf07f29e70e2f28117c3bde88",
+    "arquivo": "sosenchentes-situacao-municipios.html"
+  },
+  "poder360-relatorio-defesa-civil-24jul2026": {
+    "id": "poder360-relatorio-defesa-civil-24jul2026",
+    "url": "https://static.poder360.com.br/uploads/2026/07/relatorio-defesa-civil-rs-24jul.pdf",
+    "data_consulta": "2026-11-03T14:37:52.512Z",
+    "nota": "Relatório da Defesa Civil RS de 24/07/2026 (cópia publicada pelo Poder360)",
+    "status": 200,
+    "bytes": 965247,
+    "sha256": "5195d116ce495963e277630eca07c73ee11467866984a97cfc4bf60c0fbdbfcf",
+    "arquivo": "poder360-relatorio-defesa-civil-24jul2026.txt"
+  },
+  "inmet-prognostico-primavera-2026": {
+    "id": "inmet-prognostico-primavera-2026",
+    "url": "https://portal.inmet.gov.br/uploads/notastecnicas/Prognostico_Primavera_2026.pdf",
+    "data_consulta": "2026-11-03T14:37:53.324Z",
+    "status": 200,
+    "bytes": 888848,
+    "sha256": "0e6481667f0f25ac5d451739615267d768101fdaeaa701e4aee93f95be734ece",
+    "arquivo": "inmet-prognostico-primavera-2026.txt"
+  },
+  "ufpel-consenso-ond-2026": {
+    "id": "ufpel-consenso-ond-2026",
+    "url": "https://wp.ufpel.edu.br/cppmet/files/2026/09/Boletim_climatico_consenso_OND.pdf",
+    "data_consulta": "2026-11-03T14:37:55.641Z",
+    "status": 200,
+    "bytes": 1009950,
+    "sha256": "fcb4525af425c4986fa65efcdabccdebc360091cb5d5bbed852e750e095c9c39",
+    "arquivo": "ufpel-consenso-ond-2026.txt"
+  },
+  "dieese-cesta-2026-09": {
+    "id": "dieese-cesta-2026-09",
+    "url": "https://www.dieese.org.br/analisecestabasica/2026/202609cestabasica.pdf",
+    "data_consulta": "2026-11-03T14:37:57.319Z",
+    "status": 200,
+    "bytes": 1232873,
+    "sha256": "049a956d74244d2ba1e26a765c86fb961e2c4d5b05c0bc67bbd76b2eb4cf236c",
+    "arquivo": "dieese-cesta-2026-09.txt"
+  },
+  "dieese-cesta-2026-10": {
+    "id": "dieese-cesta-2026-10",
+    "url": "https://www.dieese.org.br/analisecestabasica/2026/202610cestabasica.pdf",
+    "data_consulta": "2026-11-03T14:37:59.167Z",
+    "status": 404,
+    "bytes": 280,
+    "sha256": "0c33a759892a35ea8b5831e75d42be14bde14706c363fec644557956fa179042",
+    "arquivo": null
+  },
+  "antt-pisos-minimos": {
+    "id": "antt-pisos-minimos",
+    "url": "https://www.gov.br/antt/pt-br/assuntos/cargas/pisos-minimos-de-frete",
+    "data_consulta": "2026-11-03T14:37:59.728Z",
+    "status": 404,
+    "bytes": 26,
+    "sha256": "6bbcea2b37bd092cc60604157a0ceec8944866fc2478f7af8aea3c3df40bc258",
+    "arquivo": null
+  },
+  "esfera-handbook-2018-en": {
+    "id": "esfera-handbook-2018-en",
+    "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf",
+    "data_consulta": "2026-11-03T14:38:00.591Z",
+    "status": 403,
+    "bytes": 5708,
+    "sha256": "4b52a1b26f593d25c94b77b5470b5b9529b42ef98bbfb8e2112fe5adc73b2281",
+    "arquivo": null
+  },
+  "osm-rios": {
+    "id": "osm-rios",
+    "url": "https://overpass-api.de/api/interpreter",
+    "data_consulta": "2026-11-03T14:38:00.821Z",
+    "nota": "Rios principais da bacia do Guaíba (OSM)",
+    "status": 502,
+    "bytes": 534,
+    "sha256": "8084e21e11df846a2e41bb93ddaf66961aa2ef71e9a9fc1f46debc960b303042",
+    "arquivo": null
+  },
+  "osm-guaiba": {
+    "id": "osm-guaiba",
+    "url": "https://overpass-api.de/api/interpreter",
+    "data_consulta": "2026-11-03T14:38:06.449Z",
+    "status": 200,
+    "bytes": 252371,
+    "sha256": "e4996a64fd036c038e2ff4eb4c62f09c253db7a0a1c0e79b6bb686c846860c2c",
+    "arquivo": "osm-guaiba.json"
+  },
+  "osm-rodovias": {
+    "id": "osm-rodovias",
+    "url": "https://overpass-api.de/api/interpreter",
+    "data_consulta": "2026-11-03T14:38:39.108Z",
+    "status": 502,
+    "bytes": 534,
+    "sha256": "8084e21e11df846a2e41bb93ddaf66961aa2ef71e9a9fc1f46debc960b303042",
+    "arquivo": null
+  },
+  "osm-escolas": {
+    "id": "osm-escolas",
+    "url": "https://overpass-api.de/api/interpreter",
+    "data_consulta": "2026-11-03T14:38:44.470Z",
+    "nota": "Escolas (OSM) para localizar as escolas-base reais",
+    "status": 502,
+    "bytes": 534,
+    "sha256": "8084e21e11df846a2e41bb93ddaf66961aa2ef71e9a9fc1f46debc960b303042",
+    "arquivo": null
+  },
+  "osm-abrigos-ginasios": {
+    "id": "osm-abrigos-ginasios",
+    "url": "https://overpass-api.de/api/interpreter",
+    "data_consulta": "2026-11-03T14:38:49.864Z",
+    "status": 200,
+    "bytes": 43490,
+    "sha256": "0bd4e79ca59fd7bb3bf2e144c6a30b88e98eb3bdbfa0237d000155dd6b44d0a8",
+    "arquivo": "osm-abrigos-ginasios.json"
+  },
+  "sosenchentes-sobre-o-pix": {
+    "id": "sosenchentes-sobre-o-pix",
+    "url": "https://sosenchentes.rs.gov.br/sobre-o-pix",
+    "data_consulta": "2026-11-03T14:40:27.645Z",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "planoriogrande-pix": {
+    "id": "planoriogrande-pix",
+    "url": "https://planoriogrande.rs.gov.br/pix-sos-rio-grande-do-sul",
+    "data_consulta": "2026-11-03T14:40:38.139Z",
+    "status": 200,
+    "bytes": 44160,
+    "sha256": "3d4e33dee18ced164dfec1319ba16d8f4c0faba7a026f40e1cc3f1f3e821ac93",
+    "arquivo": "planoriogrande-pix.html"
+  },
+  "legisweb-antt-6076-2026": {
+    "id": "legisweb-antt-6076-2026",
+    "url": "https://www.legisweb.com.br/legislacao/?id=489672",
+    "data_consulta": "2026-11-03T14:40:40.500Z",
+    "status": 200,
+    "bytes": 125476,
+    "sha256": "d4c335ae2f9516cff6646ba55b17c34c8bb5abee2907180dc04b9f0b43d5d069",
+    "arquivo": "legisweb-antt-6076-2026.html"
+  },
+  "esfera-manual-2018-pt": {
+    "id": "esfera-manual-2018-pt",
+    "url": "https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf",
+    "data_consulta": "2026-11-03T14:40:41.242Z",
+    "status": 403,
+    "bytes": 5680,
+    "sha256": "26e85fab52248ecaedab41b9ae79bd0f5a37be169e724460d3ff849606b1a641",
+    "arquivo": null
+  }
+}

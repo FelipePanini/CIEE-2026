@@ -1,0 +1,1986 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-03T14:38:03Z",
+    "timestamp_areas_base": "2026-11-03T10:04:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 844313547,
+  "lat": -29.9010784,
+  "lon": -51.1644995,
+  "tags": {
+    "addr:housenumber": "1151",
+    "addr:street": "Rua Araguaia",
+    "leisure": "sports_centre",
+    "name": "Centro Olímpico Municipal de Canoas",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1250718369,
+  "lat": -30.0125380,
+  "lon": -51.2031503,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Miudinho Academia",
+    "sport": "fitness"
+  }
+},
+{
+  "type": "node",
+  "id": 1250718386,
+  "lat": -30.0251258,
+  "lon": -51.2148284,
+  "tags": {
+    "amenity": "restaurant",
+    "leisure": "sports_centre",
+    "name": "Bar do Carlão",
+    "note": "Apesar do nome \"bar\", a placa diz que servem \"churrasco\", entao, deve ser um restaurante e nao um bar.",
+    "sport": "snooker"
+  }
+},
+{
+  "type": "node",
+  "id": 1286851394,
+  "lat": -30.0379623,
+  "lon": -51.1683858,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Open Matt: Jiu Jitsu e Associados",
+    "sport": "gymnastics"
+  }
+},
+{
+  "type": "node",
+  "id": 1446154222,
+  "lat": -30.1232802,
+  "lon": -51.2485066,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "APCEF"
+  }
+},
+{
+  "type": "node",
+  "id": 2246660613,
+  "lat": -30.1008074,
+  "lon": -51.2656661,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Sava Fitness",
+    "opening_hours": "Mo-Fr 08:00-12:00,16:00-21:30; Sa 09:00-12:00",
+    "phone": "+55 51 3346-6048",
+    "sport": "multi"
+  }
+},
+{
+  "type": "node",
+  "id": 2395087006,
+  "lat": -29.5050086,
+  "lon": -51.9488286,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Sociedade Rio Branco - Sede campestre"
+  }
+},
+{
+  "type": "node",
+  "id": 2395087029,
+  "lat": -29.5102795,
+  "lon": -51.9659304,
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Soges - Sede campestre"
+  }
+},
+{
+  "type": "node",
+  "id": 2396591066,
+  "lat": -29.4701699,
+  "lon": -51.9507145,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "AABB - Associação Atlética Banco do Brasil"
+  }
+},
+{
+  "type": "node",
+  "id": 2505094742,
+  "lat": 38.7060341,
+  "lon": -9.1531464,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Academia",
+    "sport": "gymnastics"
+  }
+},
+{
+  "type": "node",
+  "id": 2514651262,
+  "lat": -30.0647675,
+  "lon": -51.2396756,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Academia Inter Fitness",
+    "opening_hours": "Mo-Fr 07:00-21:30",
+    "phone": "+55 51 3230-4614",
+    "sport": "multi"
+  }
+},
+{
+  "type": "node",
+  "id": 2632423061,
+  "lat": -30.0082437,
+  "lon": -51.2011214,
+  "tags": {
+    "addr:housenumber": "735",
+    "addr:postcode": "90230-091",
+    "addr:street": "Rua Ernesto Fontoura",
+    "leisure": "sports_centre",
+    "name": "Centro de Artes Marciais Ordem do Dragão",
+    "phone": "+55 51 3084-3836",
+    "website": "http://www.ordemdodragao.com.br"
+  }
+},
+{
+  "type": "node",
+  "id": 2641530130,
+  "lat": -29.9128358,
+  "lon": -51.1767673,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Polisport"
+  }
+},
+{
+  "type": "node",
+  "id": 2657145227,
+  "lat": -30.0557776,
+  "lon": -51.2285920,
+  "tags": {
+    "fixme": "Descobrir contorno exato.",
+    "leisure": "sports_centre",
+    "name": "Academia",
+    "opening_hours": "Su-Sa 07:00-22:00",
+    "sport": "multi"
+  }
+},
+{
+  "type": "node",
+  "id": 3197936652,
+  "lat": -29.9239456,
+  "lon": -51.1847056,
+  "tags": {
+    "addr:housenumber": "428",
+    "addr:postcode": "92310-114",
+    "addr:street": "Rua Araçá",
+    "leisure": "sports_centre",
+    "name": "Canoas Fitness",
+    "sport": "gymnastics"
+  }
+},
+{
+  "type": "node",
+  "id": 3681007267,
+  "lat": 38.7146816,
+  "lon": -9.1551698,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Ganesha Yoga Studio",
+    "website": "https://ganesha.pt"
+  }
+},
+{
+  "type": "node",
+  "id": 3733833051,
+  "lat": -30.0445000,
+  "lon": -51.1415057,
+  "tags": {
+    "addr:housenumber": "7201",
+    "addr:postcode": "91310-003",
+    "addr:street": "Avenida Protásio Alves",
+    "addr:suburb": "Protásio Alves",
+    "leisure": "sports_centre",
+    "name": "Afp Atividade Física Personalizada",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3733951401,
+  "lat": -30.0975176,
+  "lon": -51.2294861,
+  "tags": {
+    "addr:city": "Porto Alegre",
+    "addr:housenumber": "2206",
+    "addr:postcode": "91740-000",
+    "addr:street": "Avenida da Cavalhada",
+    "addr:suburb": "Cavalhada",
+    "leisure": "sports_centre",
+    "name": "Riograndense Tênis Clube"
+  }
+},
+{
+  "type": "node",
+  "id": 4423078311,
+  "lat": -30.1316974,
+  "lon": -51.2355491,
+  "tags": {
+    "addr:city": "Porto Alegre",
+    "addr:housenumber": "2353",
+    "addr:postcode": "91760-000",
+    "addr:street": "Avenida Coronel Marcos",
+    "addr:suburb": "Ipanema",
+    "leisure": "sports_centre",
+    "name": "Ipanema Sports - Academia",
+    "opening_hours": "Mo-Fr 06:00-23:00; Sa 09:00-18:00; Su, PH 09:00-13:00",
+    "phone": "+55 51 3246-9000",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.ipanemasports.com.br/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4437117899,
+  "lat": -30.0482785,
+  "lon": -51.1515739,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "E.C. New Boys"
+  }
+},
+{
+  "type": "node",
+  "id": 4783315439,
+  "lat": -30.0537651,
+  "lon": -51.2221617,
+  "tags": {
+    "addr:housenumber": "1030",
+    "addr:street": "Avenida Getúlio Vargas",
+    "leisure": "sports_centre",
+    "name": "Movimento e Saúde",
+    "phone": "+55 51 3237-9327",
+    "website": "http://www.msmovimentoesaude.com.br/"
+  }
+},
+{
+  "type": "node",
+  "id": 4783315441,
+  "lat": -30.0600869,
+  "lon": -51.2268581,
+  "tags": {
+    "addr:housenumber": "483",
+    "addr:postcode": "90880-481",
+    "addr:street": "Rua José de Alencar",
+    "addr:unit": "1",
+    "email": "contato@studioposturale.com.br",
+    "leisure": "sports_centre",
+    "name": "Studio Posturale Menino Deus",
+    "opening_hours": "Mo-Fr 08:00-21:30",
+    "phone": "+55 51 3019-2135",
+    "website": "https://studioposturale.com.br/"
+  }
+},
+{
+  "type": "node",
+  "id": 4805805194,
+  "lat": -30.0855026,
+  "lon": -51.2400818,
+  "tags": {
+    "addr:housenumber": "780",
+    "addr:street": "Avenida Icaraí",
+    "addr:unit": "112",
+    "email": "academiasulfitnesspoa@gmail.com",
+    "leisure": "sports_centre",
+    "name": "Sul Fitness Academia",
+    "opening_hours": "Mo-Fr 07:00-22:00; Sa 09:00-14:00",
+    "phone": "+55 51 3907-6772",
+    "sport": "multi",
+    "website": "https://www.sulfitnessacademia.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4805948808,
+  "lat": -30.0326037,
+  "lon": -51.2086028,
+  "tags": {
+    "addr:housenumber": "1535",
+    "addr:street": "Rua Ramiro Barcelos",
+    "alt_name": "Academia Bio Ativa Ramiro",
+    "leisure": "sports_centre",
+    "name": "Bio Academia Ramiro",
+    "opening_hours": "Mo-Fr 06:30-23:00; Sa 09:00-18:00",
+    "phone": "+55 51 3028-0893",
+    "sport": "multi",
+    "website": "http://academiabioativa.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4805948812,
+  "lat": -30.0369625,
+  "lon": -51.2050415,
+  "tags": {
+    "addr:housenumber": "337",
+    "addr:street": "Rua São Manoel",
+    "addr:unit": "10",
+    "leisure": "sports_centre",
+    "name": "Espaço A Casa",
+    "sport": "yoga",
+    "website": "http://acasapoa.blogspot.com.br/"
+  }
+},
+{
+  "type": "node",
+  "id": 4805949080,
+  "lat": -30.0353567,
+  "lon": -51.2085231,
+  "tags": {
+    "addr:housenumber": "1843",
+    "addr:street": "Rua Ramiro Barcelos",
+    "email": "anandam@anandam.pro.br",
+    "leisure": "sports_centre",
+    "name": "Ánamdam Yoga e Cultura",
+    "opening_hours": "Mo-Fr 14:00-18:00",
+    "phone": "+55 51 3328-4280",
+    "sport": "yoga",
+    "website": "http://www.anandam.pro.br/"
+  }
+},
+{
+  "type": "node",
+  "id": 4895392128,
+  "lat": -30.0270769,
+  "lon": -51.2030291,
+  "tags": {
+    "addr:housenumber": "64",
+    "addr:street": "Rua Doutor Florêncio Ygartua",
+    "email": "contato@fitacademia.esp.br",
+    "leisure": "sports_centre",
+    "name": "Fit Academia",
+    "opening_hours": "Mo-Fr 06:30-22:00; Sa 09:00-15:00",
+    "phone": "+55 51 3264-1111",
+    "sport": "multi",
+    "website": "https://www.fitacademia.esp.br/"
+  }
+},
+{
+  "type": "node",
+  "id": 4942251975,
+  "lat": -30.0409454,
+  "lon": -51.2239530,
+  "tags": {
+    "addr:housenumber": "544",
+    "addr:street": "Rua Luiz Afonso",
+    "email": "biostudipoa@outlook.com",
+    "leisure": "sports_centre",
+    "name": "BioStudio Cidade Baixa",
+    "opening_hours": "Mo-Fr 07:30-12:00,14:00-21:30",
+    "phone": "+55 51 3574-8845",
+    "sport": "multi",
+    "website": "https://www.biostudiopoa.com.br/"
+  }
+},
+{
+  "type": "node",
+  "id": 5241895922,
+  "lat": -30.1048376,
+  "lon": -51.6517596,
+  "tags": {
+    "addr:housenumber": "972",
+    "addr:postcode": "92990-000",
+    "addr:street": "Avenida João Ricardo Juliano",
+    "addr:unit": "2",
+    "email": "secretaria.guaibacountryclub@gmail.com",
+    "leisure": "sports_centre",
+    "name": "Guaíba Country Club",
+    "opening_hours": "Mo-Su 09:00-18:00",
+    "phone": "+55 51 3481-1133",
+    "website": "http://www.guaibacoutryclub.com.br"
+  }
+},
+{
+  "type": "node",
+  "id": 5456505908,
+  "lat": -30.0349161,
+  "lon": -51.2058861,
+  "tags": {
+    "addr:housenumber": "761",
+    "addr:street": "Rua Miguel Tostes",
+    "email": "oficinadopilates@gmail.com",
+    "leisure": "sports_centre",
+    "name": "Oficina do Pilates",
+    "phone": "+55 51 3779-9895",
+    "sport": "multi"
+  }
+},
+{
+  "type": "node",
+  "id": 6126512165,
+  "lat": -29.9969744,
+  "lon": -51.1939731,
+  "tags": {
+    "addr:housenumber": "850",
+    "addr:postcode": "90240-130",
+    "addr:street": "Rua Lauro Müller",
+    "leisure": "sports_centre",
+    "name": "HD Sport Center - Humaitá",
+    "phone": "+55 51 3374-6522"
+  }
+},
+{
+  "type": "node",
+  "id": 6966926180,
+  "lat": -29.9305631,
+  "lon": -51.1628770,
+  "tags": {
+    "addr:city": "Canoas",
+    "addr:housenumber": "860",
+    "addr:postcode": "92025-640",
+    "addr:street": "Rua Santa Teresinha",
+    "addr:suburb": "Nossa Senhora das Graças",
+    "branch": "Canoas",
+    "brand": "AABB",
+    "brand:wikidata": "Q9633503",
+    "brand:wikipedia": "pt:Associação Atlética Banco do Brasil",
+    "fee": "no",
+    "leisure": "sports_centre",
+    "name": "Associação Atlética Banco do Brasil",
+    "name:en": "Banco do Brasil Athletic Association",
+    "name:pt": "Associação Atlética Banco do Brasil",
+    "short_name": "AABB",
+    "sport": "soccer"
+  }
+},
+{
+  "type": "node",
+  "id": 7180053708,
+  "lat": -30.0340233,
+  "lon": -51.2124557,
+  "tags": {
+    "addr:housenumber": "508",
+    "addr:postcode": "90035-121",
+    "addr:street": "Rua General João Telles",
+    "leisure": "sports_centre",
+    "name": "Hebraica -RS",
+    "opening_hours": "Mo-Su 07:00-23:00",
+    "phone": "+55 51 3311-4056"
+  }
+},
+{
+  "type": "node",
+  "id": 9800616941,
+  "lat": -30.1224370,
+  "lon": -51.2548848,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Sensei Renata Escola de Judô",
+    "sport": "judo"
+  }
+},
+{
+  "type": "node",
+  "id": 11107450262,
+  "lat": -30.0397155,
+  "lon": -51.2224084,
+  "tags": {
+    "addr:housenumber": "363",
+    "addr:street": "Rua Luiz Afonso",
+    "addr:suburb": "Cidade Baixa",
+    "leisure": "sports_centre",
+    "name": "Stillo Natação e Academia",
+    "sport": "swimming;fitness"
+  }
+},
+{
+  "type": "way",
+  "id": 40446356,
+  "center": {
+    "lat": -30.0455397,
+    "lon": -51.2197618
+  },
+  "tags": {
+    "addr:street": "Avenida Erico Verissimo",
+    "building": "civic",
+    "leisure": "sports_centre",
+    "name": "Ginásio Tesourinha",
+    "official_name": "Ginásio Osmar Fortes Barcellos",
+    "sport": "multi",
+    "wikidata": "Q10289718"
+  }
+},
+{
+  "type": "way",
+  "id": 103892205,
+  "center": {
+    "lat": -30.0529728,
+    "lon": -51.1733999
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Clube Farrapos",
+    "website": "http://www.clubefarrapos.com.br"
+  }
+},
+{
+  "type": "way",
+  "id": 108399313,
+  "center": {
+    "lat": -29.9920135,
+    "lon": -51.2057466
+  },
+  "tags": {
+    "addr:housenumber": "600",
+    "addr:street": "Rua João Moreira Maciel",
+    "leisure": "sports_centre",
+    "name": "Grêmio Náutico União",
+    "sport": "rowing"
+  }
+},
+{
+  "type": "way",
+  "id": 108399318,
+  "center": {
+    "lat": -29.9912698,
+    "lon": -51.2055286
+  },
+  "tags": {
+    "addr:housenumber": "740",
+    "addr:street": "Rua João Moreira Maciel",
+    "leisure": "sports_centre",
+    "name": "Clube de Regatas Vasco da Gama",
+    "phone": "+55 51 3342-1634",
+    "sport": "rowing"
+  }
+},
+{
+  "type": "way",
+  "id": 113319638,
+  "center": {
+    "lat": -30.1003438,
+    "lon": -51.2491785
+  },
+  "tags": {
+    "addr:housenumber": "1001",
+    "addr:street": "Avenida Wenceslau Escobar",
+    "leisure": "sports_centre",
+    "name": "Atiradores de Elite Paintball",
+    "shooting": "paintball",
+    "sport": "shooting",
+    "website": "http://www.atiradoresdeelite.com"
+  }
+},
+{
+  "type": "way",
+  "id": 114455493,
+  "center": {
+    "lat": -29.9936347,
+    "lon": -51.2063107
+  },
+  "tags": {
+    "addr:housenumber": "470",
+    "addr:street": "Rua João Moreira Maciel",
+    "leisure": "sports_centre",
+    "name": "GPA",
+    "official_name": "Clube de Regatas Guaíba Porto Alegre",
+    "sport": "rowing",
+    "website": "https://www.gpa1888.com.br/",
+    "wikidata": "Q9782873"
+  }
+},
+{
+  "type": "way",
+  "id": 114455500,
+  "center": {
+    "lat": -29.9926743,
+    "lon": -51.2059226
+  },
+  "tags": {
+    "addr:housenumber": "580",
+    "addr:street": "Rua João Moreira Maciel",
+    "leisure": "sports_centre",
+    "name": "Clube de Regatas Almirante Barroso",
+    "sport": "rowing"
+  }
+},
+{
+  "type": "way",
+  "id": 114455509,
+  "center": {
+    "lat": -29.9931000,
+    "lon": -51.2060693
+  },
+  "tags": {
+    "addr:housenumber": "530",
+    "addr:street": "Rua João Moreira Maciel",
+    "leisure": "sports_centre",
+    "name": "Grêmio de Regatas Almirante Tamandaré",
+    "sport": "rowing"
+  }
+},
+{
+  "type": "way",
+  "id": 121183319,
+  "center": {
+    "lat": -30.0426685,
+    "lon": -51.2034946
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "loc_name": "Ginásio da Brigada Militar",
+    "name": "Escola de Educação Física da Brigada Militar",
+    "wikidata": "Q1525211"
+  }
+},
+{
+  "type": "way",
+  "id": 174553245,
+  "center": {
+    "lat": -29.4559110,
+    "lon": -51.9557577
+  },
+  "tags": {
+    "highway": "secondary",
+    "name": "Avenida Parque do Imigrante",
+    "oneway": "yes",
+    "surface": "paving_stones"
+  }
+},
+{
+  "type": "way",
+  "id": 215711812,
+  "center": {
+    "lat": -30.1442079,
+    "lon": -51.2229392
+  },
+  "tags": {
+    "access": "private",
+    "addr:housenumber": "12060",
+    "addr:postcode": "90680-000",
+    "addr:street": "Avenida Guaíba",
+    "email": "secretaria@cpg.com.br",
+    "fax": "+55 51 3248-1207",
+    "landuse": "recreation_ground",
+    "leisure": "sports_centre",
+    "name": "Clube do Professor Gaúcho",
+    "opening_hours": "Tu-Su 08:00-22:00",
+    "phone": "+55 51 3248-5710",
+    "short_name": "CPG",
+    "website": "http://www.cpg.com.br/",
+    "wikidata": "Q120967243"
+  }
+},
+{
+  "type": "way",
+  "id": 217350242,
+  "center": {
+    "lat": -30.0362642,
+    "lon": -51.2127990
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Parque Ramiro Souto",
+    "name:fr": "Stade Ramiro Souto",
+    "opening_hours": "24/7",
+    "phone": "+55 51 3311-4877",
+    "source": "SMAM",
+    "sport": "athletics",
+    "website": "http://www.aredencao.com.br"
+  }
+},
+{
+  "type": "way",
+  "id": 217763419,
+  "center": {
+    "lat": -30.0428771,
+    "lon": -51.2335316
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Academia Lucas Gelatti Chalegre",
+    "sport": "multi",
+    "start_date": "2013"
+  }
+},
+{
+  "type": "way",
+  "id": 217822501,
+  "center": {
+    "lat": -30.0263076,
+    "lon": -51.1998559
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Área de Ginástica",
+    "sport": "multi",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 218096219,
+  "center": {
+    "lat": -30.0254476,
+    "lon": -51.1988018
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Área de Ginástica",
+    "sport": "multi",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 219912892,
+  "center": {
+    "lat": -30.0224665,
+    "lon": -51.1977330
+  },
+  "tags": {
+    "addr:housenumber": "500",
+    "addr:postcode": "90440-050",
+    "addr:street": "Rua Quintino Bocaiúva",
+    "barrier": "wall",
+    "email": "faleconosco@gnu.com.br",
+    "landuse": "recreation_ground",
+    "leisure": "sports_centre",
+    "name": "Grêmio Náutico União Moinhos de Vento",
+    "opening_hours": "Su-Sa 05:00-24:00",
+    "phone": "+55 51 3025-3800",
+    "short_name": "GNU Moinhos de Vento",
+    "sport": "multi",
+    "website": "https://www.gnu.com.br/",
+    "wheelchair": "yes",
+    "wikipedia": "pt:Grêmio Náutico União"
+  }
+},
+{
+  "type": "way",
+  "id": 231001448,
+  "center": {
+    "lat": -29.4550045,
+    "lon": -51.9544010
+  },
+  "tags": {
+    "amenity": "events_venue",
+    "name": "Parque do Imigrante"
+  }
+},
+{
+  "type": "way",
+  "id": 231024462,
+  "center": {
+    "lat": -29.5101818,
+    "lon": -51.9678635
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Ginásio do Cristo Rei",
+    "sport": "volleyball;futsal"
+  }
+},
+{
+  "type": "way",
+  "id": 231024473,
+  "center": {
+    "lat": -29.5095583,
+    "lon": -51.9666518
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Ginásio da E.E. Vidal de Negreiros"
+  }
+},
+{
+  "type": "way",
+  "id": 231101740,
+  "center": {
+    "lat": -29.5008738,
+    "lon": -51.9649743
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Ginásio da Soges"
+  }
+},
+{
+  "type": "way",
+  "id": 231101741,
+  "center": {
+    "lat": -29.5049048,
+    "lon": -51.9644279
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Ginásio da E.E. Ensino Médio"
+  }
+},
+{
+  "type": "way",
+  "id": 231101765,
+  "center": {
+    "lat": -29.4918283,
+    "lon": -51.9652820
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Ginásio Ito João Snel"
+  }
+},
+{
+  "type": "way",
+  "id": 231461756,
+  "center": {
+    "lat": -29.4626685,
+    "lon": -51.9626717
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Ginásio de Esportes",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 231739753,
+  "center": {
+    "lat": -29.4626565,
+    "lon": -51.9479039
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Associação Atlética Municipal"
+  }
+},
+{
+  "type": "way",
+  "id": 231743310,
+  "center": {
+    "lat": -29.4651385,
+    "lon": -51.9762310
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Clube Sete de Setembro"
+  }
+},
+{
+  "type": "way",
+  "id": 231960959,
+  "center": {
+    "lat": -29.4593391,
+    "lon": -51.9602165
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Clube Tiro e Caça",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 232091070,
+  "center": {
+    "lat": -29.4557816,
+    "lon": -51.9556745
+  },
+  "tags": {
+    "highway": "secondary",
+    "name": "Avenida Parque do Imigrante",
+    "oneway": "yes",
+    "surface": "paving_stones"
+  }
+},
+{
+  "type": "way",
+  "id": 232287322,
+  "center": {
+    "lat": -29.4617248,
+    "lon": -51.9535717
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "AABB - Associação Atlética Banco do Brasil"
+  }
+},
+{
+  "type": "way",
+  "id": 232335624,
+  "center": {
+    "lat": -29.4465251,
+    "lon": -51.9491747
+  },
+  "tags": {
+    "alt_name": "Prédio 14",
+    "building": "university",
+    "leisure": "sports_centre",
+    "name": "Prédio 14 - Ginásio de arena",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 232335625,
+  "center": {
+    "lat": -29.4469383,
+    "lon": -51.9491871
+  },
+  "tags": {
+    "alt_name": "Prédio 15",
+    "building": "university",
+    "leisure": "sports_centre",
+    "name": "Prédio 15 - Ginásio de ginástica artística",
+    "source": "Bing",
+    "sport": "gymnastics"
+  }
+},
+{
+  "type": "way",
+  "id": 232335626,
+  "center": {
+    "lat": -29.4463730,
+    "lon": -51.9497456
+  },
+  "tags": {
+    "alt_name": "Prédio 13",
+    "building": "university",
+    "leisure": "sports_centre",
+    "name": "Prédio 13 - Ginásio das Piscinas",
+    "source": "Bing",
+    "sport": "swimming"
+  }
+},
+{
+  "type": "way",
+  "id": 233807020,
+  "center": {
+    "lat": -30.0565134,
+    "lon": -51.2196242
+  },
+  "tags": {
+    "access": "yes",
+    "addr:housenumber": "628",
+    "addr:street": "Rua Gonçalves Dias",
+    "barrier": "fence",
+    "fence_type": "metal",
+    "leisure": "sports_centre",
+    "name": "CETE",
+    "official_name": "Centro Estadual de Treinamento Esportivo",
+    "opening_hours": "Su-Sa 07:00-22:00",
+    "phone": "+55 51 3233-6644",
+    "sport": "multi",
+    "start_date": "1963",
+    "website": "http://www.fundergs.rs.gov.br/",
+    "wheelchair": "yes",
+    "wikipedia": "pt:Centro Estadual de Treinamento Esportivo"
+  }
+},
+{
+  "type": "way",
+  "id": 237136938,
+  "center": {
+    "lat": -30.0213141,
+    "lon": -51.1274463
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Centro Esportivo Correio do Povo",
+    "source": "LABGEO/UFRGS"
+  }
+},
+{
+  "type": "way",
+  "id": 239668817,
+  "center": {
+    "lat": -30.0174589,
+    "lon": -51.1488983
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Happy Fitness"
+  }
+},
+{
+  "type": "way",
+  "id": 240972760,
+  "center": {
+    "lat": -30.0068914,
+    "lon": -51.1735947
+  },
+  "tags": {
+    "email": "contato@saojose.net",
+    "leisure": "sports_centre",
+    "loc_name": "Zequinha",
+    "name": "Esporte Clube São José",
+    "opening_hours": "Mo-Fr 08:00-18:00; Sa 08:00-12:00",
+    "phone": "+55 51 3341-3200",
+    "sport": "multi",
+    "start_date": "1939",
+    "website": "https://www.saojose.net/",
+    "wikipedia": "pt:Esporte Clube São José"
+  }
+},
+{
+  "type": "way",
+  "id": 241947022,
+  "center": {
+    "lat": -30.0554897,
+    "lon": -51.2006059
+  },
+  "tags": {
+    "addr:housenumber": "337",
+    "addr:street": "Rua Luiz de Camões",
+    "leisure": "sports_centre",
+    "name": "Grêmio Sargento Expedicionário Geraldo Santana",
+    "old_name": "Grêmio Esportivo Serviço de Transmissões Regional",
+    "opening_hours": "Mo-Fr 08:30-12:00,13:30-18:00",
+    "phone": "+55 51 3223-5520",
+    "sport": "multi",
+    "start_date": "1947",
+    "website": "https://www.geraldosantana.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 242603957,
+  "center": {
+    "lat": -30.0528523,
+    "lon": -51.1711306
+  },
+  "tags": {
+    "addr:housenumber": "1341",
+    "addr:postcode": "91410-000",
+    "addr:street": "Avenida Professor Cristiano Fischer",
+    "leisure": "sports_centre",
+    "name": "Planet Ball",
+    "website": "https://planetball.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 244178645,
+  "center": {
+    "lat": -30.0603493,
+    "lon": -51.2138164
+  },
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "90880-440",
+    "addr:street": "Largo Patrono Fernando Kroeff",
+    "alt_name": "Grêmio Futebol Porto Alegrense",
+    "barrier": "fence",
+    "fence_type": "metal",
+    "leisure": "sports_centre",
+    "name": "Grêmio Foot-Ball Porto Alegrense",
+    "opening_hours": "\"O estádio encontra-se fechado.\"",
+    "phone": "+55 51 3218-2000",
+    "sport": "soccer",
+    "start_date": "1903",
+    "website": "https://gremio.net/",
+    "wikipedia": "pt:Grêmio Foot-Ball Porto Alegrense"
+  }
+},
+{
+  "type": "way",
+  "id": 244450978,
+  "center": {
+    "lat": -30.0311063,
+    "lon": -51.2184422
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Centro Esportivo",
+    "operator": "Colégio Marista Rosário",
+    "sport": "multi"
+  }
+},
+{
+  "type": "way",
+  "id": 244787099,
+  "center": {
+    "lat": -30.0149974,
+    "lon": -51.1494926
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Centro Poliesportivo Monte Moro",
+    "sport": "multi"
+  }
+},
+{
+  "type": "way",
+  "id": 244787102,
+  "center": {
+    "lat": -30.0148728,
+    "lon": -51.1491343
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Ginásio Santa Paula Frassinetti",
+    "sport": "multi"
+  }
+},
+{
+  "type": "way",
+  "id": 253881079,
+  "center": {
+    "lat": -30.0474417,
+    "lon": -51.1918415
+  },
+  "tags": {
+    "barrier": "wall",
+    "landuse": "recreation_ground",
+    "leisure": "sports_centre",
+    "name": "Petrópole Tênis Clube",
+    "sport": "tennis;soccer;swimming",
+    "website": "https://www.petropole.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 260262782,
+  "center": {
+    "lat": -30.0030160,
+    "lon": -51.1525199
+  },
+  "tags": {
+    "addr:city": "Porto Alegre",
+    "addr:housenumber": "90",
+    "addr:postcode": "91050-190",
+    "addr:street": "Travessa Comandante Gustavo Cramer",
+    "barrier": "wall",
+    "leisure": "sports_centre",
+    "name": "Lindóia Tênis Clube",
+    "phone": "+55 51 3017-4422",
+    "sport": "multi",
+    "website": "https://www.lindoiatc.com.br/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 287717508,
+  "center": {
+    "lat": -30.0341672,
+    "lon": -51.1828867
+  },
+  "tags": {
+    "addr:housenumber": "300",
+    "addr:postcode": "90470-150",
+    "addr:street": "Avenida João Obino",
+    "barrier": "fence",
+    "club": "sport",
+    "email": "faleconosco@gnu.com.br",
+    "fence_type": "concrete",
+    "leisure": "sports_centre",
+    "name": "Grêmio Náutico União Alto Petrópolis",
+    "opening_hours": "Mo-Su 06:30-22:30",
+    "phone": "+55 51 3025-3800",
+    "short_name": "GNU Alto Petrópolis",
+    "sport": "multi",
+    "website": "https://www.gnu.com.br/",
+    "wheelchair": "yes",
+    "wikipedia": "pt:Grêmio Náutico União"
+  }
+},
+{
+  "type": "way",
+  "id": 313869019,
+  "center": {
+    "lat": -30.0511050,
+    "lon": -51.1661476
+  },
+  "tags": {
+    "addr:housenumber": "388",
+    "addr:postcode": "91410-110",
+    "addr:street": "Rua Graciliano Ramos",
+    "leisure": "sports_centre",
+    "name": "HD Sport Center",
+    "phone": "+55 51 3334-8878"
+  }
+},
+{
+  "type": "way",
+  "id": 324489209,
+  "center": {
+    "lat": -29.9827356,
+    "lon": -51.1846953
+  },
+  "tags": {
+    "addr:city": "Porto Alegre",
+    "addr:housenumber": "695",
+    "addr:street": "Avenida José Aloísio Filho",
+    "addr:suburb": "Humaitá",
+    "leisure": "sports_centre",
+    "name": "SEST SENAT"
+  }
+},
+{
+  "type": "way",
+  "id": 328021546,
+  "center": {
+    "lat": -30.0654271,
+    "lon": -51.2355329
+  },
+  "tags": {
+    "addr:housenumber": "891",
+    "addr:postcode": "90810-240",
+    "addr:street": "Avenida Padre Cacique",
+    "addr:suburb": "Praia de Belas",
+    "alt_name": "SC Internacional",
+    "contact:facebook": "scinternacional",
+    "contact:instagram": "scinternacional",
+    "contact:twitter": "SCInternacional",
+    "leisure": "sports_centre",
+    "name": "Sport Club Internacional",
+    "name:pt": "Beira-Rio",
+    "phone": "+55 51 3230-4600",
+    "short_name": "SCI",
+    "sport": "soccer",
+    "website": "https://www.internacional.com.br/",
+    "wikipedia": "pt:Sport Club Internacional"
+  }
+},
+{
+  "type": "way",
+  "id": 329970345,
+  "center": {
+    "lat": -30.0396252,
+    "lon": -51.1753893
+  },
+  "tags": {
+    "alt_name": "Sede Grêmio",
+    "barrier": "wall",
+    "leisure": "sports_centre",
+    "name": "Grêmio Esportivo Israelita",
+    "official_name": "Associação Israelita Hebraica-RS",
+    "phone": "+55 51 3334-8435",
+    "website": "http://hebraicars.com.br/sede-gremio/"
+  }
+},
+{
+  "type": "way",
+  "id": 340089940,
+  "center": {
+    "lat": -29.4573999,
+    "lon": -51.9522250
+  },
+  "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Parque do Imigrante",
+    "oneway": "yes",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 371815686,
+  "center": {
+    "lat": -30.0485335,
+    "lon": -51.1380190
+  },
+  "tags": {
+    "addr:city": "Porto Alegre",
+    "addr:housenumber": "750",
+    "addr:street": "Beco Souza Costa",
+    "addr:suburb": "Protásio Alves",
+    "leisure": "sports_centre",
+    "name": "ASTTI - Associação dos Profissionais em Telecomunicações e Tecnologia da Informação",
+    "phone": "+55 51 3383-6400",
+    "website": "https://www.astti.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 371944096,
+  "center": {
+    "lat": -30.1080560,
+    "lon": -51.1126524
+  },
+  "tags": {
+    "addr:city": "Porto Alegre",
+    "addr:housenumber": "5012",
+    "addr:postcode": "91560-000",
+    "addr:street": "Estrada João de Oliveira Remião",
+    "addr:suburb": "Lomba do Pinheiro",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Ginásio Paróquia Santa Clara",
+    "sport": "multi",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 372538306,
+  "center": {
+    "lat": -30.1503514,
+    "lon": -51.1432329
+  },
+  "tags": {
+    "addr:city": "Porto Alegre",
+    "addr:postcode": "91790-000",
+    "addr:street": "Avenida Economista Nilo Wulff",
+    "addr:suburb": "Restinga",
+    "amenity": "community_centre",
+    "leisure": "sports_centre",
+    "name": "CECORES - Centro de Comunidade da Vila Restinga",
+    "network": "Secretaria Municipal do Esporte",
+    "operator": "Secretaria Municipal",
+    "phone": "+55 51 3250-6700"
+  }
+},
+{
+  "type": "way",
+  "id": 414231235,
+  "center": {
+    "lat": -30.0243533,
+    "lon": -51.1901091
+  },
+  "tags": {
+    "addr:street": "Rua Silva Jardim",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "S."
+  }
+},
+{
+  "type": "way",
+  "id": 414433982,
+  "center": {
+    "lat": -30.0343875,
+    "lon": -51.2249377
+  },
+  "tags": {
+    "addr:housenumber": "248",
+    "addr:street": "Avenida Desembargador André da Rocha",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Academia DK1",
+    "operator": "Mo 08:00-12:00,16:00-22:00; Tu 10:30-14:00,17:00-20:30; We 08:00-12:00,16:00-22:00; Th 10:30-14:00,17:00-20:30; Fr 08:00-12:00,16:00-22:00",
+    "phone": "+55 51 3224-7394",
+    "source": "CCPG/PMPA",
+    "sport": "multi",
+    "website": "http://www.academiadk1.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 419348018,
+  "center": {
+    "lat": -30.0248035,
+    "lon": -51.2016745
+  },
+  "tags": {
+    "addr:housenumber": "684",
+    "addr:postcode": "91310-000",
+    "addr:street": "Rua 24 de Outubro",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Bio Express Parcão",
+    "opening_hours": "Mo-Fr 06:30-22:30; Sa 09:00-18:00; Su 09:00-18:00",
+    "phone": "+55 51 3398-6715",
+    "sport": "fitness",
+    "website": "https://bioexpressacademia.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 419349242,
+  "center": {
+    "lat": -30.0339949,
+    "lon": -51.2060272
+  },
+  "tags": {
+    "addr:housenumber": "655",
+    "addr:street": "Rua Miguel Tostes",
+    "alt_name": "Winner Fight and Fitness",
+    "building": "yes",
+    "email": "comercial@winnersport.com.br",
+    "leisure": "sports_centre",
+    "name": "Winner Fight & Fitness",
+    "opening_hours": "Mo-Fr 07:00-22:00; Sa 09:00-13:30",
+    "phone": "+55 51 3388-7826",
+    "sport": "multi",
+    "start_date": "1994",
+    "website": "http://www.winnersport.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 420864984,
+  "center": {
+    "lat": -30.0468201,
+    "lon": -51.2211420
+  },
+  "tags": {
+    "addr:housenumber": "276",
+    "addr:street": "Avenida Getúlio Vargas",
+    "building": "yes",
+    "email": "academiaprogymfitness@hotmail.com",
+    "leisure": "sports_centre",
+    "name": "Pro Gym Fitness",
+    "opening_hours": "Mo-Fr 06:30-23:00; Sa 10:00-13:00",
+    "phone": "+55 51 3372-9471"
+  }
+},
+{
+  "type": "way",
+  "id": 421398658,
+  "center": {
+    "lat": -30.0512310,
+    "lon": -51.2217303
+  },
+  "tags": {
+    "addr:housenumber": "760",
+    "addr:street": "Avenida Getúlio Vargas",
+    "building": "yes",
+    "email": "academiabiofitness@gmail.com",
+    "leisure": "sports_centre",
+    "name": "Academia Bio Fitness",
+    "opening_hours": "Mo-Fr 06:00-22:00; Sa 0:00-14:00",
+    "phone": "+55 51 3231-6368",
+    "sport": "fitness",
+    "website": "http://www.academiabiofitness.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 425866436,
+  "center": {
+    "lat": -30.0947339,
+    "lon": -51.2279531
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Stillo Zona Sul",
+    "sport": "swimming"
+  }
+},
+{
+  "type": "way",
+  "id": 426178916,
+  "center": {
+    "lat": -30.1319257,
+    "lon": -51.2362220
+  },
+  "tags": {
+    "addr:city": "Porto Alegre",
+    "addr:housenumber": "2353",
+    "addr:postcode": "91760-000",
+    "addr:street": "Avenida Coronel Marcos",
+    "addr:suburb": "Ipanema",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Ipanema Sports - Academia",
+    "opening_hours": "Segunda à Sexta 6h às 23h Sábado 9h às 15h Domingos e Feriados 9h às 13h.",
+    "phone": "+55 51 3246-9000",
+    "sport": "multi",
+    "website": "https://www.ipanemasports.com.br/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 427137471,
+  "center": {
+    "lat": -30.0407488,
+    "lon": -51.1535781
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Centro Esportivo C. J. Felix"
+  }
+},
+{
+  "type": "way",
+  "id": 463807364,
+  "center": {
+    "lat": -29.9772446,
+    "lon": -51.2011461
+  },
+  "tags": {
+    "addr:street": "Rua João Moreira Maciel",
+    "leisure": "sports_centre",
+    "name": "Centro de Treinamento Luis Carvalho"
+  }
+},
+{
+  "type": "way",
+  "id": 485551944,
+  "center": {
+    "lat": -30.0537437,
+    "lon": -51.2275233
+  },
+  "tags": {
+    "addr:housenumber": "300",
+    "addr:street": "Rua Botafogo",
+    "landuse": "commercial",
+    "leisure": "sports_centre",
+    "name": "Master Fitness Center",
+    "opening_hours": "Mo-Fr 06:30-22:30; Sa 09:00-13:00",
+    "phone": "+55 51 3232-1180",
+    "website": "http://www.masterfitnesscenter.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 485578680,
+  "center": {
+    "lat": -30.0476820,
+    "lon": -51.2240680
+  },
+  "tags": {
+    "addr:housenumber": "371",
+    "addr:street": "Rua Múcio Teixeira",
+    "addr:unit": "1",
+    "email": "contato@timevilleroy.com.br",
+    "landuse": "commercial",
+    "leisure": "sports_centre",
+    "name": "Time Villeroy",
+    "opening_hours": "Mo-Fr 06:00-22:00; Sa 09:00-13:00",
+    "phone": "+55 51 3407-7779",
+    "website": "http://www.timevilleroy.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 485891298,
+  "center": {
+    "lat": -30.0430300,
+    "lon": -51.2188760
+  },
+  "tags": {
+    "addr:housenumber": "77",
+    "addr:street": "Avenida Venâncio Aires",
+    "landuse": "commercial",
+    "leisure": "sports_centre",
+    "name": "Moinhos Fitness Venâncio",
+    "opening_hours": "Mo-Fr 06:30-24:00; Sa 10:00-15:00; Su 09:30-13:30",
+    "phone": "+55 51 3012-7227",
+    "website": "https://www.moinhosfitness.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 485965700,
+  "center": {
+    "lat": -30.0380299,
+    "lon": -51.2254540
+  },
+  "tags": {
+    "addr:housenumber": "263",
+    "addr:postcode": "90050-001",
+    "addr:street": "Rua José do Patrocínio",
+    "barrier": "fence",
+    "email": "contato@preventivars.com.br",
+    "fence_type": "metal",
+    "leisure": "sports_centre",
+    "name": "Preventiva",
+    "opening_hours": "Mo-Fr 07:00-21:00",
+    "phone": "+55 51 3519-7919",
+    "sport": "multi",
+    "website": "https://www.preventivars.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 496328985,
+  "center": {
+    "lat": -30.0807955,
+    "lon": -51.2063026
+  },
+  "tags": {
+    "addr:housenumber": "320",
+    "addr:postcode": "91720-130",
+    "addr:street": "Avenida Arnaldo Bohrer",
+    "barrier": "fence",
+    "fence_type": "metal",
+    "leisure": "sports_centre",
+    "name": "Ginásio de Esportes Lupi Martins",
+    "phone": "+55 51 3354-3446",
+    "sport": "multi"
+  }
+},
+{
+  "type": "way",
+  "id": 527296703,
+  "center": {
+    "lat": -30.0496826,
+    "lon": -51.1868426
+  },
+  "tags": {
+    "addr:housenumber": "655",
+    "addr:street": "Rua Barão do Amazonas",
+    "email": "barao@toponeacademia.com.br",
+    "landuse": "commercial",
+    "leisure": "sports_centre",
+    "name": "Top One Barão do Amazonas",
+    "opening_hours": "Mo-Fr 06:30-24:00; Sa 09:00-17:00; Su 10:00-15:00",
+    "phone": "+55 51 2111-7330",
+    "sport": "multi",
+    "website": "https://www.toponeacademia.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 540219774,
+  "center": {
+    "lat": -29.9343735,
+    "lon": -51.1754463
+  },
+  "tags": {
+    "addr:city": "Canoas",
+    "addr:housenumber": "3120",
+    "addr:postcode": "92110-001",
+    "addr:street": "Rua Venâncio Aires",
+    "addr:suburb": "Niterói",
+    "leisure": "sports_centre",
+    "name": "Grêmio Esportivo Beneficente Getúlio Vargas",
+    "sport": "soccer;multi"
+  }
+},
+{
+  "type": "way",
+  "id": 548761739,
+  "center": {
+    "lat": -29.9028403,
+    "lon": -51.1989848
+  },
+  "tags": {
+    "addr:city": "Canoas",
+    "addr:street": "Avenida Rio Grande do Sul",
+    "addr:suburb": "Mathias Velho",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Cento Social Urbano Mathias Velho",
+    "sport": "multi"
+  }
+},
+{
+  "type": "way",
+  "id": 551718017,
+  "center": {
+    "lat": -29.9203527,
+    "lon": -51.1684301
+  },
+  "tags": {
+    "addr:city": "Canoas",
+    "addr:housenumber": "13",
+    "addr:street": "Rua São Bernardo",
+    "addr:suburb": "Marechal Rondon",
+    "leisure": "sports_centre",
+    "name": "Breda Master Soccer"
+  }
+},
+{
+  "type": "way",
+  "id": 565218100,
+  "center": {
+    "lat": -29.9123940,
+    "lon": -51.2154929
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Complexo cultural e esportivo Martin Luther King",
+    "name:etymology:wikidata": "Q8027"
+  }
+},
+{
+  "type": "way",
+  "id": 572993455,
+  "center": {
+    "lat": -29.9009631,
+    "lon": -51.2175466
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Centro de Iniciação ao Esporte",
+    "old_name": "Praça Pequeno Kauan",
+    "source:old_name": "Lei Municipal Ordinária Nº 5261/2007"
+  }
+},
+{
+  "type": "way",
+  "id": 573794115,
+  "center": {
+    "lat": -29.9058653,
+    "lon": -51.2244598
+  },
+  "tags": {
+    "addr:housenumber": "4296",
+    "addr:street": "Rua Florianópolis",
+    "building": "commercial",
+    "leisure": "sports_centre",
+    "name": "Ginasio Esportivo ALT"
+  }
+},
+{
+  "type": "way",
+  "id": 606792927,
+  "center": {
+    "lat": -30.0420733,
+    "lon": -51.2401984
+  },
+  "tags": {
+    "check_date": "2023-07-14",
+    "fee": "no",
+    "leisure": "sports_centre",
+    "name": "Academia da Terceira Idade",
+    "operator:type": "public",
+    "short_name": "ATI",
+    "surface": "dirt"
+  }
+},
+{
+  "type": "way",
+  "id": 606792944,
+  "center": {
+    "lat": -30.0415666,
+    "lon": -51.2410522
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Academia da Terceira Idade",
+    "short_name": "ATI",
+    "surface": "dirt"
+  }
+},
+{
+  "type": "way",
+  "id": 629705929,
+  "center": {
+    "lat": -30.0266556,
+    "lon": -51.1763873
+  },
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:street": "Rua Barão do Rio Grande",
+    "leisure": "sports_centre",
+    "name": "Sociedade Libanesa de Porto Alegre",
+    "phone": "+55 51 3028-7308",
+    "website": "http://sociedadelibanesa.com.br"
+  }
+},
+{
+  "type": "way",
+  "id": 640184315,
+  "center": {
+    "lat": -29.9965038,
+    "lon": -51.0913065
+  },
+  "tags": {
+    "landuse": "recreation_ground",
+    "leisure": "sports_centre",
+    "name": "Associação Comunitária da Nova Gleba",
+    "short_name": "ACNG"
+  }
+},
+{
+  "type": "way",
+  "id": 653742258,
+  "center": {
+    "lat": -29.9964552,
+    "lon": -51.1944572
+  },
+  "tags": {
+    "addr:housenumber": "700",
+    "addr:street": "Rua Lauro Müller",
+    "leisure": "sports_centre",
+    "name": "Soccer City",
+    "phone": "+55 51 3574-5501",
+    "website": "https://www.soccercitypoa.com.br/"
+  }
+},
+{
+  "type": "way",
+  "id": 661615943,
+  "center": {
+    "lat": -30.1837505,
+    "lon": -51.2316280
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "AFCEEE - Sede Campestre"
+  }
+},
+{
+  "type": "way",
+  "id": 893579409,
+  "center": {
+    "lat": -29.4573326,
+    "lon": -51.9521831
+  },
+  "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Parque do Imigrante",
+    "oneway": "yes",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 893579460,
+  "center": {
+    "lat": -29.4563587,
+    "lon": -51.9543829
+  },
+  "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Parque do Imigrante",
+    "oneway": "yes",
+    "surface": "paving_stones"
+  }
+},
+{
+  "type": "way",
+  "id": 893579461,
+  "center": {
+    "lat": -29.4565003,
+    "lon": -51.9544801
+  },
+  "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Parque do Imigrante",
+    "oneway": "yes",
+    "surface": "paving_stones"
+  }
+},
+{
+  "type": "way",
+  "id": 1106121998,
+  "center": {
+    "lat": -30.0817393,
+    "lon": -51.2080847
+  },
+  "tags": {
+    "access": "private",
+    "addr:street": "Avenida Engenheiro Ludolfo Bohel",
+    "addr:suburb": "Teresopolis",
+    "leisure": "sports_centre",
+    "name": "Teresópolis tênis Clube"
+  }
+},
+{
+  "type": "way",
+  "id": 1123478632,
+  "center": {
+    "lat": -30.0545926,
+    "lon": -51.1713179
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Parque Esportivo PUCRS"
+  }
+},
+{
+  "type": "way",
+  "id": 1124129486,
+  "center": {
+    "lat": -29.9267905,
+    "lon": -51.1670481
+  },
+  "tags": {
+    "description": "box_crosstraining",
+    "leisure": "sports_centre",
+    "name": "My Box Fire RS"
+  }
+},
+{
+  "type": "relation",
+  "id": 3308052,
+  "center": {
+    "lat": -30.0864386,
+    "lon": -51.2484896
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Escolinha de Futebol do Grêmio",
+    "sport": "soccer",
+    "type": "multipolygon",
+    "website": "http://www.escolinhadogremio.com.br"
+  }
+},
+{
+  "type": "relation",
+  "id": 3532261,
+  "center": {
+    "lat": -30.0370608,
+    "lon": -51.2295302
+  },
+  "tags": {
+    "addr:housenumber": "1050",
+    "addr:postcode": "90010-460",
+    "addr:street": "Rua Washington Luiz",
+    "alt_name": "Associação Cristã de Moços",
+    "brand": "YMCA",
+    "brand:wikidata": "Q157169",
+    "brand:wikipedia": "en:YMCA",
+    "leisure": "sports_centre",
+    "name": "YMCA",
+    "opening_hours": "Mo-Fr 06:00-23:00; Sa 09:00-18:00",
+    "phone": "+55 51 3213-6000",
+    "type": "multipolygon",
+    "website": "https://www.acm-rs.com.br/"
+  }
+},
+{
+  "type": "relation",
+  "id": 8397518,
+  "center": {
+    "lat": -30.0874008,
+    "lon": -51.2443587
+  },
+  "tags": {
+    "addr:housenumber": "750",
+    "addr:postcode": "90810-080",
+    "addr:street": "Avenida Diário de Notícias",
+    "leisure": "sports_centre",
+    "loc_name": "Hipódromo",
+    "name": "Hipódromo do Cristal",
+    "operator": "Jockey Club do Rio Grande do Sul",
+    "sport": "horse_racing",
+    "start_date": "1959",
+    "type": "multipolygon",
+    "website": "https://www.jockeyrs.com.br/",
+    "wikidata": "Q1620098",
+    "wikipedia": "pt:Hipódromo do Cristal"
+  }
+},
+{
+  "type": "relation",
+  "id": 15020209,
+  "center": {
+    "lat": -30.0422974,
+    "lon": -51.1595625
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Quadras de tênis Bohrer",
+    "sport": "tennis",
+    "type": "multipolygon"
+  }
+}
+
+  ]
+}
