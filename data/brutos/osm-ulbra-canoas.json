@@ -1,0 +1,51 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-03T15:04:38Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 3693821881,
+  "lat": -29.8869159,
+  "lon": -51.1628055,
+  "tags": {
+    "amenity": "university",
+    "name": "Ulbra",
+    "operator": "Comunidade Evangélica São Paulo"
+  }
+},
+{
+  "type": "way",
+  "id": 93462358,
+  "center": {
+    "lat": -29.8870514,
+    "lon": -51.1612342
+  },
+  "tags": {
+    "amenity": "university",
+    "building": "yes",
+    "name": "Reitoria ULBRA"
+  }
+},
+{
+  "type": "way",
+  "id": 365370063,
+  "center": {
+    "lat": -29.8866848,
+    "lon": -51.1555289
+  },
+  "tags": {
+    "amenity": "university",
+    "name": "ULBRA",
+    "opening_hours": "Mo-Fr 07:30-22:00; Sa 08:00-14:00",
+    "website": "https://www.ulbra.br/",
+    "wikidata": "Q5650092"
+  }
+}
+
+  ]
+}
