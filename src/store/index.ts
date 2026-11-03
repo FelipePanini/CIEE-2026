@@ -17,6 +17,7 @@ import { CENARIOS, type BoletimAtual, type CenarioId } from '../engine/cenarios'
 import { PARAMETROS_PADRAO, type IdParametro } from '../engine/parametros';
 import { VOLUNTARIOS_PADRAO, type Zona } from '../engine/producao';
 import type { Fase, IdItem } from '../engine/urgencia';
+import type { Dado } from '../engine/tipos';
 
 export type Qualidade = 'alta' | 'media' | '2d';
 
@@ -75,6 +76,10 @@ export interface Estado {
   setAnimacoesPausadas: (v: boolean) => void;
   setApresentacao: (a: Partial<Estado['apresentacao']>) => void;
   restaurarPadroes: () => void;
+  /** Volta a uma entrada salva (o Modo Apresentação restaura o estado do usuário ao sair). */
+  setEntrada: (e: Entrada) => void;
+  /** Leituras ao vivo de /api/niveis; ficam na entrada para o motor e as telas usarem. */
+  setNiveisAoVivo: (n: NonNullable<Entrada['niveisReais']>) => void;
 }
 
 const agoraISO = () => new Date().toISOString();
@@ -121,7 +126,7 @@ const movimentoReduzidoInicial = () =>
   typeof window !== 'undefined' &&
   window.matchMedia?.('(prefers-reduced-motion: reduce)').matches === true;
 
-export const useOperacao = create<Estado>((set, get) => {
+export const useOperacao = create<Estado>((set) => {
   const mudar = (f: (e: Entrada) => Partial<Entrada>) =>
     set((s) => ({ entrada: { ...s.entrada, ...f(s.entrada), agora: agoraISO() } }));
   return {
@@ -237,9 +242,23 @@ export const useOperacao = create<Estado>((set, get) => {
     setQualidade: (qualidade) => set({ qualidade }),
     setAnimacoesPausadas: (animacoesPausadas) => set({ animacoesPausadas }),
     setApresentacao: (a) => set((s) => ({ apresentacao: { ...s.apresentacao, ...a } })),
-    restaurarPadroes: () => set({ entrada: entradaInicial(get().entrada.cenario) }),
+    restaurarPadroes: () =>
+      set((s) => ({
+        entrada: { ...entradaInicial(s.entrada.cenario), niveisReais: s.entrada.niveisReais },
+      })),
+    setEntrada: (entrada) =>
+      set((s) => ({
+        entrada: { ...entrada, niveisReais: s.entrada.niveisReais, agora: agoraISO() },
+      })),
+    setNiveisAoVivo: (niveisReais) => mudar(() => ({ niveisReais })),
   };
 });
+
+/** Nível atual de uma estação: leitura ao vivo (/api/niveis) se houver, senão o último JSON publicado. */
+export function useNivelAtual(estacao: string): Dado<number> {
+  const vivo = useOperacao((s) => s.entrada.niveisReais?.[estacao]);
+  return vivo ?? DADOS.rios.estacoes.find((e) => e.id === estacao)!.nivel_atual;
+}
 
 /** Resultado derivado da entrada atual (memoizado por referência da entrada). */
 export function useResultado(): Resultado {

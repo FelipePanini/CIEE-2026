@@ -68,3 +68,18 @@ export function picosAcima(l: Leitura[], limiar_m: number, gapDias = 3): Leitura
 }
 
 export const ultimaLeitura = (l: Leitura[]): Leitura | null => (l.length ? l[l.length - 1]! : null);
+
+/** Dado (Regra nº 1) do nível atual a partir da leitura mais recente — mesmo formato em JSON e na API. */
+export function dadoNivelAtual(estacao: IdEstacao, ult: Leitura, url: string, consulta: string) {
+  const d = ult.dataHora;
+  return {
+    valor: ult.nivel_m,
+    unidade: 'm',
+    fonte: `ANA — telemetria ${ESTACOES_ANA[estacao].nome}, leitura de ${d.slice(8, 10)}/${d.slice(5, 7)}/${d.slice(0, 4)} ${d.slice(11, 16)}`,
+    url,
+    data_referencia: d.replace(' ', 'T').slice(0, 16),
+    data_consulta: consulta,
+    camada: 'ATUAL' as const,
+    nota: 'Leitura telemétrica mais recente disponível (dado bruto, sujeito a consistência pela ANA/SGB).',
+  };
+}

@@ -10,7 +10,7 @@ import {
   YAxis,
 } from 'recharts';
 import { DADOS, municipioPorIbge, nomeMunicipio } from '../../data/carregar';
-import { useOperacao, useResultado } from '../../store';
+import { useNivelAtual, useOperacao, useResultado } from '../../store';
 import { Grade, Kpi, Painel, TituloTela } from '../../ui/blocos';
 import { MapaSVG, type PinoMapa } from '../../ui/MapaSVG';
 import { Numero, SeloDoDado } from '../../ui/Numero';
@@ -34,6 +34,7 @@ export function SliderNivel({ estacao }: { estacao: string }) {
   const r = useResultado();
   const setNivel = useOperacao((s) => s.setNivel);
   const manual = useOperacao((s) => s.entrada.niveis[estacao]);
+  const nivelReal = useNivelAtual(estacao);
   const picos = picosDaEstacao(estacao);
   const max = Math.ceil(
     Math.max(...picos.map((p) => n(p.nivel) ?? 0), n(est.cota_inundacao) ?? 0) * 1.08,
@@ -78,8 +79,7 @@ export function SliderNivel({ estacao }: { estacao: string }) {
       </div>
       <div className="flex flex-wrap items-center gap-2 text-[0.68rem] text-creme-200">
         <span>
-          Nível real agora:{' '}
-          <Numero dado={est.nivel_atual} formatar={(v) => `${fmt.dec2(v)} m`} selo />
+          Nível real agora: <Numero dado={nivelReal} formatar={(v) => `${fmt.dec2(v)} m`} selo />
         </span>
         {manual !== undefined && (
           <button onClick={() => setNivel(estacao, null)} className="underline">

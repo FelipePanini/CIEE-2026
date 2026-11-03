@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { DADOS } from '../data/carregar';
 import { formatarDataHora } from './formato';
 import { SeloCamada } from './SeloCamada';
+import { useOperacao } from '../store';
 
 /** Cabeçalho fixo: marca, data da última atualização dos dados e controles globais (passados como filhos). */
 export function Cabecalho({ children }: { children?: ReactNode }) {
@@ -21,8 +22,22 @@ export function Cabecalho({ children }: { children?: ReactNode }) {
         <span className="font-semibold tabular-nums text-creme-100">
           {formatarDataHora(DADOS.meta.ultima_atualizacao)}
         </span>
+        <RiosAoVivo />
       </div>
     </header>
+  );
+}
+
+/** Aparece só quando /api/niveis trouxe uma leitura mais nova que o JSON publicado. */
+function RiosAoVivo() {
+  const vivos = useOperacao((s) => s.entrada.niveisReais);
+  const refs = Object.values(vivos ?? {}).map((d) => d!.data_referencia);
+  if (!refs.length) return null;
+  const ultima = refs.sort().at(-1)!;
+  return (
+    <span className="text-piscina-300" title="Telemetria da ANA via /api/niveis">
+      rios ao vivo (ANA): {ultima.slice(8, 10)}/{ultima.slice(5, 7)} {ultima.slice(11, 16)}
+    </span>
   );
 }
 

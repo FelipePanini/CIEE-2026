@@ -1,5 +1,6 @@
 import type { CenarioId } from '../engine/cenarios';
 import { ILHAS, paraMundo, type Preset } from './mundo';
+import { ETAPAS } from '../modules/apresentacao/etapas';
 
 const em = (
   ilha: keyof typeof ILHAS,
@@ -23,7 +24,12 @@ function foco(cenario: CenarioId): [number, number] {
 }
 
 export const PRESET_TELA: Record<string, (c: CenarioId) => Preset> = {
-  panorama: () => ({ pos: [0, 82, 92], alvo: [2, 0, 4] }),
+  // na situação atual a crise está no Vale do Taquari: a câmera desce sobre ele
+  panorama: (c) => {
+    if (c !== 'atual') return { pos: [0, 82, 92], alvo: [2, 0, 4] };
+    const [x, z] = foco(c);
+    return { pos: [x + 10, 50, z + 62], alvo: [x + 6, 0, z + 6] };
+  },
   'linha-do-tempo': () => ({ pos: [-4, 80, 92], alvo: [3, 0, 3] }),
   urgencia: () => em('prateleira', [0, 11, 24], [0, 3.5, 0]),
   arrecadacao: (c) => {
@@ -36,14 +42,31 @@ export const PRESET_TELA: Record<string, (c: CenarioId) => Preset> = {
   administracao: () => em('organograma', [0, 26, 34], [0, 2, 0]),
   // a rede de parceiros cobre as duas regiões (RMPA e Vale): visão da bacia inteira
   parceiros: () => ({ pos: [3, 78, 90], alvo: [3, 0, 4] }),
-  fontes: () => em('bastidores', [0, 20, 36], [0, 6, 0]),
+  // alvo à esquerda do centro da pilha: os rótulos (à esquerda das placas) não ficam sob a navegação
+  fontes: () => em('bastidores', [-7, 22, 40], [-7, 5, 0]),
 };
+
+/** Abertura do Modo Apresentação: começa alto e longe e desce até a RMPA enquanto a água sobe. */
+export const VOO_ABERTURA: { inicio: Preset; fim: Preset } = {
+  inicio: { pos: [-70, 190, 230], alvo: [0, 0, 0] },
+  fim: { pos: [4, 52, 66], alvo: [12, 0, 12] },
+};
+/** Encerramento: a bacia inteira vista de longe. */
+const ENCERRAMENTO: Preset = { pos: [0, 118, 150], alvo: [0, 0, 6] };
 
 export function presetDaTela(
   tela: string,
   cenario: CenarioId,
   etapaApresentacao: number | null,
 ): Preset {
-  void etapaApresentacao;
+  const especial = etapaApresentacao === null ? undefined : ETAPAS[etapaApresentacao]?.camera;
+  if (especial === 'abertura') return VOO_ABERTURA.fim;
+  // bastidores na apresentação: um pouco mais longe e mais alto, para o texto caber embaixo
+  if (etapaApresentacao !== null && tela === 'fontes')
+    return em('bastidores', [0, 25, 56], [0, 0.5, 0]);
+  if (especial === 'encerramento') return ENCERRAMENTO;
   return (PRESET_TELA[tela] ?? PRESET_TELA.panorama!)(cenario);
 }
+
+export const cameraEspecial = (etapa: number | null) =>
+  etapa === null ? undefined : ETAPAS[etapa]?.camera;

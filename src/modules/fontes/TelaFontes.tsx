@@ -1,3 +1,10 @@
+import { useNivelAtual } from '../../store';
+import { camadasArquitetura, INVENTARIO } from './arquitetura';
+import { TituloTela } from '../../ui/blocos';
+import { SeloCamada } from '../../ui/SeloCamada';
+import { COR_CAMADA } from '../../ui/cores';
+import { CAMADAS } from '../../engine/tipos';
+import { ROTULO_CAMADA } from '../../engine/camadas';
 import { DADOS, nomeMunicipio } from '../../data/carregar';
 import { Numero } from '../../ui/Numero';
 import { fmt } from '../../ui/formato';
@@ -7,10 +14,11 @@ export function TelaFontes() {
   const { eventos, rios, previsao, orcamento, precos, esfera } = DADOS;
   return (
     <div className="flex flex-col gap-6">
+      <Arquitetura />
       <section className="flex flex-col gap-2">
-        <h1 className="font-display text-3xl text-creme-100 sm:text-4xl">
+        <h2 className="font-display text-2xl text-creme-100 sm:text-3xl">
           A enchente não acabou em 2024.
-        </h1>
+        </h2>
         <p className="max-w-3xl text-creme-200">
           Cheias com pessoas fora de casa no RS de 2024 a 2026 — e a previsão para os próximos
           meses. Passe o mouse (ou toque) em qualquer número para ver a fonte, o link e a data.
@@ -75,7 +83,7 @@ export function TelaFontes() {
             {rios.estacoes.map((r) => (
               <li key={r.id} className="flex flex-wrap items-baseline gap-x-3">
                 <span className="min-w-56 opacity-80">{r.nome}</span>
-                <Numero dado={r.nivel_atual} formatar={(v) => `${fmt.dec2(v)} m`} selo />
+                <NivelAtual estacao={r.id} />
                 <span className="text-xs opacity-70">
                   cota de inundação{' '}
                   <Numero dado={r.cota_inundacao} formatar={(v) => `${fmt.dec2(v)} m`} />
@@ -158,5 +166,82 @@ export function TelaFontes() {
         </div>
       </section>
     </div>
+  );
+}
+
+function NivelAtual({ estacao }: { estacao: string }) {
+  const d = useNivelAtual(estacao);
+  return <Numero dado={d} formatar={(v) => `${fmt.dec2(v)} m`} selo />;
+}
+
+/** Equivalente 2D dos Bastidores 3D: as 4 camadas com as contagens reais e o inventário por camada. */
+function Arquitetura() {
+  const camadas = camadasArquitetura();
+  const total = INVENTARIO.dados || 1;
+  return (
+    <section className="flex flex-col gap-3" aria-labelledby="titulo-arquitetura">
+      <TituloTela
+        titulo="Bastidores e fontes"
+        area="geral"
+        pergunta="como o sistema é organizado"
+      />
+      <ol className="grid gap-2 md:grid-cols-4" id="titulo-arquitetura">
+        {camadas.map((c, i) => (
+          <li
+            key={c.id}
+            className="painel flex flex-col gap-1 p-3"
+            style={{ borderTop: `4px solid ${c.cor}` }}
+          >
+            <span className="font-display text-lg">
+              {i + 1}. {c.nome}
+              {i < camadas.length - 1 && (
+                <span aria-hidden className="ml-2 text-piscina-300">
+                  →
+                </span>
+              )}
+            </span>
+            {c.linhas.map((l) => (
+              <span key={l} className="text-xs text-creme-200">
+                {l}
+              </span>
+            ))}
+          </li>
+        ))}
+      </ol>
+      <figure className="painel flex flex-col gap-2 p-3">
+        <figcaption className="text-xs font-semibold">
+          {INVENTARIO.dados} números com fonte, por camada
+        </figcaption>
+        <div
+          className="flex h-5 w-full gap-[2px] overflow-hidden rounded"
+          role="img"
+          aria-label={CAMADAS.map((c) => `${ROTULO_CAMADA[c]}: ${INVENTARIO.porCamada[c]}`).join(
+            ', ',
+          )}
+        >
+          {CAMADAS.map((c) => (
+            <div
+              key={c}
+              title={`${ROTULO_CAMADA[c]}: ${INVENTARIO.porCamada[c]}`}
+              style={{
+                width: `${(INVENTARIO.porCamada[c] / total) * 100}%`,
+                background: COR_CAMADA[c],
+              }}
+            />
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-3 text-xs">
+          {CAMADAS.map((c) => (
+            <span key={c} className="inline-flex items-center gap-1.5">
+              <SeloCamada camada={c} /> {INVENTARIO.porCamada[c]}
+            </span>
+          ))}
+          <span className="text-creme-200">· {INVENTARIO.aConfirmar} marcados A CONFIRMAR</span>
+        </div>
+        <p className="text-[0.68rem] text-creme-200/80">
+          Domínios consultados: {INVENTARIO.dominios.join(' · ')}
+        </p>
+      </figure>
+    </section>
   );
 }

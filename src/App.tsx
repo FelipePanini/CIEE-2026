@@ -7,6 +7,8 @@ import { AvisoModoLeve, SeletorQualidade } from './ui/Qualidade';
 import { moduloPorId } from './modules/registro';
 import { useOperacao } from './store';
 import { PaginaRastreio } from './modules/humano/Rastreio';
+import { useNiveisAoVivo } from './data/niveisAoVivo';
+import { BotaoApresentacao, ModoApresentacao } from './modules/apresentacao/ModoApresentacao';
 
 const Palco = lazy(() => import('./three/Palco'));
 
@@ -19,28 +21,37 @@ export function App() {
 
 function Central() {
   useRotaURL();
+  useNiveisAoVivo();
   const tela = useOperacao((s) => s.tela);
   const qualidade = useOperacao((s) => s.qualidade);
   const recolhido = useOperacao((s) => s.painelRecolhido);
   const setRecolhido = useOperacao((s) => s.setPainelRecolhido);
+  const apresentando = useOperacao((s) => s.apresentacao.ativa);
   const Modulo = moduloPorId(tela).Painel2D;
   const com3d = qualidade !== '2d';
+  const painelFechado = recolhido || apresentando;
   // o Canvas é criado na primeira vez que o 3D é pedido e nunca mais desmontado (um único contexto WebGL)
   const [montado3d, setMontado3d] = useState(com3d);
   if (com3d && !montado3d) setMontado3d(true);
   return (
     <div className="flex h-full flex-col">
-      <Cabecalho>
-        <SeletorCenario />
-        <SeletorFase />
-        <IndicadorAlerta />
-        <BotaoCartaCrise />
-        <SeletorQualidade />
-        <PainelConfiguracao />
-      </Cabecalho>
-      <BannerCrise />
+      {!apresentando && (
+        <>
+          <Cabecalho>
+            <SeletorCenario />
+            <SeletorFase />
+            <IndicadorAlerta />
+            <BotaoCartaCrise />
+            <BotaoApresentacao />
+            <SeletorQualidade />
+            <PainelConfiguracao />
+          </Cabecalho>
+          <BannerCrise />
+        </>
+      )}
+      {apresentando && com3d && <ModoApresentacao com3d />}
       <div className="flex min-h-0 flex-1 flex-col md:flex-row">
-        <Navegacao />
+        {!apresentando && <Navegacao />}
         <main className="relative min-h-0 flex-1 overflow-hidden">
           {montado3d && (
             <div
@@ -59,8 +70,8 @@ function Central() {
               </Suspense>
             </div>
           )}
-          <AvisoModoLeve />
-          {com3d && (
+          {!apresentando && <AvisoModoLeve />}
+          {com3d && !apresentando && (
             <button
               onClick={() => setRecolhido(!recolhido)}
               className="absolute right-3 top-3 z-20 rounded-md bg-navy-950/85 px-2.5 py-1.5 text-xs font-semibold ring-1 ring-piscina-300/40"
@@ -72,10 +83,11 @@ function Central() {
           <div
             className={
               com3d
-                ? `absolute bottom-0 right-0 top-12 z-10 w-[min(34rem,100%)] overflow-y-auto rounded-tl-2xl bg-navy-900/88 p-4 shadow-2xl ring-1 ring-piscina-300/20 backdrop-blur transition-transform duration-300 ${recolhido ? 'translate-x-full' : ''}`
+                ? `absolute bottom-0 right-0 top-12 z-10 w-[min(34rem,100%)] overflow-y-auto rounded-tl-2xl bg-navy-900/88 p-4 shadow-2xl ring-1 ring-piscina-300/20 backdrop-blur transition-transform duration-300 ${painelFechado ? 'translate-x-full' : ''}`
                 : 'h-full overflow-y-auto'
             }
             data-modo={com3d ? '3d' : '2d'}
+            aria-hidden={com3d && apresentando}
           >
             <div
               className={
@@ -84,13 +96,14 @@ function Central() {
                   : 'mx-auto flex max-w-7xl flex-col gap-4 p-4 pb-10'
               }
             >
+              {apresentando && !com3d && <ModoApresentacao com3d={false} />}
               <Modulo />
               <LegendaCamadas />
             </div>
           </div>
         </main>
       </div>
-      <Rodape />
+      {!apresentando && <Rodape />}
     </div>
   );
 }

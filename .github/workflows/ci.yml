@@ -31,3 +31,10 @@ jobs:
         run: npm test
       - name: Build
         run: npm run build
+      # a função /api/niveis contra a ANA de verdade (o runner tem internet aberta); não bloqueia o CI
+      # se a ANA estiver fora do ar — o app cai no último JSON publicado
+      - name: Smoke test /api/niveis (ANA ao vivo)
+        continue-on-error: true
+        run: >-
+          npx tsx -e "import('./api/niveis.ts').then(async (m) => { const r = await m.buscarNiveis();
+          console.log(JSON.stringify(r, null, 1)); if (!r.ok) process.exit(1); })"

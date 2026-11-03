@@ -17,6 +17,36 @@ npm run check        # lint + typecheck + validação dos dados + testes
 
 Requer Node 20 ou superior.
 
+## Modo Apresentação (para a banca)
+
+Clique em **▶ Apresentar** no cabeçalho. O app entra em tela cheia e percorre o pitch em 13 etapas, sempre no mesmo mundo 3D (a câmera viaja; nada recarrega):
+
+1. Abertura — voo sobre a bacia; a água sobe até o pico de maio/2024 enquanto os contadores sobem junto
+2. Linha do tempo — "a enchente não acabou em 2024" (as colunas 3D passam por 2024 → 2025 → 2026)
+3. Crise atual no mapa 3D (Vale do Taquari)
+4. Urgência · 5. Arrecadação · 6. Rotas · 7. Quadra · 8. Gastos · 9. Parceiros
+5. Carta de Crise ao vivo (BR-116 bloqueada em Canoas, inspirada no boletim da PRF de 10/05/2024) — mostra o tempo de recálculo; **D** desfaz
+6. Prontidão — "a próxima cheia já tem previsão"
+7. Bastidores — Fontes → Dados → Motor → Telas, com as contagens reais
+8. Encerramento — "Liderar é transformar coordenação em confiança." + **Gerar card para o LinkedIn**
+
+| Tecla                         | Ação                             |
+| ----------------------------- | -------------------------------- |
+| → · espaço · Enter · PageDown | próxima etapa                    |
+| ← · Backspace · PageUp        | etapa anterior                   |
+| Home / End                    | primeira / última                |
+| F                             | liga/desliga tela cheia          |
+| D                             | desfaz a Carta de Crise          |
+| Esc                           | sai e restaura o estado anterior |
+
+O passador de slides (clicker) funciona porque envia PageUp/PageDown. Ao sair, a tela, o cenário, as cartas e os ajustes voltam exatamente como estavam.
+
+**Card do LinkedIn.** Na última etapa, o botão gera um PNG 1200×627 com o quadro atual do 3D, os números de impacto (cada um com a fonte) e as hashtags **#CIEE #AprendizCIEE #Conteudos**. "Copiar texto do post" copia uma legenda pronta. A imagem de compartilhamento (Open Graph, `public/og.jpg`) sai do mesmo gerador: `npm run build && npx vite preview --port 4173` e, em outro terminal, `npm run gerar-og`.
+
+**Rastreio do kit.** A etiqueta com QR fica na tela Quadra. O QR abre `/rastreio/KIT-2026-0001`, a página pública do doador, que mostra só o caminho da caixa (coleta → montagem → bilhete → rota → abrigo), sem nenhum dado de família.
+
+**Sem internet na sala.** Abra o app uma vez com internet (de preferência no mesmo computador da apresentação). O service worker guarda código, dados, relevo e fontes, e depois disso tudo funciona offline com o último dado publicado.
+
 ## Atualizar os dados antes da apresentação
 
 ```bash
@@ -35,7 +65,11 @@ npm run validar-dados     # confere a Regra nº 1 e regenera docs/a-confirmar.md
 
 1. Em [vercel.com/new](https://vercel.com/new), importe o repositório `felipepanini/ciee-2026`. O preset **Vite** é detectado pelo `vercel.json`.
 2. Pronto: cada push gera um _preview deployment_ por branch e o `main` vira produção.
-3. Opcional: se a ANA exigir credencial no futuro, configure `ANA_USUARIO`/`ANA_SENHA` nas variáveis de ambiente da Vercel. Nunca coloque chaves no código do cliente.
+3. O que vem junto, sem configurar nada:
+   - **`/api/niveis`** ([`api/niveis.ts`](api/niveis.ts)): função serverless que lê a telemetria da ANA no servidor (contorna o CORS) e devolve cada nível no formato da Regra nº 1. Fica 10 min em cache na borda (`s-maxage=600`, `stale-while-revalidate=3600`). O app consulta a função ao abrir e a cada 10 min. Se ela falhar, o app segue com `data/rios.json`, e o cabeçalho mostra "rios ao vivo (ANA)" só quando a leitura da função é mais nova que o JSON.
+   - **PWA** (vite-plugin-pwa): `manifest.webmanifest` + service worker com tudo pré-carregado; `/api/niveis` usa a rede primeiro e, offline, a última resposta salva.
+   - **Open Graph**: no build, a URL absoluta da imagem usa `VERCEL_PROJECT_PRODUCTION_URL`, que a própria Vercel define.
+4. Opcional: se a ANA exigir credencial no futuro, configure `ANA_USUARIO`/`ANA_SENHA` nas variáveis de ambiente da Vercel. Nunca coloque chaves no código do cliente.
 
 ## Regra nº 1: dados confiáveis, rastreáveis e com data
 
@@ -66,7 +100,8 @@ api/niveis.ts      função serverless (Vercel): níveis dos rios sem bloqueio d
 src/engine/        motor puro e testado: camadas, urgência, cobertura, rotas (Dijkstra + 2-opt), custos…
 src/store/         estado único (Zustand), orientado a eventos: Carta de Crise = evento que se desfaz
 src/modules/       uma pasta por tela: panorama, linha-do-tempo, urgencia, rotas, quadra, gastos, administracao, parceiros…
-src/three/         Canvas 3D único e persistente, câmera e qualidade
+                   + humano/ (rastreio por QR, mural de relatos) · apresentacao/ (13 etapas, card do LinkedIn)
+src/three/         Canvas 3D único e persistente: bacia (DEM), ilhas (quadra, prateleira, kit, organograma, bastidores)
 src/ui/            selos de camada, número rastreável, componentes
 ```
 
@@ -211,6 +246,25 @@ Números que não puderam ser confirmados na fonte oficial aparecem em amarelo n
 - **leptospirose › indicadores › confirmados** (`saude.json`) — conferir em: SES-RS / CEVS — informes epidemiológicos de leptospirose ([link](https://saude.rs.gov.br/))
 
 <!-- a-confirmar:fim -->
+
+## Critérios de aceite
+
+| Critério                                                          | Situação                                                | Como foi verificado                                                                                                                                              |
+| ----------------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Todo número tem fonte, data e selo de camada                      | ✅                                                      | `validar-dados` no CI (zod + regras); `Numero` mostra fonte/link/datas no hover/toque; valores derivados levam o selo CALCULADO com a procedência de cada insumo |
+| Cabeçalho mostra a última atualização dos dados                   | ✅                                                      | "Dados atualizados em DD/MM/AAAA HH:mm" lido de `data/meta.json`                                                                                                 |
+| SIMULADO só em estoques, parceiros, relatos e eventos hipotéticos | ✅                                                      | `validar-dados` reprova SIMULADO fora de `data/simulado/`; o inventário dos Bastidores mostra 54 dos 241 números nessa camada                                    |
+| Seletor Case / Atual / Prontidão e todos os módulos respondem     | ✅                                                      | testes do motor nos 3 cenários + screenshots de cada tela                                                                                                        |
+| Mudar um parâmetro de uma área altera as outras                   | ✅                                                      | store único → `simular()`; teste do motor: bloquear um trecho muda ETA → urgência → metas de arrecadação → semáforo da Logística                                 |
+| Carta de Crise recalcula em < 1 s e pode ser desfeita             | ✅                                                      | teste do motor (aplica em < 1 s; desfazer volta exatamente ao estado anterior); a etapa 10 da apresentação mostra o tempo medido (poucos ms)                     |
+| Todo 3D carrega dado e tem equivalente 2D                         | ✅                                                      | cada cena tem Painel2D; Bastidores 3D ↔ seção "Bastidores e fontes"                                                                                              |
+| Um único contexto WebGL                                           | ✅                                                      | Playwright: 1 renderer, 0 perdas de contexto e 1 canvas após percorrer as 13 etapas e alternar 2D/3D                                                             |
+| 60 fps no modo alta (GPU integrada) ou sugestão do modo leve      | ⚠️ a medir na máquina da banca                          | `PerformanceMonitor` sugere o modo médio/2D quando o fps cai; pós-processamento só no alta e carregado sob demanda; DPR até 1,75                                 |
+| Publicado na Vercel e funcionando offline (PWA)                   | ⏳ falta importar o repositório na Vercel (passo acima) | offline testado com Playwright no build de produção: recarregar sem rede abre o app e o 3D                                                                       |
+| CI verde e Action de atualização funcionando                      | ✅                                                      | GitHub Actions `ci` (lint, typecheck, validar-dados, testes, build) e `atualizar-dados` (diária + manual)                                                        |
+| Link no LinkedIn mostra imagem e título (Open Graph)              | ✅ no código / ⏳ após o deploy                         | `og:title`, `og:description`, `og:image` 1200×630 (`public/og.jpg`)                                                                                              |
+| Nenhuma empresa real como doadora nem dado pessoal real           | ✅                                                      | nomes de parceiros validados pelo padrão fictício; rodapé LGPD; rastreio sem dado de família                                                                     |
+| Modo Apresentação percorre o pitch só com o teclado               | ✅                                                      | Playwright: 13 etapas com → e saída com Esc, estado restaurado                                                                                                   |
 
 ## Privacidade
 

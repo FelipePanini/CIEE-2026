@@ -15,6 +15,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
+  dadoNivelAtual,
   ESTACOES_ANA,
   lerTelemetria,
   maximoDiario,
@@ -96,16 +97,7 @@ function atualizarRios(res: Resultado[]): void {
     const ult = ultimaLeitura(r.leituras)!;
     const est = rios.estacoes.find((e) => e.id === r.estacao);
     if (est) {
-      est.nivel_atual = {
-        valor: ult.nivel_m,
-        unidade: 'm',
-        fonte: `ANA — telemetria ${ESTACOES_ANA[r.estacao].nome}, leitura de ${ult.dataHora.slice(8, 10)}/${ult.dataHora.slice(5, 7)}/${ult.dataHora.slice(0, 4)} ${ult.dataHora.slice(11, 16)}`,
-        url: r.url,
-        data_referencia: ult.dataHora.replace(' ', 'T').slice(0, 16),
-        data_consulta: iso(hoje),
-        camada: 'ATUAL',
-        nota: 'Leitura telemétrica mais recente disponível (dado bruto, sujeito a consistência pela ANA/SGB).',
-      };
+      est.nivel_atual = dadoNivelAtual(r.estacao, ult, r.url, iso(hoje));
     }
     const id = `${r.estacao}-recente`;
     const serie = {

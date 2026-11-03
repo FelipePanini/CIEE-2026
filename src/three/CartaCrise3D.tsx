@@ -51,6 +51,7 @@ export function CartaCrise3D() {
   const r = useResultado();
   const reduzido = useOperacao((s) => s.movimentoReduzido);
   const recolhido = useOperacao((s) => s.painelRecolhido);
+  const apresentando = useOperacao((s) => s.apresentacao.ativa);
   const camera = useThree((s) => s.camera);
   const grupo = useRef<THREE.Group>(null);
   const [carta, setCarta] = useState<Carta | null>(null);
@@ -84,14 +85,15 @@ export function CartaCrise3D() {
       return;
     }
     // segue a câmera: 9 unidades à frente
-    const desloc = recolhido || window.innerWidth < 900 ? 0 : -2.3;
+    // painel aberto à direita → carta à esquerda; na apresentação o texto fica à esquerda → carta à direita
+    const desloc = apresentando ? 2.4 : recolhido || window.innerWidth < 900 ? 0 : -2.3;
     const frente = new THREE.Vector3(desloc, 0, -9).applyQuaternion(camera.quaternion);
     g.position.copy(camera.position).add(frente);
     g.quaternion.copy(camera.quaternion);
     const virada = reduzido ? 1 : Math.min(1, t / 0.9);
     g.rotateY(Math.PI * (1 - THREE.MathUtils.smootherstep(virada, 0, 1)));
     const saida = t > 3.4 ? (t - 3.4) / 0.8 : 0;
-    g.scale.setScalar(1 - saida * 0.9);
+    g.scale.setScalar((apresentando ? 0.8 : 1) * (1 - saida * 0.9));
   });
 
   return (
@@ -106,27 +108,32 @@ export function CartaCrise3D() {
       </mesh>
       <Html
         transform
-        position={[0, -0.05, 0.06]}
+        position={[0, 0, 0.06]}
         distanceFactor={4.2}
         zIndexRange={[1000, 900]}
         className="pointer-events-none select-none"
       >
+        {/* o cartão inteiro também em HTML, do tamanho da carta 3D (5,2 × 3,2): cobre os rótulos do
+            mapa, porque o DOM fica sempre acima do WebGL */}
         <div
-          className="w-[300px] text-left text-navy-900"
+          className="h-[283px] w-[460px] overflow-hidden rounded-sm bg-creme-100 text-left text-navy-900"
           style={{ display: carta ? 'block' : 'none' }}
         >
           {carta && (
             <>
-              <p className="text-[9px] font-bold uppercase tracking-[0.2em]">
-                Carta de Crise · {carta.severidade}
-              </p>
-              <p className="font-display text-[20px] leading-tight">{carta.titulo}</p>
-              <p className="mt-1 text-[11px] leading-snug">{carta.descricao}</p>
-              {carta.inspirado_em && (
-                <p className="mt-1 inline-block rounded bg-coral-500 px-1 text-[8px] font-bold uppercase text-navy-950">
-                  inspirado em fato real
+              <div className="h-[26px]" style={{ background: COR[carta.severidade] }} />
+              <div className="flex flex-col gap-1.5 px-5 py-3">
+                <p className="text-[13px] font-bold uppercase tracking-[0.2em]">
+                  Carta de Crise · {carta.severidade}
                 </p>
-              )}
+                <p className="font-display text-[30px] leading-tight">{carta.titulo}</p>
+                <p className="text-[16px] leading-snug">{carta.descricao}</p>
+                {carta.inspirado_em && (
+                  <p className="self-start rounded bg-coral-500 px-1.5 py-0.5 text-[12px] font-bold uppercase text-navy-950">
+                    inspirado em fato real
+                  </p>
+                )}
+              </div>
             </>
           )}
         </div>

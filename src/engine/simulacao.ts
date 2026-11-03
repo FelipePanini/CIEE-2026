@@ -57,6 +57,8 @@ export interface Entrada {
   ajustes: AjusteCoordenador[];
   eventos: EventoAtivo[];
   niveis: Partial<Record<string, number>>;
+  /** Leituras ao vivo da ANA via /api/niveis (substituem o nivel_atual do JSON quando mais novas). */
+  niveisReais?: Partial<Record<string, Dado<number>>>;
   /** Volume extra registrado nos pontos de coleta (m³), por ponto. */
   volumes?: Record<string, number>;
   /** hora de referência da simulação (ISO) — usada nos alertas */
@@ -225,7 +227,8 @@ export function simular(dados: Dados, e: Entrada): Resultado {
   const veiculosRemovidos = new Set<string>();
   const voluntarios = { ...e.voluntarios };
   const niveis: Record<string, number> = {};
-  for (const est of dados.rios.estacoes) niveis[est.id] = num(est.nivel_atual);
+  for (const est of dados.rios.estacoes)
+    niveis[est.id] = num(e.niveisReais?.[est.id] ?? est.nivel_atual);
   Object.assign(niveis, e.niveis);
   for (const { ef } of efeitos) {
     switch (ef.tipo) {
