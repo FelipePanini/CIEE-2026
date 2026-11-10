@@ -65,6 +65,7 @@ function Pinos({ relevo, rotulos }: { relevo: Relevo; rotulos: boolean }) {
               />
             </mesh>
             <Rotulo
+              mapa
               visivel={rotulos && l.pessoasN > 0}
               position={[0, h + 0.6, 0]}
               zIndexRange={[5, 0]}
@@ -247,6 +248,7 @@ function Municipios({ relevo, visivel }: { relevo: Relevo; visivel: boolean }) {
         const p = ponto3D(relevo, g.lat / g.n, g.lon / g.n, 0);
         return (
           <Rotulo
+            mapa
             visivel={visivel}
             key={ibge}
             position={[p.x + 1.6, p.y + 3.2, p.z - 1.2]}
