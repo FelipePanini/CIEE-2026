@@ -1,16 +1,21 @@
 # Checklist de atualização dos dados
 
-Gerado por `npm run atualizar-dados` em 03/11/2026, 14:06:29.
+Gerado por `npm run atualizar-dados` em 09/11/2026, 22:38:49.
 
 ## Automático (feito pelo script)
 
-- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **12.95 m** em 2026-11-03 13:45:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=01/07/2026&dataFim=03/11/2026))
-- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **1.20 m** em 2026-11-03 13:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=01/07/2026&dataFim=03/11/2026))
+- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **12.91 m** em 2026-11-09 22:15:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=08/07/2026&dataFim=10/11/2026))
+- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **1.33 m** em 2026-11-09 19:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=08/07/2026&dataFim=10/11/2026))
 
 ## Avisos e alertas recentes da Defesa Civil RS (conferir se há cheia ativa)
 
-- 03/11/2026 13:53 — [Defesa Civil alerta: condição de ALERTA para tempestade com vento e granizo que atuam nas proximidades de Quaraí](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-com-vento-e-granizo-que-atuam-nas-proximidades-de-quarai)
-- 01/11/2026 22:11 — [Defesa Civil alerta: condição de ALERTA para tempestade com vento e granizo que atuam nas proximidades de Vacaria](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-com-vento-e-granizo-que-atuam-nas-proximidades-de-vacaria)
+- 06/11/2026 18:13 — [Defesa Civil alerta: condição de ALERTA para tempestade c/ granizo e vento, atuam nas proximidades de São José do Ouro](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-c-granizo-e-vento-atuam-nas-proximidades-de-sao-jose-do-ouro)
+- 06/11/2026 17:39 — [Defesa Civil alerta: condição de ALERTA para tempestade c/ granizo e vento, atuam nas proximidades de Maximiliano de Almeida](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-c-granizo-e-vento-atuam-nas-proximidades-de-maximiliano-de-almeida)
+- 06/11/2026 17:07 — [Defesa Civil alerta: condição de ALERTA para tempestade c/ granizo e vento, atuam nas proximidades de Erechim](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-c-granizo-e-vento-atuam-nas-proximidades-de-erechim)
+- 03/11/2026 17:06 — [Defesa Civil alerta: condição SEVERA para tempestade com granizo grande que atua nas proximidades de Mormaço, Espumoso e Tapera](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-severa-para-tempestade-com-granizo-grande-que-atua-nas-proximidades-de-mormaco-espumoso-e-tapera)
+- 06/11/2026 21:21 — [Defesa Civil alerta: condição de ALERTA para tempestade c/ granizo e vento, atuam nas proximidades de Barracão](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-c-granizo-e-vento-atuam-nas-proximidades-de-barracao)
+- 06/11/2026 20:46 — [Defesa Civil alerta: elevação do rio Carreiro. Risco ALTO de inundação em Guaporé](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-elevacao-do-rio-carreiro-risco-alto-de-inundacao-em-guapore)
+- 06/11/2026 20:28 — [Defesa Civil alerta: condição de ALERTA para tempestade c/ granizo e vento, atuam nas proximidades de São João da Urtiga](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-c-granizo-e-vento-atuam-nas-proximidades-de-sao-joao-da-urtiga)
 
 ## Manual (fontes sem API — conferir e editar o JSON correspondente)
 

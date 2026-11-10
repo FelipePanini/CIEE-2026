@@ -442,39 +442,11 @@
       "rotulo": "Últimos 125 dias",
       "camada": "ATUAL",
       "fonte": "ANA — telemetria Rio Taquari — Estrela/Lajeado (86879300)",
-      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=01/07/2026&dataFim=03/11/2026",
-      "data_consulta": "2026-11-03",
+      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=08/07/2026&dataFim=10/11/2026",
+      "data_consulta": "2026-11-10",
       "unidade": "m",
       "agregacao": "máximo diário",
       "pontos": [
-        [
-          "2026-07-01",
-          13.57
-        ],
-        [
-          "2026-07-02",
-          14.11
-        ],
-        [
-          "2026-07-03",
-          15.52
-        ],
-        [
-          "2026-07-04",
-          15.2
-        ],
-        [
-          "2026-07-05",
-          13.95
-        ],
-        [
-          "2026-07-06",
-          13.45
-        ],
-        [
-          "2026-07-07",
-          13.44
-        ],
         [
           "2026-07-08",
           13.37
@@ -949,7 +921,31 @@
         ],
         [
           "2026-11-03",
-          13.05
+          13.06
+        ],
+        [
+          "2026-11-04",
+          14.4
+        ],
+        [
+          "2026-11-05",
+          16.76
+        ],
+        [
+          "2026-11-06",
+          15.65
+        ],
+        [
+          "2026-11-07",
+          13.75
+        ],
+        [
+          "2026-11-08",
+          13.75
+        ],
+        [
+          "2026-11-09",
+          13.6
         ]
       ],
       "id": "taquari-lajeado-recente"
@@ -960,39 +956,11 @@
       "rotulo": "Últimos 125 dias",
       "camada": "ATUAL",
       "fonte": "ANA — telemetria Guaíba — Cais Mauá C6 (87450004)",
-      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=01/07/2026&dataFim=03/11/2026",
-      "data_consulta": "2026-11-03",
+      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=08/07/2026&dataFim=10/11/2026",
+      "data_consulta": "2026-11-10",
       "unidade": "m",
       "agregacao": "máximo diário",
       "pontos": [
-        [
-          "2026-07-01",
-          1.13
-        ],
-        [
-          "2026-07-02",
-          1.57
-        ],
-        [
-          "2026-07-03",
-          1.54
-        ],
-        [
-          "2026-07-04",
-          1.47
-        ],
-        [
-          "2026-07-05",
-          1.37
-        ],
-        [
-          "2026-07-06",
-          1.26
-        ],
-        [
-          "2026-07-07",
-          1.26
-        ],
         [
           "2026-07-08",
           1.13
@@ -1468,6 +1436,30 @@
         [
           "2026-11-03",
           1.21
+        ],
+        [
+          "2026-11-04",
+          1.14
+        ],
+        [
+          "2026-11-05",
+          1.37
+        ],
+        [
+          "2026-11-06",
+          1.37
+        ],
+        [
+          "2026-11-07",
+          1.63
+        ],
+        [
+          "2026-11-08",
+          1.6
+        ],
+        [
+          "2026-11-09",
+          1.39
         ]
       ],
       "id": "guaiba-cais-maua-recente"
