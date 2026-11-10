@@ -93,11 +93,11 @@
         "camada": "HISTORICO"
       },
       "nivel_atual": {
-        "valor": 12.91,
+        "valor": 13.05,
         "unidade": "m",
-        "fonte": "ANA — telemetria Rio Taquari — Estrela/Lajeado (86879300), leitura de 09/11/2026 22:15",
+        "fonte": "ANA — telemetria Rio Taquari — Estrela/Lajeado (86879300), leitura de 10/11/2026 13:30",
         "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=08/07/2026&dataFim=10/11/2026",
-        "data_referencia": "2026-11-09T22:15",
+        "data_referencia": "2026-11-10T13:30",
         "data_consulta": "2026-11-10",
         "camada": "ATUAL",
         "nota": "Leitura telemétrica mais recente disponível (dado bruto, sujeito a consistência pela ANA/SGB)."
