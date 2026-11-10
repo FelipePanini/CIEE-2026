@@ -732,5 +732,75 @@
     "sha256": null,
     "arquivo": null,
     "erro": "TypeError: fetch failed"
+  },
+  "geodata-br-uf-rs": {
+    "id": "geodata-br-uf-rs",
+    "url": "https://raw.githubusercontent.com/giuliano-macedo/geodata-br-states/main/geojson/br_states/br_rs.json",
+    "data_consulta": "2026-11-10T02:59:35.227Z",
+    "nota": "Contorno do estado RS — GeoJSON público (giuliano-macedo/geodata-br-states), derivado da malha estadual do IBGE",
+    "status": 200,
+    "bytes": 120905,
+    "sha256": "5f5d1a15c9737b03b44dac04356d9a02dc1883a4986c8ae00ab86384db2b32a8",
+    "arquivo": "geodata-br-uf-rs.json"
+  },
+  "geodata-br-uf-sc": {
+    "id": "geodata-br-uf-sc",
+    "url": "https://raw.githubusercontent.com/giuliano-macedo/geodata-br-states/main/geojson/br_states/br_sc.json",
+    "data_consulta": "2026-11-10T02:59:35.455Z",
+    "nota": "Contorno do estado SC — GeoJSON público (giuliano-macedo/geodata-br-states), derivado da malha estadual do IBGE",
+    "status": 200,
+    "bytes": 142640,
+    "sha256": "22158fcc4d830400b13c358f897f6ae4776d6af5d89941e0c3e53b2da238f0a4",
+    "arquivo": "geodata-br-uf-sc.json"
+  },
+  "geodata-br-uf-pr": {
+    "id": "geodata-br-uf-pr",
+    "url": "https://raw.githubusercontent.com/giuliano-macedo/geodata-br-states/main/geojson/br_states/br_pr.json",
+    "data_consulta": "2026-11-10T02:59:35.641Z",
+    "nota": "Contorno do estado PR — GeoJSON público (giuliano-macedo/geodata-br-states), derivado da malha estadual do IBGE",
+    "status": 200,
+    "bytes": 784391,
+    "sha256": "e27e1d46f777d91f6884be8d758543c8498114a003cee4a0c0881502084af44b",
+    "arquivo": "geodata-br-uf-pr.json"
+  },
+  "geodata-br-uf-sp": {
+    "id": "geodata-br-uf-sp",
+    "url": "https://raw.githubusercontent.com/giuliano-macedo/geodata-br-states/main/geojson/br_states/br_sp.json",
+    "data_consulta": "2026-11-10T02:59:35.941Z",
+    "nota": "Contorno do estado SP — GeoJSON público (giuliano-macedo/geodata-br-states), derivado da malha estadual do IBGE",
+    "status": 200,
+    "bytes": 2288488,
+    "sha256": "4ba97823a7db5a26f268c0ca0a4cedda8db89d0677ee575c0a940a75101ed7c9",
+    "arquivo": "geodata-br-uf-sp.json"
+  },
+  "geodata-br-uf-ms": {
+    "id": "geodata-br-uf-ms",
+    "url": "https://raw.githubusercontent.com/giuliano-macedo/geodata-br-states/main/geojson/br_states/br_ms.json",
+    "data_consulta": "2026-11-10T02:59:36.528Z",
+    "nota": "Contorno do estado MS — GeoJSON público (giuliano-macedo/geodata-br-states), derivado da malha estadual do IBGE",
+    "status": 200,
+    "bytes": 102809,
+    "sha256": "c7b12cb078f975ecd71b68e0ee4c49c186f1164224990d63f5d428bdec54e44a",
+    "arquivo": "geodata-br-uf-ms.json"
+  },
+  "geodata-br-uf-mg": {
+    "id": "geodata-br-uf-mg",
+    "url": "https://raw.githubusercontent.com/giuliano-macedo/geodata-br-states/main/geojson/br_states/br_mg.json",
+    "data_consulta": "2026-11-10T02:59:36.710Z",
+    "nota": "Contorno do estado MG — GeoJSON público (giuliano-macedo/geodata-br-states), derivado da malha estadual do IBGE",
+    "status": 200,
+    "bytes": 264812,
+    "sha256": "60f9ecc533cab37c31ecf6675b13d13ff247039faa45412fc6652274c054091a",
+    "arquivo": "geodata-br-uf-mg.json"
+  },
+  "geodata-br-uf-rj": {
+    "id": "geodata-br-uf-rj",
+    "url": "https://raw.githubusercontent.com/giuliano-macedo/geodata-br-states/main/geojson/br_states/br_rj.json",
+    "data_consulta": "2026-11-10T02:59:36.885Z",
+    "nota": "Contorno do estado RJ — GeoJSON público (giuliano-macedo/geodata-br-states), derivado da malha estadual do IBGE",
+    "status": 200,
+    "bytes": 129206,
+    "sha256": "4b7f8f529ae4db76139ad71afa49f23db5440a80862bce0e45932aa375ce6b3f",
+    "arquivo": "geodata-br-uf-rj.json"
   }
 }
