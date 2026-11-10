@@ -40,6 +40,9 @@ export interface Estado {
   setSugestaoModoLeve: (v: boolean) => void;
   eventoTimeline: string;
   setEventoTimeline: (id: string) => void;
+  /** Pedido de voo da câmera até um ponto do mapa (ex.: clique num município crítico). */
+  focoCamera: { lat: number; lon: number; dist: number; pedido: number } | null;
+  focarCamera: (lat: number, lon: number, dist?: number) => void;
   abrigoSelecionado: string | null;
   setAbrigoSelecionado: (id: string | null) => void;
   painelRecolhido: boolean;
@@ -140,6 +143,9 @@ export const useOperacao = create<Estado>((set) => {
     setSugestaoModoLeve: (sugestaoModoLeve) => set({ sugestaoModoLeve }),
     eventoTimeline: '2024-05',
     setEventoTimeline: (eventoTimeline) => set({ eventoTimeline }),
+    focoCamera: null,
+    focarCamera: (lat, lon, dist = 42) =>
+      set((s) => ({ focoCamera: { lat, lon, dist, pedido: (s.focoCamera?.pedido ?? 0) + 1 } })),
     abrigoSelecionado: null,
     setAbrigoSelecionado: (abrigoSelecionado) => set({ abrigoSelecionado }),
     painelRecolhido: false,

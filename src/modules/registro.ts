@@ -1,5 +1,5 @@
 import type { ComponentType } from 'react';
-import { Painel2DPanorama } from './panorama/Painel2D';
+import { Panorama } from './panorama';
 import { Painel2DLinhaDoTempo } from './linha-do-tempo/Painel2D';
 import { Painel2DArrecadacao, Painel2DUrgencia } from './urgencia/Painel2D';
 import { Painel2DRotas } from './rotas/Painel2D';
@@ -23,11 +23,11 @@ export interface Modulo {
 export const MODULOS: Modulo[] = [
   {
     id: 'panorama',
-    rotulo: 'Panorama',
+    rotulo: 'Visão geral',
     icone: '🗺',
     area: 'geral',
     pergunta: 'onde falta',
-    Painel2D: Painel2DPanorama,
+    Painel2D: Panorama,
   },
   {
     id: 'linha-do-tempo',

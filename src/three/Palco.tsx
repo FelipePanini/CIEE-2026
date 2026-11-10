@@ -91,6 +91,16 @@ function CameraRig() {
     c.smoothTime = especial === 'encerramento' ? 1.6 : etapa.ativa ? 0.9 : 0.55;
     void c.setLookAt(...p.pos, ...p.alvo, !reduzido);
   }, [tela, cenario, etapa, reduzido]);
+  // voo até um ponto pedido pela interface (município crítico, busca de cidade…)
+  const foco = useOperacao((s) => s.focoCamera);
+  useEffect(() => {
+    const c = ref.current;
+    if (!c || !foco) return;
+    const [x, z] = paraMundo(foco.lat, foco.lon);
+    c.smoothTime = 0.8;
+    void c.moveTo(x, 0.5, z, !reduzido);
+    void c.dollyTo(foco.dist, !reduzido);
+  }, [foco, reduzido]);
   // Limites por cena: a câmera não passa por baixo do terreno, não se afasta além do que a cena
   // comporta e o alvo (pan) fica preso à área do mapa.
   const contexto = useFlag('contextoBrasil');

@@ -92,7 +92,7 @@ export function SliderNivel({ estacao }: { estacao: string }) {
   );
 }
 
-function GraficoNivel({ estacao }: { estacao: string }) {
+export function GraficoNivel({ estacao }: { estacao: string }) {
   const est = DADOS.rios.estacoes.find((e) => e.id === estacao)!;
   const serie = DADOS.seriesRios.series.find((s) => s.estacao === estacao && s.camada === 'ATUAL');
   const dados = useMemo(
@@ -160,13 +160,13 @@ function GraficoNivel({ estacao }: { estacao: string }) {
   );
 }
 
-export function Painel2DPanorama() {
-  const r = useResultado();
-  const entrada = useOperacao((s) => s.entrada);
-  const refId = eventoReferencia(entrada.cenario, entrada.boletim) ?? '2026-09';
-  const ev = DADOS.eventos.eventos.find((e) => e.id === refId)!;
-  const pinos: PinoMapa[] = [
-    ...ev.municipios
+/** Pinos do mapa 2D: desabrigados por município no evento, locais da operação e réguas. */
+export function pinosDoPanorama(
+  r: ReturnType<typeof useResultado>,
+  ev: (typeof DADOS.eventos.eventos)[number] | null,
+): PinoMapa[] {
+  return [
+    ...(ev?.municipios ?? [])
       .filter((m) => municipioPorIbge.has(m.ibge) && m.desabrigados && n(m.desabrigados))
       .map((m) => {
         const mu = municipioPorIbge.get(m.ibge)!;
@@ -175,7 +175,7 @@ export function Painel2DPanorama() {
           ll: [mu.lat, mu.lon] as [number, number],
           cor: cor('alerta'),
           raio: 6 + Math.sqrt(n(m.desabrigados)!) / 6,
-          titulo: `${mu.nome}: ${fmt.int(n(m.desabrigados)!)} desabrigados (${ev.rotulo_curto})`,
+          titulo: `${mu.nome}: ${fmt.int(n(m.desabrigados)!)} desabrigados (${ev!.rotulo_curto})`,
         };
       }),
     ...r.locais.map((l) => ({
@@ -200,6 +200,14 @@ export function Painel2DPanorama() {
       titulo: `Régua ${e.nome}`,
     })),
   ];
+}
+
+export function Painel2DPanorama() {
+  const r = useResultado();
+  const entrada = useOperacao((s) => s.entrada);
+  const refId = eventoReferencia(entrada.cenario, entrada.boletim) ?? '2026-09';
+  const ev = DADOS.eventos.eventos.find((e) => e.id === refId)!;
+  const pinos = pinosDoPanorama(r, ev);
   return (
     <div className="flex flex-col gap-4">
       <TituloTela titulo="Panorama da crise" area="geral" pergunta="onde falta">
