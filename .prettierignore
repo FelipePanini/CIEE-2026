@@ -4,3 +4,4 @@ node_modules
 public/geo
 docs/referencia
 package-lock.json
+public/vendor
