@@ -144,7 +144,7 @@ function Caminhao({
   );
 }
 
-/** Rede viária: trechos livres (piscina), em rota (âmbar, arco animado) e bloqueados (barreira coral). */
+/** Rede viária: trechos livres (cinza), em rota (branco, arco animado) e bloqueados (barreira vermelha). */
 function Rotas3D({ relevo }: { relevo: Relevo }) {
   const r = useResultado();
   const geo = useRotasGeo();

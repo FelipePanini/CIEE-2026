@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { useOperacao, useResultado } from '../store';
 import { CENARIOS, NIVEIS_ALERTA } from '../engine/cenarios';
 import { FASES, ITENS } from '../engine/urgencia';
@@ -87,7 +87,12 @@ export function IndicadorAlerta() {
 }
 
 /** Painel lateral com todos os parâmetros "critério do grupo" e os pesos de criticidade por fase. */
-export function PainelConfiguracao() {
+export function PainelConfiguracao({
+  gatilho,
+}: {
+  /** botão próprio (barra nova); sem ele, usa o botão "Critérios" da v1 */
+  gatilho?: (abrir: () => void) => ReactNode;
+} = {}) {
   const [aberto, setAberto] = useState(false);
   const entrada = useOperacao((s) => s.entrada);
   const setParametro = useOperacao((s) => s.setParametro);
@@ -104,13 +109,17 @@ export function PainelConfiguracao() {
   };
   return (
     <>
-      <button
-        onClick={() => setAberto(true)}
-        className="rounded-md bg-superficie px-2.5 py-1.5 text-xs font-semibold text-texto hover:bg-superficie-2"
-        aria-haspopup="dialog"
-      >
-        ⚙ Critérios
-      </button>
+      {gatilho ? (
+        gatilho(() => setAberto(true))
+      ) : (
+        <button
+          onClick={() => setAberto(true)}
+          className="rounded-md bg-superficie px-2.5 py-1.5 text-xs font-semibold text-texto hover:bg-superficie-2"
+          aria-haspopup="dialog"
+        >
+          ⚙ Critérios
+        </button>
+      )}
       {aberto && (
         <div
           role="dialog"

@@ -80,7 +80,7 @@ export function Numero({ dado, formatar, selo = false, className = '', children 
               top: posicao.y,
               transform: posicao.acima ? 'translateY(-100%)' : undefined,
             }}
-            className="fixed z-[1000] w-[min(22rem,80vw)] rounded-xl bg-fundo-0 p-3 text-left text-xs font-normal leading-snug text-texto shadow-2xl ring-1 ring-linha-forte"
+            className="popover-vidro fixed z-[1000] w-[min(22rem,80vw)] !p-3 text-left text-xs font-normal leading-snug"
           >
             {calc ? <DetalheCalculado c={dado} /> : <DetalheDado d={dado} />}
           </span>,

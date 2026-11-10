@@ -123,8 +123,8 @@ export function Painel2DRotas() {
           rotuloAria="Grafo de rotas com pontos de coleta, quadras-base, abrigos e entroncamentos"
         />
         <p className="text-[0.7rem] text-texto-2">
-          Piscina: trecho livre · âmbar: em uso por uma rota · coral tracejado: bloqueado. Losangos:
-          pontos de coleta; quadrados: quadras-base; círculos: abrigos.
+          Cinza: trecho livre · branco: em uso por uma rota · vermelho tracejado: bloqueado.
+          Losangos: pontos de coleta; quadrados: quadras-base; círculos: abrigos.
         </p>
       </Painel>
       {ref && reais.length > 0 && (

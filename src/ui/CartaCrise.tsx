@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { DADOS } from '../data/carregar';
 import { useOperacao, useResultado } from '../store';
 import { AREA_ROTULO, Botao } from './blocos';
@@ -45,7 +45,7 @@ export function CartaVisual({ carta, verso = false }: { carta: Carta; verso?: bo
 }
 
 /** Botão "Carta de Crise": sorteia ou escolhe um evento; aplica e permite desfazer. */
-export function BotaoCartaCrise() {
+export function BotaoCartaCrise({ gatilho }: { gatilho?: (abrir: () => void) => ReactNode } = {}) {
   const [aberto, setAberto] = useState(false);
   const [escolhida, setEscolhida] = useState<Carta | null>(null);
   const disparar = useOperacao((s) => s.dispararCarta);
@@ -53,15 +53,22 @@ export function BotaoCartaCrise() {
   const sortear = () => setEscolhida(cartas[Math.floor(Math.random() * cartas.length)]!);
   return (
     <>
-      <button
-        onClick={() => {
+      {gatilho ? (
+        gatilho(() => {
           setAberto(true);
           setEscolhida(null);
-        }}
-        className="whitespace-nowrap rounded-md bg-texto px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-fundo-0 shadow hover:bg-branco"
-      >
-        🂠 Carta de Crise
-      </button>
+        })
+      ) : (
+        <button
+          onClick={() => {
+            setAberto(true);
+            setEscolhida(null);
+          }}
+          className="whitespace-nowrap rounded-md bg-texto px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-fundo-0 shadow hover:bg-branco"
+        >
+          🂠 Carta de Crise
+        </button>
+      )}
       {aberto && (
         <div
           role="dialog"
@@ -145,7 +152,7 @@ export function BannerCrise() {
   return (
     <div
       role="alert"
-      className="relative z-20 flex flex-wrap items-center gap-3 px-4 py-2 text-sm text-fundo-0"
+      className="relative z-20 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-2xl px-4 py-2.5 text-sm text-fundo-0 shadow-xl"
       style={{ background: COR[carta.severidade] }}
     >
       <strong className="font-display">⚠ {ultima.titulo}</strong>

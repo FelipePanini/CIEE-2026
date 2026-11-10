@@ -53,11 +53,11 @@ export function AvisoModoLeve() {
   return (
     <div
       role="status"
-      className="absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 items-center gap-3 rounded-xl bg-fundo-0 px-4 py-2 text-sm shadow-xl ring-1 ring-atencao/60"
+      className="popover-vidro absolute left-1/2 top-[calc(var(--topo)+0.25rem)] z-30 flex -translate-x-1/2 items-center gap-3 !rounded-full !px-4 !py-2 text-sm"
     >
       <span>O 3D está abaixo de 60 fps nesta máquina. Usar o modo leve?</span>
       <button
-        className="rounded bg-atencao px-2 py-1 text-xs font-bold text-fundo-0"
+        className="vidro-botao vidro-botao--compacto vidro-botao--primario"
         onClick={() => {
           setQ('media');
           setSugerir(false);
@@ -66,7 +66,7 @@ export function AvisoModoLeve() {
         Modo médio
       </button>
       <button
-        className="rounded bg-superficie-2 px-2 py-1 text-xs"
+        className="vidro-botao vidro-botao--compacto vidro-botao--vidro"
         onClick={() => {
           setQ('2d');
           setSugerir(false);

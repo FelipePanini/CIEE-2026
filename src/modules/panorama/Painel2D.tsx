@@ -17,6 +17,7 @@ import { Numero, SeloDoDado } from '../../ui/Numero';
 import { fmt } from '../../ui/formato';
 import { corSerie, varCor } from '../../ui/cores';
 import { corUrgencia } from '../../ui/cores';
+import { GlassSlider } from '../../ui/vidro';
 import { eventoReferencia } from '../../engine/cenarios';
 import type { Dado } from '../../engine/tipos';
 import { cor } from '../../ui/cores';
@@ -42,7 +43,8 @@ export function SliderNivel({ estacao }: { estacao: string }) {
   );
   const atual = r.niveis[estacao] ?? 0;
   const cota = n(est.cota_inundacao)!;
-  const pos = (v: number) => `${(v / max) * 100}%`;
+  // o polegar do slider fica 18 px para dentro em cada ponta: as marcas seguem a mesma conta
+  const pos = (v: number) => `calc(18px + ${v / max} * (100% - 36px))`;
   return (
     <div className="flex flex-col gap-1.5">
       <div className="flex items-baseline justify-between gap-2 text-sm">
@@ -54,15 +56,13 @@ export function SliderNivel({ estacao }: { estacao: string }) {
           {fmt.dec2(atual)} m
         </span>
       </div>
-      <input
-        type="range"
+      <GlassSlider
+        valor={atual}
         min={0}
         max={max}
-        step={0.01}
-        value={atual}
-        onChange={(e) => setNivel(estacao, Number(e.target.value))}
-        aria-label={`Nível simulado — ${est.nome}`}
-        className="accent-texto"
+        passo={0.01}
+        onMudar={(v) => setNivel(estacao, v)}
+        rotulo={`Nível simulado — ${est.nome}`}
       />
       <div className="relative h-5 text-[0.62rem]">
         <span className="absolute -translate-x-1/2 text-alerta" style={{ left: pos(cota) }}>
@@ -238,9 +238,9 @@ export function Painel2DPanorama() {
           rotuloAria="Mapa da bacia do Guaíba com municípios afetados, abrigos e quadras-base"
         />
         <p className="text-[0.7rem] text-texto-2">
-          Círculos coral: desabrigados por município ({ev.rotulo_curto}). Quadrados: quadras-base;
-          círculos: abrigos — cor pela urgência, tamanho pelas pessoas atendidas. Losangos: réguas
-          da ANA.
+          Círculos vermelhos: desabrigados por município ({ev.rotulo_curto}). Quadrados:
+          quadras-base; círculos: abrigos — cor pela urgência, tamanho pelas pessoas atendidas.
+          Losangos: réguas da ANA.
         </p>
       </Painel>
       <Grade>

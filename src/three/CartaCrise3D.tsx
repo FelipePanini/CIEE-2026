@@ -8,6 +8,7 @@ import { Html } from '@react-three/drei';
 import * as THREE from 'three';
 import { DADOS } from '../data/carregar';
 import { useOperacao, useResultado } from '../store';
+import { flag } from '../config/flags';
 import { dispararPulso } from './Organograma3D';
 import type { Carta } from '../data/schema';
 import type { AreaOrg } from '../modules/administracao/organograma';
@@ -78,7 +79,8 @@ export function CartaCrise3D() {
   useFrame(() => {
     const g = grupo.current;
     if (!g) return;
-    g.visible = !!carta;
+    // com o vidro ligado o card é o painel de vidro em HTML (src/ui/AvisosVidro.tsx); aqui ficam só os pulsos
+    g.visible = !!carta && !flag('vidro');
     if (!carta) return;
     const t = performance.now() / 1000 - t0.current;
     if (t > 4.2) {
@@ -121,7 +123,7 @@ export function CartaCrise3D() {
             mapa, porque o DOM fica sempre acima do WebGL */}
         <div
           className="h-[283px] w-[460px] overflow-hidden rounded-sm bg-claro text-left text-fundo-0"
-          style={{ display: carta ? 'block' : 'none' }}
+          style={{ display: carta && !flag('vidro') ? 'block' : 'none' }}
         >
           {carta && (
             <>

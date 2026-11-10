@@ -126,6 +126,8 @@ export function MapaSVG({
         height={ALT}
         preserveAspectRatio="none"
         opacity={0.62}
+        /* o PNG do relevo foi gerado com a paleta antiga: em tons de pedra na paleta neutra */
+        style={{ filter: 'grayscale(1) contrast(1.15)' }}
       />
       {geo &&
         Object.entries(geo.rios).flatMap(([nome, partes]) =>

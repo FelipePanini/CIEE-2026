@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @import './tokens.css';
+@import '../ui/vidro/vidro.css';
 
 :root {
   color-scheme: dark;

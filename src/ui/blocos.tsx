@@ -104,18 +104,13 @@ export function Botao({
   onClick?: () => void;
   tipo?: 'primario' | 'secundario' | 'perigo';
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
-  const cls =
-    tipo === 'primario'
-      ? 'bg-texto text-fundo-0 hover:bg-branco'
-      : tipo === 'perigo'
-        ? 'bg-superficie-2 text-alerta ring-1 ring-alerta/50 hover:bg-superficie-3'
-        : 'bg-superficie-2 text-texto hover:bg-superficie-3';
+  const variante = tipo === 'primario' ? 'primario' : tipo === 'perigo' ? 'perigo' : 'vidro';
   return (
     <button
       type="button"
       onClick={onClick}
       {...resto}
-      className={`rounded-md px-3 py-1.5 text-xs font-semibold transition disabled:opacity-40 ${cls} ${resto.className ?? ''}`}
+      className={`vidro-botao vidro-botao--compacto vidro-botao--${variante} ${resto.className ?? ''}`}
     >
       {children}
     </button>

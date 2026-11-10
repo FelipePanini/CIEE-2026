@@ -38,6 +38,13 @@
   --color-superficie-2: rgb(255 255 255 / 0.09);
   --color-superficie-3: rgb(255 255 255 / 0.14);
 
+  /* Vidro: tinta escura sob texto claro (garante o contraste sobre o terreno) e brilho da borda */
+  --color-vidro-tinta: rgb(12 12 14 / 0.64);
+  --color-vidro-tinta-forte: rgb(12 12 14 / 0.78);
+  --color-vidro-solido: rgb(20 20 22 / 0.94);
+  --color-vidro-brilho: rgb(255 255 255 / 0.16);
+  --color-sombra: rgb(0 0 0 / 0.45);
+
   /* Cor só para significado */
   --color-alerta: #e5484d;
   --color-atencao: #d6a65c;

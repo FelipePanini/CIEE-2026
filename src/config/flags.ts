@@ -10,6 +10,8 @@ import { create } from 'zustand';
 export const FLAGS_PADRAO = {
   /** Liquid glass (liquidglass.dev). Desligada: superfícies translúcidas simples. */
   vidro: true,
+  /** O painel lateral grande também refrata (é o vidro mais caro). Desligada: desfoque simples. */
+  vidroPainelLateral: true,
   /** Navegação em dock de vidro embaixo. Desligada: menu lateral da v1. */
   dock: true,
   /** Barra superior em três zonas. Desligada: cabeçalho da v1. */
