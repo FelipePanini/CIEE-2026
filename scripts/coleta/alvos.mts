@@ -341,4 +341,33 @@ export const ALVOS: Alvo[] = [
     ),
     nota: 'ERS-129 e ERS-130 (Vale do Taquari), citadas no boletim de bloqueios de 22/07/2026',
   },
+  // ---- Rodada 2: mapa de contexto (contornos dos estados) e corredor SP → RS ----
+  ...(
+    [
+      ['rs', 43],
+      ['sc', 42],
+      ['pr', 41],
+      ['sp', 35],
+      ['ms', 50],
+      ['mg', 31],
+      ['rj', 33],
+    ] as const
+  ).map(([uf, codigo]): Alvo => ({
+    id: `ibge-malha-uf-${uf}`,
+    url: `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${codigo}?formato=application/vnd.geo%2Bjson&qualidade=minima`,
+    tipo: 'json',
+    nota: `Contorno do estado ${uf.toUpperCase()} — API de malhas do IBGE (qualidade mínima)`,
+  })),
+  {
+    id: 'planalto-lei-13103-2015',
+    url: 'https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13103.htm',
+    tipo: 'html',
+    nota: 'Lei do Motorista (Lei 13.103/2015): tempo de direção e descanso',
+  },
+  {
+    id: 'planalto-ctb-lei-9503',
+    url: 'https://www.planalto.gov.br/ccivil_03/leis/l9503compilado.htm',
+    tipo: 'html',
+    nota: 'CTB compilado — art. 67-C (tempo de direção do motorista profissional)',
+  },
 ];
