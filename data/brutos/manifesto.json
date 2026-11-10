@@ -82,10 +82,10 @@
   "sgb-sace-taquari-ultimo-boletim": {
     "id": "sgb-sace-taquari-ultimo-boletim",
     "url": "https://www.sgb.gov.br/sace/taquari/ultimo_boletim.php",
-    "data_consulta": "2026-11-10T01:38:39.696Z",
+    "data_consulta": "2026-11-10T02:51:50.423Z",
     "status": 404,
     "bytes": 70606,
-    "sha256": "eec2cf9dd41b79694e4ec1ad67f34b76cb36d91e694706a7e552b1fff50f44c7",
+    "sha256": "b709e57d195f51a388803d551564bed4d352db444de0129778ca26c8d737a529",
     "arquivo": null
   },
   "sgb-sace-index": {
@@ -164,7 +164,7 @@
   "dieese-cesta-2026-10": {
     "id": "dieese-cesta-2026-10",
     "url": "https://www.dieese.org.br/analisecestabasica/2026/202610cestabasica.pdf",
-    "data_consulta": "2026-11-10T01:38:40.920Z",
+    "data_consulta": "2026-11-10T02:51:51.875Z",
     "status": 404,
     "bytes": 280,
     "sha256": "0c33a759892a35ea8b5831e75d42be14bde14706c363fec644557956fa179042",
@@ -173,7 +173,7 @@
   "antt-pisos-minimos": {
     "id": "antt-pisos-minimos",
     "url": "https://www.gov.br/antt/pt-br/assuntos/cargas/pisos-minimos-de-frete",
-    "data_consulta": "2026-11-10T01:38:41.768Z",
+    "data_consulta": "2026-11-10T02:51:52.957Z",
     "status": 404,
     "bytes": 26,
     "sha256": "6bbcea2b37bd092cc60604157a0ceec8944866fc2478f7af8aea3c3df40bc258",
@@ -182,10 +182,10 @@
   "esfera-handbook-2018-en": {
     "id": "esfera-handbook-2018-en",
     "url": "https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf",
-    "data_consulta": "2026-11-10T01:38:42.416Z",
+    "data_consulta": "2026-11-10T02:51:54.006Z",
     "status": 403,
     "bytes": 5708,
-    "sha256": "29413a69d6832c8c65ae0248b852431c19722624a1957547006896593229870b",
+    "sha256": "b833bd5106f3b3a262ce9476324d33be23bf0ad7770c7170b219d51ea2b5c05d",
     "arquivo": null
   },
   "osm-rios": {
@@ -265,10 +265,10 @@
   "esfera-manual-2018-pt": {
     "id": "esfera-manual-2018-pt",
     "url": "https://spherestandards.org/wp-content/uploads/Manual-Esfera-2018-PT.pdf",
-    "data_consulta": "2026-11-10T01:38:42.505Z",
+    "data_consulta": "2026-11-10T02:51:54.124Z",
     "status": 403,
     "bytes": 5680,
-    "sha256": "52fba5769eb0155dd7b72715864c1a66a076f2fda1a692703fde09661ff1264c",
+    "sha256": "28bbbb25c3dcae7ef53d02ba9dd08830043e89481ef8a72d22efe7d62cb83ab0",
     "arquivo": null
   },
   "ana-telemetria-87450004-caismaua-2026": {
@@ -352,7 +352,7 @@
   "dieese-cesta-produto": {
     "id": "dieese-cesta-produto",
     "url": "https://www.dieese.org.br/cesta/produto",
-    "data_consulta": "2026-11-10T01:38:42.548Z",
+    "data_consulta": "2026-11-10T02:51:54.189Z",
     "status": 400,
     "bytes": 1101,
     "sha256": "3c10e0ed2340cb5d16483d023492cfd295c3cc4655c1d14951ff6b0640474eea",
@@ -370,7 +370,7 @@
   "vtex-carrefour-sabonete-85g": {
     "id": "vtex-carrefour-sabonete-85g",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=sabonete%2085g&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:38:42.667Z",
+    "data_consulta": "2026-11-10T02:51:54.348Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -390,7 +390,7 @@
   "vtex-carrefour-creme-dental-90g": {
     "id": "vtex-carrefour-creme-dental-90g",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=creme%20dental%2090g&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:38:50.836Z",
+    "data_consulta": "2026-11-10T02:52:02.659Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -410,7 +410,7 @@
   "vtex-carrefour-escova-dental": {
     "id": "vtex-carrefour-escova-dental",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=escova%20dental&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:38:59.029Z",
+    "data_consulta": "2026-11-10T02:52:10.971Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -430,7 +430,7 @@
   "vtex-carrefour-papel-higienico-12-rolos": {
     "id": "vtex-carrefour-papel-higienico-12-rolos",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=papel%20higienico%2012%20rolos&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:39:07.087Z",
+    "data_consulta": "2026-11-10T02:52:19.266Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -450,7 +450,7 @@
   "vtex-carrefour-absorvente": {
     "id": "vtex-carrefour-absorvente",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=absorvente&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:39:15.243Z",
+    "data_consulta": "2026-11-10T02:52:27.559Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -470,7 +470,7 @@
   "vtex-carrefour-sabao-em-barra": {
     "id": "vtex-carrefour-sabao-em-barra",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=sabao%20em%20barra&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:39:23.311Z",
+    "data_consulta": "2026-11-10T02:52:35.910Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -490,7 +490,7 @@
   "vtex-carrefour-agua-sanitaria-2l": {
     "id": "vtex-carrefour-agua-sanitaria-2l",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=agua%20sanitaria%202l&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:39:31.465Z",
+    "data_consulta": "2026-11-10T02:52:44.045Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -510,7 +510,7 @@
   "vtex-carrefour-agua-mineral-5l": {
     "id": "vtex-carrefour-agua-mineral-5l",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=agua%20mineral%205l&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:39:39.643Z",
+    "data_consulta": "2026-11-10T02:52:52.314Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -530,7 +530,7 @@
   "vtex-carrefour-cobertor-solteiro": {
     "id": "vtex-carrefour-cobertor-solteiro",
     "url": "https://mercado.carrefour.com.br/api/catalog_system/pub/products/search?ft=cobertor%20solteiro&_from=0&_to=4",
-    "data_consulta": "2026-11-10T01:39:47.833Z",
+    "data_consulta": "2026-11-10T02:53:00.447Z",
     "nota": "Catálogo público do Carrefour Mercado (VTEX) — preço de referência",
     "status": 503,
     "bytes": 0,
@@ -633,5 +633,104 @@
     "bytes": 286068,
     "sha256": "3c1d5fd46e2cd0b5ec5e843bd47b5b12b16e755b15d25198bf8f1549db2375b0",
     "arquivo": "osm-bairros-v2.json"
+  },
+  "ibge-malha-uf-rs": {
+    "id": "ibge-malha-uf-rs",
+    "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/43?formato=application/vnd.geo%2Bjson&qualidade=minima",
+    "data_consulta": "2026-11-10T02:53:08.751Z",
+    "nota": "Contorno do estado RS — API de malhas do IBGE (qualidade mínima)",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "ibge-malha-uf-sc": {
+    "id": "ibge-malha-uf-sc",
+    "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/42?formato=application/vnd.geo%2Bjson&qualidade=minima",
+    "data_consulta": "2026-11-10T02:53:27.253Z",
+    "nota": "Contorno do estado SC — API de malhas do IBGE (qualidade mínima)",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "ibge-malha-uf-pr": {
+    "id": "ibge-malha-uf-pr",
+    "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/41?formato=application/vnd.geo%2Bjson&qualidade=minima",
+    "data_consulta": "2026-11-10T02:53:45.756Z",
+    "nota": "Contorno do estado PR — API de malhas do IBGE (qualidade mínima)",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "ibge-malha-uf-sp": {
+    "id": "ibge-malha-uf-sp",
+    "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/35?formato=application/vnd.geo%2Bjson&qualidade=minima",
+    "data_consulta": "2026-11-10T02:54:04.252Z",
+    "nota": "Contorno do estado SP — API de malhas do IBGE (qualidade mínima)",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "ibge-malha-uf-ms": {
+    "id": "ibge-malha-uf-ms",
+    "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/50?formato=application/vnd.geo%2Bjson&qualidade=minima",
+    "data_consulta": "2026-11-10T02:54:22.749Z",
+    "nota": "Contorno do estado MS — API de malhas do IBGE (qualidade mínima)",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "ibge-malha-uf-mg": {
+    "id": "ibge-malha-uf-mg",
+    "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/31?formato=application/vnd.geo%2Bjson&qualidade=minima",
+    "data_consulta": "2026-11-10T02:54:41.249Z",
+    "nota": "Contorno do estado MG — API de malhas do IBGE (qualidade mínima)",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "ibge-malha-uf-rj": {
+    "id": "ibge-malha-uf-rj",
+    "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/33?formato=application/vnd.geo%2Bjson&qualidade=minima",
+    "data_consulta": "2026-11-10T02:54:59.749Z",
+    "nota": "Contorno do estado RJ — API de malhas do IBGE (qualidade mínima)",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "planalto-lei-13103-2015": {
+    "id": "planalto-lei-13103-2015",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13103.htm",
+    "data_consulta": "2026-11-10T02:55:18.251Z",
+    "nota": "Lei do Motorista (Lei 13.103/2015): tempo de direção e descanso",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
+  },
+  "planalto-ctb-lei-9503": {
+    "id": "planalto-ctb-lei-9503",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/l9503compilado.htm",
+    "data_consulta": "2026-11-10T02:55:27.244Z",
+    "nota": "CTB compilado — art. 67-C (tempo de direção do motorista profissional)",
+    "status": "erro",
+    "bytes": 0,
+    "sha256": null,
+    "arquivo": null,
+    "erro": "TypeError: fetch failed"
   }
 }
