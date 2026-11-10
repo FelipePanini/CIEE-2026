@@ -37,6 +37,7 @@ export function Parceiros3D({ relevo }: { relevo: Relevo }) {
               />
             </mesh>
             <Rotulo
+              mapa
               visivel={ativo}
               position={[pos[0], pos[1] + alturaRotulo, pos[2]]}
               center

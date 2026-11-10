@@ -15,7 +15,7 @@ import { cor } from '../ui/cores';
 
 const n = (d?: Dado) => (d && typeof d.valor === 'number' ? d.valor : null);
 
-interface Coluna {
+export interface Coluna {
   id: string;
   lat: number;
   lon: number;
@@ -23,7 +23,7 @@ interface Coluna {
   rotulo: string;
 }
 
-const COLUNAS: Coluna[] = [
+export const COLUNAS: Coluna[] = [
   ...new Set(DADOS.eventos.eventos.flatMap((e) => e.municipios.map((m) => m.ibge))),
 ].flatMap((ibge) => {
   const m = municipioPorIbge.get(ibge);
@@ -37,7 +37,7 @@ const COLUNAS: Coluna[] = [
   const lon = locais.length ? locais.reduce((s, l) => s + l.lon, 0) / locais.length : m.lon;
   return [{ id: `m${ibge}`, lat, lon, cor: cor('agua'), rotulo: m.nome }];
 });
-const COLUNAS_RIO: Coluna[] = DADOS.rios.estacoes.map((e) => ({
+export const COLUNAS_RIO: Coluna[] = DADOS.rios.estacoes.map((e) => ({
   id: `r-${e.id}`,
   lat: e.lat,
   lon: e.lon,
@@ -45,7 +45,7 @@ const COLUNAS_RIO: Coluna[] = DADOS.rios.estacoes.map((e) => ({
   rotulo: e.rio,
 }));
 
-function alturaAlvo(evento: string, c: Coluna): { h: number; texto: string } {
+export function alturaAlvo(evento: string, c: Coluna): { h: number; texto: string } {
   const ev = DADOS.eventos.eventos.find((e) => e.id === evento)!;
   if (c.id.startsWith('m')) {
     const im = ev.municipios.find((m) => `m${m.ibge}` === c.id);
@@ -125,6 +125,7 @@ export function LinhaTempo3D({ relevo }: { relevo: Relevo }) {
               />
             </mesh>
             <Rotulo
+              mapa
               visivel={ativo && alvos[i]!.h > 0}
               position={[x, base[i]! + alvos[i]!.h + 1, z]}
               center

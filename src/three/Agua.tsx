@@ -153,6 +153,7 @@ export function Regua3D({
         <meshBasicMaterial color={nivel >= cota ? cor('alerta') : cor('agua')} />
       </mesh>
       <Rotulo
+        mapa
         visivel={rotulos}
         position={[0.8, topo, 0]}
         distanceFactor={60}

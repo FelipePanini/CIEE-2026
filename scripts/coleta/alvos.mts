@@ -342,21 +342,13 @@ export const ALVOS: Alvo[] = [
     nota: 'ERS-129 e ERS-130 (Vale do Taquari), citadas no boletim de bloqueios de 22/07/2026',
   },
   // ---- Rodada 2: mapa de contexto (contornos dos estados) e corredor SP → RS ----
-  ...(
-    [
-      ['rs', 43],
-      ['sc', 42],
-      ['pr', 41],
-      ['sp', 35],
-      ['ms', 50],
-      ['mg', 31],
-      ['rj', 33],
-    ] as const
-  ).map(([uf, codigo]): Alvo => ({
-    id: `ibge-malha-uf-${uf}`,
-    url: `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${codigo}?formato=application/vnd.geo%2Bjson&qualidade=minima`,
+  // A API de malhas do IBGE (servicodados.ibge.gov.br) recusa a conexão dos runners e deste ambiente
+  // (renegociação TLS antiga). Os contornos vêm de um espelho público em GeoJSON.
+  ...(['rs', 'sc', 'pr', 'sp', 'ms', 'mg', 'rj'] as const).map((uf): Alvo => ({
+    id: `geodata-br-uf-${uf}`,
+    url: `https://raw.githubusercontent.com/giuliano-macedo/geodata-br-states/main/geojson/br_states/br_${uf}.json`,
     tipo: 'json',
-    nota: `Contorno do estado ${uf.toUpperCase()} — API de malhas do IBGE (qualidade mínima)`,
+    nota: `Contorno do estado ${uf.toUpperCase()} — GeoJSON público (giuliano-macedo/geodata-br-states), derivado da malha estadual do IBGE`,
   })),
   {
     id: 'planalto-lei-13103-2015',

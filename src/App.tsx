@@ -18,6 +18,7 @@ import { GlassButton, GlassPanel, useVidroGlobal } from './ui/vidro';
 import { BotaoApresentacao, ModoApresentacao } from './modules/apresentacao/ModoApresentacao';
 
 const Palco = lazy(() => import('./three/Palco'));
+const CamadaRotulos = lazy(() => import('./three/rotulos/CamadaRotulos'));
 
 /** /rastreio/KIT-AAAA-NNNN abre a página pública do doador (aberta pelo QR); o resto é a Central. */
 export function App() {
@@ -37,6 +38,7 @@ function Central() {
   const apresentando = useOperacao((s) => s.apresentacao.ativa);
   const barraNova = useFlag('barraNova');
   const dock = useFlag('dock');
+  const rotulosNovos = useFlag('rotulosInteligentes');
   const vidro = useFlag('vidro');
   const vidroLateral = useFlag('vidroPainelLateral');
   const Modulo = moduloPorId(tela).Painel2D;
@@ -73,6 +75,7 @@ function Central() {
             }
           >
             <Palco ativo={com3d} />
+            {rotulosNovos && <CamadaRotulos />}
           </Suspense>
         </div>
       )}

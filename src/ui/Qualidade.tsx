@@ -53,7 +53,7 @@ export function AvisoModoLeve() {
   return (
     <div
       role="status"
-      className="popover-vidro absolute left-1/2 top-[calc(var(--topo)+0.25rem)] z-30 flex -translate-x-1/2 items-center gap-3 !rounded-full !px-4 !py-2 text-sm"
+      className="popover-vidro absolute left-[var(--esq)] top-[calc(var(--topo)+0.25rem)] z-30 flex items-center gap-3 !rounded-full !px-4 !py-2 text-sm"
     >
       <span>O 3D está abaixo de 60 fps nesta máquina. Usar o modo leve?</span>
       <button

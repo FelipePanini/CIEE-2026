@@ -42,9 +42,12 @@ export function Terreno({ relevo, passo = 3 }: { relevo: Relevo; passo?: number 
             Math.min(relevo.altura - 1, j * passo) * relevo.largura +
               Math.min(relevo.largura - 1, i * passo)
           ]!;
-        pos.setY(k, Math.max(0, m) * Y_POR_METRO);
+        // as bordas do DEM descem suavemente até a base: o terreno não termina num "paredão"
+        const borda = Math.min(i, w - 1 - i, j, h - 1 - j) / (Math.min(w, h) * 0.07);
+        const fb = Math.min(1, borda) ** 2 * (3 - 2 * Math.min(1, borda));
+        pos.setY(k, Math.max(0, m) * Y_POR_METRO * fb);
         // pedra: várzea escura → serra clara, interpolando os tokens pedra-1…pedra-5
-        const t = m <= 1 ? 0 : 0.12 + tomElevacao(m) * 0.88;
+        const t = (m <= 1 ? 0 : 0.12 + tomElevacao(m) * 0.88) * fb;
         const f = t * (rampa.length - 1);
         const a = rampa[Math.floor(f)]!;
         const b = rampa[Math.min(rampa.length - 1, Math.floor(f) + 1)]!;

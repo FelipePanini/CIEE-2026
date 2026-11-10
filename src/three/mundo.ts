@@ -24,6 +24,11 @@ export function paraMundo(lat: number, lon: number): [number, number] {
   return [(lon - cLon) * kmPorGrauLon * UNIDADES_POR_KM, (cLat - lat) * 110.57 * UNIDADES_POR_KM];
 }
 
+/** Inverso de paraMundo: unidades da cena → [lat, lon]. */
+export function deMundo(x: number, z: number): [number, number] {
+  return [cLat - z / (110.57 * UNIDADES_POR_KM), cLon + x / (kmPorGrauLon * UNIDADES_POR_KM)];
+}
+
 export interface Relevo {
   largura: number;
   altura: number;

@@ -3,22 +3,29 @@
  * (transição suave de ~1 s) dentro do mesmo mundo — o renderer nunca é recriado.
  */
 import { lazy, Suspense, useEffect, useRef } from 'react';
-import { Canvas, useThree } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { CameraControls, PerformanceMonitor } from '@react-three/drei';
 import { useOperacao } from '../store';
 import { Bacia3D } from './Bacia3D';
 import { useRelevo } from './Terreno';
 import { cameraEspecial, presetDaTela, VOO_ABERTURA } from './presets';
-import { Ilhas } from './Ilhas';
+import { CenaDoMundo, Ilhas } from './Ilhas';
+import { Horizonte } from './Horizonte';
+import { Contexto3D } from './Contexto3D';
+import { atualizarZoom, cenaDaTela } from './zoom';
+import { ILHAS, paraMundo } from './mundo';
+import { useFlag } from '../config/flags';
+import * as THREE from 'three';
 import { CartaCrise3D } from './CartaCrise3D';
 import { registrarCaptura } from './captura';
+import { SincroniaCamera } from './rotulos/camera';
 import { cor } from '../ui/cores';
 
 const PosProcessamento = lazy(() => import('./PosProcessamento'));
 
 declare global {
   interface Window {
-    __cc3d?: { renderers: number; perdas: number; gl?: unknown };
+    __cc3d?: { renderers: number; perdas: number; gl?: unknown; controles?: CameraControls };
   }
 }
 
@@ -84,15 +91,48 @@ function CameraRig() {
     c.smoothTime = especial === 'encerramento' ? 1.6 : etapa.ativa ? 0.9 : 0.55;
     void c.setLookAt(...p.pos, ...p.alvo, !reduzido);
   }, [tela, cenario, etapa, reduzido]);
-  return (
-    <CameraControls
-      ref={ref}
-      makeDefault
-      minDistance={4}
-      maxDistance={260}
-      maxPolarAngle={Math.PI * 0.47}
-    />
-  );
+  // Limites por cena: a câmera não passa por baixo do terreno, não se afasta além do que a cena
+  // comporta e o alvo (pan) fica preso à área do mapa.
+  const contexto = useFlag('contextoBrasil');
+  const cena = cenaDaTela(tela);
+  useEffect(() => {
+    const c = ref.current;
+    if (!c) return;
+    if (cena === 'bacia') {
+      c.minDistance = 10;
+      c.maxDistance = contexto && !apresentando ? 1700 : 300;
+      const caixa = contexto
+        ? new THREE.Box3(
+            new THREE.Vector3(paraMundo(-33.8, -57.7)[0], 0, paraMundo(-21.5, -44)[1]),
+            new THREE.Vector3(paraMundo(-21.5, -44)[0], 30, paraMundo(-33.8, -57.7)[1]),
+          )
+        : new THREE.Box3(new THREE.Vector3(-70, 0, -70), new THREE.Vector3(70, 30, 70));
+      c.setBoundary(caixa);
+    } else {
+      const o = ILHAS[cena];
+      c.minDistance = 6;
+      c.maxDistance = 95;
+      c.setBoundary(
+        new THREE.Box3(
+          new THREE.Vector3(o[0] - 16, 0, o[2] - 16),
+          new THREE.Vector3(o[0] + 16, 16, o[2] + 16),
+        ),
+      );
+    }
+  }, [cena, contexto, apresentando]);
+  // fog exponencial proporcional à distância: o que está muito além do foco some na cor do fundo
+  const cena3 = useThree((s) => s.scene);
+  useFrame(() => {
+    const c = ref.current;
+    if (!c) return;
+    // acesso para os testes de ponta a ponta (zoom e colisão de rótulos)
+    if (window.__cc3d && !window.__cc3d.controles) window.__cc3d.controles = c;
+    const d = c.distance;
+    atualizarZoom(d);
+    const fog = cena3.fog as THREE.FogExp2 | null;
+    if (fog && 'density' in fog) fog.density = 0.36 / Math.max(40, d);
+  });
+  return <CameraControls ref={ref} makeDefault maxPolarAngle={Math.PI * 0.47} />;
 }
 
 function Registro() {
@@ -124,10 +164,15 @@ const TELAS_BACIA = ['panorama', 'linha-do-tempo', 'rotas', 'arrecadacao', 'parc
 
 function Mundo({ passo }: { passo: number }) {
   const relevo = useRelevo();
+  const contexto = useFlag('contextoBrasil');
   const rotulos = TELAS_BACIA.includes(useOperacao((s) => s.tela));
   return (
     <>
-      {relevo && <Bacia3D relevo={relevo} passo={passo} rotulos={rotulos} />}
+      <Horizonte />
+      {contexto && <Contexto3D />}
+      <CenaDoMundo nome="bacia">
+        {relevo && <Bacia3D relevo={relevo} passo={passo} rotulos={rotulos} />}
+      </CenaDoMundo>
       <Ilhas />
     </>
   );
@@ -144,12 +189,13 @@ export function Palco({ ativo = true }: { ativo?: boolean }) {
       dpr={alta ? [1, 1.75] : 1}
       frameloop={!ativo ? 'never' : pausado ? 'demand' : 'always'}
       gl={{ antialias: alta, powerPreference: 'high-performance' }}
-      camera={{ fov: 38, near: 0.5, far: 900, position: [0, 85, 95] }}
+      camera={{ fov: 38, near: 0.5, far: 9000, position: [0, 85, 95] }}
       onCreated={({ gl }) => gl.setClearColor(cor('fundo-0'))}
       aria-label="Mundo 3D da operação"
     >
       <Registro />
-      <fog attach="fog" args={[cor('fundo-0'), 160, 520]} />
+      <SincroniaCamera />
+      <fogExp2 attach="fog" args={[cor('fundo-1'), 0.003]} />
       <hemisphereLight args={[cor('cinza-2'), cor('fundo-1'), 0.7]} />
       <ambientLight intensity={0.25} />
       <directionalLight position={[-60, 90, -40]} intensity={1.5} color={cor('texto')} />
