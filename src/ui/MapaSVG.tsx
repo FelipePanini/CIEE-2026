@@ -5,6 +5,7 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { useOperacao } from '../store';
 import meta from '../../public/geo/relevo.json';
+import { cor } from './cores';
 
 export type LL = [number, number];
 const { bbox } = meta;
@@ -113,7 +114,7 @@ export function MapaSVG({
       viewBox={vb}
       role="img"
       aria-label={rotuloAria}
-      className={`h-auto w-full rounded-xl bg-navy-950 ${className}`}
+      className={`h-auto w-full rounded-xl bg-fundo-0 ${className}`}
       style={{ maxHeight: alturaMax }}
       preserveAspectRatio="xMidYMid meet"
     >
@@ -133,7 +134,7 @@ export function MapaSVG({
               key={nome + i}
               d={caminho(p)}
               fill="none"
-              stroke="#6fb3b1"
+              stroke={cor('cinza-3')}
               strokeWidth={(nome === 'Rio Jacuí' || nome === 'Rio Taquari' ? 2.4 : 1.6) * escala}
               strokeLinecap="round"
               opacity={0.85}
@@ -148,7 +149,7 @@ export function MapaSVG({
               key={ref + i}
               d={caminho(p)}
               fill="none"
-              stroke="#f3efe6"
+              stroke={cor('texto')}
               strokeWidth={1.1 * escala}
               opacity={0.45}
             />
@@ -184,7 +185,7 @@ export function MapaSVG({
                 height={r * 2}
                 rx={r * 0.3}
                 fill={p.cor}
-                stroke="#0b1e26"
+                stroke={cor('fundo-0')}
                 strokeWidth={1.5 * escala}
               />
             ) : p.forma === 'losango' ? (
@@ -195,19 +196,19 @@ export function MapaSVG({
                 height={r * 2}
                 transform="rotate(45)"
                 fill={p.cor}
-                stroke="#0b1e26"
+                stroke={cor('fundo-0')}
                 strokeWidth={1.5 * escala}
               />
             ) : (
-              <circle r={r} fill={p.cor} stroke="#0b1e26" strokeWidth={1.5 * escala} />
+              <circle r={r} fill={p.cor} stroke={cor('fundo-0')} strokeWidth={1.5 * escala} />
             )}
             {p.rotulo && (
               <text
                 x={r + 4 * escala}
                 y={4 * escala}
                 fontSize={17 * escala}
-                fill="#f3efe6"
-                stroke="#0b1e26"
+                fill={cor('texto')}
+                stroke={cor('fundo-0')}
                 strokeWidth={3 * escala}
                 paintOrder="stroke"
                 fontWeight={600}

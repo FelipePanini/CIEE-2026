@@ -1,0 +1,66 @@
+/*
+ * Design tokens da rodada 2 — paleta neutra para o liquid glass.
+ * ÚNICA fonte de cor do app: Tailwind (classes), CSS, gráficos e materiais do Three.js leem daqui
+ * (src/ui/cores.ts e src/three/tema.ts). Nenhuma cor fica escrita em componente
+ * (src/styles/tokens.test.ts reprova hex fora deste arquivo).
+ *
+ * Regra: a base é grafite e cinza. Cor só carrega significado — alerta, atenção e ok — para que,
+ * quando algo ficar vermelho, todo mundo olhe. A água é o único elemento "vivo" do mapa.
+ */
+@theme static {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-preto: #000000;
+  --color-branco: #ffffff;
+
+  /* Fundo: gradiente de preto grafite, nunca preto chapado */
+  --color-fundo-0: #0a0a0b;
+  --color-fundo-1: #141416;
+  --color-fundo-2: #1c1c1f;
+  --color-fundo-3: #2a2a2e;
+
+  /* Texto */
+  --color-texto: #f5f5f7;
+  --color-texto-2: #a1a1a6;
+  --color-texto-3: #6e6e73;
+
+  /* Superfície clara (bilhetes, etiquetas, cartas) */
+  --color-claro: #e8e8ec;
+
+  /* Linhas e bordas: branco com 8 a 14% */
+  --color-linha-fraca: rgb(255 255 255 / 0.08);
+  --color-linha: rgb(255 255 255 / 0.11);
+  --color-linha-forte: rgb(255 255 255 / 0.14);
+
+  /* Superfícies translúcidas (vidro simples; o vidro com refração vem do liquidglass) */
+  --color-superficie: rgb(255 255 255 / 0.05);
+  --color-superficie-2: rgb(255 255 255 / 0.09);
+  --color-superficie-3: rgb(255 255 255 / 0.14);
+
+  /* Cor só para significado */
+  --color-alerta: #e5484d;
+  --color-atencao: #d6a65c;
+  --color-ok: #86a694;
+
+  /* Água: cinza-azulado frio e luminoso */
+  --color-agua: #cfdbe8;
+  --color-agua-funda: #9fb3c8;
+  --color-agua-brilho: #eef4fa;
+
+  /* Terreno e objetos da maquete: tons de pedra */
+  --color-pedra-1: #26262a;
+  --color-pedra-2: #3d3d40;
+  --color-pedra-3: #5e5d5c;
+  --color-pedra-4: #8a8884;
+  --color-pedra-5: #b8b5ae;
+
+  /* Escala de cinzas para séries de gráfico e categorias (do mais forte ao mais discreto) */
+  --color-cinza-1: #f5f5f7;
+  --color-cinza-2: #b4b4b9;
+  --color-cinza-3: #7c7c82;
+  --color-cinza-4: #4f4f55;
+
+  --font-display: 'Archivo Black', 'Archivo Variable', system-ui, sans-serif;
+  --font-sans: 'Archivo Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}

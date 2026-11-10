@@ -3,8 +3,9 @@ import { DADOS } from '../data/carregar';
 import { useOperacao, useResultado } from '../store';
 import { AREA_ROTULO, Botao } from './blocos';
 import type { Carta } from '../data/schema';
+import { cor } from './cores';
 
-const COR = { atencao: '#f2b84b', alerta: '#f3876d', critico: '#ef6a4b' } as const;
+const COR = { atencao: cor('atencao'), alerta: cor('alerta'), critico: cor('alerta') } as const;
 
 export function CartaVisual({ carta, verso = false }: { carta: Carta; verso?: boolean }) {
   return (
@@ -12,13 +13,13 @@ export function CartaVisual({ carta, verso = false }: { carta: Carta; verso?: bo
       className="painel-claro flex w-full max-w-md flex-col gap-2 p-5 shadow-2xl"
       style={{ borderTop: `8px solid ${COR[carta.severidade]}` }}
     >
-      <p className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-navy-700">
+      <p className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-fundo-3">
         Carta de Crise · {AREA_ROTULO[carta.area]} · {carta.severidade}
       </p>
       <h3 className="font-display text-2xl leading-tight">{carta.titulo}</h3>
       <p className="text-sm">{carta.descricao}</p>
       {verso && (
-        <p className="rounded bg-navy-900 p-2 text-xs text-creme-100">
+        <p className="rounded bg-fundo-1 p-2 text-xs text-texto">
           Resposta sugerida: {carta.resposta_sugerida}
         </p>
       )}
@@ -27,15 +28,15 @@ export function CartaVisual({ carta, verso = false }: { carta: Carta; verso?: bo
           href={carta.inspirado_em.url}
           target="_blank"
           rel="noreferrer"
-          className="text-xs text-navy-700 underline"
+          className="text-xs text-fundo-3 underline"
         >
-          <span className="mr-1 rounded bg-coral-500 px-1.5 py-0.5 text-[0.6rem] font-bold uppercase text-navy-950">
+          <span className="mr-1 rounded bg-cinza-2 px-1.5 py-0.5 text-[0.6rem] font-bold uppercase text-fundo-0">
             inspirado em fato real
           </span>
           {carta.inspirado_em.texto} — {carta.inspirado_em.fonte}
         </a>
       ) : (
-        <span className="text-[0.65rem] uppercase tracking-wider text-navy-700">
+        <span className="text-[0.65rem] uppercase tracking-wider text-fundo-3">
           evento hipotético (simulado)
         </span>
       )}
@@ -57,7 +58,7 @@ export function BotaoCartaCrise() {
           setAberto(true);
           setEscolhida(null);
         }}
-        className="whitespace-nowrap rounded-md bg-coral-500 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-navy-950 shadow hover:bg-coral-400"
+        className="whitespace-nowrap rounded-md bg-texto px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-fundo-0 shadow hover:bg-branco"
       >
         🂠 Carta de Crise
       </button>
@@ -65,18 +66,18 @@ export function BotaoCartaCrise() {
         <div
           role="dialog"
           aria-label="Carta de Crise"
-          className="fixed inset-0 z-[950] flex items-center justify-center bg-navy-950/75 p-4"
+          className="fixed inset-0 z-[950] flex items-center justify-center bg-fundo-0/75 p-4"
           onClick={() => setAberto(false)}
         >
           <div
-            className="flex max-h-full w-[min(56rem,100%)] flex-col gap-4 overflow-y-auto rounded-2xl bg-navy-900 p-5 ring-1 ring-piscina-300/30"
+            className="flex max-h-full w-[min(56rem,100%)] flex-col gap-4 overflow-y-auto rounded-2xl bg-fundo-1 p-5 ring-1 ring-linha"
             onClick={(e) => e.stopPropagation()}
           >
             <header className="flex items-center justify-between gap-2">
               <h2 className="font-display text-2xl">Carta de Crise</h2>
               <button
                 onClick={() => setAberto(false)}
-                className="text-2xl text-creme-200"
+                className="text-2xl text-texto-2"
                 aria-label="Fechar"
               >
                 ×
@@ -111,13 +112,13 @@ export function BotaoCartaCrise() {
                     <li key={c.id}>
                       <button
                         onClick={() => setEscolhida(c)}
-                        className="flex h-full w-full flex-col gap-1 rounded-xl bg-navy-800 p-3 text-left hover:bg-navy-700"
+                        className="flex h-full w-full flex-col gap-1 rounded-xl bg-superficie p-3 text-left hover:bg-superficie-2"
                         style={{ borderLeft: `4px solid ${COR[c.severidade]}` }}
                       >
                         <span className="text-sm font-bold">{c.titulo}</span>
-                        <span className="text-[0.68rem] text-creme-200">{AREA_ROTULO[c.area]}</span>
+                        <span className="text-[0.68rem] text-texto-2">{AREA_ROTULO[c.area]}</span>
                         {c.inspirado_em && (
-                          <span className="text-[0.6rem] font-bold uppercase text-coral-400">
+                          <span className="text-[0.6rem] font-bold uppercase text-texto-2">
                             inspirado em fato real
                           </span>
                         )}
@@ -144,7 +145,7 @@ export function BannerCrise() {
   return (
     <div
       role="alert"
-      className="relative z-20 flex flex-wrap items-center gap-3 px-4 py-2 text-sm text-navy-950"
+      className="relative z-20 flex flex-wrap items-center gap-3 px-4 py-2 text-sm text-fundo-0"
       style={{ background: COR[carta.severidade] }}
     >
       <strong className="font-display">⚠ {ultima.titulo}</strong>
@@ -154,7 +155,7 @@ export function BannerCrise() {
       </span>
       <button
         onClick={() => desfazer(ultima.uid)}
-        className="rounded bg-navy-950/20 px-2 py-1 text-xs font-bold"
+        className="rounded bg-fundo-0/20 px-2 py-1 text-xs font-bold"
       >
         ↶ Desfazer
       </button>

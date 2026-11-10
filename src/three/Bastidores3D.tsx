@@ -10,9 +10,10 @@ import * as THREE from 'three';
 import { Rotulo } from './Rotulo';
 import { ILHAS } from './mundo';
 import { CAMADAS, type Camada } from '../engine/tipos';
-import { COR_CAMADA } from '../ui/cores';
+import { corCamada } from '../ui/cores';
 import { camadasArquitetura, INVENTARIO } from '../modules/fontes/arquitetura';
 import { useOperacao } from '../store';
+import { cor } from '../ui/cores';
 
 const LARG = 17;
 const PROF = 10;
@@ -52,7 +53,7 @@ export function Bastidores3D() {
     return lista;
   }, []);
   const cores = useMemo(
-    () => particulas.map((p) => new THREE.Color(COR_CAMADA[p.camada])),
+    () => particulas.map((p) => new THREE.Color(corCamada(p.camada))),
     [particulas],
   );
 
@@ -80,7 +81,7 @@ export function Bastidores3D() {
     <group position={ILHAS.bastidores}>
       <mesh position={[0, -0.1, 0]} rotation-x={-Math.PI / 2}>
         <circleGeometry args={[20, 64]} />
-        <meshStandardMaterial color="#17343d" />
+        <meshStandardMaterial color={cor('fundo-2')} />
       </mesh>
       {camadasArquitetura().map((c, i) => (
         <group
@@ -110,7 +111,7 @@ export function Bastidores3D() {
             distanceFactor={26}
             style={{ transform: 'translate(-100%, -50%)' }}
           >
-            <div className="whitespace-nowrap rounded bg-navy-950/85 px-2 py-1 text-right text-[12px] leading-tight text-creme-100 ring-1 ring-piscina-300/30">
+            <div className="whitespace-nowrap rounded bg-fundo-0/85 px-2 py-1 text-right text-[12px] leading-tight text-texto ring-1 ring-linha">
               <div className="font-display text-[16px]" style={{ color: c.cor }}>
                 {i + 1}. {c.nome}
               </div>
@@ -134,13 +135,11 @@ export function Bastidores3D() {
         <meshBasicMaterial toneMapped={false} />
       </instancedMesh>
       <Rotulo visivel={ativo} position={[0, 15.5, 0]} center distanceFactor={30}>
-        <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_#0b1e26]">
-          <div className="font-display text-[20px] text-creme-100">
-            Fontes → Dados → Motor → Telas
-          </div>
+        <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_var(--color-fundo-0)]">
+          <div className="font-display text-[20px] text-texto">Fontes → Dados → Motor → Telas</div>
           <div className="flex justify-center gap-3 text-[12px]">
             {CAMADAS.map((c) => (
-              <span key={c} style={{ color: COR_CAMADA[c] }}>
+              <span key={c} style={{ color: corCamada(c) }}>
                 ● {c === 'HISTORICO' ? 'HISTÓRICO' : c === 'PREVISAO' ? 'PREVISÃO' : c}{' '}
                 {INVENTARIO.porCamada[c]}
               </span>

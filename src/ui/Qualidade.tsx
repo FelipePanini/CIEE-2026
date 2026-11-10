@@ -16,7 +16,7 @@ export function SeletorQualidade() {
       <div
         role="radiogroup"
         aria-label="Qualidade gráfica"
-        className="flex rounded-md bg-navy-800 p-0.5 text-[0.68rem]"
+        className="flex rounded-md bg-superficie p-0.5 text-[0.68rem]"
       >
         {OPCOES.map((o) => (
           <button
@@ -25,7 +25,7 @@ export function SeletorQualidade() {
             aria-checked={q === o.id}
             title={o.dica}
             onClick={() => setQ(o.id)}
-            className={`rounded px-2 py-1 font-semibold ${q === o.id ? 'bg-piscina-300 text-navy-950' : 'text-creme-200'}`}
+            className={`rounded px-2 py-1 font-semibold ${q === o.id ? 'bg-cinza-2 text-fundo-0' : 'text-texto-2'}`}
           >
             {o.rotulo}
           </button>
@@ -36,7 +36,7 @@ export function SeletorQualidade() {
           onClick={() => setPausado(!pausado)}
           title={pausado ? 'Retomar animações' : 'Pausar animações'}
           aria-pressed={pausado}
-          className="rounded-md bg-navy-800 px-2 py-1 text-xs"
+          className="rounded-md bg-superficie px-2 py-1 text-xs"
         >
           {pausado ? '▶' : '⏸'}
         </button>
@@ -53,11 +53,11 @@ export function AvisoModoLeve() {
   return (
     <div
       role="status"
-      className="absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 items-center gap-3 rounded-xl bg-navy-950 px-4 py-2 text-sm shadow-xl ring-1 ring-alerta/60"
+      className="absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 items-center gap-3 rounded-xl bg-fundo-0 px-4 py-2 text-sm shadow-xl ring-1 ring-atencao/60"
     >
       <span>O 3D está abaixo de 60 fps nesta máquina. Usar o modo leve?</span>
       <button
-        className="rounded bg-alerta px-2 py-1 text-xs font-bold text-navy-950"
+        className="rounded bg-atencao px-2 py-1 text-xs font-bold text-fundo-0"
         onClick={() => {
           setQ('media');
           setSugerir(false);
@@ -66,7 +66,7 @@ export function AvisoModoLeve() {
         Modo médio
       </button>
       <button
-        className="rounded bg-navy-700 px-2 py-1 text-xs"
+        className="rounded bg-superficie-2 px-2 py-1 text-xs"
         onClick={() => {
           setQ('2d');
           setSugerir(false);
@@ -74,7 +74,7 @@ export function AvisoModoLeve() {
       >
         2D
       </button>
-      <button className="text-xs text-creme-200 underline" onClick={() => setSugerir(false)}>
+      <button className="text-xs text-texto-2 underline" onClick={() => setSugerir(false)}>
         manter
       </button>
     </div>

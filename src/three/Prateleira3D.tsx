@@ -7,15 +7,16 @@ import { useOperacao, useResultado } from '../store';
 import { ITENS, itemPorId } from '../engine/urgencia';
 import { ILHAS } from './mundo';
 import { Rotulo } from './Rotulo';
+import { cor } from '../ui/cores';
 
 const ALT_DIA = 0.55; // unidades por dia de cobertura
 const MAX_DIAS = 14;
 const COR_ITEM = {
-  agua: '#2fa8a3',
-  alimentos: '#c89a63',
-  higiene: '#8f7ae0',
-  cobertores: '#bd8413',
-  papel_roupas: '#f3efe6',
+  agua: cor('cinza-2'),
+  alimentos: cor('pedra-4'),
+  higiene: cor('cinza-3'),
+  cobertores: cor('cinza-3'),
+  papel_roupas: cor('texto'),
 } as const;
 
 function Unidade({ item, y, cor }: { item: keyof typeof COR_ITEM; y: number; cor: string }) {
@@ -51,13 +52,13 @@ export function Prateleira3D() {
     <group position={ILHAS.prateleira}>
       <mesh position={[0, -0.1, 0]}>
         <boxGeometry args={[16, 0.2, 4]} />
-        <meshStandardMaterial color="#17343d" />
+        <meshStandardMaterial color={cor('fundo-2')} />
       </mesh>
       {/* estrutura da estante */}
       {[-7.8, 7.8].map((x) => (
         <mesh key={x} position={[x, 4, -1.6]}>
           <boxGeometry args={[0.25, 8, 0.25]} />
-          <meshStandardMaterial color="#8cc7c5" />
+          <meshStandardMaterial color={cor('cinza-2')} />
         </mesh>
       ))}
       {local.urgencias.map((u, i) => {
@@ -65,22 +66,26 @@ export function Prateleira3D() {
         const dias = Math.min(MAX_DIAS, u.coberturaNaChegada.valor);
         const n = Math.max(0, Math.round(dias));
         const critico = u.critico;
-        const cor = critico ? '#ef6a4b' : COR_ITEM[u.item];
+        const corPilha = critico ? cor('alerta') : COR_ITEM[u.item];
         return (
           <group key={u.item} position={[x, 0, 0]}>
             {Array.from({ length: n }, (_, k) => (
-              <Unidade key={k} item={u.item} y={ALT_DIA / 2 + k * ALT_DIA} cor={cor} />
+              <Unidade key={k} item={u.item} y={ALT_DIA / 2 + k * ALT_DIA} cor={corPilha} />
             ))}
             {n === 0 && (
               <mesh position={[0, 0.05, 0]}>
                 <boxGeometry args={[1, 0.1, 0.9]} />
-                <meshStandardMaterial color="#ef6a4b" emissive="#ef6a4b" emissiveIntensity={0.8} />
+                <meshStandardMaterial
+                  color={cor('alerta')}
+                  emissive={cor('alerta')}
+                  emissiveIntensity={0.8}
+                />
               </mesh>
             )}
             {/* marca do prazo crítico */}
             <mesh position={[0, u.prazo * ALT_DIA, 0]}>
               <boxGeometry args={[1.7, 0.05, 1.3]} />
-              <meshBasicMaterial color="#f3efe6" transparent opacity={0.8} />
+              <meshBasicMaterial color={cor('texto')} transparent opacity={0.8} />
             </mesh>
             <Rotulo
               visivel={rotulos}
@@ -91,7 +96,7 @@ export function Prateleira3D() {
               className="pointer-events-none select-none"
             >
               <div
-                className={`whitespace-nowrap rounded px-2 py-1 text-center text-[12px] leading-tight ${critico ? 'bg-coral-500 text-navy-950' : 'bg-navy-950/85 text-creme-100'}`}
+                className={`whitespace-nowrap rounded px-2 py-1 text-center text-[12px] leading-tight ${critico ? 'bg-alerta text-fundo-0' : 'bg-fundo-0/85 text-texto'}`}
               >
                 <strong>{itemPorId(u.item).nome}</strong>
                 <div>
@@ -113,9 +118,9 @@ export function Prateleira3D() {
         zIndexRange={[5, 0]}
         className="pointer-events-none select-none"
       >
-        <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_#0b1e26]">
-          <div className="font-display text-[18px] text-creme-100">Prateleira: {local.nome}</div>
-          <div className="text-[12px] text-creme-200">
+        <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_var(--color-fundo-0)]">
+          <div className="font-display text-[18px] text-texto">Prateleira: {local.nome}</div>
+          <div className="text-[12px] text-texto-2">
             {Math.round(local.pessoasN)} pessoas · altura da pilha = dias de cobertura (
             {ITENS.length} itens)
           </div>

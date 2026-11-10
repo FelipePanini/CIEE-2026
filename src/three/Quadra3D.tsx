@@ -10,10 +10,11 @@ import { Rotulo } from './Rotulo';
 import { useOperacao, useResultado } from '../store';
 import { ZONAS } from '../engine/producao';
 import { ILHAS } from './mundo';
+import { cor } from '../ui/cores';
 
 const LARG = 30; // m (quadra de ~28 × 16 m)
 const PROF = 17;
-const CORES_ZONA = ['#8cc7c5', '#bd8413', '#2fa8a3', '#8f7ae0', '#e8603f'];
+const CORES_ZONA = [cor('pedra-3'), cor('pedra-2'), cor('pedra-3'), cor('pedra-2'), cor('pedra-3')];
 const MAX_CAIXAS = 90;
 const MAX_VOL = 60;
 const xZona = (i: number) => -LARG / 2 + 3 + i * ((LARG - 6) / (ZONAS.length - 1));
@@ -97,15 +98,15 @@ export function Quadra3D() {
       {/* piso e marcações da quadra */}
       <mesh rotation-x={-Math.PI / 2} position={[0, 0.01, 0]}>
         <planeGeometry args={[LARG + 4, PROF + 4]} />
-        <meshStandardMaterial color="#1f4350" />
+        <meshStandardMaterial color={cor('fundo-3')} />
       </mesh>
       <mesh rotation-x={-Math.PI / 2} position={[0, 0.02, 0]}>
         <planeGeometry args={[LARG, PROF]} />
-        <meshStandardMaterial color="#d9774f" />
+        <meshStandardMaterial color={cor('pedra-2')} />
       </mesh>
       <mesh rotation-x={-Math.PI / 2} position={[0, 0.03, 0]}>
         <ringGeometry args={[2.6, 2.75, 48]} />
-        <meshBasicMaterial color="#f3efe6" />
+        <meshBasicMaterial color={cor('texto')} />
       </mesh>
       {/* paredes baixas (maquete) */}
       {[
@@ -114,13 +115,13 @@ export function Quadra3D() {
       ].map(([x, z, w, d], i) => (
         <mesh key={i} position={[x!, 1, z!]}>
           <boxGeometry args={[w!, 2, d!]} />
-          <meshStandardMaterial color="#f3efe6" transparent opacity={0.35} />
+          <meshStandardMaterial color={cor('texto')} transparent opacity={0.35} />
         </mesh>
       ))}
       {/* esteira da linha */}
       <mesh position={[0, 0.4, 0]}>
         <boxGeometry args={[LARG - 4, 0.8, 2.4]} />
-        <meshStandardMaterial color="#17343d" />
+        <meshStandardMaterial color={cor('fundo-2')} />
       </mesh>
       {/* zonas */}
       {pr.porZona.map((z, i) => {
@@ -132,7 +133,7 @@ export function Quadra3D() {
               <meshStandardMaterial
                 ref={gargalo ? pulso : undefined}
                 color={CORES_ZONA[i]}
-                emissive={gargalo ? '#ef6a4b' : '#000000'}
+                emissive={gargalo ? cor('alerta') : cor('preto')}
                 transparent
                 opacity={0.55}
               />
@@ -140,7 +141,7 @@ export function Quadra3D() {
             {/* coluna de vazão: altura ∝ kits/h */}
             <mesh position={[0, 0.4 + (z.kitsHora / maxVazao) * 2.5, -PROF / 2 + 1.5]}>
               <boxGeometry args={[1.2, (z.kitsHora / maxVazao) * 5, 0.6]} />
-              <meshStandardMaterial color={gargalo ? '#ef6a4b' : '#8cc7c5'} />
+              <meshStandardMaterial color={gargalo ? cor('alerta') : cor('cinza-2')} />
             </mesh>
             <Rotulo
               visivel={rotulos}
@@ -151,7 +152,7 @@ export function Quadra3D() {
               className="pointer-events-none select-none"
             >
               <div
-                className={`whitespace-nowrap rounded px-2 py-1 text-center text-[12px] leading-tight ${gargalo ? 'bg-coral-500 text-navy-950' : 'bg-navy-950/85 text-creme-100'}`}
+                className={`whitespace-nowrap rounded px-2 py-1 text-center text-[12px] leading-tight ${gargalo ? 'bg-alerta text-fundo-0' : 'bg-fundo-0/85 text-texto'}`}
               >
                 <strong>{ZONAS[i]!.nome}</strong>
                 <div>
@@ -167,7 +168,7 @@ export function Quadra3D() {
                 center
                 distanceFactor={22}
               >
-                <div className="w-[190px] rotate-[-2deg] rounded bg-creme-100 px-2 py-1 text-[11px] font-semibold leading-snug text-navy-900 shadow-lg">
+                <div className="w-[190px] rotate-[-2deg] rounded bg-claro px-2 py-1 text-[11px] font-semibold leading-snug text-fundo-0 shadow-lg">
                   “{ultimoBilhete}”
                 </div>
               </Rotulo>
@@ -177,15 +178,15 @@ export function Quadra3D() {
       })}
       <instancedMesh ref={caixas} args={[undefined, undefined, MAX_CAIXAS]}>
         <boxGeometry args={[0.5, 0.36, 0.42]} />
-        <meshStandardMaterial color="#c89a63" />
+        <meshStandardMaterial color={cor('pedra-4')} />
       </instancedMesh>
       <instancedMesh ref={vols} args={[undefined, undefined, MAX_VOL]}>
         <capsuleGeometry args={[0.22, 0.8, 4, 8]} />
-        <meshStandardMaterial color="#2fa8a3" />
+        <meshStandardMaterial color={cor('cinza-2')} />
       </instancedMesh>
       <instancedMesh ref={cabecas} args={[undefined, undefined, MAX_VOL]}>
         <sphereGeometry args={[0.2, 10, 10]} />
-        <meshStandardMaterial color="#f3efe6" />
+        <meshStandardMaterial color={cor('texto')} />
       </instancedMesh>
       <Rotulo
         visivel={rotulos}
@@ -195,7 +196,7 @@ export function Quadra3D() {
         zIndexRange={[5, 0]}
         className="pointer-events-none select-none"
       >
-        <div className="font-display whitespace-nowrap text-[18px] text-creme-100 [text-shadow:0_2px_6px_#0b1e26]">
+        <div className="font-display whitespace-nowrap text-[18px] text-texto [text-shadow:0_2px_6px_var(--color-fundo-0)]">
           Linha da quadra: {Math.round(pr.kitsHora.valor)} kits/h
         </div>
       </Rotulo>

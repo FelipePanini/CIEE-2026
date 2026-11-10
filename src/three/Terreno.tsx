@@ -2,12 +2,13 @@ import { useEffect, useMemo, useState } from 'react';
 import * as THREE from 'three';
 import {
   carregarRelevo,
-  corElevacao,
+  tomElevacao,
   LARGURA_MUNDO,
   PROFUNDIDADE_MUNDO,
   Y_POR_METRO,
   type Relevo,
 } from './mundo';
+import { rgbTres } from './tema';
 
 export function useRelevo(): Relevo | null {
   const [r, setR] = useState<Relevo | null>(null);
@@ -32,6 +33,7 @@ export function Terreno({ relevo, passo = 3 }: { relevo: Relevo; passo?: number 
     g.rotateX(-Math.PI / 2);
     const pos = g.attributes.position as THREE.BufferAttribute;
     const cores = new Float32Array(pos.count * 3);
+    const rampa = (['pedra-1', 'pedra-2', 'pedra-3', 'pedra-4', 'pedra-5'] as const).map(rgbTres);
     for (let j = 0; j < h; j++)
       for (let i = 0; i < w; i++) {
         const k = j * w + i;
@@ -41,10 +43,15 @@ export function Terreno({ relevo, passo = 3 }: { relevo: Relevo; passo?: number 
               Math.min(relevo.largura - 1, i * passo)
           ]!;
         pos.setY(k, Math.max(0, m) * Y_POR_METRO);
-        const c = m <= 1 ? [0.08, 0.2, 0.25] : corElevacao(m);
-        cores[k * 3] = c[0]!;
-        cores[k * 3 + 1] = c[1]!;
-        cores[k * 3 + 2] = c[2]!;
+        // pedra: várzea escura → serra clara, interpolando os tokens pedra-1…pedra-5
+        const t = m <= 1 ? 0 : 0.12 + tomElevacao(m) * 0.88;
+        const f = t * (rampa.length - 1);
+        const a = rampa[Math.floor(f)]!;
+        const b = rampa[Math.min(rampa.length - 1, Math.floor(f) + 1)]!;
+        const u = f - Math.floor(f);
+        cores[k * 3] = a[0] + (b[0] - a[0]) * u;
+        cores[k * 3 + 1] = a[1] + (b[1] - a[1]) * u;
+        cores[k * 3 + 2] = a[2] + (b[2] - a[2]) * u;
       }
     g.setAttribute('color', new THREE.BufferAttribute(cores, 3));
     g.computeVertexNormals();

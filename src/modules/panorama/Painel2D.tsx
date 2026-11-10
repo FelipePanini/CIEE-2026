@@ -15,10 +15,11 @@ import { Grade, Kpi, Painel, TituloTela } from '../../ui/blocos';
 import { MapaSVG, type PinoMapa } from '../../ui/MapaSVG';
 import { Numero, SeloDoDado } from '../../ui/Numero';
 import { fmt } from '../../ui/formato';
-import { PALETA, SERIES } from '../../ui/cores';
+import { corSerie, varCor } from '../../ui/cores';
 import { corUrgencia } from '../../ui/cores';
 import { eventoReferencia } from '../../engine/cenarios';
 import type { Dado } from '../../engine/tipos';
+import { cor } from '../../ui/cores';
 
 const n = (d?: Dado) => (d && typeof d.valor === 'number' ? d.valor : null);
 
@@ -48,7 +49,7 @@ export function SliderNivel({ estacao }: { estacao: string }) {
         <span className="font-semibold">{est.nome}</span>
         <span
           className="font-display text-xl tabular-nums"
-          style={{ color: atual >= cota ? PALETA.coral : PALETA.creme }}
+          style={{ color: atual >= cota ? varCor('alerta') : varCor('texto') }}
         >
           {fmt.dec2(atual)} m
         </span>
@@ -61,23 +62,23 @@ export function SliderNivel({ estacao }: { estacao: string }) {
         value={atual}
         onChange={(e) => setNivel(estacao, Number(e.target.value))}
         aria-label={`Nível simulado — ${est.nome}`}
-        className="accent-coral-500"
+        className="accent-texto"
       />
       <div className="relative h-5 text-[0.62rem]">
-        <span className="absolute -translate-x-1/2 text-coral-400" style={{ left: pos(cota) }}>
+        <span className="absolute -translate-x-1/2 text-alerta" style={{ left: pos(cota) }}>
           ▲ cota {fmt.dec1(cota)}
         </span>
         {picos.map((p, i) => (
           <span
             key={i}
-            className="absolute -translate-x-1/2 whitespace-nowrap text-creme-200"
+            className="absolute -translate-x-1/2 whitespace-nowrap text-texto-2"
             style={{ left: pos(n(p.nivel) ?? 0), top: i % 2 ? 10 : 0 }}
           >
             │{p.evento.rotulo_curto}
           </span>
         ))}
       </div>
-      <div className="flex flex-wrap items-center gap-2 text-[0.68rem] text-creme-200">
+      <div className="flex flex-wrap items-center gap-2 text-[0.68rem] text-texto-2">
         <span>
           Nível real agora: <Numero dado={nivelReal} formatar={(v) => `${fmt.dec2(v)} m`} selo />
         </span>
@@ -104,44 +105,42 @@ function GraficoNivel({ estacao }: { estacao: string }) {
     <figure className="flex flex-col gap-1">
       <figcaption className="flex items-center justify-between gap-2 text-xs">
         <span className="font-semibold">{est.rio} — máximo diário, últimos 125 dias</span>
-        <span className="text-[0.62rem] uppercase tracking-wider text-creme-200">
-          {serie.fonte}
-        </span>
+        <span className="text-[0.62rem] uppercase tracking-wider text-texto-2">{serie.fonte}</span>
       </figcaption>
       <div className="h-40">
         <ResponsiveContainer>
           <LineChart data={dados} margin={{ top: 6, right: 8, left: -18, bottom: 0 }}>
-            <CartesianGrid stroke="#ffffff14" vertical={false} />
+            <CartesianGrid stroke={cor('linha-fraca')} vertical={false} />
             <XAxis
               dataKey="d"
-              tick={{ fill: '#e7e0d2', fontSize: 10 }}
+              tick={{ fill: cor('texto-2'), fontSize: 10 }}
               interval={20}
               tickLine={false}
-              axisLine={{ stroke: '#ffffff30' }}
+              axisLine={{ stroke: cor('linha-forte') }}
             />
             <YAxis
-              tick={{ fill: '#e7e0d2', fontSize: 10 }}
+              tick={{ fill: cor('texto-2'), fontSize: 10 }}
               tickLine={false}
               axisLine={false}
               width={40}
             />
             <Tooltip
               contentStyle={{
-                background: '#0b1e26',
-                border: '1px solid #8cc7c555',
+                background: cor('fundo-0'),
+                border: '1px solid var(--color-linha-forte)',
                 borderRadius: 8,
                 fontSize: 12,
               }}
               formatter={(v) => [`${fmt.dec2(Number(v))} m`, 'nível']}
-              labelStyle={{ color: '#8cc7c5' }}
+              labelStyle={{ color: cor('cinza-2') }}
             />
             <ReferenceLine
               y={n(est.cota_inundacao) ?? 0}
-              stroke={SERIES[0]}
+              stroke={corSerie(0)}
               strokeDasharray="4 3"
               label={{
                 value: 'cota de inundação',
-                fill: '#f3876d',
+                fill: cor('alerta'),
                 fontSize: 10,
                 position: 'insideTopRight',
               }}
@@ -149,7 +148,7 @@ function GraficoNivel({ estacao }: { estacao: string }) {
             <Line
               type="monotone"
               dataKey="v"
-              stroke={SERIES[1]}
+              stroke={corSerie(1)}
               strokeWidth={2}
               dot={false}
               isAnimationActive={false}
@@ -174,7 +173,7 @@ export function Painel2DPanorama() {
         return {
           id: `m${m.ibge}`,
           ll: [mu.lat, mu.lon] as [number, number],
-          cor: '#ef6a4b88',
+          cor: cor('alerta'),
           raio: 6 + Math.sqrt(n(m.desabrigados)!) / 6,
           titulo: `${mu.nome}: ${fmt.int(n(m.desabrigados)!)} desabrigados (${ev.rotulo_curto})`,
         };
@@ -182,7 +181,7 @@ export function Painel2DPanorama() {
     ...r.locais.map((l) => ({
       id: l.id,
       ll: [l.lat, l.lon] as [number, number],
-      cor: l.pessoasN ? corUrgencia(l.urgenciaMax, true) : '#8cc7c5',
+      cor: l.pessoasN ? corUrgencia(l.urgenciaMax, true) : cor('cinza-2'),
       raio: 4 + Math.sqrt(l.pessoasN) / 5,
       forma: l.tipo === 'quadra' ? ('quadrado' as const) : ('circulo' as const),
       rotulo: l.nome.replace(
@@ -195,7 +194,7 @@ export function Painel2DPanorama() {
     ...DADOS.rios.estacoes.map((e) => ({
       id: e.id,
       ll: [e.lat, e.lon] as [number, number],
-      cor: '#f3efe6',
+      cor: cor('texto'),
       raio: 4,
       forma: 'losango' as const,
       titulo: `Régua ${e.nome}`,
@@ -229,7 +228,7 @@ export function Painel2DPanorama() {
       <Painel
         titulo="Bacia do Guaíba — Taquari, Jacuí, Caí e Sinos"
         acao={
-          <span className="text-[0.65rem] text-creme-200">
+          <span className="text-[0.65rem] text-texto-2">
             Relevo: Copernicus DEM 30 m · rios e rodovias: OSM
           </span>
         }
@@ -238,7 +237,7 @@ export function Painel2DPanorama() {
           pinos={pinos}
           rotuloAria="Mapa da bacia do Guaíba com municípios afetados, abrigos e quadras-base"
         />
-        <p className="text-[0.7rem] text-creme-200">
+        <p className="text-[0.7rem] text-texto-2">
           Círculos coral: desabrigados por município ({ev.rotulo_curto}). Quadrados: quadras-base;
           círculos: abrigos — cor pela urgência, tamanho pelas pessoas atendidas. Losangos: réguas
           da ANA.
@@ -249,7 +248,7 @@ export function Painel2DPanorama() {
           {DADOS.rios.estacoes.map((e) => (
             <SliderNivel key={e.id} estacao={e.id} />
           ))}
-          <p className="text-[0.7rem] text-creme-200">
+          <p className="text-[0.7rem] text-texto-2">
             Ao passar da cota de inundação, o nível de alerta da operação sobe para ALERTA em todas
             as telas.
           </p>
@@ -262,7 +261,7 @@ export function Painel2DPanorama() {
       </Grade>
       <Painel titulo="Municípios no evento de referência">
         <table className="w-full text-left text-xs">
-          <thead className="text-creme-200">
+          <thead className="text-texto-2">
             <tr>
               <th className="py-1">Município</th>
               <th>Desabrigados</th>
@@ -272,7 +271,7 @@ export function Painel2DPanorama() {
           </thead>
           <tbody>
             {ev.municipios.map((m) => (
-              <tr key={m.ibge} className="border-t border-white/5">
+              <tr key={m.ibge} className="border-t border-linha-fraca">
                 <td className="py-1">{nomeMunicipio(m.ibge)}</td>
                 <td>
                   {m.desabrigados ? <Numero dado={m.desabrigados} formatar={fmt.int} /> : '—'}

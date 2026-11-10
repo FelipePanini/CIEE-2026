@@ -12,6 +12,7 @@ import { cameraEspecial, presetDaTela, VOO_ABERTURA } from './presets';
 import { Ilhas } from './Ilhas';
 import { CartaCrise3D } from './CartaCrise3D';
 import { registrarCaptura } from './captura';
+import { cor } from '../ui/cores';
 
 const PosProcessamento = lazy(() => import('./PosProcessamento'));
 
@@ -144,14 +145,14 @@ export function Palco({ ativo = true }: { ativo?: boolean }) {
       frameloop={!ativo ? 'never' : pausado ? 'demand' : 'always'}
       gl={{ antialias: alta, powerPreference: 'high-performance' }}
       camera={{ fov: 38, near: 0.5, far: 900, position: [0, 85, 95] }}
-      onCreated={({ gl }) => gl.setClearColor('#0b1e26')}
+      onCreated={({ gl }) => gl.setClearColor(cor('fundo-0'))}
       aria-label="Mundo 3D da operação"
     >
       <Registro />
-      <fog attach="fog" args={['#0b1e26', 160, 520]} />
-      <hemisphereLight args={['#b5dcdb', '#102a35', 0.7]} />
+      <fog attach="fog" args={[cor('fundo-0'), 160, 520]} />
+      <hemisphereLight args={[cor('cinza-2'), cor('fundo-1'), 0.7]} />
       <ambientLight intensity={0.25} />
-      <directionalLight position={[-60, 90, -40]} intensity={1.5} color="#fff2e0" />
+      <directionalLight position={[-60, 90, -40]} intensity={1.5} color={cor('texto')} />
       <PerformanceMonitor
         onDecline={() => ativo && qualidade === 'alta' && sugerir(true)}
         flipflops={2}

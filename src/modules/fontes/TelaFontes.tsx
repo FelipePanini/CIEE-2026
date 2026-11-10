@@ -2,7 +2,7 @@ import { useNivelAtual } from '../../store';
 import { camadasArquitetura, INVENTARIO } from './arquitetura';
 import { TituloTela } from '../../ui/blocos';
 import { SeloCamada } from '../../ui/SeloCamada';
-import { COR_CAMADA } from '../../ui/cores';
+import { corCamada } from '../../ui/cores';
 import { CAMADAS } from '../../engine/tipos';
 import { ROTULO_CAMADA } from '../../engine/camadas';
 import { DADOS, nomeMunicipio } from '../../data/carregar';
@@ -16,10 +16,10 @@ export function TelaFontes() {
     <div className="flex flex-col gap-6">
       <Arquitetura />
       <section className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl text-creme-100 sm:text-3xl">
+        <h2 className="font-display text-2xl text-texto sm:text-3xl">
           A enchente não acabou em 2024.
         </h2>
-        <p className="max-w-3xl text-creme-200">
+        <p className="max-w-3xl text-texto-2">
           Cheias com pessoas fora de casa no RS de 2024 a 2026 — e a previsão para os próximos
           meses. Passe o mouse (ou toque) em qualquer número para ver a fonte, o link e a data.
         </p>
@@ -29,12 +29,12 @@ export function TelaFontes() {
         {eventos.eventos.map((e) => (
           <article key={e.id} className="painel flex flex-col gap-2 p-4">
             <header className="flex items-baseline justify-between gap-2">
-              <h2 className="font-display text-xl text-coral-500">{e.rotulo_curto}</h2>
-              <span className="text-[0.65rem] uppercase tracking-wider text-piscina-300">
+              <h2 className="font-display text-xl text-texto">{e.rotulo_curto}</h2>
+              <span className="text-[0.65rem] uppercase tracking-wider text-texto-2">
                 {e.bacia_principal}
               </span>
             </header>
-            <p className="text-xs leading-snug text-creme-200">{e.resumo}</p>
+            <p className="text-xs leading-snug text-texto-2">{e.resumo}</p>
             <dl className="grid grid-cols-2 gap-x-3 gap-y-1 text-sm">
               <dt className="opacity-70">Municípios</dt>
               <dd>
@@ -96,8 +96,8 @@ export function TelaFontes() {
           <h2 className="font-display mb-2 text-lg">Próximos meses</h2>
           {previsao.prognosticos.map((p) => (
             <div key={p.id} className="mb-2 text-sm">
-              <p className="font-semibold text-piscina-300">{p.orgao}</p>
-              <p className="text-xs text-creme-200">{p.resumo}</p>
+              <p className="font-semibold text-texto-2">{p.orgao}</p>
+              <p className="text-xs text-texto-2">{p.resumo}</p>
               <div className="mt-1 flex flex-wrap gap-3">
                 {p.indicadores.map((i) => (
                   <span key={i.id} className="text-xs">
@@ -195,13 +195,13 @@ function Arquitetura() {
             <span className="font-display text-lg">
               {i + 1}. {c.nome}
               {i < camadas.length - 1 && (
-                <span aria-hidden className="ml-2 text-piscina-300">
+                <span aria-hidden className="ml-2 text-texto-2">
                   →
                 </span>
               )}
             </span>
             {c.linhas.map((l) => (
-              <span key={l} className="text-xs text-creme-200">
+              <span key={l} className="text-xs text-texto-2">
                 {l}
               </span>
             ))}
@@ -225,7 +225,7 @@ function Arquitetura() {
               title={`${ROTULO_CAMADA[c]}: ${INVENTARIO.porCamada[c]}`}
               style={{
                 width: `${(INVENTARIO.porCamada[c] / total) * 100}%`,
-                background: COR_CAMADA[c],
+                background: corCamada(c),
               }}
             />
           ))}
@@ -236,9 +236,9 @@ function Arquitetura() {
               <SeloCamada camada={c} /> {INVENTARIO.porCamada[c]}
             </span>
           ))}
-          <span className="text-creme-200">· {INVENTARIO.aConfirmar} marcados A CONFIRMAR</span>
+          <span className="text-texto-2">· {INVENTARIO.aConfirmar} marcados A CONFIRMAR</span>
         </div>
-        <p className="text-[0.68rem] text-creme-200/80">
+        <p className="text-[0.68rem] text-texto-2">
           Domínios consultados: {INVENTARIO.dominios.join(' · ')}
         </p>
       </figure>

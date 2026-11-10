@@ -7,6 +7,7 @@ import { Numero } from '../../ui/Numero';
 import { fmt } from '../../ui/formato';
 import { corUrgencia } from '../../ui/cores';
 import { eventoReferencia } from '../../engine/cenarios';
+import { cor } from '../../ui/cores';
 
 type Geo = Record<string, [number, number][]>;
 let cache: Promise<Geo> | null = null;
@@ -48,7 +49,7 @@ export function Painel2DRotas() {
         .map((a) => ({
           id: a.id,
           pts: geo[a.id]!,
-          cor: bloq.has(a.id) ? '#ef6a4b' : emRota.has(a.id) ? '#f2b84b' : '#8cc7c5',
+          cor: bloq.has(a.id) ? cor('alerta') : emRota.has(a.id) ? cor('texto') : cor('cinza-3'),
           largura: bloq.has(a.id) ? 5 : emRota.has(a.id) ? 4.5 : 2.5,
           tracejado: bloq.has(a.id) || a.via === 'vias urbanas',
           titulo: `${a.via}: ${nomeNo(a.de)} → ${nomeNo(a.para)} · ${fmt.dec1(a.km.valor as number)} km${bloq.has(a.id) ? ' · BLOQUEADA' : ''} (clique para ${bloq.has(a.id) ? 'liberar' : 'bloquear'})`,
@@ -64,16 +65,16 @@ export function Painel2DRotas() {
       ll: [n.lat, n.lon],
       cor:
         n.tipo === 'entroncamento'
-          ? '#f3efe6'
+          ? cor('texto')
           : n.tipo === 'coleta'
             ? pt?.lotado
-              ? '#ef6a4b'
-              : '#bd8413'
+              ? cor('alerta')
+              : cor('cinza-3')
             : l
               ? l.pessoasN
                 ? corUrgencia(l.urgenciaMax, true)
-                : '#8cc7c5'
-              : '#4a6b72',
+                : cor('cinza-2')
+              : cor('pedra-3'),
       raio: n.tipo === 'entroncamento' ? 3 : 6,
       forma: n.tipo === 'quadra' ? 'quadrado' : n.tipo === 'coleta' ? 'losango' : 'circulo',
       rotulo: n.tipo === 'entroncamento' ? undefined : curto(n.nome),
@@ -109,7 +110,7 @@ export function Painel2DRotas() {
       <Painel
         titulo="Rede viária da operação"
         acao={
-          <span className="text-[0.65rem] text-creme-200">
+          <span className="text-[0.65rem] text-texto-2">
             Clique num trecho para bloquear/liberar · rotas recalculam (Dijkstra + 2-opt)
           </span>
         }
@@ -121,7 +122,7 @@ export function Painel2DRotas() {
           recorte={[-30.2, -52.15, -29.15, -50.95]}
           rotuloAria="Grafo de rotas com pontos de coleta, quadras-base, abrigos e entroncamentos"
         />
-        <p className="text-[0.7rem] text-creme-200">
+        <p className="text-[0.7rem] text-texto-2">
           Piscina: trecho livre · âmbar: em uso por uma rota · coral tracejado: bloqueado. Losangos:
           pontos de coleta; quadrados: quadras-base; círculos: abrigos.
         </p>
@@ -137,12 +138,12 @@ export function Painel2DRotas() {
                     href={b.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-piscina-300 underline"
+                    className="text-texto-2 underline"
                   >
                     {b.fonte}
                   </a>
                 </span>
-                <span className={bloq.has(b.aresta) ? 'text-coral-400' : 'text-creme-200'}>
+                <span className={bloq.has(b.aresta) ? 'text-alerta' : 'text-texto-2'}>
                   {bloq.has(b.aresta) ? 'aplicado' : 'não aplicado'}
                 </span>
               </li>
@@ -156,12 +157,12 @@ export function Painel2DRotas() {
             key={ro.base}
             titulo={`Base: ${curto(nomeNo(ro.base))}`}
             acao={
-              <span className={`text-xs ${ro.cabeNaJanela ? 'text-ok' : 'text-alerta'}`}>
+              <span className={`text-xs ${ro.cabeNaJanela ? 'text-ok' : 'text-atencao'}`}>
                 {ro.cabeNaJanela ? 'cabe na janela' : 'excede a janela'}
               </span>
             }
           >
-            <p className="text-xs text-creme-200">
+            <p className="text-xs text-texto-2">
               {ro.veiculo ? (
                 <>
                   {ro.veiculo.categoria.toUpperCase()} · {fmt.int(ro.veiculo.capacidadeKg)} kg ·
@@ -169,7 +170,7 @@ export function Painel2DRotas() {
                   viagem(ns)
                 </>
               ) : (
-                <span className="text-coral-400">Sem veículo disponível</span>
+                <span className="text-alerta">Sem veículo disponível</span>
               )}
             </p>
             <ol className="flex flex-col gap-1 text-xs">
@@ -184,12 +185,12 @@ export function Painel2DRotas() {
                         : '🏫 base'}{' '}
                     — {curto(nomeNo(p.no))}
                   </span>
-                  <span className="tabular-nums text-creme-200">+{fmt.dec1(p.chegadaH)} h</span>
+                  <span className="tabular-nums text-texto-2">+{fmt.dec1(p.chegadaH)} h</span>
                 </li>
               ))}
             </ol>
             {ro.inalcancaveis.length > 0 && (
-              <p className="text-xs text-coral-400">
+              <p className="text-xs text-alerta">
                 Sem caminho: {ro.inalcancaveis.map((x) => curto(nomeNo(x))).join(', ')}
               </p>
             )}
@@ -208,7 +209,7 @@ export function Painel2DRotas() {
       </Grade>
       <Painel titulo="Veículos e capacidades (categorias reais)">
         <table className="w-full text-left text-xs">
-          <thead className="text-creme-200">
+          <thead className="text-texto-2">
             <tr>
               <th className="py-1">Categoria</th>
               <th>Eixos</th>
@@ -220,7 +221,7 @@ export function Painel2DRotas() {
             {DADOS.veiculos.categorias.map((c) => {
               const piso = DADOS.frete.pisos.find((p) => p.eixos === c.eixos)!;
               return (
-                <tr key={c.id} className="border-t border-white/5">
+                <tr key={c.id} className="border-t border-linha-fraca">
                   <td className="py-1">{c.nome}</td>
                   <td>{c.eixos}</td>
                   <td>

@@ -11,10 +11,11 @@ import { useOperacao, useResultado } from '../store';
 import { dispararPulso } from './Organograma3D';
 import type { Carta } from '../data/schema';
 import type { AreaOrg } from '../modules/administracao/organograma';
+import { cor } from '../ui/cores';
 
 export const impactosMapa: { lat: number; lon: number; t0: number; cor: string }[] = [];
 
-const COR = { atencao: '#f2b84b', alerta: '#f3876d', critico: '#ef6a4b' } as const;
+const COR = { atencao: cor('atencao'), alerta: cor('alerta'), critico: cor('alerta') } as const;
 
 function locaisDoImpacto(
   c: Carta,
@@ -100,11 +101,14 @@ export function CartaCrise3D() {
     <group ref={grupo} renderOrder={10} visible={false}>
       <mesh>
         <boxGeometry args={[5.2, 3.2, 0.06]} />
-        <meshBasicMaterial color="#f3efe6" depthTest={false} />
+        <meshBasicMaterial color={cor('texto')} depthTest={false} />
       </mesh>
       <mesh position={[0, 1.45, 0.04]}>
         <boxGeometry args={[5.2, 0.3, 0.02]} />
-        <meshBasicMaterial color={carta ? COR[carta.severidade] : '#ef6a4b'} depthTest={false} />
+        <meshBasicMaterial
+          color={carta ? COR[carta.severidade] : cor('alerta')}
+          depthTest={false}
+        />
       </mesh>
       <Html
         transform
@@ -116,7 +120,7 @@ export function CartaCrise3D() {
         {/* o cartão inteiro também em HTML, do tamanho da carta 3D (5,2 × 3,2): cobre os rótulos do
             mapa, porque o DOM fica sempre acima do WebGL */}
         <div
-          className="h-[283px] w-[460px] overflow-hidden rounded-sm bg-creme-100 text-left text-navy-900"
+          className="h-[283px] w-[460px] overflow-hidden rounded-sm bg-claro text-left text-fundo-0"
           style={{ display: carta ? 'block' : 'none' }}
         >
           {carta && (
@@ -129,7 +133,7 @@ export function CartaCrise3D() {
                 <p className="font-display text-[30px] leading-tight">{carta.titulo}</p>
                 <p className="text-[16px] leading-snug">{carta.descricao}</p>
                 {carta.inspirado_em && (
-                  <p className="self-start rounded bg-coral-500 px-1.5 py-0.5 text-[12px] font-bold uppercase text-navy-950">
+                  <p className="self-start rounded bg-cinza-2 px-1.5 py-0.5 text-[12px] font-bold uppercase text-fundo-0">
                     inspirado em fato real
                   </p>
                 )}

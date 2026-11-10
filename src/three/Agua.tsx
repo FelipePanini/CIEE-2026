@@ -13,6 +13,7 @@ import { useNivelAtual } from '../store';
 import { elevacaoMinima, paraMundo, Y_POR_METRO, UNIDADES_POR_KM, type Relevo } from './mundo';
 import type { Dado } from '../engine/tipos';
 import { progressoAbertura } from './abertura';
+import { cor } from '../ui/cores';
 
 const n = (d?: Dado) => (d && typeof d.valor === 'number' ? d.valor : null);
 
@@ -57,7 +58,7 @@ export function PlanoAgua({
   relevo,
   estacao,
   nivel,
-  cor = '#2f9fbf',
+  cor: corAgua = cor('agua'),
 }: {
   relevo: Relevo;
   estacao: string;
@@ -71,8 +72,12 @@ export function PlanoAgua({
   const yAgua = Math.max(0, base + (nivel - ref)) * Y_POR_METRO + 0.02;
   const raio = RAIO_KM[estacao]! * UNIDADES_POR_KM;
   const uniforms = useMemo(
-    () => ({ uCor: { value: new THREE.Color(cor) }, uOpac: { value: 0.78 }, uTempo: { value: 0 } }),
-    [cor],
+    () => ({
+      uCor: { value: new THREE.Color(corAgua) },
+      uOpac: { value: 0.78 },
+      uTempo: { value: 0 },
+    }),
+    [corAgua],
   );
   const malha = useRef<THREE.Mesh>(null);
   useFrame((_, dt) => {
@@ -127,15 +132,15 @@ export function Regua3D({
   const real = n(useNivelAtual(estacao)) ?? 0;
   const topo = y(pico) + 1.2;
   const marcas = [
-    { v: cota, cor: '#ef6a4b', t: `cota ${cota.toFixed(1).replace('.', ',')} m` },
-    { v: pico, cor: '#f3efe6', t: `pico 2024 ${pico.toFixed(2).replace('.', ',')} m` },
-    { v: real, cor: '#8cc7c5', t: `real agora ${real.toFixed(2).replace('.', ',')} m` },
+    { v: cota, cor: cor('alerta'), t: `cota ${cota.toFixed(1).replace('.', ',')} m` },
+    { v: pico, cor: cor('texto'), t: `pico 2024 ${pico.toFixed(2).replace('.', ',')} m` },
+    { v: real, cor: cor('cinza-2'), t: `real agora ${real.toFixed(2).replace('.', ',')} m` },
   ];
   return (
     <group position={[x, 0, z]}>
       <mesh position={[0, topo / 2, 0]}>
         <cylinderGeometry args={[0.08, 0.08, topo, 8]} />
-        <meshStandardMaterial color="#f3efe6" />
+        <meshStandardMaterial color={cor('texto')} />
       </mesh>
       {marcas.map((m) => (
         <mesh key={m.t} position={[0, y(m.v), 0]}>
@@ -145,7 +150,7 @@ export function Regua3D({
       ))}
       <mesh ref={disco} position={[0, y(nivel), 0]}>
         <cylinderGeometry args={[0.6, 0.6, 0.12, 24]} />
-        <meshBasicMaterial color={nivel >= cota ? '#ef6a4b' : '#2f9fbf'} />
+        <meshBasicMaterial color={nivel >= cota ? cor('alerta') : cor('agua')} />
       </mesh>
       <Rotulo
         visivel={rotulos}
@@ -154,7 +159,7 @@ export function Regua3D({
         zIndexRange={[5, 0]}
         className="pointer-events-none select-none"
       >
-        <div className="whitespace-nowrap rounded bg-navy-950/85 px-2 py-1 text-[11px] leading-tight text-creme-100 ring-1 ring-piscina-300/40">
+        <div className="whitespace-nowrap rounded bg-fundo-0/85 px-2 py-1 text-[11px] leading-tight text-texto ring-1 ring-linha-forte">
           <strong>{est.rio}</strong> · {nivel.toFixed(2).replace('.', ',')} m
           {marcas.map((m) => (
             <div key={m.t} style={{ color: m.cor }}>

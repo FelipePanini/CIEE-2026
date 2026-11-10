@@ -62,7 +62,7 @@ export function Numero({ dado, formatar, selo = false, className = '', children 
         onFocus={abrir}
         onBlur={agendarFechar}
         onClick={() => setAberto((a) => !a)}
-        className={`cursor-help border-b border-dotted border-current/40 text-left tabular-nums ${pendente ? 'text-alerta' : ''} ${className}`}
+        className={`cursor-help border-b border-dotted border-current/40 text-left tabular-nums ${pendente ? 'text-atencao' : ''} ${className}`}
       >
         {children ?? valorTexto(dado, formatar)}
       </button>
@@ -80,7 +80,7 @@ export function Numero({ dado, formatar, selo = false, className = '', children 
               top: posicao.y,
               transform: posicao.acima ? 'translateY(-100%)' : undefined,
             }}
-            className="fixed z-[1000] w-[min(22rem,80vw)] rounded-xl bg-navy-950 p-3 text-left text-xs font-normal leading-snug text-creme-100 shadow-2xl ring-1 ring-piscina-300/40"
+            className="fixed z-[1000] w-[min(22rem,80vw)] rounded-xl bg-fundo-0 p-3 text-left text-xs font-normal leading-snug text-texto shadow-2xl ring-1 ring-linha-forte"
           >
             {calc ? <DetalheCalculado c={dado} /> : <DetalheDado d={dado} />}
           </span>,
@@ -112,7 +112,7 @@ function DetalheDado({ d }: { d: Dado<number> | Dado<string> }) {
       </span>
       {d.nota && <span className="opacity-80">{d.nota}</span>}
       {d.valor === A_CONFIRMAR && (
-        <span className="text-alerta">
+        <span className="text-atencao">
           Número não confirmado na fonte oficial — ver README (A CONFIRMAR).
         </span>
       )}
@@ -121,7 +121,7 @@ function DetalheDado({ d }: { d: Dado<number> | Dado<string> }) {
           href={d.url}
           target="_blank"
           rel="noreferrer"
-          className="truncate text-piscina-300 underline"
+          className="truncate text-texto-2 underline"
         >
           {d.url}
         </a>
@@ -132,7 +132,7 @@ function DetalheDado({ d }: { d: Dado<number> | Dado<string> }) {
           href={c.url}
           target="_blank"
           rel="noreferrer"
-          className="truncate text-piscina-200/80 underline"
+          className="truncate text-texto-2 underline"
         >
           também: {c.fonte}
         </a>
@@ -149,7 +149,7 @@ function DetalheCalculado({ c }: { c: Calculado }) {
         <SeloCamada camada="CALCULADO" pontos={p.camadas} />
         <span className="opacity-70">{c.unidade}</span>
       </span>
-      <code className="rounded bg-navy-800 px-1.5 py-1 font-mono text-[0.7rem]">{c.formula}</code>
+      <code className="rounded bg-superficie px-1.5 py-1 font-mono text-[0.7rem]">{c.formula}</code>
       <span className="opacity-70">Insumos:</span>
       <ul className="flex flex-col gap-1">
         {p.dados.slice(0, 6).map((d, i) => (

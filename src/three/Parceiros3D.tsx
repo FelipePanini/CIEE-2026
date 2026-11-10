@@ -4,12 +4,13 @@ import { DADOS } from '../data/carregar';
 import { useOperacao, useResultado } from '../store';
 import { elevacao, paraMundo, Y_POR_METRO, type Relevo } from './mundo';
 import { Rotulo } from './Rotulo';
+import { cor } from '../ui/cores';
 
 const COR = {
-  produto: '#bd8413',
-  veiculo: '#2fa8a3',
-  espaco: '#8f7ae0',
-  voluntarios: '#e8603f',
+  produto: cor('cinza-3'),
+  veiculo: cor('cinza-2'),
+  espaco: cor('cinza-3'),
+  voluntarios: cor('cinza-1'),
 } as const;
 
 export function Parceiros3D({ relevo }: { relevo: Relevo }) {
@@ -42,7 +43,7 @@ export function Parceiros3D({ relevo }: { relevo: Relevo }) {
               distanceFactor={55}
             >
               <div
-                className="whitespace-nowrap rounded bg-navy-950/80 px-1.5 py-0.5 text-[10px] text-creme-100"
+                className="whitespace-nowrap rounded bg-fundo-0/80 px-1.5 py-0.5 text-[10px] text-texto"
                 style={{ borderLeft: `3px solid ${COR[p.tipo_ajuda]}` }}
               >
                 {p.nome}
@@ -59,7 +60,7 @@ export function Parceiros3D({ relevo }: { relevo: Relevo }) {
             <Line
               key={i}
               points={[p3(pa.lat, pa.lon, 1.2), p3(l.lat, l.lon, 2.5)]}
-              color="#f2b84b"
+              color={cor('atencao')}
               lineWidth={2}
               dashed
               dashSize={0.6}

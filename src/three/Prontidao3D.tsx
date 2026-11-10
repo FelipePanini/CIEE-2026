@@ -17,6 +17,7 @@ import {
   type Relevo,
 } from './mundo';
 import { Rotulo } from './Rotulo';
+import { cor } from '../ui/cores';
 
 const prog = DADOS.previsao.prognosticos.find((p) => p.id === 'inmet-ond-2026')!;
 const anomalia = prog.indicadores.find((i) => i.id === 'anomalia_chuva_max')!.dado;
@@ -58,11 +59,11 @@ export function Prontidao3D({ relevo }: { relevo: Relevo }) {
     <group>
       <mesh rotation-x={-Math.PI / 2} position={[0, 7, 0]} visible={ativo}>
         <planeGeometry args={[LARGURA_MUNDO, PROFUNDIDADE_MUNDO]} />
-        <meshBasicMaterial color="#8cc7c5" transparent opacity={0.1} depthWrite={false} />
+        <meshBasicMaterial color={cor('cinza-2')} transparent opacity={0.1} depthWrite={false} />
       </mesh>
       <instancedMesh ref={gotas} args={[undefined, undefined, N_GOTAS]} visible={ativo}>
         <boxGeometry args={[0.05, 0.9, 0.05]} />
-        <meshBasicMaterial color="#b5dcdb" transparent opacity={0.55} />
+        <meshBasicMaterial color={cor('cinza-2')} transparent opacity={0.55} />
       </instancedMesh>
       {r.locais.map((l) => {
         const [x, z] = paraMundo(l.lat, l.lon);
@@ -71,15 +72,19 @@ export function Prontidao3D({ relevo }: { relevo: Relevo }) {
         return (
           <mesh key={l.id} position={[x, y + 0.2, z]} rotation-x={-Math.PI / 2} visible={ativo}>
             <ringGeometry args={[1, 1.5, 32]} />
-            <meshBasicMaterial color={pronto ? '#6cc28f' : '#f2b84b'} transparent opacity={0.9} />
+            <meshBasicMaterial
+              color={pronto ? cor('ok') : cor('atencao')}
+              transparent
+              opacity={0.9}
+            />
           </mesh>
         );
       })}
       <Rotulo visivel={ativo} position={[-30, 16, -30]} center distanceFactor={90}>
-        <div className="w-64 rounded-lg bg-navy-950/90 p-2 text-center text-[12px] leading-snug text-creme-100 ring-1 ring-piscina-300/50">
-          <strong className="text-piscina-300">PREVISÃO · out–dez/2026</strong>
+        <div className="w-64 rounded-lg bg-fundo-0/90 p-2 text-center text-[12px] leading-snug text-texto ring-1 ring-linha-forte">
+          <strong className="text-texto-2">PREVISÃO · out–dez/2026</strong>
           <div>Chuva até +{ANOM} mm acima da média no RS (INMET/INPE)</div>
-          <div className="text-[10px] text-creme-200">
+          <div className="text-[10px] text-texto-2">
             Anéis verdes: abrigos com estoque pré-posicionado; âmbar: ainda falta estoque
           </div>
         </div>

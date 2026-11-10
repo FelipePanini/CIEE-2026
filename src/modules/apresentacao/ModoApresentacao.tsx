@@ -42,7 +42,7 @@ export function BotaoApresentacao() {
     <button
       type="button"
       onClick={() => set({ ativa: true, etapa: 0 })}
-      className="rounded-md bg-creme-100 px-3 py-1.5 text-xs font-bold text-navy-900 hover:bg-white"
+      className="rounded-md bg-claro px-3 py-1.5 text-xs font-bold text-fundo-0 hover:bg-branco"
       title="Modo Apresentação (tela cheia, navegação pelas setas)"
     >
       ▶ Apresentar
@@ -53,10 +53,8 @@ export function BotaoApresentacao() {
 function Destaque({ rotulo, children }: { rotulo: string; children: ReactNode }) {
   return (
     <div className="flex min-w-0 flex-col gap-1">
-      <span className="text-sm uppercase tracking-wider text-creme-200/80 md:text-base">
-        {rotulo}
-      </span>
-      <span className="font-display text-3xl leading-none text-creme-100 md:text-[2.6rem]">
+      <span className="text-sm uppercase tracking-wider text-texto-2 md:text-base">{rotulo}</span>
+      <span className="font-display text-3xl leading-none text-texto md:text-[2.6rem]">
         {children}
       </span>
     </div>
@@ -211,7 +209,7 @@ function Destaques({ id, msCarta }: { id: string; msCarta: number | null }) {
             <button
               type="button"
               onClick={() => desfazer()}
-              className="pointer-events-auto self-end rounded-md bg-navy-700 px-3 py-2 text-sm font-semibold ring-1 ring-coral-500/60"
+              className="pointer-events-auto self-end rounded-md bg-superficie-2 px-3 py-2 text-sm font-semibold ring-1 ring-linha-forte"
             >
               Desfazer (D)
             </button>
@@ -226,7 +224,7 @@ function Destaques({ id, msCarta }: { id: string; msCarta: number | null }) {
             <Numero dado={r.producao.kitsHora} formatar={(v) => `${fmt.int(v)} kits/h`} />
           </Destaque>
           <Destaque rotulo="Gargalo">
-            <span className="text-coral-400">
+            <span className="text-alerta">
               {ZONAS.find((z) => z.id === r.producao.gargalo)!.nome}
             </span>
           </Destaque>
@@ -300,7 +298,7 @@ function Encerramento() {
       <button
         type="button"
         onClick={() => void baixarCardLinkedIn(r)}
-        className="rounded-lg bg-coral-500 px-4 py-2.5 text-base font-bold text-navy-950 hover:bg-coral-400"
+        className="rounded-lg bg-texto px-4 py-2.5 text-base font-bold text-fundo-0 hover:bg-branco"
       >
         Gerar card para o LinkedIn
       </button>
@@ -312,11 +310,11 @@ function Encerramento() {
             .then(() => setCopiado(true))
             .catch(() => setCopiado(false));
         }}
-        className="rounded-lg bg-navy-700 px-4 py-2.5 text-base font-semibold ring-1 ring-piscina-300/40"
+        className="rounded-lg bg-superficie-2 px-4 py-2.5 text-base font-semibold ring-1 ring-linha-forte"
       >
         {copiado ? 'Texto copiado ✓' : 'Copiar texto do post'}
       </button>
-      <span className="text-lg font-bold text-piscina-300">{HASHTAGS}</span>
+      <span className="text-lg font-bold text-texto-2">{HASHTAGS}</span>
     </div>
   );
 }
@@ -426,19 +424,19 @@ export function ModoApresentacao({ com3d }: { com3d: boolean }) {
       aria-label={`Modo Apresentação — etapa ${i + 1} de ${ETAPAS.length}: ${etapa.titulo}`}
     >
       <div className="flex items-start justify-between gap-4 p-5">
-        <div className="leading-tight [text-shadow:0_2px_8px_#0b1e26]">
-          <p className="font-display text-xl text-creme-100">Central de Comando</p>
-          <p className="text-sm text-piscina-300">Solução Distribuidora · Ação Social RS</p>
+        <div className="leading-tight [text-shadow:0_2px_8px_var(--color-fundo-0)]">
+          <p className="font-display text-xl text-texto">Central de Comando</p>
+          <p className="text-sm text-texto-2">Solução Distribuidora · Ação Social RS</p>
         </div>
         <div className="pointer-events-auto flex items-center gap-2 text-sm">
-          <span className="font-display text-2xl tabular-nums text-creme-100">
+          <span className="font-display text-2xl tabular-nums text-texto">
             {String(i + 1).padStart(2, '0')}
-            <span className="text-creme-200/60"> / {ETAPAS.length}</span>
+            <span className="text-texto-2"> / {ETAPAS.length}</span>
           </span>
           <button
             type="button"
             onClick={() => set({ ativa: false })}
-            className="rounded-md bg-navy-950/80 px-3 py-1.5 font-semibold ring-1 ring-piscina-300/40"
+            className="rounded-md bg-fundo-0/80 px-3 py-1.5 font-semibold ring-1 ring-linha-forte"
           >
             Sair (Esc)
           </button>
@@ -450,17 +448,17 @@ export function ModoApresentacao({ com3d }: { com3d: boolean }) {
         aria-live="polite"
       >
         <div
-          className={`flex flex-col gap-3 rounded-2xl p-6 ${final ? 'max-w-5xl items-center bg-navy-950/85' : 'max-w-3xl bg-gradient-to-r from-navy-950/92 via-navy-950/82 to-navy-950/55'}`}
+          className={`flex flex-col gap-3 rounded-2xl p-6 ${final ? 'max-w-5xl items-center bg-fundo-0/85' : 'max-w-3xl bg-gradient-to-r from-fundo-0/92 via-fundo-0/82 to-fundo-0/55'}`}
         >
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-coral-400">
+          <p className="text-sm font-bold uppercase tracking-[0.25em] text-texto-2">
             {etapa.rotulo}
           </p>
           <h2
-            className={`font-display leading-[1.05] text-creme-100 ${final ? 'text-4xl md:text-7xl' : 'text-3xl md:text-5xl'}`}
+            className={`font-display leading-[1.05] text-texto ${final ? 'text-4xl md:text-7xl' : 'text-3xl md:text-5xl'}`}
           >
             {etapa.titulo}
           </h2>
-          <p className="max-w-3xl text-xl text-creme-200 md:text-2xl">{etapa.frase}</p>
+          <p className="max-w-3xl text-xl text-texto-2 md:text-2xl">{etapa.frase}</p>
           <div className="pointer-events-auto mt-2 flex flex-wrap items-end gap-x-10 gap-y-4">
             {final ? <Encerramento /> : <Destaques id={etapa.id} msCarta={msCarta} />}
           </div>
@@ -469,13 +467,13 @@ export function ModoApresentacao({ com3d }: { com3d: boolean }) {
 
       <nav
         aria-label="Etapas da apresentação"
-        className="pointer-events-auto flex items-center gap-3 bg-gradient-to-t from-navy-950/95 to-transparent px-5 pb-4 pt-6"
+        className="pointer-events-auto flex items-center gap-3 bg-gradient-to-t from-fundo-0/95 to-transparent px-5 pb-4 pt-6"
       >
         <button
           type="button"
           onClick={() => set({ etapa: Math.max(0, i - 1) })}
           disabled={i === 0}
-          className="rounded-md bg-navy-800 px-3 py-2 text-lg font-bold disabled:opacity-30"
+          className="rounded-md bg-superficie px-3 py-2 text-lg font-bold disabled:opacity-30"
           aria-label="Etapa anterior"
         >
           ←
@@ -491,10 +489,10 @@ export function ModoApresentacao({ com3d }: { com3d: boolean }) {
                 title={e.titulo}
               >
                 <span
-                  className={`h-1.5 w-full rounded-full ${k < i ? 'bg-piscina-300' : k === i ? 'bg-coral-500' : 'bg-white/15'}`}
+                  className={`h-1.5 w-full rounded-full ${k < i ? 'bg-cinza-2' : k === i ? 'bg-texto' : 'bg-linha-forte'}`}
                 />
                 <span
-                  className={`hidden truncate text-[0.7rem] lg:block ${k === i ? 'font-bold text-creme-100' : 'text-creme-200/60'}`}
+                  className={`hidden truncate text-[0.7rem] lg:block ${k === i ? 'font-bold text-texto' : 'text-texto-2'}`}
                 >
                   {e.rotulo}
                 </span>
@@ -506,12 +504,12 @@ export function ModoApresentacao({ com3d }: { com3d: boolean }) {
           type="button"
           onClick={() => set({ etapa: Math.min(ETAPAS.length - 1, i + 1) })}
           disabled={i === ETAPAS.length - 1}
-          className="rounded-md bg-coral-500 px-3 py-2 text-lg font-bold text-navy-950 disabled:opacity-30"
+          className="rounded-md bg-texto px-3 py-2 text-lg font-bold text-fundo-0 disabled:opacity-30"
           aria-label="Próxima etapa"
         >
           →
         </button>
-        <span className="hidden text-xs text-creme-200/70 xl:inline">
+        <span className="hidden text-xs text-texto-2 xl:inline">
           ← → navegar · F tela cheia · Esc sair
         </span>
       </nav>

@@ -61,7 +61,7 @@ function Central() {
             >
               <Suspense
                 fallback={
-                  <div className="absolute inset-0 grid place-items-center text-sm text-creme-200">
+                  <div className="absolute inset-0 grid place-items-center text-sm text-texto-2">
                     Carregando o mundo 3D…
                   </div>
                 }
@@ -74,7 +74,7 @@ function Central() {
           {com3d && !apresentando && (
             <button
               onClick={() => setRecolhido(!recolhido)}
-              className="absolute right-3 top-3 z-20 rounded-md bg-navy-950/85 px-2.5 py-1.5 text-xs font-semibold ring-1 ring-piscina-300/40"
+              className="absolute right-3 top-3 z-20 rounded-md bg-fundo-0/85 px-2.5 py-1.5 text-xs font-semibold ring-1 ring-linha-forte"
               aria-expanded={!recolhido}
             >
               {recolhido ? '◧ Mostrar painel' : '▭ Só o 3D'}
@@ -83,7 +83,7 @@ function Central() {
           <div
             className={
               com3d
-                ? `absolute bottom-0 right-0 top-12 z-10 w-[min(34rem,100%)] overflow-y-auto rounded-tl-2xl bg-navy-900/88 p-4 shadow-2xl ring-1 ring-piscina-300/20 backdrop-blur transition-transform duration-300 ${painelFechado ? 'translate-x-full' : ''}`
+                ? `absolute bottom-0 right-0 top-12 z-10 w-[min(34rem,100%)] overflow-y-auto rounded-tl-2xl bg-fundo-1/88 p-4 shadow-2xl ring-1 ring-linha backdrop-blur transition-transform duration-300 ${painelFechado ? 'translate-x-full' : ''}`
                 : 'h-full overflow-y-auto'
             }
             data-modo={com3d ? '3d' : '2d'}

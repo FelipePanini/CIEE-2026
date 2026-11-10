@@ -12,7 +12,7 @@ export function MuralRelatos({ max }: { max?: number }) {
   const relatos = DADOS.relatos.relatos.slice(0, max);
   return (
     <Painel titulo="Mural de relatos">
-      <p className="text-xs text-creme-200">{DADOS.relatos.aviso}</p>
+      <p className="text-xs text-texto-2">{DADOS.relatos.aviso}</p>
       <ul
         className="grid gap-3"
         style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(210px,100%), 1fr))' }}
@@ -20,7 +20,7 @@ export function MuralRelatos({ max }: { max?: number }) {
         {relatos.map((r, i) => (
           <li
             key={r.id}
-            className={`painel-claro flex flex-col gap-2 p-3 text-navy-900 shadow ${INCLINACAO[i % INCLINACAO.length]}`}
+            className={`painel-claro flex flex-col gap-2 p-3 text-fundo-0 shadow ${INCLINACAO[i % INCLINACAO.length]}`}
           >
             <SeloCamada camada="SIMULADO" texto={r.selo} className="self-start" />
             <blockquote className="text-[0.8rem] leading-snug">“{r.texto}”</blockquote>

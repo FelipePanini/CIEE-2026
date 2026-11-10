@@ -1,37 +1,6 @@
 @import 'tailwindcss';
 
-/*
- * Design tokens — extraídos do PDF dos slides do grupo (docs/referencia/slides-acao-social-rs.pdf):
- *   fundo navy #102A35 · texto escuro #17343D · coral #EF6A4B · creme #F3EFE6 · piscina #8CC7C5
- *   títulos: Archivo Black · texto: Archivo (substituto livre da Aptos usada nos slides)
- */
-@theme {
-  --color-navy-950: #0b1e26;
-  --color-navy-900: #102a35;
-  --color-navy-800: #17343d;
-  --color-navy-700: #1f4350;
-  --color-navy-600: #2c5566;
-  --color-coral-500: #ef6a4b;
-  --color-coral-400: #f3876d;
-  --color-coral-600: #d9553a;
-  --color-creme-100: #f3efe6;
-  --color-creme-200: #e7e0d2;
-  --color-piscina-300: #8cc7c5;
-  --color-piscina-400: #6fb3b1;
-  --color-piscina-200: #b5dcdb;
-  --color-alerta: #f2b84b;
-  --color-ok: #6cc28f;
-
-  /* Camadas de dado — selos */
-  --color-camada-historico: #b9a98c;
-  --color-camada-atual: #ef6a4b;
-  --color-camada-previsao: #8cc7c5;
-  --color-camada-simulado: #c6b4e6;
-  --color-camada-parametro: #f2b84b;
-
-  --font-display: 'Archivo Black', 'Archivo Variable', system-ui, sans-serif;
-  --font-sans: 'Archivo Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
-}
+@import './tokens.css';
 
 :root {
   color-scheme: dark;
@@ -46,11 +15,32 @@ body,
 
 body {
   margin: 0;
-  background: var(--color-navy-900);
-  color: var(--color-creme-100);
+  background: linear-gradient(160deg, var(--color-fundo-0) 0%, var(--color-fundo-1) 100%) fixed;
+  color: var(--color-texto);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: 'tnum' 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Grão sutil (2,5%) por cima do fundo, para dar profundidade ao grafite */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='160' height='160' filter='url(%23g)'/></svg>");
+}
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* KPIs e números: algarismos tabulares, para as colunas não "dançarem" */
+.kpi,
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
 }
 
 .font-display {
@@ -60,20 +50,20 @@ body {
 
 /* Painéis HTML por cima do Canvas 3D */
 .painel {
-  background: color-mix(in oklab, var(--color-navy-900) 88%, transparent);
-  border: 1px solid color-mix(in oklab, var(--color-piscina-300) 22%, transparent);
+  background: color-mix(in oklab, var(--color-fundo-1) 72%, transparent);
+  border: 1px solid var(--color-linha);
   border-radius: 14px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(10px);
 }
 
 .painel-claro {
-  background: var(--color-creme-100);
-  color: var(--color-navy-800);
+  background: var(--color-claro);
+  color: var(--color-fundo-1);
   border-radius: 14px;
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-coral-500);
+  outline: 2px solid var(--color-texto);
   outline-offset: 2px;
 }
 

@@ -13,8 +13,9 @@ import { useResultado } from '../../store';
 import { Grade, Kpi, Painel, TituloTela } from '../../ui/blocos';
 import { Numero } from '../../ui/Numero';
 import { fmt } from '../../ui/formato';
-import { SERIES } from '../../ui/cores';
+import { corSerie } from '../../ui/cores';
 import { FraseKit } from '../urgencia/Painel2D';
+import { cor } from '../../ui/cores';
 
 const nomeProduto = (id: string) => DADOS.precos.produtos.find((p) => p.id === id)?.nome ?? id;
 const embalagem = (id: string) => DADOS.precos.produtos.find((p) => p.id === id)?.embalagem ?? '';
@@ -43,7 +44,7 @@ export function Painel2DGastos() {
       </Grade>
       <Painel titulo="Orçamento usado vs. disponível">
         <div
-          className="h-4 overflow-hidden rounded-full bg-navy-700"
+          className="h-4 overflow-hidden rounded-full bg-superficie-2"
           role="meter"
           aria-valuenow={Math.round(uso * 100)}
           aria-valuemin={0}
@@ -56,9 +57,9 @@ export function Painel2DGastos() {
               width: `${Math.min(100, uso * 100)}%`,
               background:
                 uso > 1
-                  ? 'var(--color-coral-500)'
+                  ? 'var(--color-alerta)'
                   : uso > 0.8
-                    ? 'var(--color-alerta)'
+                    ? 'var(--color-atencao)'
                     : 'var(--color-ok)',
             }}
           />
@@ -68,7 +69,7 @@ export function Painel2DGastos() {
           <Numero dado={c.orcamento} formatar={fmt.brl} selo /> (
           <Numero dado={c.usoOrcamento} formatar={fmt.pct} />)
         </p>
-        <div className="flex flex-wrap gap-4 text-xs text-creme-200">
+        <div className="flex flex-wrap gap-4 text-xs text-texto-2">
           <span>
             Compras: <Numero dado={c.compras} formatar={fmt.brl} />
           </span>
@@ -82,12 +83,12 @@ export function Painel2DGastos() {
       </Painel>
       <Grade min={360}>
         <Painel titulo="De onde vem cada real do kit">
-          <p className="text-xs text-creme-200">
+          <p className="text-xs text-texto-2">
             <FraseKit />. Alimentos: preço médio DIEESE em Porto Alegre; higiene, limpeza e água:
             catálogo online de atacado (loja citada só como fonte de preço).
           </p>
           <table className="w-full text-left text-xs">
-            <thead className="text-creme-200">
+            <thead className="text-texto-2">
               <tr>
                 <th className="py-1">Item</th>
                 <th>Qtd.</th>
@@ -97,17 +98,17 @@ export function Painel2DGastos() {
             </thead>
             <tbody>
               {r.kit.linhas.map((l) => (
-                <tr key={l.produto} className="border-t border-white/5">
+                <tr key={l.produto} className="border-t border-linha-fraca">
                   <td className="py-1">
                     {nomeProduto(l.produto)}{' '}
-                    <span className="text-creme-200/60">({embalagem(l.produto)})</span>
+                    <span className="text-texto-2">({embalagem(l.produto)})</span>
                   </td>
                   <td className="tabular-nums">{fmt.dec2(l.qtd)}</td>
                   <td>
                     {l.preco ? (
                       <Numero dado={l.preco} formatar={fmt.brl} />
                     ) : (
-                      <span className="text-alerta">A CONFIRMAR</span>
+                      <span className="text-atencao">A CONFIRMAR</span>
                     )}
                   </td>
                   <td className="text-right tabular-nums">
@@ -115,7 +116,7 @@ export function Painel2DGastos() {
                   </td>
                 </tr>
               ))}
-              <tr className="border-t border-white/20 font-bold">
+              <tr className="border-t border-linha-forte font-bold">
                 <td className="py-1" colSpan={3}>
                   Total do kit
                 </td>
@@ -125,7 +126,7 @@ export function Painel2DGastos() {
               </tr>
             </tbody>
           </table>
-          <p className="text-xs text-creme-200">
+          <p className="text-xs text-texto-2">
             Energia: <Numero dado={r.kit.kcalPessoaDia} formatar={(v) => `${fmt.int(v)} kcal`} />{' '}
             por pessoa/dia (TACO) — meta Esfera{' '}
             <Numero
@@ -146,11 +147,11 @@ export function Painel2DGastos() {
               <Numero
                 dado={c.pixEmKits}
                 formatar={fmt.int}
-                className="font-display text-xl text-coral-400"
+                className="font-display text-xl text-texto"
               />{' '}
               kits.
             </p>
-            <p className="text-xs text-creme-200">
+            <p className="text-xs text-texto-2">
               <Numero dado={DADOS.orcamento.pix_sos_rs.familias_beneficiadas!} formatar={fmt.int} />{' '}
               famílias receberam{' '}
               <Numero dado={DADOS.orcamento.pix_sos_rs.valor_por_familia!} formatar={fmt.brl} />{' '}
@@ -174,28 +175,28 @@ export function Painel2DGastos() {
                       type="category"
                       dataKey="n"
                       width={130}
-                      tick={{ fill: '#e7e0d2', fontSize: 11 }}
+                      tick={{ fill: cor('texto-2'), fontSize: 11 }}
                       tickLine={false}
                       axisLine={false}
                     />
                     <Tooltip
                       contentStyle={{
-                        background: '#0b1e26',
-                        border: '1px solid #8cc7c555',
+                        background: cor('fundo-0'),
+                        border: '1px solid var(--color-linha-forte)',
                         borderRadius: 8,
                         fontSize: 12,
                       }}
                       formatter={(v) => fmt.brl(Number(v))}
-                      cursor={{ fill: '#ffffff0d' }}
+                      cursor={{ fill: cor('superficie') }}
                     />
                     <Bar dataKey="v" radius={[0, 4, 4, 0]} isAnimationActive={false} barSize={26}>
-                      <Cell fill={SERIES[1]} />
-                      <Cell fill={SERIES[0]} />
+                      <Cell fill={corSerie(1)} />
+                      <Cell fill={corSerie(0)} />
                       <LabelList
                         dataKey="v"
                         position="right"
                         formatter={(v: unknown) => fmt.brlCompacto(Number(v))}
-                        fill="#f3efe6"
+                        fill={cor('texto')}
                         fontSize={12}
                       />
                     </Bar>
@@ -210,7 +211,7 @@ export function Painel2DGastos() {
             </Painel>
           ) : (
             <Painel titulo="Prevenir vs. reagir">
-              <p className="text-xs text-creme-200">
+              <p className="text-xs text-texto-2">
                 Troque para o cenário Prontidão para comparar o estoque pré-posicionado com a compra
                 emergencial.
               </p>

@@ -28,14 +28,14 @@ export function Navegacao() {
   return (
     <nav
       aria-label="Módulos"
-      className="relative z-20 flex shrink-0 gap-1 overflow-x-auto border-b border-piscina-300/15 bg-navy-950/85 p-1.5 backdrop-blur md:w-40 md:flex-col md:overflow-visible md:border-b-0 md:border-r"
+      className="relative z-20 flex shrink-0 gap-1 overflow-x-auto border-b border-linha bg-fundo-0/85 p-1.5 backdrop-blur md:w-40 md:flex-col md:overflow-visible md:border-b-0 md:border-r"
     >
       {MODULOS.map((m) => (
         <button
           key={m.id}
           onClick={() => setTela(m.id)}
           aria-current={tela === m.id ? 'page' : undefined}
-          className={`flex shrink-0 items-center gap-2 rounded-lg px-2.5 py-2 text-left text-xs font-semibold transition ${tela === m.id ? 'bg-creme-100 text-navy-900' : 'text-creme-200 hover:bg-navy-800 hover:text-creme-100'}`}
+          className={`flex shrink-0 items-center gap-2 rounded-lg px-2.5 py-2 text-left text-xs font-semibold transition ${tela === m.id ? 'bg-claro text-fundo-0' : 'text-texto-2 hover:bg-superficie hover:text-texto'}`}
         >
           <span aria-hidden className="w-5 text-center">
             {m.icone}

@@ -1,4 +1,5 @@
 /** Papéis do organograma da operação, conforme o Diário de Bordo do Estudo Dirigido (docs/referencia). */
+import { cor } from '../../ui/cores';
 export type AreaOrg = 'lider' | 'administracao' | 'comercio' | 'logistica' | 'producao';
 
 export interface Papel {
@@ -54,28 +55,28 @@ export const CRONOGRAMA = [
     nome: 'Alinhamento',
     minutos: 30,
     entrega: 'Eleição do líder e diretrizes gerais',
-    cor: '#8cc7c5',
+    cor: cor('cinza-4'),
   },
   {
     id: 'planejamento',
     nome: 'Planejamento',
     minutos: 30,
     entrega: 'Organograma + plano de trabalho',
-    cor: '#ef6a4b',
+    cor: cor('cinza-3'),
   },
   {
     id: 'producao',
     nome: 'Produção',
     minutos: 105,
     entrega: 'Kits, quadra e rotas',
-    cor: '#17343d',
+    cor: cor('cinza-1'),
   },
   {
     id: 'controle',
     nome: 'Controle',
     minutos: 60,
     entrega: 'Revisão, ensaio e banca avaliadora',
-    cor: '#f3876d',
+    cor: cor('cinza-2'),
   },
 ] as const;
 

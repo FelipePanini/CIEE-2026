@@ -11,8 +11,9 @@ import { Rotulo } from './Rotulo';
 import { useOperacao, useResultado } from '../store';
 import { AREAS_ORG, PAPEIS, type AreaOrg } from '../modules/administracao/organograma';
 import { ILHAS } from './mundo';
+import { cor } from '../ui/cores';
 
-const COR_SEM = { verde: '#6cc28f', amarelo: '#f2b84b', vermelho: '#ef6a4b' } as const;
+const COR_SEM = { verde: cor('ok'), amarelo: cor('atencao'), vermelho: cor('alerta') } as const;
 const RAIO = 9;
 const AREAS = AREAS_ORG.filter((a) => a.id !== 'lider');
 
@@ -24,10 +25,10 @@ interface Pulso {
 
 /** Fila global de pulsos (também alimentada pela Carta de Crise). */
 export const pulsosOrg: Pulso[] = [];
-export function dispararPulso(area: AreaOrg | 'todas', cor = '#f2b84b') {
+export function dispararPulso(area: AreaOrg | 'todas', corPulso = cor('atencao')) {
   const agora = performance.now() / 1000;
   const alvos = area === 'todas' ? AREAS.map((a) => a.id) : [area];
-  for (const a of alvos) pulsosOrg.push({ area: a, t0: agora, cor });
+  for (const a of alvos) pulsosOrg.push({ area: a, t0: agora, cor: corPulso });
 }
 
 export function Organograma3D() {
@@ -49,12 +50,15 @@ export function Organograma3D() {
       const m = mensagens[0]!;
       dispararPulso(
         (AREAS.some((a) => a.id === m.para) ? m.para : 'todas') as AreaOrg | 'todas',
-        '#8cc7c5',
+        cor('cinza-2'),
       );
     }
     if (nAlertas > ultimo.current.alertas) {
       const novo = r.alertas[r.alertas.length - 1];
-      dispararPulso(novo && novo.area !== 'lider' ? (novo.area as AreaOrg) : 'todas', '#ef6a4b');
+      dispararPulso(
+        novo && novo.area !== 'lider' ? (novo.area as AreaOrg) : 'todas',
+        cor('alerta'),
+      );
     }
     ultimo.current = { alertas: nAlertas, msgs: mensagens.length };
   }, [nAlertas, mensagens, r.alertas]);
@@ -93,12 +97,16 @@ export function Organograma3D() {
     <group position={ILHAS.organograma}>
       <mesh position={[0, -0.05, 0]} rotation-x={-Math.PI / 2}>
         <circleGeometry args={[RAIO + 6, 64]} />
-        <meshStandardMaterial color="#17343d" />
+        <meshStandardMaterial color={cor('fundo-2')} />
       </mesh>
       {/* Líder do Projeto */}
       <mesh position={[0, 3.2, 0]}>
         <sphereGeometry args={[1.5, 32, 32]} />
-        <meshStandardMaterial color="#ef6a4b" emissive="#ef6a4b" emissiveIntensity={0.35} />
+        <meshStandardMaterial
+          color={cor('texto')}
+          emissive={cor('texto')}
+          emissiveIntensity={0.35}
+        />
       </mesh>
       <Rotulo
         visivel={rotulos}
@@ -108,7 +116,7 @@ export function Organograma3D() {
         zIndexRange={[5, 0]}
         className="pointer-events-none select-none"
       >
-        <div className="whitespace-nowrap rounded bg-coral-500 px-2 py-1 text-center text-[13px] font-bold text-navy-950">
+        <div className="whitespace-nowrap rounded bg-texto px-2 py-1 text-center text-[13px] font-bold text-fundo-0">
           Líder do Projeto{nomes.lider ? ` · ${nomes.lider}` : ''}
         </div>
       </Rotulo>
@@ -121,7 +129,7 @@ export function Organograma3D() {
             <group key={a.id}>
               <Line
                 points={[[0, 3.2, 0], p]}
-                color="#8cc7c5"
+                color={cor('cinza-2')}
                 lineWidth={2}
                 transparent
                 opacity={0.8}
@@ -143,10 +151,16 @@ export function Organograma3D() {
                 ];
                 return (
                   <group key={pp.id}>
-                    <Line points={[p, q]} color="#8cc7c5" lineWidth={1} transparent opacity={0.5} />
+                    <Line
+                      points={[p, q]}
+                      color={cor('cinza-2')}
+                      lineWidth={1}
+                      transparent
+                      opacity={0.5}
+                    />
                     <mesh position={q}>
                       <sphereGeometry args={[0.35, 12, 12]} />
-                      <meshStandardMaterial color="#f3efe6" />
+                      <meshStandardMaterial color={cor('texto')} />
                     </mesh>
                   </group>
                 );
@@ -159,10 +173,10 @@ export function Organograma3D() {
                 zIndexRange={[5, 0]}
                 className="pointer-events-none select-none"
               >
-                <div className="whitespace-nowrap rounded bg-navy-950/85 px-2 py-1 text-center text-[12px] leading-tight text-creme-100 ring-1 ring-piscina-300/40">
+                <div className="whitespace-nowrap rounded bg-fundo-0/85 px-2 py-1 text-center text-[12px] leading-tight text-texto ring-1 ring-linha-forte">
                   <strong>{a.nome}</strong>
                   {papeis.map((pp) => (
-                    <div key={pp.id} className="text-[10px] text-creme-200">
+                    <div key={pp.id} className="text-[10px] text-texto-2">
                       {pp.titulo}
                       {nomes[pp.id] ? ` · ${nomes[pp.id]}` : ''}
                     </div>

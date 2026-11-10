@@ -66,15 +66,12 @@ export function elevacaoMinima(r: Relevo, lat: number, lon: number, raioKm = 1.2
   return min;
 }
 
-/** Paleta da maquete por elevação (navy → piscina → creme). */
-export function corElevacao(m: number): [number, number, number] {
-  const a = [0.13, 0.27, 0.3];
-  const b = [0.33, 0.52, 0.5];
-  const c = [0.86, 0.82, 0.74];
-  const t = Math.min(1, Math.sqrt(Math.max(0, m) / 900));
-  const mix = (x: number[], y: number[], k: number) =>
-    x.map((v, i) => v + (y[i]! - v) * k) as [number, number, number];
-  return t < 0.35 ? mix(a, b, t / 0.35) : mix(b, c, (t - 0.35) / 0.65);
+/**
+ * Tom do terreno por elevação: 0 (várzea) → 1 (serra). A cor em si vem dos tokens `pedra-*`
+ * (src/three/tema.ts); aqui fica só a curva, para o motor do mundo não conhecer cores.
+ */
+export function tomElevacao(m: number): number {
+  return Math.min(1, Math.sqrt(Math.max(0, m) / 900));
 }
 
 /** Presets de câmera por tela: [posição, alvo]. Transição suave (~1 s) entre eles. */

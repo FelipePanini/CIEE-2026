@@ -49,10 +49,10 @@ export const CENARIOS: {
 ];
 
 export const NIVEIS_ALERTA = [
-  { nivel: 0, nome: 'Normal', cor: '#6cc28f' },
-  { nivel: 1, nome: 'Atenção', cor: '#f2b84b' },
-  { nivel: 2, nome: 'Alerta', cor: '#f3876d' },
-  { nivel: 3, nome: 'Crítico', cor: '#ef6a4b' },
+  { nivel: 0, nome: 'Normal', tom: 'ok' },
+  { nivel: 1, nome: 'Atenção', tom: 'atencao' },
+  { nivel: 2, nome: 'Alerta', tom: 'alerta' },
+  { nivel: 3, nome: 'Crítico', tom: 'alerta' },
 ] as const;
 
 export interface LocalCenario {

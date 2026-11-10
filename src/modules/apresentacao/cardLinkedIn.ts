@@ -7,6 +7,7 @@ import { DADOS } from '../../data/carregar';
 import { formatarDataHora, fmt } from '../../ui/formato';
 import { capturarQuadro3D } from '../../three/captura';
 import type { Resultado } from '../../engine/simulacao';
+import { cor, corAlfa } from '../../ui/cores';
 
 export const HASHTAGS = '#CIEE #AprendizCIEE #Conteudos';
 export const FRASE_FINAL = 'Liderar é transformar coordenação em confiança.';
@@ -112,8 +113,8 @@ export async function gerarCard(
   c.height = altura;
   const ctx = c.getContext('2d')!;
   const fundo = ctx.createLinearGradient(0, 0, largura, altura);
-  fundo.addColorStop(0, '#0b1e26');
-  fundo.addColorStop(1, '#12293a');
+  fundo.addColorStop(0, cor('fundo-0'));
+  fundo.addColorStop(1, cor('fundo-1'));
   ctx.fillStyle = fundo;
   ctx.fillRect(0, 0, largura, altura);
 
@@ -127,35 +128,35 @@ export async function gerarCard(
     cobrir(ctx, img, xImg, 0, largura - xImg, altura);
     ctx.restore();
     const fade = ctx.createLinearGradient(xImg, 0, xImg + 260, 0);
-    fade.addColorStop(0, '#0b1e26');
-    fade.addColorStop(1, 'rgba(11,30,38,0)');
+    fade.addColorStop(0, cor('fundo-0'));
+    fade.addColorStop(1, corAlfa('fundo-0', 0));
     ctx.fillStyle = fade;
     ctx.fillRect(xImg - 1, 0, 262, altura);
   }
 
   const m = 56;
   ctx.textBaseline = 'alphabetic';
-  ctx.fillStyle = '#8cc7c5';
+  ctx.fillStyle = cor('cinza-2');
   ctx.font = '700 15px "Archivo Variable", sans-serif';
   ctx.fillText('ESTUDO DIRIGIDO CIEE · AÇÃO SOCIAL RIO GRANDE DO SUL', m, 66);
-  ctx.fillStyle = '#f3efe6';
+  ctx.fillStyle = cor('texto');
   ctx.font = '58px "Archivo Black", sans-serif';
   ctx.fillText('Central de Comando', m, 128);
-  ctx.fillStyle = '#ef6a4b';
+  ctx.fillStyle = cor('texto-2');
   ctx.font = '600 24px "Archivo Variable", sans-serif';
   ctx.fillText('Solução Distribuidora — da resposta à prontidão', m, 164);
 
   let y = 236;
   for (const l of linhasDeImpacto(r)) {
-    ctx.fillStyle = '#f3efe6';
+    ctx.fillStyle = cor('texto');
     ctx.font = '40px "Archivo Black", sans-serif';
     ctx.fillText(l.valor, m, y);
     const w = ctx.measureText(l.valor).width;
     ctx.font = '600 18px "Archivo Variable", sans-serif';
-    ctx.fillStyle = '#e7e0d2';
+    ctx.fillStyle = cor('texto-2');
     ctx.fillText(l.rotulo, m + w + 14, y - 14);
     ctx.font = '500 13px "Archivo Variable", sans-serif';
-    ctx.fillStyle = '#8cc7c5';
+    ctx.fillStyle = cor('cinza-2');
     ctx.fillText(`fonte: ${l.fonte}`, m + w + 14, y + 4);
     y += 74;
   }
@@ -163,16 +164,16 @@ export async function gerarCard(
   // frase final sobre a imagem
   ctx.font = '30px "Archivo Black", sans-serif';
   const frase = quebrar(ctx, `“${FRASE_FINAL}”`, largura - xImg - 120);
-  ctx.fillStyle = 'rgba(11,30,38,0.72)';
+  ctx.fillStyle = corAlfa('fundo-0', 0.72);
   const hF = frase.length * 38 + 28;
   ctx.fillRect(xImg + 80, altura - 112 - hF, largura - xImg - 120, hF);
-  ctx.fillStyle = '#f3efe6';
+  ctx.fillStyle = cor('texto');
   frase.forEach((t, i) => ctx.fillText(t, xImg + 96, altura - 112 - hF + 46 + i * 38));
 
-  ctx.fillStyle = '#8cc7c5';
+  ctx.fillStyle = cor('cinza-2');
   ctx.font = '800 24px "Archivo Variable", sans-serif';
   ctx.fillText(HASHTAGS, m, altura - 56);
-  ctx.fillStyle = '#e7e0d2';
+  ctx.fillStyle = cor('texto-2');
   ctx.font = '500 13px "Archivo Variable", sans-serif';
   ctx.fillText(
     `Dados: ANA · Defesa Civil RS · IBGE · INMET · DIEESE — atualizados em ${formatarDataHora(DADOS.meta.ultima_atualizacao)}. Parceiros fictícios; nenhum dado pessoal.`,

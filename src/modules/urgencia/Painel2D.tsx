@@ -14,7 +14,7 @@ export function FraseKit() {
   return (
     <span>
       1 kit = 1 família de {p.familia_ref} pessoas por {p.dias_kit} dias{' '}
-      <span className="text-creme-200/70">
+      <span className="text-texto-2">
         (média no RS:{' '}
         <Numero
           dado={DADOS.municipios.media_moradores_domicilio_rs}
@@ -44,14 +44,14 @@ export function Painel2DUrgencia() {
               role="radio"
               aria-checked={filtro === id}
               onClick={() => setFiltro(id)}
-              className={`rounded-full px-2.5 py-1 ${filtro === id ? 'bg-creme-100 text-navy-900' : 'bg-navy-800 text-creme-200'}`}
+              className={`rounded-full px-2.5 py-1 ${filtro === id ? 'bg-claro text-fundo-0' : 'bg-superficie text-texto-2'}`}
             >
               {id === 'todos' ? 'Todos' : itemPorId(id).nome}
             </button>
           ))}
         </div>
       </TituloTela>
-      <p className="text-sm text-creme-200">
+      <p className="text-sm text-texto-2">
         Vermelho = a cobertura na chegada da próxima reposição fica abaixo do prazo crítico.{' '}
         <FraseKit />.
       </p>
@@ -59,25 +59,25 @@ export function Painel2DUrgencia() {
         {locais.map((l) => (
           <article
             key={l.id}
-            className={`painel flex cursor-pointer flex-col gap-2 p-3 ${sel === l.id ? 'ring-2 ring-piscina-300' : ''}`}
+            className={`painel flex cursor-pointer flex-col gap-2 p-3 ${sel === l.id ? 'ring-2 ring-linha-forte' : ''}`}
             onClick={() => setSel(l.id)}
             title="Mostrar este abrigo na prateleira 3D"
           >
             <header className="flex items-start justify-between gap-2">
               <div>
                 <h3 className="text-sm font-bold leading-tight">{l.nome}</h3>
-                <p className="text-[0.7rem] text-creme-200">
+                <p className="text-[0.7rem] text-texto-2">
                   {nomeMunicipio(l.municipio)} · <Numero dado={l.pessoas} formatar={fmt.int} />{' '}
                   pessoas ·{' '}
                   {l.semRota ? (
-                    <span className="text-coral-500">sem rota</span>
+                    <span className="text-alerta">sem rota</span>
                   ) : l.eta ? (
                     <>
                       reposição em <Numero dado={l.eta} formatar={(v) => `${fmt.dec1(v * 24)} h`} />
                     </>
                   ) : null}
                 </p>
-                <p className="text-[0.65rem] text-piscina-300">
+                <p className="text-[0.65rem] text-texto-2">
                   Voluntário(a) de referência: {l.voluntarioReferencia}
                 </p>
               </div>
@@ -86,11 +86,11 @@ export function Painel2DUrgencia() {
                 title="Kits para cobrir o prazo crítico de todos os itens"
               >
                 {fmt.int(l.kitsNecessarios)}
-                <span className="block text-[0.6rem] font-normal text-creme-200">kits</span>
+                <span className="block text-[0.6rem] font-normal text-texto-2">kits</span>
               </span>
             </header>
             {l.acimaCapacidade && (
-              <p className="rounded bg-coral-500/15 px-2 py-1 text-[0.7rem] text-coral-400">
+              <p className="rounded bg-alerta/15 px-2 py-1 text-[0.7rem] text-alerta">
                 Acima da capacidade Esfera: <Numero dado={l.capacidade} formatar={fmt.int} /> vagas.
               </p>
             )}
@@ -113,7 +113,7 @@ export function Painel2DArrecadacao() {
   return (
     <div className="flex flex-col gap-4">
       <TituloTela titulo="Arrecadação nos pontos de coleta" area="comercio" pergunta="onde falta">
-        <span className="text-xs text-creme-200">
+        <span className="text-xs text-texto-2">
           Metas derivadas do Índice de Urgência dos abrigos que cada ponto abastece
         </span>
       </TituloTela>
@@ -130,12 +130,12 @@ export function Painel2DArrecadacao() {
           return (
             <article
               key={p.id}
-              className={`painel flex flex-col gap-2 p-3 ${p.lotado ? 'ring-2 ring-coral-500' : ''}`}
+              className={`painel flex flex-col gap-2 p-3 ${p.lotado ? 'ring-2 ring-alerta' : ''}`}
             >
               <header className="flex items-start justify-between gap-2">
                 <div>
                   <h3 className="text-sm font-bold">{p.parceiro}</h3>
-                  <p className="text-[0.7rem] text-creme-200">
+                  <p className="text-[0.7rem] text-texto-2">
                     {nomeMunicipio(p.municipio)} ·{' '}
                     <SeloCamada camada="SIMULADO" texto="NOME FICTÍCIO" />
                   </p>
@@ -145,7 +145,7 @@ export function Painel2DArrecadacao() {
                 </span>
               </header>
               <div
-                className="h-3 overflow-hidden rounded-full bg-navy-700"
+                className="h-3 overflow-hidden rounded-full bg-superficie-2"
                 role="meter"
                 aria-valuenow={Math.round(pct * 100)}
                 aria-valuemin={0}
@@ -157,19 +157,19 @@ export function Painel2DArrecadacao() {
                   style={{
                     width: `${Math.min(100, pct * 100)}%`,
                     background: p.lotado
-                      ? 'var(--color-coral-500)'
+                      ? 'var(--color-alerta)'
                       : pct > 0.75
-                        ? 'var(--color-alerta)'
+                        ? 'var(--color-atencao)'
                         : 'var(--color-ok)',
                   }}
                 />
               </div>
-              <p className="text-[0.68rem] text-creme-200">
+              <p className="text-[0.68rem] text-texto-2">
                 <Numero dado={p.volume} formatar={(v) => `${fmt.dec1(v)} m³`} /> de{' '}
                 {fmt.dec1(p.capacidade)} m³
               </p>
               {p.lotado && (
-                <p className="rounded bg-coral-500 px-2 py-1 text-[0.72rem] font-bold text-navy-950">
+                <p className="rounded bg-alerta px-2 py-1 text-[0.72rem] font-bold text-fundo-0">
                   ⚠ Ponto lotado — aviso automático enviado à Logística; o ponto entrou na próxima
                   rota.
                 </p>
@@ -186,9 +186,9 @@ export function Painel2DArrecadacao() {
                           style={{
                             background:
                               m.prioridade >= 0.5
-                                ? 'var(--color-coral-500)'
+                                ? 'var(--color-alerta)'
                                 : m.prioridade >= 0.25
-                                  ? 'var(--color-alerta)'
+                                  ? 'var(--color-atencao)'
                                   : 'var(--color-ok)',
                           }}
                         />{' '}
@@ -200,7 +200,7 @@ export function Painel2DArrecadacao() {
                     </li>
                   ))}
                 {p.metas.every((m) => m.quantidade === 0) && (
-                  <li className="text-creme-200">Sem déficit nos abrigos desta base.</li>
+                  <li className="text-texto-2">Sem déficit nos abrigos desta base.</li>
                 )}
               </ul>
               <div className="flex gap-2">
@@ -250,7 +250,7 @@ export function FormularioCoordenador() {
           <select
             value={local}
             onChange={(e) => setLocal(e.target.value)}
-            className="rounded bg-navy-800 px-2 py-1.5"
+            className="rounded bg-superficie px-2 py-1.5"
           >
             {locais.map((l) => (
               <option key={l.id} value={l.id}>
@@ -264,7 +264,7 @@ export function FormularioCoordenador() {
           <select
             value={item}
             onChange={(e) => setItem(e.target.value as IdItem)}
-            className="rounded bg-navy-800 px-2 py-1.5"
+            className="rounded bg-superficie px-2 py-1.5"
           >
             {ITENS.map((i) => (
               <option key={i.id} value={i.id}>
@@ -281,7 +281,7 @@ export function FormularioCoordenador() {
             value={estoque}
             onChange={(e) => setEstoque(e.target.value)}
             placeholder={atual ? String(Math.round(atual.estoque[item].valor as number)) : ''}
-            className="w-32 rounded bg-navy-800 px-2 py-1.5"
+            className="w-32 rounded bg-superficie px-2 py-1.5"
             required
           />
         </label>
@@ -293,7 +293,7 @@ export function FormularioCoordenador() {
             value={pessoas}
             onChange={(e) => setPessoas(e.target.value)}
             placeholder={atual ? String(Math.round(atual.pessoasN)) : ''}
-            className="w-32 rounded bg-navy-800 px-2 py-1.5"
+            className="w-32 rounded bg-superficie px-2 py-1.5"
           />
         </label>
         <Botao tipo="primario" type="submit">
@@ -305,7 +305,7 @@ export function FormularioCoordenador() {
           {ajustes.map((a) => (
             <li
               key={a.uid}
-              className="flex items-center justify-between gap-2 border-t border-white/5 pt-1"
+              className="flex items-center justify-between gap-2 border-t border-linha-fraca pt-1"
             >
               <span>
                 {new Date(a.em).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}{' '}
@@ -313,14 +313,14 @@ export function FormularioCoordenador() {
                 {fmt.int(a.estoque)}
                 {a.pessoas !== undefined ? ` · ${fmt.int(a.pessoas)} pessoas` : ''}
               </span>
-              <button onClick={() => desfazer(a.uid)} className="text-coral-400 underline">
+              <button onClick={() => desfazer(a.uid)} className="text-alerta underline">
                 desfazer
               </button>
             </li>
           ))}
         </ul>
       )}
-      <p className="text-[0.68rem] text-creme-200">
+      <p className="text-[0.68rem] text-texto-2">
         Nenhum dado pessoal é coletado — só contagens de estoque e de pessoas.
       </p>
     </Painel>

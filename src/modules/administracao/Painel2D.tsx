@@ -3,12 +3,13 @@ import { useOperacao, useResultado } from '../../store';
 import { Botao, Grade, Painel, Semaforo, TituloTela, AREA_ROTULO } from '../../ui/blocos';
 import { AREAS_ORG, CRONOGRAMA, DURACAO_TOTAL_MIN, PAPEIS, type AreaOrg } from './organograma';
 import type { Alerta } from '../../engine/simulacao';
+import { cor } from '../../ui/cores';
 
 const COR_NIVEL: Record<Alerta['nivel'], string> = {
-  info: '#8cc7c5',
-  atencao: '#f2b84b',
-  alerta: '#f3876d',
-  critico: '#ef6a4b',
+  info: cor('cinza-2'),
+  atencao: cor('atencao'),
+  alerta: cor('alerta'),
+  critico: cor('alerta'),
 };
 
 function useAgora(ativo: boolean) {
@@ -48,7 +49,7 @@ export function Cronograma() {
     <Painel
       titulo="Cronograma tático — 4 horas"
       acao={
-        <span className="font-display text-2xl tabular-nums text-coral-400">{mmss(decorrido)}</span>
+        <span className="font-display text-2xl tabular-nums text-texto">{mmss(decorrido)}</span>
       }
     >
       <div
@@ -63,7 +64,7 @@ export function Cronograma() {
             style={{
               width: `${(f.minutos / DURACAO_TOTAL_MIN) * 100}%`,
               background: f.cor,
-              color: f.id === 'producao' ? '#f3efe6' : '#0b1e26',
+              color: f.id === 'producao' ? cor('texto') : cor('fundo-0'),
             }}
           >
             {f.nome} ·{' '}
@@ -74,16 +75,16 @@ export function Cronograma() {
         ))}
         {folga > 0 && (
           <div
-            className="flex items-center justify-center bg-navy-700 text-[0.62rem] text-creme-200"
+            className="flex items-center justify-center bg-superficie-2 text-[0.62rem] text-texto-2"
             style={{ width: `${(folga / DURACAO_TOTAL_MIN) * 100}%` }}
           >
             folga {folga} min
           </div>
         )}
       </div>
-      <div className="relative h-1 rounded bg-navy-700">
+      <div className="relative h-1 rounded bg-superficie-2">
         <div
-          className="absolute -top-1 h-3 w-0.5 bg-coral-500"
+          className="absolute -top-1 h-3 w-0.5 bg-texto"
           style={{ left: `${Math.min(100, (min / DURACAO_TOTAL_MIN) * 100)}%` }}
         />
       </div>
@@ -96,7 +97,7 @@ export function Cronograma() {
           </Botao>
         )}
         <Botao onClick={zerar}>Zerar</Botao>
-        <span className="text-xs text-creme-200">
+        <span className="text-xs text-texto-2">
           {atual
             ? `Fase atual: ${atual.nome} — entrega: ${atual.entrega}`
             : min >= acc
@@ -109,12 +110,12 @@ export function Cronograma() {
           const atrasado = min > f.fim && !marcos.includes(f.id);
           return (
             <li key={f.id}>
-              <label className={`flex items-center gap-2 ${atrasado ? 'text-coral-400' : ''}`}>
+              <label className={`flex items-center gap-2 ${atrasado ? 'text-alerta' : ''}`}>
                 <input
                   type="checkbox"
                   checked={marcos.includes(f.id)}
                   onChange={() => alternar(f.id)}
-                  className="accent-coral-500"
+                  className="accent-texto"
                 />
                 Marco {f.nome}: {f.entrega} {atrasado && '— atrasado'}
               </label>
@@ -148,7 +149,7 @@ export function CentralAlertas({ limite = 12 }: { limite?: number }) {
     <Painel
       titulo="Central de alertas"
       acao={
-        <span className="text-[0.65rem] text-creme-200">
+        <span className="text-[0.65rem] text-texto-2">
           mensagens claras e datadas para as equipes
         </span>
       }
@@ -157,12 +158,12 @@ export function CentralAlertas({ limite = 12 }: { limite?: number }) {
         {itens.slice(0, limite).map((a) => (
           <li
             key={a.id}
-            className="rounded-lg bg-navy-800 p-2 text-xs"
+            className="rounded-lg bg-superficie p-2 text-xs"
             style={{ borderLeft: `4px solid ${COR_NIVEL[a.nivel]}` }}
           >
             <div className="flex justify-between gap-2">
               <strong>{a.titulo}</strong>
-              <time className="shrink-0 tabular-nums text-creme-200" dateTime={a.em}>
+              <time className="shrink-0 tabular-nums text-texto-2" dateTime={a.em}>
                 {new Date(a.em).toLocaleString('pt-BR', {
                   day: '2-digit',
                   month: '2-digit',
@@ -171,8 +172,8 @@ export function CentralAlertas({ limite = 12 }: { limite?: number }) {
                 })}
               </time>
             </div>
-            <p className="text-creme-200">{a.mensagem}</p>
-            <p className="text-[0.62rem] uppercase tracking-wider text-piscina-300">
+            <p className="text-texto-2">{a.mensagem}</p>
+            <p className="text-[0.62rem] uppercase tracking-wider text-texto-2">
               {a.nivel} · para {AREA_ROTULO[a.area as keyof typeof AREA_ROTULO] ?? a.area}
             </p>
           </li>
@@ -190,7 +191,7 @@ export function CentralAlertas({ limite = 12 }: { limite?: number }) {
         <select
           value={para}
           onChange={(e) => setPara(e.target.value as AreaOrg)}
-          className="rounded bg-navy-800 px-2 py-1.5"
+          className="rounded bg-superficie px-2 py-1.5"
           aria-label="Área de destino"
         >
           {AREAS_ORG.filter((a) => a.id !== 'lider').map((a) => (
@@ -203,7 +204,7 @@ export function CentralAlertas({ limite = 12 }: { limite?: number }) {
           value={texto}
           onChange={(e) => setTexto(e.target.value)}
           placeholder="Mensagem do líder…"
-          className="min-w-40 flex-1 rounded bg-navy-800 px-2 py-1.5"
+          className="min-w-40 flex-1 rounded bg-superficie px-2 py-1.5"
           aria-label="Mensagem"
         />
         <Botao tipo="primario" type="submit">
@@ -222,20 +223,20 @@ export function OrganogramaEditavel() {
   return (
     <Painel
       titulo="Organograma da operação"
-      acao={<span className="text-[0.65rem] text-creme-200">nomes ficam só neste navegador</span>}
+      acao={<span className="text-[0.65rem] text-texto-2">nomes ficam só neste navegador</span>}
     >
       <div className="flex flex-col items-center gap-3">
         {AREAS_ORG.filter((a) => a.id === 'lider').map((a) => (
           <div
             key={a.id}
-            className="w-full max-w-sm rounded-xl bg-coral-500 p-3 text-center text-navy-950"
+            className="w-full max-w-sm rounded-xl bg-claro p-3 text-center text-fundo-0"
           >
             <p className="text-xs font-bold uppercase tracking-wider">{a.nome}</p>
             <input
               value={nomes.lider ?? ''}
               onChange={(e) => setNome('lider', e.target.value)}
               placeholder="(nome eleito pelo grupo)"
-              className="mt-1 w-full rounded bg-coral-400/60 px-2 py-1 text-center text-sm font-semibold placeholder:text-navy-900/60"
+              className="mt-1 w-full rounded bg-branco/60 px-2 py-1 text-center text-sm font-semibold placeholder:text-fundo-0"
               aria-label="Nome do Líder do Projeto"
             />
             <p className="mt-1 text-[0.65rem]">{a.missao}</p>
@@ -251,7 +252,7 @@ export function OrganogramaEditavel() {
                 <p className="text-xs font-bold uppercase tracking-wider">{a.nome}</p>
                 {corArea(a.id) && <Semaforo cor={corArea(a.id)!} />}
               </div>
-              <p className="text-[0.65rem] text-navy-700">{a.missao}</p>
+              <p className="text-[0.65rem] text-fundo-3">{a.missao}</p>
               {PAPEIS.filter((p) => p.area === a.id).map((p) => (
                 <label key={p.id} className="flex flex-col text-[0.7rem]">
                   <span className="font-semibold">{p.titulo}</span>
@@ -259,7 +260,7 @@ export function OrganogramaEditavel() {
                     value={nomes[p.id] ?? ''}
                     onChange={(e) => setNome(p.id, e.target.value)}
                     placeholder="(nome)"
-                    className="rounded bg-white/70 px-2 py-0.5 text-sm"
+                    className="rounded bg-branco/70 px-2 py-0.5 text-sm"
                     aria-label={p.titulo}
                   />
                 </label>
@@ -280,23 +281,23 @@ export function LinhaDecisoes() {
     <Painel titulo="Linha do tempo de decisões (Cartas de Crise)">
       <ol className="flex flex-col gap-2 text-xs">
         {r.decisoes.map((d) => (
-          <li key={d.uid} className="rounded-lg bg-navy-800 p-2">
+          <li key={d.uid} className="rounded-lg bg-superficie p-2">
             <div className="flex justify-between gap-2">
               <strong>
                 {new Date(d.em).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}{' '}
                 · {d.titulo}
               </strong>
-              <button onClick={() => desfazer(d.uid)} className="text-coral-400 underline">
+              <button onClick={() => desfazer(d.uid)} className="text-alerta underline">
                 desfazer
               </button>
             </div>
-            <p className="text-creme-200">Resposta sugerida: {d.resposta}</p>
+            <p className="text-texto-2">Resposta sugerida: {d.resposta}</p>
             {d.inspirado && (
               <a
                 href={d.inspirado.url}
                 target="_blank"
                 rel="noreferrer"
-                className="text-piscina-300 underline"
+                className="text-texto-2 underline"
               >
                 Inspirado em fato real: {d.inspirado.texto}
               </a>

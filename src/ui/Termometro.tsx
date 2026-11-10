@@ -25,7 +25,7 @@ export function Termometro({ u, compacto = false }: { u: UrgenciaItem; compacto?
         </span>
       </div>
       <div
-        className="relative h-2.5 overflow-hidden rounded-full bg-navy-700"
+        className="relative h-2.5 overflow-hidden rounded-full bg-superficie-2"
         role="meter"
         aria-valuemin={0}
         aria-valuemax={escala}
@@ -37,13 +37,13 @@ export function Termometro({ u, compacto = false }: { u: UrgenciaItem; compacto?
           style={{ width: `${largura}%`, background: cor }}
         />
         <div
-          className="absolute inset-y-0 w-0.5 bg-creme-100/70"
+          className="absolute inset-y-0 w-0.5 bg-claro/70"
           style={{ left: `${marcaPrazo}%` }}
           title="Prazo crítico"
         />
       </div>
       {!compacto && (
-        <div className="flex justify-between text-[0.65rem] text-creme-200/80">
+        <div className="flex justify-between text-[0.65rem] text-texto-2">
           <span>{def.humano(u.estoque)} em estoque</span>
           <span>
             urgência <Numero dado={u.urgencia} formatar={(v) => fmt.dec2(v)} />

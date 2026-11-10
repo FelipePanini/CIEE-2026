@@ -11,6 +11,7 @@ import { useOperacao } from '../store';
 import { elevacao, paraMundo, Y_POR_METRO, type Relevo } from './mundo';
 import { Rotulo } from './Rotulo';
 import type { Dado } from '../engine/tipos';
+import { cor } from '../ui/cores';
 
 const n = (d?: Dado) => (d && typeof d.valor === 'number' ? d.valor : null);
 
@@ -34,13 +35,13 @@ const COLUNAS: Coluna[] = [
   );
   const lat = locais.length ? locais.reduce((s, l) => s + l.lat, 0) / locais.length : m.lat;
   const lon = locais.length ? locais.reduce((s, l) => s + l.lon, 0) / locais.length : m.lon;
-  return [{ id: `m${ibge}`, lat, lon, cor: '#2f9fbf', rotulo: m.nome }];
+  return [{ id: `m${ibge}`, lat, lon, cor: cor('agua'), rotulo: m.nome }];
 });
 const COLUNAS_RIO: Coluna[] = DADOS.rios.estacoes.map((e) => ({
   id: `r-${e.id}`,
   lat: e.lat,
   lon: e.lon,
-  cor: '#ef6a4b',
+  cor: cor('alerta'),
   rotulo: e.rio,
 }));
 
@@ -129,7 +130,7 @@ export function LinhaTempo3D({ relevo }: { relevo: Relevo }) {
               center
               distanceFactor={44}
             >
-              <div className="whitespace-nowrap rounded bg-navy-950/85 px-1.5 py-0.5 text-[11px] text-creme-100">
+              <div className="whitespace-nowrap rounded bg-fundo-0/85 px-1.5 py-0.5 text-[11px] text-texto">
                 {alvos[i]!.texto}
               </div>
             </Rotulo>

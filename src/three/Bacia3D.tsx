@@ -16,6 +16,7 @@ import { OndasImpacto } from './CartaCrise3D';
 import { LinhaTempo3D } from './LinhaTempo3D';
 import { Prontidao3D } from './Prontidao3D';
 import { Parceiros3D } from './Parceiros3D';
+import { cor } from '../ui/cores';
 
 type Geo = Record<string, [number, number][]>;
 let cacheRotas: Promise<Geo> | null = null;
@@ -33,7 +34,7 @@ function useRotasGeo() {
 }
 
 const corUrg = (u: number, pessoas: number) =>
-  !pessoas ? '#8cc7c5' : u >= 0.5 ? '#ef6a4b' : u >= 0.25 ? '#f2b84b' : '#6cc28f';
+  !pessoas ? cor('cinza-2') : u >= 0.5 ? cor('alerta') : u >= 0.25 ? cor('atencao') : cor('ok');
 
 function ponto3D(relevo: Relevo, lat: number, lon: number, acima = 0): THREE.Vector3 {
   const [x, z] = paraMundo(lat, lon);
@@ -71,7 +72,7 @@ function Pinos({ relevo, rotulos }: { relevo: Relevo; rotulos: boolean }) {
               distanceFactor={55}
               className="pointer-events-none select-none"
             >
-              <div className="whitespace-nowrap rounded bg-navy-950/80 px-1.5 py-0.5 text-[10px] font-semibold text-creme-100">
+              <div className="whitespace-nowrap rounded bg-fundo-0/80 px-1.5 py-0.5 text-[10px] font-semibold text-texto">
                 {l.nome.replace(
                   /^(EMEF|EEEF|Instituto Estadual de Educação|Colégio Estadual|Abrigo( na)?)\s*/i,
                   '',
@@ -88,8 +89,8 @@ function Pinos({ relevo, rotulos }: { relevo: Relevo; rotulos: boolean }) {
           <mesh key={pt.id} position={p} rotation={[0, Math.PI / 4, Math.PI / 4]}>
             <boxGeometry args={[0.55, 0.55, 0.55]} />
             <meshStandardMaterial
-              color={pt.lotado ? '#ef6a4b' : '#bd8413'}
-              emissive={pt.lotado ? '#ef6a4b' : '#000000'}
+              color={pt.lotado ? cor('alerta') : cor('cinza-3')}
+              emissive={pt.lotado ? cor('alerta') : cor('preto')}
               emissiveIntensity={0.5}
             />
           </mesh>
@@ -134,7 +135,11 @@ function Caminhao({
   return (
     <mesh ref={ref}>
       <boxGeometry args={[0.45, 0.35, 0.9]} />
-      <meshStandardMaterial color="#f3efe6" emissive="#f2b84b" emissiveIntensity={0.3} />
+      <meshStandardMaterial
+        color={cor('texto')}
+        emissive={cor('agua-brilho')}
+        emissiveIntensity={0.5}
+      />
     </mesh>
   );
 }
@@ -187,7 +192,7 @@ function Rotas3D({ relevo }: { relevo: Relevo }) {
                   : null;
               }}
               points={l.pts}
-              color={l.bloq ? '#ef6a4b' : l.rota ? '#f2b84b' : '#8cc7c5'}
+              color={l.bloq ? cor('alerta') : l.rota ? cor('texto') : cor('cinza-3')}
               lineWidth={l.rota ? 4 : l.bloq ? 3.5 : 1.6}
               dashed={l.rota}
               dashSize={1.2}
@@ -211,7 +216,11 @@ function Rotas3D({ relevo }: { relevo: Relevo }) {
                 )}
               >
                 <boxGeometry args={[1.8, 1.8, 0.3]} />
-                <meshStandardMaterial color="#ef6a4b" emissive="#ef6a4b" emissiveIntensity={0.6} />
+                <meshStandardMaterial
+                  color={cor('alerta')}
+                  emissive={cor('alerta')}
+                  emissiveIntensity={0.6}
+                />
               </mesh>
             )}
           </group>
@@ -244,7 +253,7 @@ function Municipios({ relevo, visivel }: { relevo: Relevo; visivel: boolean }) {
             center
             distanceFactor={70}
           >
-            <div className="font-display whitespace-nowrap text-[13px] text-creme-100 [text-shadow:0_1px_3px_#0b1e26]">
+            <div className="font-display whitespace-nowrap text-[13px] text-texto [text-shadow:0_1px_3px_var(--color-fundo-0)]">
               {m.nome}
             </div>
           </Rotulo>

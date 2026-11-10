@@ -15,7 +15,7 @@ export function SeletorCenario() {
     <div
       role="radiogroup"
       aria-label="Cenário"
-      className="flex rounded-full bg-navy-800 p-0.5 text-xs"
+      className="flex rounded-full bg-superficie p-0.5 text-xs"
     >
       {CENARIOS.map((c) => (
         <button
@@ -24,7 +24,7 @@ export function SeletorCenario() {
           aria-checked={cenario === c.id}
           title={c.descricao}
           onClick={() => setCenario(c.id)}
-          className={`rounded-full px-3 py-1.5 font-semibold transition ${cenario === c.id ? 'bg-coral-500 text-navy-950' : 'text-creme-200 hover:text-creme-100'}`}
+          className={`rounded-full px-3 py-1.5 font-semibold transition ${cenario === c.id ? 'bg-texto text-fundo-0' : 'text-texto-2 hover:text-texto'}`}
         >
           {c.curto}
         </button>
@@ -46,7 +46,7 @@ export function SeletorFase() {
         <select
           value={fase}
           onChange={(e) => setFase(e.target.value as typeof fase)}
-          className="rounded-md bg-navy-800 px-2 py-1 text-creme-100"
+          className="rounded-md bg-superficie px-2 py-1 text-texto"
         >
           {FASES.map((f) => (
             <option key={f.id} value={f.id} title={f.descricao}>
@@ -61,7 +61,7 @@ export function SeletorFase() {
           <select
             value={boletim}
             onChange={(e) => setBoletim(e.target.value as typeof boletim)}
-            className="rounded-md bg-navy-800 px-2 py-1 text-creme-100"
+            className="rounded-md bg-superficie px-2 py-1 text-texto"
           >
             <option value="2026-07">23/07 (pico)</option>
             <option value="2026-09">22/09 (recente)</option>
@@ -77,8 +77,8 @@ export function IndicadorAlerta() {
   const n = NIVEIS_ALERTA[r.nivelAlerta]!;
   return (
     <span
-      className="flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-navy-950"
-      style={{ background: n.cor }}
+      className="flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-fundo-0"
+      style={{ background: `var(--color-${n.tom})` }}
       title="Nível de alerta da operação (deriva do cenário, dos rios e das Cartas de Crise)"
     >
       <span className={r.nivelAlerta >= 3 ? 'anima-pulso' : ''}>●</span> {n.nome}
@@ -106,7 +106,7 @@ export function PainelConfiguracao() {
     <>
       <button
         onClick={() => setAberto(true)}
-        className="rounded-md bg-navy-800 px-2.5 py-1.5 text-xs font-semibold text-creme-100 hover:bg-navy-700"
+        className="rounded-md bg-superficie px-2.5 py-1.5 text-xs font-semibold text-texto hover:bg-superficie-2"
         aria-haspopup="dialog"
       >
         ⚙ Critérios
@@ -115,24 +115,24 @@ export function PainelConfiguracao() {
         <div
           role="dialog"
           aria-label="Critérios do grupo"
-          className="fixed inset-0 z-[900] flex justify-end bg-navy-950/60"
+          className="fixed inset-0 z-[900] flex justify-end bg-fundo-0/60"
           onClick={() => setAberto(false)}
         >
           <div
-            className="h-full w-[min(30rem,100vw)] overflow-y-auto bg-navy-900 p-5 shadow-2xl ring-1 ring-piscina-300/30"
+            className="h-full w-[min(30rem,100vw)] overflow-y-auto bg-fundo-1 p-5 shadow-2xl ring-1 ring-linha"
             onClick={(e) => e.stopPropagation()}
           >
             <header className="mb-4 flex items-start justify-between gap-3">
               <div>
                 <h2 className="font-display text-xl">Critérios do grupo</h2>
-                <p className="text-xs text-creme-200">
+                <p className="text-xs text-texto-2">
                   Parâmetros do modelo. Cada mudança recalcula urgência, rotas, metas, produção e
                   custos em todas as telas.
                 </p>
               </div>
               <button
                 onClick={() => setAberto(false)}
-                className="text-2xl leading-none text-creme-200"
+                className="text-2xl leading-none text-texto-2"
                 aria-label="Fechar"
               >
                 ×
@@ -159,15 +159,13 @@ export function PainelConfiguracao() {
                     step={d.passo}
                     value={entrada.parametros[d.id]}
                     onChange={(e) => setParametro(d.id, Number(e.target.value))}
-                    className="accent-coral-500"
+                    className="accent-texto"
                   />
                   {d.descricao && (
-                    <span className="text-[0.7rem] leading-snug text-creme-200/80">
-                      {d.descricao}
-                    </span>
+                    <span className="text-[0.7rem] leading-snug text-texto-2">{d.descricao}</span>
                   )}
                   {referencia[d.id] && (
-                    <span className="text-[0.7rem] text-piscina-300">
+                    <span className="text-[0.7rem] text-texto-2">
                       Referência real: <Numero dado={referencia[d.id]!} selo />
                     </span>
                   )}
@@ -177,7 +175,7 @@ export function PainelConfiguracao() {
                 <h3 className="font-display mb-2 text-base">Pesos de criticidade por fase</h3>
                 <table className="w-full text-xs">
                   <thead>
-                    <tr className="text-left text-creme-200">
+                    <tr className="text-left text-texto-2">
                       <th className="py-1">Item</th>
                       {FASES.map((f) => (
                         <th key={f.id}>{f.rotulo}</th>
@@ -197,7 +195,7 @@ export function PainelConfiguracao() {
                               step={0.1}
                               value={entrada.pesos[it.id]?.[f.id] ?? it.pesos[f.id]}
                               onChange={(e) => setPeso(it.id, f.id, Number(e.target.value))}
-                              className="w-14 rounded bg-navy-800 px-1 py-0.5 tabular-nums"
+                              className="w-14 rounded bg-superficie px-1 py-0.5 tabular-nums"
                               aria-label={`Peso ${it.nome} — ${f.rotulo}`}
                             />
                           </td>
@@ -209,7 +207,7 @@ export function PainelConfiguracao() {
               </section>
               <button
                 onClick={restaurar}
-                className="self-start rounded-md bg-navy-700 px-3 py-1.5 text-xs"
+                className="self-start rounded-md bg-superficie-2 px-3 py-1.5 text-xs"
               >
                 Restaurar padrões do grupo
               </button>

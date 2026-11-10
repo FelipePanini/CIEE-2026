@@ -6,6 +6,7 @@
 import { DADOS } from '../../data/carregar';
 import { inventariar } from '../../engine/inventario';
 import { MODULOS } from '../registro';
+import { cor } from '../../ui/cores';
 
 export const INVENTARIO = inventariar(DADOS);
 const ARQ = __ARQUITETURA__;
@@ -16,7 +17,7 @@ export const camadasArquitetura = () =>
     {
       id: 'fontes',
       nome: 'Fontes',
-      cor: '#8cc7c5',
+      cor: cor('cinza-4'),
       linhas: [
         `${INVENTARIO.urls} links · ${INVENTARIO.dominios.length} domínios`,
         'ANA · Defesa Civil RS · IBGE · INMET · DIEESE · OSM',
@@ -25,7 +26,7 @@ export const camadasArquitetura = () =>
     {
       id: 'dados',
       nome: 'Dados',
-      cor: '#f3efe6',
+      cor: cor('cinza-3'),
       linhas: [
         `${INVENTARIO.arquivos} JSONs · ${INVENTARIO.dados} números com fonte`,
         `${INVENTARIO.aConfirmar} A CONFIRMAR · validados no CI (zod)`,
@@ -34,7 +35,7 @@ export const camadasArquitetura = () =>
     {
       id: 'motor',
       nome: 'Motor',
-      cor: '#ef6a4b',
+      cor: cor('cinza-2'),
       linhas: [
         `${ARQ.modulosMotor} módulos puros · ${ARQ.testes} testes (Vitest)`,
         'urgência · Dijkstra + 2-opt · custos · produção',
@@ -43,7 +44,7 @@ export const camadasArquitetura = () =>
     {
       id: 'telas',
       nome: 'Telas',
-      cor: '#c6b4e6',
+      cor: cor('cinza-1'),
       linhas: [
         `${MODULOS.length} telas · ${ARQ.componentes3d} componentes 3D`,
         'um único Canvas · fallback 2D completo',

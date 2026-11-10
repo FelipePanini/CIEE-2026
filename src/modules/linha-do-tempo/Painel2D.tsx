@@ -13,26 +13,27 @@ import { DADOS } from '../../data/carregar';
 import { Grade, Painel, TituloTela } from '../../ui/blocos';
 import { Numero, SeloDoDado } from '../../ui/Numero';
 import { fmt } from '../../ui/formato';
-import { SERIES } from '../../ui/cores';
+import { corSerie } from '../../ui/cores';
 import { formatarDataCurta } from '../../engine/camadas';
 import type { Dado } from '../../engine/tipos';
 import { useOperacao } from '../../store';
+import { cor } from '../../ui/cores';
 
 const n = (d?: Dado) => (d && typeof d.valor === 'number' ? d.valor : null);
 const COR_EVENTO: Record<string, string> = {
-  '2024-05': SERIES[0],
-  '2025-06': SERIES[2],
-  '2026-07': SERIES[1],
-  '2026-09': SERIES[3],
+  '2024-05': corSerie(0),
+  '2025-06': corSerie(2),
+  '2026-07': corSerie(1),
+  '2026-09': corSerie(3),
 };
 const tip = {
   contentStyle: {
-    background: '#0b1e26',
-    border: '1px solid #8cc7c555',
+    background: cor('fundo-0'),
+    border: '1px solid var(--color-linha-forte)',
     borderRadius: 8,
     fontSize: 12,
   },
-  labelStyle: { color: '#8cc7c5' },
+  labelStyle: { color: cor('cinza-2') },
 };
 
 function BarrasIndicador({
@@ -56,9 +57,9 @@ function BarrasIndicador({
           <BarChart data={dados} margin={{ top: 18, right: 4, left: 4, bottom: 0 }}>
             <XAxis
               dataKey="rotulo"
-              tick={{ fill: '#e7e0d2', fontSize: 11 }}
+              tick={{ fill: cor('texto-2'), fontSize: 11 }}
               tickLine={false}
-              axisLine={{ stroke: '#ffffff30' }}
+              axisLine={{ stroke: cor('linha-forte') }}
             />
             <YAxis hide scale="sqrt" domain={[0, 'dataMax']} />
             <Tooltip
@@ -67,7 +68,7 @@ function BarrasIndicador({
                 v === null ? 'A CONFIRMAR' : fmt.int(Number(v)),
                 (item.payload as { dado: Dado }).dado.fonte,
               ]}
-              cursor={{ fill: '#ffffff0d' }}
+              cursor={{ fill: cor('superficie') }}
             />
             <Bar dataKey="v" radius={[4, 4, 0, 0]} isAnimationActive={false}>
               {dados.map((d) => (
@@ -79,14 +80,14 @@ function BarrasIndicador({
                 formatter={(v: unknown) =>
                   v === null || v === undefined ? 'A CONFIRMAR' : fmt.int(Number(v))
                 }
-                fill="#f3efe6"
+                fill={cor('texto')}
                 fontSize={11}
               />
             </Bar>
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <p className="text-[0.62rem] text-creme-200/70">
+      <p className="text-[0.62rem] text-texto-2">
         Escala raiz quadrada: 2024 é muito maior que os eventos seguintes.
       </p>
     </figure>
@@ -116,13 +117,13 @@ function PicosTaquari() {
           <BarChart data={dados} margin={{ top: 18, right: 4, left: -10, bottom: 0 }}>
             <XAxis
               dataKey="rotulo"
-              tick={{ fill: '#e7e0d2', fontSize: 10 }}
+              tick={{ fill: cor('texto-2'), fontSize: 10 }}
               tickLine={false}
-              axisLine={{ stroke: '#ffffff30' }}
+              axisLine={{ stroke: cor('linha-forte') }}
               interval={0}
             />
             <YAxis
-              tick={{ fill: '#e7e0d2', fontSize: 10 }}
+              tick={{ fill: cor('texto-2'), fontSize: 10 }}
               tickLine={false}
               axisLine={false}
               domain={[0, 36]}
@@ -134,15 +135,15 @@ function PicosTaquari() {
                 `${fmt.dec2(Number(v))} m`,
                 (item.payload as { fonte: string }).fonte,
               ]}
-              cursor={{ fill: '#ffffff0d' }}
+              cursor={{ fill: cor('superficie') }}
             />
             <ReferenceLine
               y={cota}
-              stroke="#f3efe6"
+              stroke={cor('texto')}
               strokeDasharray="4 3"
               label={{
                 value: 'cota 19 m',
-                fill: '#f3efe6',
+                fill: cor('texto'),
                 fontSize: 10,
                 position: 'insideTopLeft',
               }}
@@ -155,7 +156,7 @@ function PicosTaquari() {
                 dataKey="v"
                 position="top"
                 formatter={(v: unknown) => `${fmt.dec1(Number(v))}`}
-                fill="#f3efe6"
+                fill={cor('texto')}
                 fontSize={10}
               />
             </Bar>
@@ -182,10 +183,10 @@ export function Painel2DLinhaDoTempo() {
         area="geral"
         pergunta="linha do tempo das cheias"
       />
-      <p className="max-w-3xl text-sm text-creme-200">
+      <p className="max-w-3xl text-sm text-texto-2">
         Desde maio de 2024, a telemetria da ANA registrou{' '}
-        <strong className="text-coral-400">{nPicos} picos de rio acima da cota de inundação</strong>{' '}
-        nas réguas do Guaíba (Cais Mauá) e do Taquari (Estrela/Lajeado). A crise mudou de lugar — da
+        <strong className="text-texto">{nPicos} picos de rio acima da cota de inundação</strong> nas
+        réguas do Guaíba (Cais Mauá) e do Taquari (Estrela/Lajeado). A crise mudou de lugar — da
         Região Metropolitana para o Vale do Taquari — mas não acabou.
       </p>
       {com3d && (
@@ -194,14 +195,14 @@ export function Painel2DLinhaDoTempo() {
           role="group"
           aria-label="Evento mostrado nas colunas 3D"
         >
-          <span className="text-xs text-creme-200">Colunas 3D:</span>
+          <span className="text-xs text-texto-2">Colunas 3D:</span>
           {eventos.map((e) => (
             <button
               key={e.id}
               type="button"
               onClick={() => selecionar(e.id)}
               aria-pressed={selecionado === e.id}
-              className={`rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ${selecionado === e.id ? 'bg-creme-100 text-navy-900 ring-creme-100' : 'text-creme-100 ring-piscina-300/40 hover:bg-navy-800'}`}
+              className={`rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ${selecionado === e.id ? 'bg-claro text-fundo-0 ring-texto' : 'text-texto ring-linha-forte hover:bg-superficie'}`}
             >
               <span
                 aria-hidden
@@ -211,7 +212,7 @@ export function Painel2DLinhaDoTempo() {
               {e.rotulo_curto}
             </button>
           ))}
-          <span className="text-[0.66rem] text-creme-200/80">
+          <span className="text-[0.66rem] text-texto-2">
             altura = desabrigados (√) e pico acima da cota
           </span>
         </div>
@@ -223,7 +224,7 @@ export function Painel2DLinhaDoTempo() {
         {eventos.map((e) => (
           <li
             key={e.id}
-            className={`painel relative flex flex-col gap-2 p-4 ${selecionado === e.id ? 'ring-2 ring-creme-100/80' : ''}`}
+            className={`painel relative flex flex-col gap-2 p-4 ${selecionado === e.id ? 'ring-2 ring-texto' : ''}`}
             style={{ borderTop: `4px solid ${COR_EVENTO[e.id]}` }}
           >
             <div className="flex items-baseline justify-between gap-2">
@@ -231,14 +232,14 @@ export function Painel2DLinhaDoTempo() {
                 type="button"
                 onClick={() => selecionar(e.id)}
                 aria-pressed={selecionado === e.id}
-                className="font-display text-left text-xl underline decoration-dotted underline-offset-4 hover:text-piscina-300"
+                className="font-display text-left text-xl underline decoration-dotted underline-offset-4 hover:text-texto-2"
                 title={com3d ? 'Mostrar este evento nas colunas 3D' : 'Selecionar evento'}
               >
                 {e.rotulo_curto}
               </button>
               <SeloDoDado dado={e.indicadores.municipios_afetados} />
             </div>
-            <p className="text-[0.72rem] leading-snug text-creme-200">{e.resumo}</p>
+            <p className="text-[0.72rem] leading-snug text-texto-2">{e.resumo}</p>
             <dl className="grid grid-cols-2 gap-x-2 gap-y-0.5 text-xs">
               <dt className="opacity-70">Municípios</dt>
               <dd>
@@ -264,7 +265,7 @@ export function Painel2DLinhaDoTempo() {
                 href={l.url}
                 target="_blank"
                 rel="noreferrer"
-                className="text-[0.68rem] leading-snug text-piscina-300 underline"
+                className="text-[0.68rem] leading-snug text-texto-2 underline"
               >
                 Lição: {l.texto}
               </a>
@@ -285,7 +286,7 @@ export function Painel2DLinhaDoTempo() {
       </Grade>
       <Painel titulo="Rios acima da cota">
         <PicosTaquari />
-        <p className="text-xs text-creme-200">
+        <p className="text-xs text-texto-2">
           Guaíba no Cais Mauá (cota 3,00 m):{' '}
           {eventos.flatMap((e) =>
             e.picos
@@ -300,13 +301,13 @@ export function Painel2DLinhaDoTempo() {
       </Painel>
       <Painel
         titulo="Próximos meses — a próxima cheia já tem previsão"
-        className="ring-1 ring-piscina-300/40"
+        className="ring-1 ring-linha-forte"
       >
         <Grade min={280}>
           {DADOS.previsao.prognosticos.map((p) => (
             <div key={p.id} className="flex flex-col gap-1.5 text-sm">
-              <p className="font-semibold text-piscina-300">{p.orgao}</p>
-              <p className="text-xs text-creme-200">{p.resumo}</p>
+              <p className="font-semibold text-texto-2">{p.orgao}</p>
+              <p className="text-xs text-texto-2">{p.resumo}</p>
               {p.indicadores.map((i) => (
                 <p key={i.id} className="text-xs">
                   {i.rotulo}: <Numero dado={i.dado} className="font-display text-lg" />{' '}
@@ -316,11 +317,11 @@ export function Painel2DLinhaDoTempo() {
             </div>
           ))}
           <div className="flex flex-col gap-1 text-xs">
-            <p className="font-semibold text-piscina-300">Avisos recentes da Defesa Civil RS</p>
+            <p className="font-semibold text-texto-2">Avisos recentes da Defesa Civil RS</p>
             <ul className="flex flex-col gap-1">
               {DADOS.previsao.avisos_recentes.map((a) => (
                 <li key={a.url}>
-                  <span className="text-creme-200">{formatarDataCurta(a.data)}</span> —{' '}
+                  <span className="text-texto-2">{formatarDataCurta(a.data)}</span> —{' '}
                   <a href={a.url} target="_blank" rel="noreferrer" className="underline">
                     {a.titulo}
                   </a>

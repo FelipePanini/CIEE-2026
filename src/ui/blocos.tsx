@@ -24,11 +24,11 @@ export function TituloTela({
   return (
     <header className="flex flex-wrap items-end justify-between gap-3">
       <div className="min-w-0">
-        <p className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-piscina-300">
+        <p className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-texto-2">
           {AREA_ROTULO[area]}
-          {pergunta && <span className="text-coral-400"> · {pergunta}</span>}
+          {pergunta && <span className="text-texto"> · {pergunta}</span>}
         </p>
-        <h1 className="font-display text-2xl leading-tight text-creme-100 sm:text-3xl">{titulo}</h1>
+        <h1 className="font-display text-2xl leading-tight text-texto sm:text-3xl">{titulo}</h1>
       </div>
       {children && <div className="flex flex-wrap items-center gap-2">{children}</div>}
     </header>
@@ -50,7 +50,7 @@ export function Painel({
     <section className={`painel flex min-w-0 flex-col gap-3 p-4 ${className}`}>
       {(titulo || acao) && (
         <header className="flex items-center justify-between gap-2">
-          {titulo && <h2 className="font-display text-base text-creme-100">{titulo}</h2>}
+          {titulo && <h2 className="font-display text-base text-texto">{titulo}</h2>}
           {acao}
         </header>
       )}
@@ -72,13 +72,13 @@ export function Kpi({
 }) {
   return (
     <div className="painel flex min-w-0 flex-col gap-1 p-3">
-      <span className="text-[0.7rem] text-creme-200/80">{rotulo}</span>
+      <span className="text-[0.7rem] text-texto-2">{rotulo}</span>
       <span
-        className={`font-display text-2xl leading-none ${destaque ? 'text-coral-500' : 'text-creme-100'}`}
+        className={`font-display text-2xl leading-none ${destaque ? 'text-alerta' : 'text-texto'}`}
       >
         {children}
       </span>
-      {nota && <span className="text-[0.68rem] text-creme-200/70">{nota}</span>}
+      {nota && <span className="text-[0.68rem] text-texto-2">{nota}</span>}
     </div>
   );
 }
@@ -106,10 +106,10 @@ export function Botao({
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const cls =
     tipo === 'primario'
-      ? 'bg-coral-500 text-navy-950 hover:bg-coral-400'
+      ? 'bg-texto text-fundo-0 hover:bg-branco'
       : tipo === 'perigo'
-        ? 'bg-navy-700 text-coral-400 ring-1 ring-coral-500/50 hover:bg-navy-600'
-        : 'bg-navy-700 text-creme-100 hover:bg-navy-600';
+        ? 'bg-superficie-2 text-alerta ring-1 ring-alerta/50 hover:bg-superficie-3'
+        : 'bg-superficie-2 text-texto hover:bg-superficie-3';
   return (
     <button
       type="button"
@@ -127,8 +127,8 @@ export function Semaforo({ cor }: { cor: 'verde' | 'amarelo' | 'vermelho' }) {
     cor === 'verde'
       ? 'var(--color-ok)'
       : cor === 'amarelo'
-        ? 'var(--color-alerta)'
-        : 'var(--color-coral-500)';
+        ? 'var(--color-atencao)'
+        : 'var(--color-alerta)';
   const txt = cor === 'verde' ? 'em dia' : cor === 'amarelo' ? 'atenção' : 'crítico';
   return (
     <span className="inline-flex items-center gap-1.5 text-xs">

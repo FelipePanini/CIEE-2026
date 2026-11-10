@@ -13,7 +13,7 @@ export function ControleVoluntarios({ zona }: { zona: Zona }) {
   return (
     <span className="inline-flex items-center gap-1">
       <button
-        className="h-7 w-7 rounded bg-navy-700 text-sm"
+        className="h-7 w-7 rounded bg-superficie-2 text-sm"
         onClick={() => setV(zona, v - 1)}
         aria-label={`Menos voluntários — ${zona}`}
       >
@@ -21,7 +21,7 @@ export function ControleVoluntarios({ zona }: { zona: Zona }) {
       </button>
       <span className="w-6 text-center font-display tabular-nums">{v}</span>
       <button
-        className="h-7 w-7 rounded bg-navy-700 text-sm"
+        className="h-7 w-7 rounded bg-superficie-2 text-sm"
         onClick={() => setV(zona, v + 1)}
         aria-label={`Mais voluntários — ${zona}`}
       >
@@ -37,7 +37,7 @@ export function EstacaoBilhete() {
   const [t, setT] = useState('');
   return (
     <Painel titulo="Estação do bilhete">
-      <p className="text-xs text-creme-200">
+      <p className="text-xs text-texto-2">
         Cada kit leva uma mensagem de voluntário ou doador. Sem nomes completos nem contatos — só o
         primeiro nome ou a cidade.
       </p>
@@ -54,7 +54,7 @@ export function EstacaoBilhete() {
           onChange={(e) => setT(e.target.value)}
           maxLength={140}
           placeholder="Escreva uma mensagem para o kit…"
-          className="flex-1 rounded bg-navy-800 px-2 py-1.5 text-sm"
+          className="flex-1 rounded bg-superficie px-2 py-1.5 text-sm"
           aria-label="Mensagem do bilhete"
         />
         <Botao tipo="primario" type="submit">
@@ -86,7 +86,7 @@ export function Painel2DQuadra() {
         area="producao"
         pergunta="como chega"
       >
-        <span className="text-xs text-creme-200">
+        <span className="text-xs text-texto-2">
           <FraseKit />
         </span>
       </TituloTela>
@@ -117,24 +117,24 @@ export function Painel2DQuadra() {
             return (
               <div
                 key={z.zona}
-                className={`flex flex-col items-center gap-2 rounded-xl p-2 text-center ${gargalo ? 'bg-coral-500/20 ring-2 ring-coral-500' : 'bg-navy-800'}`}
+                className={`flex flex-col items-center gap-2 rounded-xl p-2 text-center ${gargalo ? 'bg-alerta/20 ring-2 ring-alerta' : 'bg-superficie'}`}
               >
                 <span className="text-[0.7rem] font-bold uppercase tracking-wider">{def.nome}</span>
-                <div className="flex h-24 w-6 items-end overflow-hidden rounded bg-navy-700">
+                <div className="flex h-24 w-6 items-end overflow-hidden rounded bg-superficie-2">
                   <div
-                    className={`w-full rounded ${gargalo ? 'anima-pulso bg-coral-500' : 'bg-piscina-300'}`}
+                    className={`w-full rounded ${gargalo ? 'anima-pulso bg-alerta' : 'bg-cinza-2'}`}
                     style={{ height: `${(z.kitsHora / max) * 100}%` }}
                   />
                 </div>
                 <span className="font-display text-lg tabular-nums">{fmt.int(z.kitsHora)}</span>
-                <span className="text-[0.62rem] text-creme-200">kits/h</span>
+                <span className="text-[0.62rem] text-texto-2">kits/h</span>
                 <ControleVoluntarios zona={z.zona} />
-                <span className="text-[0.62rem] text-creme-200">voluntários</span>
+                <span className="text-[0.62rem] text-texto-2">voluntários</span>
               </div>
             );
           })}
         </div>
-        <p className="text-xs text-creme-200">
+        <p className="text-xs text-texto-2">
           A linha anda na velocidade da zona mais lenta. Mova voluntários para o gargalo e veja a
           vazão, o tempo de produção, o ETA das rotas e o semáforo da Produção mudarem juntos.
         </p>

@@ -8,13 +8,14 @@ import { Rotulo } from './Rotulo';
 import { DADOS } from '../data/carregar';
 import { useOperacao, useResultado } from '../store';
 import { ILHAS } from './mundo';
+import { cor } from '../ui/cores';
 
 const COR_CAT = {
-  alimentos: '#c89a63',
-  higiene: '#8f7ae0',
-  limpeza: '#bd8413',
-  agua: '#2fa8a3',
-  abrigo: '#e8603f',
+  alimentos: cor('pedra-4'),
+  higiene: cor('cinza-3'),
+  limpeza: cor('cinza-3'),
+  agua: cor('cinza-2'),
+  abrigo: cor('cinza-1'),
 } as const;
 const brl = (v: number) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
@@ -50,11 +51,11 @@ export function Kit3D() {
       {/* caixa */}
       <mesh position={[0, 0.5, 0]}>
         <boxGeometry args={[2.4, 1, 1.8]} />
-        <meshStandardMaterial color="#c89a63" />
+        <meshStandardMaterial color={cor('pedra-4')} />
       </mesh>
       <mesh ref={tampa} position={[0, 1.05, -0.9]}>
         <boxGeometry args={[2.4, 0.08, 1.8]} />
-        <meshStandardMaterial color="#d8ab74" />
+        <meshStandardMaterial color={cor('pedra-5')} />
       </mesh>
       <group ref={grupo}>
         {linhas.map((l) => {
@@ -78,7 +79,7 @@ export function Kit3D() {
                 zIndexRange={[5, 0]}
                 className="pointer-events-none select-none"
               >
-                <div className="whitespace-nowrap rounded bg-navy-950/85 px-1.5 py-0.5 text-center text-[11px] leading-tight text-creme-100">
+                <div className="whitespace-nowrap rounded bg-fundo-0/85 px-1.5 py-0.5 text-center text-[11px] leading-tight text-texto">
                   <strong>{p?.nome ?? l.produto}</strong>
                   <div>
                     {l.qtd.toLocaleString('pt-BR', { maximumFractionDigits: 2 })} ×{' '}
@@ -86,7 +87,7 @@ export function Kit3D() {
                       ? brl(l.preco.valor)
                       : 'A CONFIRMAR'}
                   </div>
-                  <div className="text-[9px] text-piscina-300">
+                  <div className="text-[9px] text-texto-2">
                     {(l.preco?.fonte ?? '').split('—')[0]}
                   </div>
                 </div>
@@ -103,11 +104,11 @@ export function Kit3D() {
         zIndexRange={[5, 0]}
         className="pointer-events-none select-none"
       >
-        <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_#0b1e26]">
-          <div className="font-display text-[22px] text-creme-100">
+        <div className="whitespace-nowrap text-center [text-shadow:0_2px_6px_var(--color-fundo-0)]">
+          <div className="font-display text-[22px] text-texto">
             Kit família: {brl(r.kit.custo.valor)}
           </div>
-          <div className="text-[12px] text-creme-200">
+          <div className="text-[12px] text-texto-2">
             {brl(r.kit.custoPorPessoaDia.valor)} por pessoa/dia ·{' '}
             {Math.round(r.kit.kcalPessoaDia.valor)} kcal/pessoa/dia (TACO)
           </div>
