@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-10T17:01:06.948Z",
+  "ultima_atualizacao": "2026-11-11T17:07:02.285Z",
   "metodo": "Pesquisa manual com fonte e data para cada número + coleta automática (GitHub Action coleta-bruta: IBGE, ANA, Defesa Civil RS, INMET, DIEESE, ANTT). Rodar npm run atualizar-dados antes da apresentação.",
   "fontes_bloqueadas_no_ambiente": []
 }

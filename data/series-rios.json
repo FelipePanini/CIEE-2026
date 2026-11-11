@@ -442,15 +442,11 @@
       "rotulo": "Últimos 125 dias",
       "camada": "ATUAL",
       "fonte": "ANA — telemetria Rio Taquari — Estrela/Lajeado (86879300)",
-      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=08/07/2026&dataFim=10/11/2026",
-      "data_consulta": "2026-11-10",
+      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=09/07/2026&dataFim=11/11/2026",
+      "data_consulta": "2026-11-11",
       "unidade": "m",
       "agregacao": "máximo diário",
       "pontos": [
-        [
-          "2026-07-08",
-          13.37
-        ],
         [
           "2026-07-09",
           13.19
@@ -950,6 +946,10 @@
         [
           "2026-11-10",
           13.4
+        ],
+        [
+          "2026-11-11",
+          13.25
         ]
       ],
       "id": "taquari-lajeado-recente"
@@ -960,15 +960,11 @@
       "rotulo": "Últimos 125 dias",
       "camada": "ATUAL",
       "fonte": "ANA — telemetria Guaíba — Cais Mauá C6 (87450004)",
-      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=08/07/2026&dataFim=10/11/2026",
-      "data_consulta": "2026-11-10",
+      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=09/07/2026&dataFim=11/11/2026",
+      "data_consulta": "2026-11-11",
       "unidade": "m",
       "agregacao": "máximo diário",
       "pontos": [
-        [
-          "2026-07-08",
-          1.13
-        ],
         [
           "2026-07-09",
           1.12
@@ -1464,6 +1460,10 @@
         [
           "2026-11-09",
           1.39
+        ],
+        [
+          "2026-11-11",
+          7.65
         ]
       ],
       "id": "guaiba-cais-maua-recente"
