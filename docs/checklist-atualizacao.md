@@ -1,10 +1,11 @@
 # Checklist de atualização dos dados
 
-Gerado por `npm run atualizar-dados` em 13/11/2026, 14:11:44.
+Gerado por `npm run atualizar-dados` em 14/11/2026, 12:47:54.
 
 ## Automático (feito pelo script)
 
-- [ ] Telemetria da ANA indisponível nesta execução — o app usa o último JSON salvo.
+- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **12.95 m** em 2026-11-14 12:15:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=12/07/2026&dataFim=14/11/2026))
+- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **0.86 m** em 2026-11-14 12:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=12/07/2026&dataFim=14/11/2026))
 
 ## Avisos e alertas recentes da Defesa Civil RS (conferir se há cheia ativa)
 
