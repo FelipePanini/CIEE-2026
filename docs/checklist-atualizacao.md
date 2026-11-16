@@ -1,19 +1,15 @@
 # Checklist de atualização dos dados
 
-Gerado por `npm run atualizar-dados` em 15/11/2026, 13:20:08.
+Gerado por `npm run atualizar-dados` em 16/11/2026, 16:34:45.
 
 ## Automático (feito pelo script)
 
-- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **13.07 m** em 2026-11-15 13:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=13/07/2026&dataFim=15/11/2026))
-- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **1.03 m** em 2026-11-15 12:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=13/07/2026&dataFim=15/11/2026))
+- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **12.86 m** em 2026-11-16 16:15:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=14/07/2026&dataFim=16/11/2026))
+- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **0.92 m** em 2026-11-16 16:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=14/07/2026&dataFim=16/11/2026))
 
 ## Avisos e alertas recentes da Defesa Civil RS (conferir se há cheia ativa)
 
-- 12/11/2026 18:03 — [Defesa Civil alerta: condição de ALERTA para chuva intensa nas proximidades de Independência](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-chuva-intensa-nas-proximidades-de-independencia)
-- 12/11/2026 12:56 — [Defesa Civil alerta: condição de ALERTA para tempestade c/ granizo e vento nas proximidades de Sananduva](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-c-granizo-e-vento-nas-proximidades-de-sananduva)
-- 12/11/2026 10:09 — [Defesa Civil alerta: inundação do rio Uruguai. Risco MUITO ALTO de inundação em Uruguaiana](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-inundacao-do-rio-uruguai-risco-muito-alto-de-inundacao-em-uruguaiana)
-- 12/11/2026 10:05 — [Defesa Civil alerta: condição de ALERTA para tempestade c/ granizo e vento nas proximidades de Giruá](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-c-granizo-e-vento-nas-proximidades-de-girua)
-- 11/11/2026 07:07 — [Defesa Civil alerta: condição de ALERTA para tempestade c/ granizo e vento nas proximidades de  Uruguaiana e Barra do Quaraí](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-c-granizo-e-vento-nas-proximidades-de-uruguaiana-e-barra-do-quarai)
+- (não foi possível ler a página — abrir manualmente)
 
 ## Manual (fontes sem API — conferir e editar o JSON correspondente)
 
