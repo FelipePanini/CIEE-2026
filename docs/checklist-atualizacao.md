@@ -1,15 +1,16 @@
 # Checklist de atualização dos dados
 
-Gerado por `npm run atualizar-dados` em 16/11/2026, 16:34:45.
+Gerado por `npm run atualizar-dados` em 17/11/2026, 15:33:20.
 
 ## Automático (feito pelo script)
 
-- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **12.86 m** em 2026-11-16 16:15:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=14/07/2026&dataFim=16/11/2026))
-- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **0.92 m** em 2026-11-16 16:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=14/07/2026&dataFim=16/11/2026))
+- [ ] Telemetria da ANA indisponível nesta execução — o app usa o último JSON salvo.
 
 ## Avisos e alertas recentes da Defesa Civil RS (conferir se há cheia ativa)
 
-- (não foi possível ler a página — abrir manualmente)
+- 17/11/2026 12:19 — [Defesa Civil alerta: condição de ALERTA para chuva intensa  que atua nas proximidades de Soledade](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-chuva-intensa-que-atua-nas-proximidades-de-soledade)
+- 17/11/2026 11:44 — [Defesa Civil alerta: condição de ALERTA para chuva intensa e volumosa que atua nas proximidades de Três de Maio](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-chuva-intensa-e-volumosa-que-atua-nas-proximidades-de-tres-de-maio)
+- 17/11/2026 11:28 — [Defesa Civil alerta: condição de ALERTA nas proximidades de Carazinho](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-nas-proximidades-de-carazinho)
 
 ## Manual (fontes sem API — conferir e editar o JSON correspondente)
 
