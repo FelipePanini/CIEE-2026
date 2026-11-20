@@ -1,18 +1,20 @@
 # Checklist de atualização dos dados
 
-Gerado por `npm run atualizar-dados` em 19/11/2026, 15:15:36.
+Gerado por `npm run atualizar-dados` em 20/11/2026, 14:47:09.
 
 ## Automático (feito pelo script)
 
-- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **12.82 m** em 2026-11-19 15:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=17/07/2026&dataFim=19/11/2026))
-- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **0.99 m** em 2026-11-19 14:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=17/07/2026&dataFim=19/11/2026))
+- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **12.86 m** em 2026-11-20 14:30:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=18/07/2026&dataFim=20/11/2026))
+- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **0.80 m** em 2026-11-20 14:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=18/07/2026&dataFim=20/11/2026))
 
 ## Avisos e alertas recentes da Defesa Civil RS (conferir se há cheia ativa)
 
-- 19/11/2026 14:33 — [Defesa Civil alerta: condição de ALERTA para tempestade com granizo e vento que atuam nas proximidades de Maquiné.](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-com-granizo-e-vento-que-atuam-nas-proximidades-de-maquine)
-- 19/11/2026 14:27 — [Defesa Civil alerta: condição de ALERTA para tempestade com granizo e vento que atuam nas proximidades de Vacaria](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-com-granizo-e-vento-que-atuam-nas-proximidades-de-vacaria)
-- 19/11/2026 13:13 — [Defesa Civil alerta: condição de ALERTA para tempestade com granizo e vento que atuam nas proximidades de Barra do Ribeiro](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-com-granizo-e-vento-que-atuam-nas-proximidades-de-barra-do-ribeiro)
-- 19/11/2026 12:23 — [Defesa Civil alerta: condição de ALERTA para tempestade com granizo e vento que atuam nas proximidades de Cidreira](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestade-com-granizo-e-vento-que-atuam-nas-proximidades-de-cidreira)
+- 20/11/2026 12:46 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de Esmeralda](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-esmeralda)
+- 20/11/2026 12:22 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de Santiago](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-santiago)
+- 20/11/2026 12:22 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de Júlio de Castilhos](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-julio-de-castilhos)
+- 20/11/2026 11:32 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de Itacurubi](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-itacurubi)
+- 20/11/2026 11:11 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de São Borja](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-sao-borj-6b00552986ec9)
+- 20/11/2026 07:18 — [Defesa Civil alerta: condição de ALERTA para chuva, granizo e vento que atuam nas proximidades de Vacaria](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-chuva-granizo-e-vento-que-atuam-nas-proximidades-de-vacaria)
 
 ## Manual (fontes sem API — conferir e editar o JSON correspondente)
 
