@@ -1,20 +1,20 @@
 # Checklist de atualização dos dados
 
-Gerado por `npm run atualizar-dados` em 20/11/2026, 14:47:09.
+Gerado por `npm run atualizar-dados` em 21/11/2026, 13:47:24.
 
 ## Automático (feito pelo script)
 
-- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **12.86 m** em 2026-11-20 14:30:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=18/07/2026&dataFim=20/11/2026))
-- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **0.80 m** em 2026-11-20 14:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=18/07/2026&dataFim=20/11/2026))
+- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **15.41 m** em 2026-11-21 13:30:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=19/07/2026&dataFim=21/11/2026))
+- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **0.86 m** em 2026-11-21 13:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=19/07/2026&dataFim=21/11/2026))
 
 ## Avisos e alertas recentes da Defesa Civil RS (conferir se há cheia ativa)
 
+- 20/11/2026 23:06 — [Defesa Civil alerta: Condição de ATENÇ&Atilde;O para tempestades com granizo e vento que devem atuar ao longo da madrugada](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-atencao-para-tempestades-com-granizo-e-vento-que-devem-atuar-ao-longo-da-madrugada-6b00fc57a5c63)
+- 20/11/2026 20:31 — [Defesa Civil alerta: elevação do rio Taquari. Risco ALTO de inundação em Lajeado](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-elevacao-do-rio-taquari-risco-alto-de-inundacao-em-lajeado)
+- 04/11/2026 17:37 — [Defesa Civil assina junto ao MPRS, TCERS e MPCRS Nota Técnica de Estrutura Mínima para Compdecs](https://www.defesacivil.rs.gov.br/defesa-civil-assina-junto-ao-mprs-tcers-e-mpcrs-nota-tecnica-de-estrutura-minima-para-compdecs)
 - 20/11/2026 12:46 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de Esmeralda](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-esmeralda)
 - 20/11/2026 12:22 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de Santiago](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-santiago)
 - 20/11/2026 12:22 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de Júlio de Castilhos](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-julio-de-castilhos)
-- 20/11/2026 11:32 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de Itacurubi](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-itacurubi)
-- 20/11/2026 11:11 — [Defesa Civil alerta: condição de ALERTA para tempestades com granizo e vento que atuam nas proximidades de São Borja](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-tempestades-com-granizo-e-vento-que-atuam-nas-proximidades-de-sao-borj-6b00552986ec9)
-- 20/11/2026 07:18 — [Defesa Civil alerta: condição de ALERTA para chuva, granizo e vento que atuam nas proximidades de Vacaria](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-condicao-de-alerta-para-chuva-granizo-e-vento-que-atuam-nas-proximidades-de-vacaria)
 
 ## Manual (fontes sem API — conferir e editar o JSON correspondente)
 
