@@ -442,19 +442,11 @@
       "rotulo": "Últimos 125 dias",
       "camada": "ATUAL",
       "fonte": "ANA — telemetria Rio Taquari — Estrela/Lajeado (86879300)",
-      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=22/07/2026&dataFim=24/11/2026",
-      "data_consulta": "2026-11-24",
+      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=24/07/2026&dataFim=26/11/2026",
+      "data_consulta": "2026-11-26",
       "unidade": "m",
       "agregacao": "máximo diário",
       "pontos": [
-        [
-          "2026-07-22",
-          24.74
-        ],
-        [
-          "2026-07-23",
-          24.77
-        ],
         [
           "2026-07-24",
           18.58
@@ -949,7 +941,15 @@
         ],
         [
           "2026-11-24",
-          13.46
+          13.5
+        ],
+        [
+          "2026-11-25",
+          16.53
+        ],
+        [
+          "2026-11-26",
+          16.21
         ]
       ],
       "id": "taquari-lajeado-recente"
@@ -960,19 +960,11 @@
       "rotulo": "Últimos 125 dias",
       "camada": "ATUAL",
       "fonte": "ANA — telemetria Guaíba — Cais Mauá C6 (87450004)",
-      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=22/07/2026&dataFim=24/11/2026",
-      "data_consulta": "2026-11-24",
+      "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=24/07/2026&dataFim=26/11/2026",
+      "data_consulta": "2026-11-26",
       "unidade": "m",
       "agregacao": "máximo diário",
       "pontos": [
-        [
-          "2026-07-22",
-          1.74
-        ],
-        [
-          "2026-07-23",
-          1.99
-        ],
         [
           "2026-07-24",
           2.15
@@ -1464,6 +1456,14 @@
         [
           "2026-11-24",
           0.96
+        ],
+        [
+          "2026-11-25",
+          1.34
+        ],
+        [
+          "2026-11-26",
+          1.28
         ]
       ],
       "id": "guaiba-cais-maua-recente"
