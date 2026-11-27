@@ -1,20 +1,19 @@
 # Checklist de atualização dos dados
 
-Gerado por `npm run atualizar-dados` em 26/11/2026, 15:59:32.
+Gerado por `npm run atualizar-dados` em 27/11/2026, 15:56:08.
 
 ## Automático (feito pelo script)
 
-- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **14.69 m** em 2026-11-26 15:30:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=24/07/2026&dataFim=26/11/2026))
-- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **1.22 m** em 2026-11-26 15:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=24/07/2026&dataFim=26/11/2026))
+- [x] Nível atual — Rio Taquari — Estrela/Lajeado (86879300): **13.51 m** em 2026-11-27 15:30:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=25/07/2026&dataFim=27/11/2026))
+- [x] Nível atual — Guaíba — Cais Mauá C6 (87450004): **1.05 m** em 2026-11-27 14:00:00 ([fonte](https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=25/07/2026&dataFim=27/11/2026))
 
 ## Avisos e alertas recentes da Defesa Civil RS (conferir se há cheia ativa)
 
-- 25/11/2026 14:31 — [Defesa Civil alerta: elevação do rio Uruguai. Risco ALTO de inundação entre Barra do Guarita e Porto Mauá](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-elevacao-do-rio-uruguai-risco-alto-de-inundacao-entre-barra-do-guarita-e-porto-maua)
-- 25/11/2026 14:12 — [Defesa Civil alerta: elevação do rio Uruguai. Risco ALTO de inundação em São Borja](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-elevacao-do-rio-uruguai-risco-alto-de-inundacao-em-sao-borja-6b083adbd435d)
+- 27/11/2026 06:43 — [Defesa Civil alerta: inundação do rio Uruguai. Risco MUITO ALTO de inundação em São Borja](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-inundacao-do-rio-uruguai-risco-muito-alto-de-inundacao-em-sao-borja-6b0950a7bca77)
 - 23/11/2026 00:00 — [Defesa Civil mobiliza voluntários e reforça assistência a famílias atingidas em Tupanciretã](https://www.defesacivil.rs.gov.br/defesa-civil-mobiliza-voluntarios-e-reforca-assistencia-a-familias-atingidas-em-tupancireta)
 - 26/11/2026 06:57 — [Defesa Civil alerta: inundação do rio Uruguai. Risco MUITO ALTO de inundação em São Borja](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-inundacao-do-rio-uruguai-risco-muito-alto-de-inundacao-em-irai-6b0839986c21e-6b0839cff0824)
 - 25/11/2026 17:13 — [Defesa Civil alerta: inundação do rio Uruguai. Risco MUITO ALTO de inundação em Iraí](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-inundacao-do-rio-uruguai-risco-muito-alto-de-inundacao-em-irai-6b0839986c21e)
-- 25/11/2026 06:47 — [Defesa Civil alerta: INUNDAÇ&Atilde;O do rio Uruguai. Risco MUITO ALTO em Iraí](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-inundacao-do-rio-uruguai-risco-muito-alto-em-irai-6b06ae9686900)
+- 25/11/2026 14:31 — [Defesa Civil alerta: elevação do rio Uruguai. Risco ALTO de inundação entre Barra do Guarita e Porto Mauá](https://www.defesacivil.rs.gov.br/defesa-civil-alerta-elevacao-do-rio-uruguai-risco-alto-de-inundacao-entre-barra-do-guarita-e-porto-maua)
 
 ## Manual (fontes sem API — conferir e editar o JSON correspondente)
 
