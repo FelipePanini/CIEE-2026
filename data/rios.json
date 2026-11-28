@@ -45,12 +45,12 @@
         "nota": "Sem referência oficial de \"nível normal\"; o painel usa a série recente como base."
       },
       "nivel_atual": {
-        "valor": 1.05,
+        "valor": 1,
         "unidade": "m",
-        "fonte": "ANA — telemetria Guaíba — Cais Mauá C6 (87450004), leitura de 27/11/2026 14:00",
-        "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=25/07/2026&dataFim=27/11/2026",
-        "data_referencia": "2026-11-27T14:00",
-        "data_consulta": "2026-11-27",
+        "fonte": "ANA — telemetria Guaíba — Cais Mauá C6 (87450004), leitura de 28/11/2026 13:00",
+        "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=87450004&dataInicio=26/07/2026&dataFim=28/11/2026",
+        "data_referencia": "2026-11-28T13:00",
+        "data_consulta": "2026-11-28",
         "camada": "ATUAL",
         "nota": "Leitura telemétrica mais recente disponível (dado bruto, sujeito a consistência pela ANA/SGB)."
       }
@@ -93,12 +93,12 @@
         "camada": "HISTORICO"
       },
       "nivel_atual": {
-        "valor": 13.51,
+        "valor": 13.32,
         "unidade": "m",
-        "fonte": "ANA — telemetria Rio Taquari — Estrela/Lajeado (86879300), leitura de 27/11/2026 15:30",
-        "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=25/07/2026&dataFim=27/11/2026",
-        "data_referencia": "2026-11-27T15:30",
-        "data_consulta": "2026-11-27",
+        "fonte": "ANA — telemetria Rio Taquari — Estrela/Lajeado (86879300), leitura de 28/11/2026 14:15",
+        "url": "https://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?codEstacao=86879300&dataInicio=26/07/2026&dataFim=28/11/2026",
+        "data_referencia": "2026-11-28T14:15",
+        "data_consulta": "2026-11-28",
         "camada": "ATUAL",
         "nota": "Leitura telemétrica mais recente disponível (dado bruto, sujeito a consistência pela ANA/SGB)."
       }
